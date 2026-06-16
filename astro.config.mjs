@@ -19,11 +19,20 @@ export default defineConfig({
           link: '/getting-started/',
         },
         {
+          label: 'Dashboard',
+          link: '/dashboard/',
+        },
+        {
           label: 'Tally Sheets',
           items: [
             { label: 'User Manual', link: '/tally-sheets/user-manual/' },
             { label: 'FAQ', link: '/tally-sheets/faq/' },
+            { label: 'Transport Units', link: '/tally-sheets/transport-units/' },
           ],
+        },
+        {
+          label: 'Inventory',
+          link: '/inventory/',
         },
         {
           label: 'Shipments',
@@ -51,6 +60,20 @@ export default defineConfig({
           items: [
             { label: 'User Manual', link: '/reports/user-manual/' },
             { label: 'FAQ', link: '/reports/faq/' },
+          ],
+        },
+        {
+          label: 'Utilities',
+          link: '/utilities/',
+        },
+        {
+          label: 'Account & Settings',
+          items: [
+            { label: 'Company Profile & Branding', link: '/account-settings/company-profile/' },
+            { label: 'User Profile', link: '/account-settings/user-profile/' },
+            { label: 'Subscriptions & Plans', link: '/account-settings/subscriptions/' },
+            { label: 'Storage', link: '/account-settings/storage/' },
+            { label: 'Support Tickets', link: '/account-settings/support-tickets/' },
           ],
         },
       ],
