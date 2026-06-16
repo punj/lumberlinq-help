@@ -21,7 +21,9 @@ The Export menu shows Excel, PDF, Bundle, and Advanced options.
 
 ## Can I import tally rows?
 
-Yes. The toolbar includes Import for file-based import and AI Import for image-based extraction from handwritten tally sheets.
+Yes. The toolbar includes **Import** for file-based import (CSV or Excel) and **AI Import** for image-based extraction from handwritten tally sheets.
+
+**AI Import important note:** AI extraction is not guaranteed to be accurate. Always review every row in the Preview step before confirming — AI can make mistakes, particularly with unclear handwriting, low-resolution photos, or smudged ink. Verify all extracted values match your original document before saving.
 
 ## What does the status bar show?
 

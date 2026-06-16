@@ -3,9 +3,17 @@ title: Reports, Users & Permissions — User Manual
 description: Step-by-step guide for running reports, managing users, and configuring role-based access in LumberLinq.
 ---
 
+## How to Access Reports and User Management
+
+**Reports — Sidebar:** Main Menu → **Reports** · URL: `/reports`
+**Manage Users — Sidebar:** Main Menu → Settings → **Manage User** · URL: `/manage/user` *(Admin role required)*
+**RBAC — Sidebar:** accessible from within the Manage User page
+
+---
+
 ## Reports
 
-Open **Reports** and choose the report you need. Each report is designed for a different operational view:
+Open **Reports** from the main sidebar (`/reports`) and choose the report you need. Each report is designed for a different operational view:
 
 - **Business Partner Report** — Review buyer, supplier, shipper, consignee, and service-party records.
 - **Product Report** — Review timber product master data.

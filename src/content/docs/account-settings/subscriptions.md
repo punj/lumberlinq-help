@@ -49,7 +49,7 @@ When a limit is reached, LumberLinq shows a warning banner or blocks the action.
 |----------|-----------------|
 | Storage quota | Maximum total file storage across all modules |
 | Users | Maximum number of active user accounts |
-| AI credits | Credits for AI Import (handwritten tally extraction) |
+| AI credits | Credits for AI Import (handwritten tally extraction). AI results must always be verified — see the [AI Import disclaimer](/tally-sheets/user-manual/#import-and-ai-import). |
 | Tally sheets | Maximum number of tally sheets |
 | Shipments | Maximum number of shipments |
 | Transport Units | Maximum number of TUs |

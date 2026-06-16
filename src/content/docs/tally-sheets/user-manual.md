@@ -3,9 +3,22 @@ title: Tally Sheets — User Manual
 description: Step-by-step guide for creating and managing Round and Square tally sheets in LumberLinq.
 ---
 
+## How to Access Tally Sheets
+
+**Sidebar:** Main Menu → **Tally Sheets**
+**URL:** `/new-tallysheet`
+
+| Page | URL |
+|------|-----|
+| Tally Sheet list | `/new-tallysheet` |
+| New tally / create TU | click "New Tally Sheet" from the list |
+| View all Transport Units | `/new-tallysheet/view-trans` |
+| Global search | `/new-tallysheet/search-global` |
+| Import tally data | `/new-tallysheet/import` |
+
 ## Tally Sheet List
 
-Open **Tallysheet > List Tallysheet** to view transport units and tally sheets. The list supports search, table columns, KPI cards, and row actions.
+Open **Tally Sheets** from the main sidebar (URL: `/new-tallysheet`) to view transport units and tally sheets. The list supports search, table columns, KPI cards, and row actions.
 
 ![Round tally list](/screenshots/tally/round-list-page.png)
 
@@ -154,5 +167,11 @@ The Tally Sheet list is responsive and adapts to a narrow viewport.
 
 The toolbar includes Import and AI Import actions.
 
-- **Import** supports file-based tally import with configure, upload/map, and preview steps.
-- **AI Import** supports image-based extraction for handwritten tally sheets and shows AI credit usage.
+- **Import** — file-based tally import with three steps: Configure, Upload & Map columns, and Preview before confirming.
+- **AI Import** — upload a photo of a handwritten tally sheet. The AI reads the image and extracts measurement rows automatically. Each image costs AI credits, which are deducted after extraction.
+
+:::caution[AI can make mistakes — always verify]
+AI Import is powered by machine learning and **may produce incorrect values**. Unclear handwriting, low-resolution images, smudged ink, poor lighting, or closely spaced numbers can all cause extraction errors. The Preview step is **mandatory** — review every extracted row and correct any mistakes before confirming import. Do not rely on AI-extracted data without careful verification. Credits are deducted after extraction, not after confirmation, so take time to check every value.
+:::
+
+AI Import requires the feature to be enabled on your subscription plan. If the AI Import button is missing from the toolbar, your plan does not include this feature or it has been disabled by your administrator.

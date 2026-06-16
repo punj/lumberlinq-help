@@ -3,6 +3,21 @@ title: Business Partners — User Manual
 description: Step-by-step guide for viewing, adding, editing, and managing Business Partners in LumberLinq.
 ---
 
+## How to Access Business Partners
+
+**Sidebar:** Main Menu → **Business Partners**
+**URL:** `/business-partners`
+
+| Action | How |
+|--------|-----|
+| View all partners | Open Business Partners from sidebar |
+| Create a new partner | Click **New Partner** |
+| Edit a partner | Click the pencil icon |
+| Add attachments / bank accounts | Open a saved partner and switch tabs |
+| Deactivate a partner | Use the status action on the list row |
+
+---
+
 Business Partners are the companies and contacts your organisation trades with in LumberLinq. A partner can be a buyer, seller, exporter, importer, or both buyer and seller.
 
 Business Partners are used across shipments, tally sheets, inventory, documents, and reports.

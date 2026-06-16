@@ -3,6 +3,21 @@ title: Shipments — User Manual
 description: Step-by-step guide for creating, editing, and managing shipments in LumberLinq.
 ---
 
+## How to Access Shipments
+
+**Sidebar:** Main Menu → **Shipments**
+**URL:** `/shipments`
+
+| Action | How |
+|--------|-----|
+| View all shipments | Open Shipments from sidebar |
+| Create a new shipment | Click **New** from the list |
+| Edit a shipment | Click the pencil icon on any row |
+| Read-only view | Click the eye icon |
+| Share a shipment | Click the share icon |
+| Export / download | Click the download icon |
+| Record a payment | Click the payment icon |
+
 ## Purpose
 
 The Shipments module helps timber and logistics teams manage export, import, domestic sale, domestic purchase, and trading shipments in one place. It brings together shipment details, parties, transport units, documents, invoice values, payment tracking, export reports, share links, and audit/status information.

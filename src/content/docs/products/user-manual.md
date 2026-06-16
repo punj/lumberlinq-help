@@ -3,6 +3,18 @@ title: Products & Loading Sites — User Manual
 description: Step-by-step guide for managing the product catalog and loading sites in LumberLinq.
 ---
 
+## How to Access Products and Loading Sites
+
+**Products — Sidebar:** Main Menu → **Products** · URL: `/products`
+**Loading Sites — Sidebar:** Main Menu → **Loading Sites** · URL: `/loading-sites`
+
+| Module | Create URL | Edit URL |
+|--------|------------|----------|
+| Products | `/add/product` | `/edit/product/:id` |
+| Loading Sites | `/add/loading-sites` | `/edit/loading-sites/:id` |
+
+---
+
 ## Products
 
 Use Products to maintain the timber product catalog used in tally sheets, transport units, and reports.
