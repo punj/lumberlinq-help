@@ -1,0 +1,32 @@
+/* LumberLinq brand colours for Starlight */
+:root {
+  --sl-color-accent-low:  #d0edf5;
+  --sl-color-accent:      #1684AC;
+  --sl-color-accent-high: #0d5a78;
+}
+
+[data-theme='dark'] {
+  --sl-color-accent-low:  #0d3d52;
+  --sl-color-accent:      #29a8d6;
+  --sl-color-accent-high: #6fcfec;
+}
+
+/* Use Inter as the UI font */
+:root {
+  --sl-font: 'Inter', system-ui, sans-serif;
+}
+
+/* Make screenshots responsive and bordered */
+.sl-markdown-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid var(--sl-color-gray-5);
+  margin-block: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo sizing */
+.site-title img {
+  height: 2rem;
+}

@@ -1,0 +1,50 @@
+---
+title: LumberLinq Help Center
+description: Official guides, FAQs, and step-by-step instructions for every feature in LumberLinq — the Timber Management System.
+template: splash
+hero:
+  title: LumberLinq Help Center
+  tagline: Find step-by-step guides, answers to common questions, and everything you need to get the most out of LumberLinq.
+  image:
+    file: ../../assets/logo.svg
+  actions:
+    - text: Get Started
+      link: /getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: Open the App
+      link: https://app.lumberlinq.com
+      icon: external
+      variant: minimal
+---
+
+import { CardGrid, Card } from '@astrojs/starlight/components';
+
+## Browse by Feature
+
+<CardGrid stagger>
+  <Card title="Tally Sheets" icon="document">
+    Capture round and square log measurements. Auto-calculated volumes, real-time saving, export to Excel and PDF.
+    [View guides →](/tally-sheets/user-manual/)
+  </Card>
+  <Card title="Shipments" icon="rocket">
+    Manage export, import, and domestic shipments — parties, transport units, documents, payments, and share links.
+    [View guides →](/shipments/user-manual/)
+  </Card>
+  <Card title="Business Partners" icon="group">
+    Maintain buyers, sellers, exporters, importers, and service parties used across your operations.
+    [View guides →](/business-partners/user-manual/)
+  </Card>
+  <Card title="Products & Loading Sites" icon="list-format">
+    Manage your timber product catalog and the yards, mills, forests, and ports where timber is stored or loaded.
+    [View guides →](/products/user-manual/)
+  </Card>
+  <Card title="Reports, Users & Permissions" icon="bars">
+    Run operational, financial, and inventory reports. Invite team members and configure role-based access control.
+    [View guides →](/reports/user-manual/)
+  </Card>
+  <Card title="Getting Started" icon="open-book">
+    New to LumberLinq? Start here — a quick orientation to the system and your first steps.
+    [Read more →](/getting-started/)
+  </Card>
+</CardGrid>

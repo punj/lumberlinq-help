@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="8" fill="#1684AC"/>
+  <!-- Stylised L + leaf icon -->
+  <path d="M 10 24 L 10 8 L 13 8 L 13 21.5 L 22 21.5 L 22 24 Z" fill="white" opacity="0.95"/>
+  <path d="M 17 8 C 17 8 24 10 24 16 C 24 19 22 21 19 21 C 16 21 14 19 14 16 C 14 12 17 8 17 8 Z" fill="#83BB6A"/>
+  <path d="M 17 8 C 17 8 20 12 20 16 C 20 19 19 21 19 21 C 17.5 19.5 17 18 17 16 C 17 12 17 8 17 8 Z" fill="#93C47D"/>
+</svg>
