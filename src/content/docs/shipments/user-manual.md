@@ -9,7 +9,7 @@ The Shipments module helps timber and logistics teams manage export, import, dom
 
 ## Open the Shipments List
 
-Go to **Shipments > List**.
+The sidebar label is **Consignments** (routes and this article still say "Shipment" internally — the on-screen label was renamed). Go to **Consignments > List Consignments**.
 
 The list shows:
 

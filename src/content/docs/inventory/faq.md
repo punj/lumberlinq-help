@@ -1,0 +1,32 @@
+---
+title: Inventory — FAQ
+description: Frequently asked questions about the Inventory module in LumberLinq.
+---
+
+**Why can't I add a Transport Unit to a shipment?**
+
+It hasn't been received into inventory yet. Go to Overview or In/Out and confirm a receipt (IN) movement exists — if not, check the tally sheet was fully saved, not just filled in.
+
+**A TU shows unavailable even though it was received — why?**
+
+Check In/Out for an assignment (In Consignment), a Proc IN (currently processing), or confirm it hasn't already shipped.
+
+**My Overview totals look wrong — what should I check?**
+
+Look for an uncommitted adjustment or an open processing run that hasn't been completed, and confirm every tally sheet linked to the affected TUs was actually saved.
+
+**Which screen should I use for reconciliation?**
+
+Use In/Out for the movement audit trail, and the Reconciliation Report (under Reports) for a structured comparison view.
+
+**What's the difference between the six stock stages?**
+
+At Forest, At Mill, and At Yard are available stock at that loading-site type. In Transit and In Shipment are stock already booked to a shipment (moving vs. not yet moving). In Process is stock currently going through a processing run.
+
+**When should I use Add Adjustment instead of a normal Stock In?**
+
+Only when recorded stock no longer matches physical reality (e.g. after a stocktake or damage) — not as a substitute for a proper receipt. If a TU was physically received but never entered, do a real Stock In instead.
+
+**Can I undo a processing run?**
+
+Cancel it while it's still Draft or In Progress — cancelling reverses the input TU assignments. Once Completed, it can't be reversed the same way.

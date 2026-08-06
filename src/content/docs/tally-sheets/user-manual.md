@@ -5,7 +5,7 @@ description: Step-by-step guide for creating and managing Round and Square tally
 
 ## Tally Sheet List
 
-Open **Tallysheet > List Tallysheet** to view transport units and tally sheets. The list supports search, table columns, KPI cards, and row actions.
+There is no menu item literally called "Tally Sheets" — every tally sheet belongs to a Transport Unit, so tally sheets are managed from the **Transport Unit** menu instead. Open **Transport Unit > Transport Units** to view all transport units and their tally sheets. The list supports search, table columns, KPI cards, and row actions.
 
 ![Round tally list](/screenshots/tally/round-list-page.png)
 
@@ -17,7 +17,7 @@ Open **Tallysheet > List Tallysheet** to view transport units and tally sheets. 
 
 ## Create and Edit
 
-Use **New Tallysheet** to create a transport unit and tally sheet. Required fields include Transport ID, Product, and Transport Mode. Product type determines whether the measurement grid opens as Round or Square.
+Use **Transport Unit > Add Transport Unit** to create a transport unit and tally sheet. Required fields include Transport ID, Product, and Transport Mode. Product type determines whether the measurement grid opens as Round or Square.
 
 ![Round — create](/screenshots/tally/round-create.png)
 
