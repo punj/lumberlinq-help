@@ -7,7 +7,7 @@ export default defineConfig({
     starlight({
       title: 'LumberLinq Help',
       logo: {
-        src: './src/assets/logo.svg',
+        src: './src/assets/logo-icon.png',
         alt: 'LumberLinq',
       },
       favicon: '/favicon.svg',
