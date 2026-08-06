@@ -5,7 +5,7 @@ description: Step-by-step guide for viewing, adding, editing, and managing Busin
 
 Business Partners are the companies and contacts your organisation trades with in LumberLinq. A partner can be a buyer, seller, exporter, importer, or both buyer and seller.
 
-Business Partners are used across shipments, tally sheets, inventory, documents, and reports.
+Business Partners are used across consignments, tally sheets, inventory, documents, and reports.
 
 ## View Business Partners
 

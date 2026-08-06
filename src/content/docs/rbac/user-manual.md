@@ -31,6 +31,8 @@ Permissions are grouped into 12 modules, each expandable with Enable All / Disab
 
 Instead of configuring permissions one user at a time, create a named **Access Role** once — e.g. "Accountant" or "Yard Supervisor" — with a chosen set of permissions, then assign it to any number of users. Click **New Role**, give it a name, tick the permissions it should include, and save. Editing a role updates every user currently assigned to it immediately. A role can't be deleted while users are still assigned to it — reassign or clear those users first.
 
+![Roles tab](/screenshots/rbac/rbac__roles-tab__01.png)
+
 ## Disabling RBAC
 
 Disabling RBAC immediately gives all users broad access based on their role tier. Previously configured permissions and Access Roles are preserved in the database, not deleted — re-enabling RBAC restores everything exactly as it was.

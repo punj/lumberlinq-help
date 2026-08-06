@@ -33,4 +33,4 @@ Yes. Set their role to USER and enable only the Reports permission — don't ena
 
 **What's the difference between deactivating and deleting a user?**
 
-Deactivating blocks login without touching their data — reversible any time. Deleting permanently removes login access; their historical tallies and shipments stay, but the action cannot be undone. Use deactivation unless you specifically need permanent removal.
+Deactivating blocks login without touching their data — reversible any time. Deleting permanently removes login access; their historical tallies and consignments stay, but the action cannot be undone. Use deactivation unless you specifically need permanent removal.

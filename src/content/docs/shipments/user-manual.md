@@ -1,15 +1,15 @@
 ---
-title: Shipments — User Manual
-description: Step-by-step guide for creating, editing, and managing shipments in LumberLinq.
+title: Consignments — User Manual
+description: Step-by-step guide for creating, editing, and managing consignments in LumberLinq.
 ---
 
 ## Purpose
 
-The Shipments module helps timber and logistics teams manage export, import, domestic sale, domestic purchase, and trading shipments in one place. It brings together shipment details, parties, transport units, documents, invoice values, payment tracking, export reports, share links, and audit/status information.
+The Consignments module (still called "Shipments" in the app's URLs and some internal text) helps timber and logistics teams manage export, import, domestic sale, domestic purchase, and trading consignments in one place. It brings together consignment details, parties, transport units, documents, invoice values, payment tracking, export reports, share links, and audit/status information.
 
-## Open the Shipments List
+## Open the Consignments List
 
-The sidebar label is **Consignments** (routes and this article still say "Shipment" internally — the on-screen label was renamed). Go to **Consignments > List Consignments**.
+The sidebar label is **Consignments** (routes and this article's screenshots still say "Shipment" internally — the on-screen label was renamed). Go to **Consignments > List Consignments**.
 
 The list shows:
 

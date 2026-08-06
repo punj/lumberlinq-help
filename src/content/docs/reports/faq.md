@@ -3,9 +3,9 @@ title: Reports — FAQ
 description: Frequently asked questions about LumberLinq's reports.
 ---
 
-**Which report should I use for shipment performance?**
+**Which report should I use for consignment performance?**
 
-Use the Consignment Report (labelled Consignment Report in the menu). It includes shipment totals, CBM, pieces, trade type, parties, ports, BL number, and financial status.
+Use the Consignment Report (still "Shipment Report" in the app's URLs). It includes consignment totals, CBM, pieces, trade type, parties, ports, BL number, and financial status.
 
 **Which report should I use for receivables and payables?**
 
@@ -13,7 +13,7 @@ Use the Financial Report. It includes actual received, actual paid, receivable, 
 
 **Which report should I use for stock and processing?**
 
-Use the Inventory Report. It shows available stock, in-process stock, shipment stock, movements, adjustments, and processing runs.
+Use the Inventory Report. It shows available stock, in-process stock, in-consignment stock, movements, adjustments, and processing runs.
 
 **Can I export reports?**
 

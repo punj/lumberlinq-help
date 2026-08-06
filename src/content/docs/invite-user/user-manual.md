@@ -18,11 +18,9 @@ Only Admins and Super Admins can invite users — the Manage User page itself re
 
 The dialog also shows a user-limit meter (used vs. plan limit) and blocks sending once the company is at its user limit — upgrade the plan to add more.
 
-The invited person receives an email with a registration link. **Invite links expire in 24 hours** — resend from Manage Users if needed.
+The invited person receives an email with a registration link. **Invite links expire in 24 hours** — resend from Manage User if needed.
 
-![Invite User dialog](/screenshots/reports/users-03-invite-user-dialog.png)
-
-![Role template dropdown](/screenshots/reports/users-05-role-template-dropdown.png)
+![Invite User dialog](/screenshots/users/invite-user__dialog__01.png)
 
 ## What the Invited User Receives
 

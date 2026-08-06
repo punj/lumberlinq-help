@@ -63,7 +63,7 @@ If you have a promo code, enter it on the payment screen before completing the t
 
 Each plan has limits on:
 - **Tally sheets** — maximum number of tallies
-- **Shipments** — maximum number of shipments
+- **Consignments** — maximum number of consignments
 - **Users** — number of team members you can invite
 - **Storage** — file/photo storage quota
 - **AI Chat (Linc)** — daily message limit per user

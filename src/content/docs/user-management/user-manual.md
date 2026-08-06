@@ -33,7 +33,7 @@ See the Inviting Team Members guide for the full invitation flow.
 
 Summary: **Manage User → Invite User** → enter one or more emails, choose Admin/an Access Role/Custom Access → Send Invite. The user receives an email with a registration link (expires in 24 hours).
 
-![Invite User dialog](/screenshots/reports/users-03-invite-user-dialog.png)
+![Invite User dialog](/screenshots/users/invite-user__dialog__01.png)
 
 ![Pending invitations](/screenshots/reports/users-02-pending-invitations.png)
 
@@ -55,11 +55,11 @@ Deactivating blocks the user from logging in without deleting their data:
 2. The user sees "Account deactivated" on next login attempt.
 3. To reactivate, find the user in Manage User and click Activate.
 
-Use deactivation when a team member leaves — deactivate rather than delete to preserve their historical tally and shipment records.
+Use deactivation when a team member leaves — deactivate rather than delete to preserve their historical tally and consignment records.
 
 ## Deleting a User
 
-Deletion permanently removes login access. Historical records (tallies, shipments) created by that user are preserved but the user account is gone. This action cannot be undone — use deactivation instead unless permanent removal is required.
+Deletion permanently removes login access. Historical records (tallies, consignments) created by that user are preserved but the user account is gone. This action cannot be undone — use deactivation instead unless permanent removal is required.
 
 ## Menu Visibility
 

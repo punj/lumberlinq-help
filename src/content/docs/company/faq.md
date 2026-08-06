@@ -21,7 +21,7 @@ No — regenerate the share link for the new branding to appear on it. Already-d
 
 **What does "Allow Stock Oversell" do?**
 
-It lets a shipment be assigned more volume than is currently available in inventory — useful for pre-selling against expected incoming stock. It removes a safety check, so leave it off unless your workflow specifically needs it.
+It lets a consignment be assigned more volume than is currently available in inventory — useful for pre-selling against expected incoming stock. It removes a safety check, so leave it off unless your workflow specifically needs it.
 
 **Who can edit Company Settings?**
 

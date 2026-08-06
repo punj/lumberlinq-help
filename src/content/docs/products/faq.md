@@ -7,7 +7,7 @@ description: Frequently asked questions about Products and Loading Sites in Lumb
 
 ### What is a Product in LumberLinq?
 
-A Product is a timber item such as round logs, sawn boards, sleepers, planks, or poles. Products define the measurement formula and product details used by tally and shipment workflows.
+A Product is a timber item such as round logs, sawn boards, sleepers, planks, or poles. Products define the measurement formula and product details used by tally and consignment workflows.
 
 ### Which product fields are required?
 
@@ -23,7 +23,7 @@ You can edit product details, but be careful with formula changes because linked
 
 ### Why can a product delete fail?
 
-Deletion can fail when the product is already used by tally sheets, shipments, or other linked records.
+Deletion can fail when the product is already used by tally sheets, consignments, or other linked records.
 
 ---
 

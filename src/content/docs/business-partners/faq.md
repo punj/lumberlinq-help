@@ -9,7 +9,7 @@ A Business Partner is a buyer, seller, exporter, importer, supplier, trader, or 
 
 ## Why do I need Business Partners?
 
-They are reused across shipments, tally sheets, inventory, documents, and reports so partner information stays consistent.
+They are reused across consignments, tally sheets, inventory, documents, and reports so partner information stays consistent.
 
 ## What fields are required?
 

@@ -1,33 +1,33 @@
 ---
-title: Shipments — FAQ
-description: Frequently asked questions about the Shipments module in LumberLinq.
+title: Consignments — FAQ
+description: Frequently asked questions about the Consignments module in LumberLinq.
 ---
 
-## What is a shipment in LumberLinq?
+## What is a consignment in LumberLinq?
 
-A shipment is a movement record for timber goods. It can include parties, route details, transport units, documents, invoice values, payments, status, and export/share controls.
+A consignment (sidebar label — the app's URLs and some internal text still say "Shipment") is a movement record for timber goods. It can include parties, route details, transport units, documents, invoice values, payments, status, and export/share controls.
 
-## Which shipment types are supported?
+## Which consignment types are supported?
 
 The supported types are Export, Import, Domestic Sale, Domestic Purchase, and Trading.
 
-## Can I search shipments by BL number?
+## Can I search consignments by BL number?
 
-Yes. Use the global search or the BL number column filter on the Shipments list.
+Yes. Use the global search or the BL number column filter on the Consignments list.
 
-## What actions are available from the shipment list?
+## What actions are available from the consignment list?
 
 The list provides view, share, download/export, edit, payment quick panel, and delete actions.
 
-## Why can I not add a transport unit to a shipment?
+## Why can I not add a transport unit to a consignment?
 
-Only eligible units can be linked. If a transport unit has not been received into inventory, the system blocks assignment. Receive the unit into inventory first, then add it to the shipment.
+Only eligible units can be linked. If a transport unit has not been received into inventory, the system blocks assignment. Receive the unit into inventory first, then add it to the consignment.
 
-## Can I upload shipment documents?
+## Can I upload consignment documents?
 
-Yes. The Documents tab supports document numbers and file uploads for shipment-related document categories.
+Yes. The Documents tab supports document numbers and file uploads for consignment-related document categories.
 
-## Can I see shipment parties clearly?
+## Can I see consignment parties clearly?
 
 Yes. The Consignment Info tab shows shipper, consignee, notify party, exporter reference, buyer order, origin, and destination fields.
 
@@ -35,22 +35,22 @@ Yes. The Consignment Info tab shows shipper, consignee, notify party, exporter r
 
 Yes. Use Financials & Payments to record payment terms, payment history, invoice totals, received/paid amounts, and outstanding balances.
 
-## Can I export a shipment?
+## Can I export a consignment?
 
 Yes. The export dialog supports format and visibility options, including Excel, PDF, and bundle-style export choices.
 
-## Can I share shipment details with another party?
+## Can I share consignment details with another party?
 
 Yes. The share action supports public, protected, and private links with expiry, access limits, download permission, and document access settings.
 
-## What happens when a shipment is locked?
+## What happens when a consignment is locked?
 
-The shipment is marked as locked and normal editing is prevented.
+The consignment is marked as locked and normal editing is prevented.
 
 ## Where do inventory and reconciliation fit?
 
-Inventory controls whether transport units are available for shipment. The Inventory Overview, In/Out ledger, adjustment dialog, processing runs, reconciliation report, and inventory report support shipment readiness and stock visibility.
+Inventory controls whether transport units are available for a consignment. The Inventory Overview, In/Out ledger, adjustment dialog, processing runs, reconciliation report, and inventory report support consignment readiness and stock visibility.
 
-## Is the Shipments module mobile responsive?
+## Is the Consignments module mobile responsive?
 
-Yes. The Shipments list adapts to a narrow viewport for search, review, and follow-up actions.
+Yes. The Consignments list adapts to a narrow viewport for search, review, and follow-up actions.

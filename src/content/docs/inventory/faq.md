@@ -3,7 +3,7 @@ title: Inventory — FAQ
 description: Frequently asked questions about the Inventory module in LumberLinq.
 ---
 
-**Why can't I add a Transport Unit to a shipment?**
+**Why can't I add a Transport Unit to a consignment?**
 
 It hasn't been received into inventory yet. Go to Overview or In/Out and confirm a receipt (IN) movement exists — if not, check the tally sheet was fully saved, not just filled in.
 
@@ -21,7 +21,7 @@ Use In/Out for the movement audit trail, and the Reconciliation Report (under Re
 
 **What's the difference between the six stock stages?**
 
-At Forest, At Mill, and At Yard are available stock at that loading-site type. In Transit and In Shipment are stock already booked to a shipment (moving vs. not yet moving). In Process is stock currently going through a processing run.
+At Forest, At Mill, and At Yard are available stock at that loading-site type. In Transit and In Consignment are stock already booked to a consignment (moving vs. not yet moving). In Process is stock currently going through a processing run.
 
 **When should I use Add Adjustment instead of a normal Stock In?**
 

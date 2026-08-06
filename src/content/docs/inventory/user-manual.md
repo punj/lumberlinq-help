@@ -7,7 +7,7 @@ description: Tracking timber stock from receipt through processing to shipment i
 
 Inventory tracks the lifecycle of timber stock after it has been received from a tally sheet and before it is shipped, processed, or moved out. It answers three questions for operations teams: what stock is available right now, where is it, and what has happened to it over time.
 
-Inventory is the bridge between Tally Sheets and Shipments. A Transport Unit (TU) created in a tally sheet cannot be added to a shipment until it has been received into inventory — this protects data integrity so you never ship stock the system doesn't recognise as officially received.
+Inventory is the bridge between Tally Sheets and Consignments. A Transport Unit (TU) created in a tally sheet cannot be added to a consignment until it has been received into inventory — this protects data integrity so you never ship stock the system doesn't recognise as officially received.
 
 ## How to Access Inventory
 
@@ -21,16 +21,16 @@ Open **Main Menu → Inventory**. Inventory is four separate pages, not tabs on 
 
 ## Overview — Reading the Stock Position
 
-Open Overview first before planning a shipment or checking site capacity. Stock is grouped into six stages, shown as clickable cards (click a card to filter the site list below it):
+Open Overview first before planning a consignment or checking site capacity. Stock is grouped into six stages, shown as clickable cards (click a card to filter the site list below it):
 
 - **At Forest** — available stock at a Forest-type loading site
-- **In Transit** — stock physically moving (shipment status Stuffed / Gate Out / In Transit)
+- **In Transit** — stock physically moving (consignment status Stuffed / Gate Out / In Transit)
 - **At Mill** — available stock at a Mill-type loading site
 - **In Process** — stock currently going through a processing run
 - **At Yard** — available stock at a Yard, Warehouse, or Port site
-- **In Shipment** — booked into a shipment but not yet physically moving
+- **In Consignment** — booked into a consignment but not yet physically moving
 
-Alongside the stage cards, KPI totals show available CBM, in-process CBM, in-shipment CBM, CBM shipped this month, and total CBM tied up in open lots.
+Alongside the stage cards, KPI totals show available CBM, in-process CBM, in-consignment CBM, CBM shipped this month, and total CBM tied up in open lots.
 
 ![Overview — expanded site](/screenshots/reports/inventory-02-overview-expanded-site.png)
 
@@ -49,7 +49,7 @@ Below the action strip, Overview lists every open stock lot — a batch of stock
 
 ## In/Out — The Movement Ledger
 
-Open **Inventory → In/Out** to see every stock movement in chronological order — the audit trail for inventory. Movement types: **IN** (received), **OUT** (dispatched), **Proc IN** (entered a processing run), **Proc OUT** (produced by a processing run), **In Consignment** (assigned to a shipment), and **Adjustment**. Filter by movement type (chips at the top) or by date range.
+Open **Inventory → In/Out** to see every stock movement in chronological order — the audit trail for inventory. Movement types: **IN** (received), **OUT** (dispatched), **Proc IN** (entered a processing run), **Proc OUT** (produced by a processing run), **In Consignment** (assigned to a consignment), and **Adjustment**. Filter by movement type (chips at the top) or by date range.
 
 ![In/Out ledger](/screenshots/reports/inventory-03-in-out-ledger.png)
 
@@ -75,7 +75,7 @@ Processing runs can be assigned to a Mill Operator — open **Inventory → Oper
 
 ## Common Problems and Fixes
 
-**"I can't add a TU to a shipment"** — the TU hasn't been received into inventory. Go to Overview or In/Out and confirm a receipt (IN) movement exists; if not, check the tally sheet was fully saved, not just filled in.
+**"I can't add a TU to a consignment"** — the TU hasn't been received into inventory. Go to Overview or In/Out and confirm a receipt (IN) movement exists; if not, check the tally sheet was fully saved, not just filled in.
 
 **"A TU shows unavailable even though it was received"** — check In/Out for an assignment (In Consignment), a Proc IN (currently processing), or confirm it hasn't already shipped.
 

@@ -5,18 +5,28 @@ description: The Dashboard landing page, calculation utilities, file storage, an
 
 ## Dashboard
 
-Open **Main Menu → Dashboard** — usually the landing page after login, at `/dashboard-v7`. It's the management view for high-level business visibility: shipments, inventory, payments, and reconciliation, all in one place, updating live within a couple of seconds of a change elsewhere in the app.
+Open **Main Menu → Dashboard** — usually the landing page after login, at `/dashboard-v7`. It's the management view for high-level business visibility: consignments, inventory, payments, and reconciliation, all in one place, updating live within a couple of seconds of a change elsewhere in the app.
 
 ![Header controls](/screenshots/reports/global-01-header-company-id-help-font-theme.png)
 
+![Dashboard header](/screenshots/dashboard/dashboard__header__01.png)
+
 Not every section is visible to every user — several require a specific permission (Financial Health needs finance access, Inventory Snapshot needs inventory access, Mill Tasks needs process/mill access, Recent Activity needs a user-management permission). If a section is missing for you, that's expected, not a bug.
 
-**What it shows:** Business Pulse KPI cards (Business Partners, Shipments, Transport Units, Volume, Pieces), My Active Mill Tasks (if you have any assigned), Financial Health, Inventory Snapshot, a Reconciliation ring, volume/product/trade-type charts, Recent Activity, and upcoming departures/arrivals.
+**What it shows:** Business Pulse KPI cards (Business Partners, Consignments, Transport Units, Volume, Pieces), My Active Mill Tasks (if you have any assigned), Financial Health, Inventory Snapshot, a Reconciliation ring, volume/product/trade-type charts, Recent Activity, and upcoming departures/arrivals.
+
+![Business Pulse KPI cards](/screenshots/dashboard/dashboard__business-pulse__01.png)
+
+![Inventory Snapshot](/screenshots/dashboard/dashboard__inventory-snapshot__01.png)
+
+![Dashboard charts](/screenshots/dashboard/dashboard__charts__01.png)
+
+![Recent Activity](/screenshots/dashboard/dashboard__recent-activity__01.png)
 
 **Using it effectively** — the dashboard is a navigation aid, not a data entry tool:
-- Pending reconciliation not zero → open the shipment or the Reconciliation Report
+- Pending reconciliation not zero → open the consignment or the Reconciliation Report
 - Volume trend drops sharply → check Tally Sheets for missing entries and Inventory for recent adjustments
-- Financial Health shows overdue → open the Financial Report or the shipment's Financials & Payments tab
+- Financial Health shows overdue → open the Financial Report or the consignment's Financials & Payments tab
 - A Mill Task looks stuck → open Inventory → Processing to review, complete, or cancel it
 
 ## Utility
@@ -41,7 +51,7 @@ Open **Main Menu → User → Storage** to see how much file storage your compan
 
 The top section shows Used storage, Storage quota, Free storage, File count, and Usage percentage. If used storage approaches or exceeds quota, new uploads will fail — upgrade your plan or delete unnecessary files.
 
-Storage aggregates files from every module: general documents, TU/site photos, Business Partner documents, shipment documents, and loading site documents. The file list shows type, name, size, uploader, and upload date.
+Storage aggregates files from every module: general documents, TU/site photos, Business Partner documents, consignment documents, and loading site documents. The file list shows type, name, size, uploader, and upload date.
 
 **If an upload fails:** confirm free space is greater than the file size; if storage is full, upgrade or delete old files; if space looks fine but it still fails, use Refresh and try again; very large files may simply time out — try compressing or splitting them.
 
@@ -57,7 +67,7 @@ The ticket list shows category, subject, status (Open, In Progress, Resolved, Cl
 
 ![Category dropdown](/screenshots/reports/support-04-new-ticket-category-dropdown.png)
 
-**For faster resolution, include:** the exact module and action, the Transport Unit ID/Shipment BL number/tally reference involved, the product or business partner name, a screenshot of the error, and your Company ID (Company Profile → Identity tab).
+**For faster resolution, include:** the exact module and action, the Transport Unit ID/Consignment BL number/tally reference involved, the product or business partner name, a screenshot of the error, and your Company ID (Company Profile → Identity tab).
 
 ![Ticket detail](/screenshots/reports/support-02-ticket-detail.png)
 
@@ -65,4 +75,4 @@ Open any ticket to see the full conversation and reply with more information. Ti
 
 ## Plan Limits — What Can Get Restricted
 
-Depending on your subscription package, limits may apply to: storage quota, number of users, AI credits (for AI Import), tally sheets, shipments, Transport Units, product catalog entries, Business Partner records, priority support, and Analytics/App Usage report access. If you can't create a new record, upload a file, or invite a user, check your current plan limits on the Subscription page before assuming it's a technical error.
+Depending on your subscription package, limits may apply to: storage quota, number of users, AI credits (for AI Import), tally sheets, consignments, Transport Units, product catalog entries, Business Partner records, priority support, and Analytics/App Usage report access. If you can't create a new record, upload a file, or invite a user, check your current plan limits on the Subscription page before assuming it's a technical error.

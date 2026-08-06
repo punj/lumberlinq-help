@@ -7,7 +7,7 @@ description: Creating a LumberLinq account, logging in, and managing your passwo
 
 Open **app.lumberlinq.com/login**. You'll see a flip card with Sign In on the front — enter your email and password and click **Sign In**. If Turnstile CAPTCHA is enabled, complete the challenge before proceeding. After a successful login you're redirected to the Dashboard.
 
-![Login page](/screenshots/reports/signup-01-login-language-entry.png)
+![Login page](/screenshots/auth/auth-login__sign-in-card__01.png)
 
 ### Social / OAuth Login
 
@@ -30,6 +30,12 @@ LumberLinq uses secure HTTP-only cookies for session management. Sessions persis
 
 Click your avatar in the top-right header, then click **Logout**.
 
+### Switching Between Companies
+
+If you belong to more than one company account, the same avatar menu shows a **Switch Company** section listing each one — click a company to make it your active company for the session. This only appears if your account has 2+ active company memberships.
+
+![Switch company menu](/screenshots/header/header__company-switcher__01.png)
+
 ## How to Create a New Account
 
 On the login page, click **Sign Up** to flip the card to registration.
@@ -41,7 +47,7 @@ On the login page, click **Sign Up** to flip the card to registration.
 5. Check your inbox for a verification email and click the link to confirm.
 6. After verification, you're redirected to the Account Setup wizard.
 
-![New user sign up form](/screenshots/reports/signup-02-new-user-sign-up-form.png)
+![New user sign up form](/screenshots/auth/auth-register__sign-up-card__01.png)
 
 ### Account Setup Wizard
 

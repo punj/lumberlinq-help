@@ -47,7 +47,7 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Shipments',
+          label: 'Consignments',
           items: [
             { label: 'User Manual', link: '/shipments/user-manual/' },
             { label: 'FAQ', link: '/shipments/faq/' },

@@ -40,7 +40,7 @@ Stores supplementary business information: Industry Type, Company Size, Role in 
 
 Two settings on the Company page control inventory-wide behaviour and don't belong to any single Inventory screen:
 
-- **Allow Stock Oversell** — when enabled, lets a shipment be assigned more volume than is currently available in inventory (useful for pre-selling against expected incoming stock). Leave this off unless your workflow specifically needs it — it removes a safety check.
+- **Allow Stock Oversell** — when enabled, lets a consignment be assigned more volume than is currently available in inventory (useful for pre-selling against expected incoming stock). Leave this off unless your workflow specifically needs it — it removes a safety check.
 - **Include Reservations in Available Stock** — controls whether tentatively reserved stock (not yet formally assigned) still counts as "available" in the Inventory Overview totals.
 
 Both are saved independently of the main company form — toggling either takes effect immediately, no separate Save button needed.
