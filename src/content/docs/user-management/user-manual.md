@@ -31,7 +31,7 @@ ADMIN and SUPER_ADMIN bypass RBAC — they have access to everything regardless 
 
 See the Inviting Team Members guide for the full invitation flow.
 
-Summary: **Manage User → Invite User** → enter email, choose role, configure permissions → Send. The user receives an email with a registration link.
+Summary: **Manage User → Invite User** → enter one or more emails, choose Admin/an Access Role/Custom Access → Send Invite. The user receives an email with a registration link (expires in 24 hours).
 
 ![Invite User dialog](/screenshots/reports/users-03-invite-user-dialog.png)
 

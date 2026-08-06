@@ -5,16 +5,20 @@ description: Adding new users to your company account in LumberLinq.
 
 ## How to Invite a New User
 
-Only Admins and Super Admins can invite users.
+Only Admins and Super Admins can invite users — the Manage User page itself requires the Admin role, so a regular user can't reach it even if granted specific permissions.
 
 1. Go to **Main Menu → User → Manage User**.
 2. Click **Invite User**.
-3. Enter the new user's email address.
-4. Select a role: USER, ADMIN, or SUPER_ADMIN.
-5. Optionally configure which permissions the user should have (if RBAC is enabled).
-6. Click **Send Invitation**.
+3. Enter one or more email addresses — separate multiple invites with commas, spaces, or new lines. One invite is sent per address.
+4. Select the invitee's access, from a dropdown that's always required:
+   - **Admin — Full access** — unrestricted access to every feature and setting.
+   - Any of the company's saved **Access Roles** (from Manage Roles) — each shows its permission count and which modules it covers.
+   - **Custom Access** — hand-pick individual permissions for just this invite.
+5. Click **Send Invite**.
 
-The invited person receives an email with a registration link, valid for a limited time.
+The dialog also shows a user-limit meter (used vs. plan limit) and blocks sending once the company is at its user limit — upgrade the plan to add more.
+
+The invited person receives an email with a registration link. **Invite links expire in 24 hours** — resend from Manage Users if needed.
 
 ![Invite User dialog](/screenshots/reports/users-03-invite-user-dialog.png)
 
@@ -31,21 +35,17 @@ An email from `no-reply@lumberlinq.com` with a subject like "You've been invited
 3. Complete the setup — no separate account setup wizard is required; you're added directly to the existing company account.
 4. Log in at `app.lumberlinq.com/login`.
 
-## User Roles Explained
+## What an Invited User Becomes
 
-| Role | What they can do |
-|------|-----------------|
-| USER | Access features their permissions allow; cannot manage other users |
-| ADMIN | Full access to company data; can invite and manage users with USER role; can access Manage User |
-| SUPER_ADMIN | Same as ADMIN but can also create additional ADMIN users |
-
-If RBAC is enabled, USER-role members also need specific permissions (e.g. Tally access, Consignment access) to access each module. These are configured when inviting.
+- Choosing **Admin — Full access** at invite time makes them a full Admin — full access to company data, can invite/manage other users, can access Manage User.
+- Choosing an **Access Role** or **Custom Access** makes them a regular user whose module access is exactly the permissions in that role/selection (e.g. Tally access, Consignment access) — this applies whether or not RBAC is currently toggled on for the company; the permissions are stored either way.
+- **Super Admin** isn't selectable anywhere in the app (not at invite time, not from Manage User) — it's an internal-only role change. Contact support if a user genuinely needs it.
 
 ## Managing Existing Users
 
 From **User → Manage User**:
 - **Deactivate** a user to block their login without deleting their data
-- **Edit** to change role or permissions
+- **Edit** to change their access role or permissions
 - **Delete** to permanently remove a user (use caution — this removes their access permanently)
 
 ![Invite validation error](/screenshots/reports/users-04-invite-validation-error.png)
