@@ -93,6 +93,8 @@ Square settings include:
 - Width, Thickness, and Length Allowances
 - Visible columns
 
+![Square settings panel expanded](/screenshots/tally/tally-sheets__settings__01.png)
+
 ![Round settings — validation rules](/screenshots/tally/round-settings-validation-rules.png)
 
 ![Round settings — configuration](/screenshots/tally/round-settings-configuration.png)
