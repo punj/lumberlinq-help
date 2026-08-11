@@ -8,7 +8,7 @@ description: Creating shareable tally links and exporting tally reports in Lumbe
 Buyers, surveyors, and freight forwarders can view tally data without a LumberLinq account using shareable links.
 
 **Steps to create a share link:**
-1. Open a tally sheet (from **Transport Unit → Transport Units** → click a TU).
+1. Open a tally sheet (from **Stock Unit → Stock Units** → click a Stock Unit).
 2. Click the **Share** button in the toolbar.
 3. Choose an access level (see below).
 4. Set optional: expiry date, download permission, document visibility.
@@ -26,7 +26,7 @@ Buyers, surveyors, and freight forwarders can view tally data without a LumberLi
 
 ## Three Access Levels Explained
 
-**PUBLIC** — Anyone with the URL can view the tally, no login needed. Shows basic volume summary, log count, transport unit ID. Does not show internal notes, pricing, or full party details.
+**PUBLIC** — Anyone with the URL can view the tally, no login needed. Shows basic volume summary, log count, Stock Unit ID. Does not show internal notes, pricing, or full party details.
 
 **PROTECTED** — Recipient must be logged into a LumberLinq account. Shows all PUBLIC data plus more detailed measurement rows and product information.
 
@@ -40,7 +40,7 @@ Use the **Access Visibility Panel** (the "eye"/info button inside the share dial
 
 - **Expiry date** — the link stops working after this date; leave blank for no expiry
 - **Download permission** — allow the recipient to download a PDF from the share view
-- **Document access** — control whether uploaded TU documents (photos, files) are visible in the share view
+- **Document access** — control whether uploaded Stock Unit documents (photos, files) are visible in the share view
 
 ## Revoking a Share Link
 
@@ -52,7 +52,7 @@ Click **Export** in the tally sheet toolbar. Formats:
 
 - **PDF** — formatted, printable document with company branding
 - **Excel (.xlsx)** — full spreadsheet with all measurement rows and summary totals, best for analysis
-- **Bundle (ZIP)** — combines the PDF report with all uploaded TU photos into a single archive
+- **Bundle (ZIP)** — combines the PDF report with all uploaded Stock Unit photos into a single archive
 
 The export dialog also has an Access Level selector (Public/Protected/Private) controlling which columns appear — the same rules as share links.
 
@@ -61,7 +61,7 @@ The export dialog also has an Access Level selector (Public/Protected/Private) c
 - **Company logo** — include your uploaded company logo in the PDF header
 - **Watermark** — add text (e.g. "DRAFT", "CONFIDENTIAL") across the PDF pages
 - **UoM row** — add a row showing units of measurement at the top of the data table
-- **Include charts** — add bar charts showing volume per Transport Unit (Excel only, when multiple TUs exist)
+- **Include charts** — add bar charts showing volume per Stock Unit (Excel only, when multiple Stock Units exist)
 
 ## Why PDF Has No Photos
 
@@ -79,6 +79,6 @@ Each AI Import uses AI credits from your plan — credits are consumed after ext
 
 **"Recipient sees 'Access denied'"** — for Protected/Private links, the recipient must be logged into LumberLinq and their account must belong to your company (or the link has expired).
 
-**"Bundle export only produces a PDF, no photos"** — photos must be uploaded to the Transport Unit first, from the tally sheet's Documents tab.
+**"Bundle export only produces a PDF, no photos"** — photos must be uploaded to the Stock Unit first, from the tally sheet's Documents tab.
 
 **"Export PDF shows no company logo"** — upload your logo from Main Menu → Company → Branding before exporting.

@@ -21,7 +21,7 @@ Use the Refresh button on the Storage page and try again. If the file is very la
 
 **What should I include in a support ticket for a faster response?**
 
-The exact module and action, the Transport Unit ID / Consignment BL number / tally reference involved, the product or business partner name, a screenshot, and your Company ID (found in Company Profile → Identity tab).
+The exact module and action, the Stock Unit ID / Consignment BL number / tally reference involved, the product or business partner name, a screenshot, and your Company ID (found in Company Profile → Identity tab).
 
 **Who can see my support tickets?**
 

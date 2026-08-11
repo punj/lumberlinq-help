@@ -61,7 +61,7 @@ export default defineConfig({
           ],
         },
         {
-          label: 'Products & Loading Sites',
+          label: 'Products & Locations',
           items: [
             { label: 'User Manual', link: '/products/user-manual/' },
             { label: 'FAQ', link: '/products/faq/' },

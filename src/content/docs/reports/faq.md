@@ -5,7 +5,7 @@ description: Frequently asked questions about LumberLinq's reports.
 
 **Which report should I use for consignment performance?**
 
-Use the Consignment Report (still "Shipment Report" in the app's URLs). It includes consignment totals, CBM, pieces, trade type, parties, ports, BL number, and financial status.
+Use the Consignment Report. It includes consignment totals, CBM, pieces, trade type, parties, ports, BL number, and financial status.
 
 **Which report should I use for receivables and payables?**
 

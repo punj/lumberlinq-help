@@ -9,7 +9,7 @@ Public needs no login and shows the least detail. Protected needs the recipient 
 
 **Why does my Bundle export have no photos?**
 
-Photos must be uploaded to the Transport Unit first (via the tally sheet's Documents tab) — then regenerate the Bundle export.
+Photos must be uploaded to the Stock Unit first (via the tally sheet's Documents tab) — then regenerate the Bundle export.
 
 **Why does my exported PDF have no company logo?**
 

@@ -5,7 +5,7 @@ description: Frequently asked questions about the Consignments module in LumberL
 
 ## What is a consignment in LumberLinq?
 
-A consignment (sidebar label — the app's URLs and some internal text still say "Shipment") is a movement record for timber goods. It can include parties, route details, transport units, documents, invoice values, payments, status, and export/share controls.
+A consignment is a movement record for timber goods. It can include parties, route details, Stock Units, documents, invoice values, payments, status, and export/share controls.
 
 ## Which consignment types are supported?
 
@@ -19,9 +19,9 @@ Yes. Use the global search or the BL number column filter on the Consignments li
 
 The list provides view, share, download/export, edit, payment quick panel, and delete actions.
 
-## Why can I not add a transport unit to a consignment?
+## Why can I not add a Stock Unit to a consignment?
 
-Only eligible units can be linked. If a transport unit has not been received into inventory, the system blocks assignment. Receive the unit into inventory first, then add it to the consignment.
+Only eligible units can be linked. If a Stock Unit has not been received into inventory, the system blocks assignment. Receive the unit into inventory first, then add it to the consignment.
 
 ## Can I upload consignment documents?
 
@@ -49,7 +49,7 @@ The consignment is marked as locked and normal editing is prevented.
 
 ## Where do inventory and reconciliation fit?
 
-Inventory controls whether transport units are available for a consignment. The Inventory Overview, In/Out ledger, adjustment dialog, processing runs, reconciliation report, and inventory report support consignment readiness and stock visibility.
+Inventory controls whether Stock Units are available for a consignment. The Inventory Overview, In/Out ledger, adjustment dialog, processing runs, reconciliation report, and inventory report support consignment readiness and stock visibility.
 
 ## Is the Consignments module mobile responsive?
 

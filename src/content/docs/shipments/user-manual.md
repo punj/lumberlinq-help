@@ -5,29 +5,29 @@ description: Step-by-step guide for creating, editing, and managing consignments
 
 ## Purpose
 
-The Consignments module (still called "Shipments" in the app's URLs and some internal text) helps timber and logistics teams manage export, import, domestic sale, domestic purchase, and trading consignments in one place. It brings together consignment details, parties, transport units, documents, invoice values, payment tracking, export reports, share links, and audit/status information.
+The Consignments module helps timber and logistics teams manage export, import, domestic sale, domestic purchase, and trading consignments in one place. It brings together consignment details, parties, Stock Units, documents, invoice values, payment tracking, export reports, share links, and audit/status information.
 
 ## Open the Consignments List
 
-The sidebar label is **Consignments** (routes and this article's screenshots still say "Shipment" internally — the on-screen label was renamed). Go to **Consignments > List Consignments**.
+Go to **Consignments > List Consignments**.
 
 The list shows:
 
 - BL number or bill number
-- Shipment type
-- Shipment date
+- Type
+- Date
 - Shipper
 - Consignee
 - Status stepper
-- Transport-unit count
+- Stock Unit count
 - Route summary
 - Row actions for view, share, download/export, edit, payments, and delete
 
-![Shipment list page](/screenshots/shipments/shipments-01-list-page.png)
+![Consignment list page](/screenshots/shipments/shipments-01-list-page.png)
 
-## Search and Filter Shipments
+## Search and Filter Consignments
 
-Use the global search box to find shipments by BL number, partner, buyer order number, exporter reference, or related shipment text.
+Use the global search box to find consignments by BL number, partner, buyer order number, exporter reference, or related consignment text.
 
 The list also includes column filters for BL number, shipper, consignee, and status. Use these when the global search returns too many results.
 
@@ -35,41 +35,41 @@ The list also includes column filters for BL number, shipper, consignee, and sta
 
 ![Column filter](/screenshots/shipments/shipments-03-column-filter.png)
 
-## Create a Shipment
+## Create a Consignment
 
-Select **New** from the Shipments list.
+Select **New** from the Consignments list.
 
 The create screen is organised into tabs:
 
-- **Shipment Details**: shipment type, mode, dates, ports, vessel/flight/vehicle details, and Incoterms or payment terms
+- **Consignment Details**: type, mode, dates, ports, vessel/flight/vehicle details, and Incoterms or payment terms
 - **Consignment Info**: shipper, consignee, notify party, exporter reference, buyer order, origin, and destination
-- **Transport Units**: search and add available transport units
-- **Documents**: BL, packing list, invoice, certificate, phyto, fumigation, and other shipment documents
+- **Stock Units**: search and add available Stock Units
+- **Documents**: BL, packing list, invoice, certificate, phyto, fumigation, and other consignment documents
 - **Financials & Payments**: invoice amount, currency, insurance, freight terms, payment terms, payment summary, and payment history
-- **Local Goods & Audit**: local tax/delivery fields, status, approved by, and remarks
+- **Dispatch & Notes**: local tax/delivery fields, status, approved by, and remarks
 
-![Create shipment — details tab](/screenshots/shipments/shipments-07-create-details-tab.png)
+![Create consignment — details tab](/screenshots/shipments/shipments-07-create-details-tab.png)
 
 ## Required Field Validation
 
-If required shipment fields are missing, LumberLinq marks the relevant fields and tabs with validation indicators. Complete the mandatory fields before saving.
+If required consignment fields are missing, LumberLinq marks the relevant fields and tabs with validation indicators. Complete the mandatory fields before saving.
 
-Common required information includes shipment type, mode of transport, required route details, Incoterms/payment terms, and party information.
+Common required information includes consignment type, mode of transport, required route details, Incoterms/payment terms, and party information.
 
 ![Required field validation](/screenshots/shipments/shipments-08-validation-required-fields.png)
 
-## Edit Shipment Details
+## Edit Consignment Details
 
-Open a shipment from the BL number link or the pencil icon.
+Open a consignment from the BL number link or the pencil icon.
 
 Use the edit screen to update:
 
-- Core shipment and route information
+- Core consignment and route information
 - Shipper, consignee, and notify party
-- Linked transport units
+- Linked Stock Units
 - Document numbers and attachments
 - Invoice and payment information
-- Shipment status and remarks
+- Consignment status and remarks
 
 ![Edit — details tab](/screenshots/shipments/shipments-09-edit-details-tab.png)
 
@@ -77,25 +77,25 @@ Use the edit screen to update:
 
 ![Party consignment details](/screenshots/shipments/shipments-20-party-consignment-details.png)
 
-![Local goods & audit tab](/screenshots/shipments/shipments-15-local-goods-audit-tab.png)
+![Dispatch & notes tab](/screenshots/shipments/shipments-15-local-goods-audit-tab.png)
 
-## Transport Units
+## Stock Units
 
-The Transport Units tab lets users search available units and link them to a shipment.
+The Stock Units tab lets users search available units and link them to a consignment.
 
-Only eligible, unassigned units are available. If a transport unit has not been received into inventory, the system prevents shipment assignment. This protects inventory accuracy before dispatch.
+Only eligible, unassigned units are available. If a Stock Unit has not been received into inventory, the system prevents consignment assignment. This protects inventory accuracy before dispatch.
 
-![Transport units tab](/screenshots/shipments/shipments-11-transport-units-tab.png)
+![Stock Units tab](/screenshots/shipments/shipments-11-transport-units-tab.png)
 
-![Transport units linked](/screenshots/shipments/shipments-21-transport-units-linked.png)
+![Stock Units linked](/screenshots/shipments/shipments-21-transport-units-linked.png)
 
-![Shipment view with transport units](/screenshots/shipments/shipments-25-shipment-view-with-transport-units.png)
+![Consignment view with Stock Units](/screenshots/shipments/shipments-25-shipment-view-with-transport-units.png)
 
-![Second transport unit](/screenshots/shipments/shipments-26-shipment-view-second-transport-unit.png)
+![Second Stock Unit](/screenshots/shipments/shipments-26-shipment-view-second-transport-unit.png)
 
 ## Documents
 
-Use the Documents tab to maintain shipment document numbers and upload files. Supported document areas include BL, packing list, commercial invoice, certificate-related documents, and other attachments.
+Use the Documents tab to maintain consignment document numbers and upload files. Supported document areas include BL, packing list, commercial invoice, certificate-related documents, and other attachments.
 
 ![Documents tab](/screenshots/shipments/shipments-12-documents-tab.png)
 
@@ -113,35 +113,35 @@ Use **Record Payment** to add a received or paid amount with date, mode, referen
 
 ![Payments record form](/screenshots/shipments/shipments-23-payments-record-form-detailed.png)
 
-## Export Shipment Reports
+## Export Consignment Reports
 
-Use the **Export** action from the shipment edit screen or the download action from the list. The export dialog supports access-level options, report format choices, watermark, company logo, photo inclusion, UOM row, and chart/stat options where available.
+Use the **Export** action from the consignment edit screen or the download action from the list. The export dialog supports access-level options, report format choices, watermark, company logo, photo inclusion, UOM row, and chart/stat options where available.
 
 ![Export dialog](/screenshots/shipments/shipments-16-export-dialog.png)
 
-![Export with transport units](/screenshots/shipments/shipments-24-export-with-transport-units.png)
+![Export with Stock Units](/screenshots/shipments/shipments-24-export-with-transport-units.png)
 
-## Share Shipment Links
+## Share Consignment Links
 
-Use the share action from the list to create public, protected, or private shipment links. The share dialog lets users control duration, access limits, download permission, and document visibility.
+Use the share action from the list to create public, protected, or private consignment links. The share dialog lets users control duration, access limits, download permission, and document visibility.
 
 ![Share menu](/screenshots/shipments/shipments-04-share-menu.png)
 
-## Lock a Shipment
+## Lock a Consignment
 
-Use the **Lock** action on the edit screen when a shipment should no longer be changed. Locked shipments show a lock badge and prevent normal editing.
+Use the **Lock** action on the edit screen when a consignment should no longer be changed. Locked consignments show a lock badge and prevent normal editing.
 
 ![Lock confirmation dialog](/screenshots/shipments/shipments-17-lock-confirmation-dialog.png)
 
 ## Read-Only View
 
-The view action opens a read-only shipment view for reviewing shipment details without editing.
+The view action opens a read-only consignment view for reviewing consignment details without editing.
 
 ![Read-only view](/screenshots/shipments/shipments-18-read-only-view.png)
 
 ## Inventory and Reconciliation
 
-Shipment assignment is connected to inventory. Transport units must be received into inventory before they can be linked to a shipment. Inventory screens help teams review available stock, movement history, adjustments, processing runs, reconciliation, and inventory reports.
+Consignment assignment is connected to inventory. Stock Units must be received into inventory before they can be linked to a consignment. Inventory screens help teams review available stock, movement history, adjustments, processing runs, reconciliation, and inventory reports.
 
 ![Inventory overview](/screenshots/shipments/shipments-27-inventory-overview.png)
 
@@ -159,6 +159,6 @@ Shipment assignment is connected to inventory. Transport units must be received 
 
 ## Mobile View
 
-The Shipments list is responsive and can be used on smaller screens for search, review, and follow-up actions.
+The Consignments list is responsive and can be used on smaller screens for search, review, and follow-up actions.
 
 ![Mobile list view](/screenshots/shipments/shipments-19-mobile-list-view.png)

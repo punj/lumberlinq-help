@@ -1,6 +1,6 @@
 ---
-title: Products & Loading Sites — FAQ
-description: Frequently asked questions about Products and Loading Sites in LumberLinq.
+title: Products & Locations — FAQ
+description: Frequently asked questions about Products and Locations in LumberLinq.
 ---
 
 ## Products
@@ -27,24 +27,24 @@ Deletion can fail when the product is already used by tally sheets, consignments
 
 ---
 
-## Loading Sites
+## Locations
 
-### What is a Loading Site?
+### What is a Location?
 
-A Loading Site is a physical place where timber is stored, processed, staged, or loaded. Examples include yards, ports, mills, forests, and warehouses.
+A Location is a physical place where timber is stored, processed, staged, or loaded. Examples include yards, ports, mills, forests, and warehouses.
 
-### Which loading site fields are required?
+### Which location fields are required?
 
-Site name and country are required. State, city, address, contact, operating hours, capacity, machines installed, site type, and notes are optional.
+Name and country are required. State, city, address, contact, operating hours, capacity, machines installed, site type, and notes are optional.
 
 ### What does Site Type mean?
 
-Site Type classifies the location as Yard, Forest, Mill, Port, or Warehouse. This helps users understand the operational role of the site.
+Site Type classifies the location as Yard, Forest, Mill, Port, or Warehouse. This helps users understand the operational role of the location.
 
-### Can I search across all loading site fields?
+### Can I search across all location fields?
 
-The list page supports global search and table filtering for the main loading site fields shown in the table.
+The list page supports global search and table filtering for the main location fields shown in the table.
 
-### Why can a loading site delete fail?
+### Why can a location delete fail?
 
-Deletion can fail when the loading site is linked to containers, measurements, bills of lading, or other transaction records.
+Deletion can fail when the location is linked to Stock Units, tally sheets, or other transaction records.

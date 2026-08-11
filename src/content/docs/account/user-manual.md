@@ -55,7 +55,7 @@ After verifying your email, complete the setup wizard before accessing the main 
 
 1. **Company details** — Company name, country, timezone, currency
 2. **Product / Timber type** — optionally set up your first product
-3. **Loading Site** — optionally add your first loading site
+3. **Location** — optionally add your first location
 
 You can skip optional steps and complete them later from Main Menu → Company.
 

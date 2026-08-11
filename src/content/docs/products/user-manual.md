@@ -1,11 +1,11 @@
 ---
-title: Products & Loading Sites — User Manual
-description: Step-by-step guide for managing the product catalog and loading sites in LumberLinq.
+title: Products & Locations — User Manual
+description: Step-by-step guide for managing the product catalog and locations in LumberLinq.
 ---
 
 ## Products
 
-Use Products to maintain the timber product catalog used in tally sheets, transport units, and reports.
+Use Products to maintain the timber product catalog used in tally sheets, Stock Units, and reports.
 
 ### Open the Product Catalog
 
@@ -58,52 +58,52 @@ From the product list or edit page, use the delete action. LumberLinq displays a
 
 ---
 
-## Loading Sites
+## Locations
 
-Use Loading Sites to manage yards, mills, forests, ports, warehouses, and other locations where timber is stored or loaded.
+Use Locations to manage yards, mills, forests, ports, warehouses, and other places where timber is stored or loaded.
 
-### Open Loading Sites
+### Open Locations
 
-Open **Loading Sites** from the application menu.
+Open **Locations** from the application menu.
 
-The list shows loading site records and summary cards.
+The list shows location records and summary cards.
 
-![Loading sites list](/screenshots/products/loading-sites-01-list-page.png)
+![Locations list](/screenshots/products/loading-sites-01-list-page.png)
 
-### Search Loading Sites
+### Search Locations
 
-Use the search box to filter by site name, contact person, country, state, city, capacity, machines installed, or notes.
+Use the search box to filter by location name, contact person, country, state, city, capacity, machines installed, or notes.
 
-![Search loading sites](/screenshots/products/loading-sites-02-search-filter-demo.png)
+![Search locations](/screenshots/products/loading-sites-02-search-filter-demo.png)
 
-### Create a Loading Site
+### Create a Location
 
-1. Click the add loading site action.
-2. Enter the site name.
+1. Click the add location action.
+2. Enter the location name.
 3. Select country, then state and city when available.
 4. Add address, postal code, contact person, phone, operating hours, capacity, current volume, machines installed, site type, and notes as needed.
-5. Save the loading site.
+5. Save the location.
 
-![Create loading site form](/screenshots/products/loading-sites-04-create-form.png)
+![Create location form](/screenshots/products/loading-sites-04-create-form.png)
 
-### Edit a Loading Site
+### Edit a Location
 
-1. Open the Loading Sites list.
-2. Search for the loading site if needed.
-3. Open the site row.
-4. Update the location, contact, capacity, operating, or notes fields.
+1. Open the Locations list.
+2. Search for the location if needed.
+3. Open the location row.
+4. Update the address, contact, capacity, operating, or notes fields.
 5. Save changes.
 
-![Edit loading site form](/screenshots/products/loading-sites-06-edit-form.png)
+![Edit location form](/screenshots/products/loading-sites-06-edit-form.png)
 
-### Loading Site Validation
+### Location Validation
 
-The loading site form requires a site name and country. Name length and uniqueness are validated before save.
+The location form requires a name and country. Name length and uniqueness are validated before save.
 
-![Loading site validation](/screenshots/products/loading-sites-05-validation-state.png)
+![Location validation](/screenshots/products/loading-sites-05-validation-state.png)
 
-### Delete a Loading Site
+### Delete a Location
 
-Use the delete action from the list or edit page. LumberLinq displays a confirmation dialog before deletion. If the site is linked to containers, measurements, or bills of lading, deletion may be blocked.
+Use the delete action from the list or edit page. LumberLinq displays a confirmation dialog before deletion. If the location is linked to Stock Units, tally sheets, or other operational records, deletion may be blocked.
 
-![Delete loading site](/screenshots/products/loading-sites-03-delete-confirmation.png)
+![Delete location](/screenshots/products/loading-sites-03-delete-confirmation.png)

@@ -25,4 +25,4 @@ That only happens when the run's output was linked to a tally sheet and you retu
 
 **Is there a separate "Machine" module?**
 
-No. Equipment is tracked as a Machines Installed field on each Loading Site, not as its own module.
+No. Equipment is tracked as a Machines Installed field on each Location, not as its own module.

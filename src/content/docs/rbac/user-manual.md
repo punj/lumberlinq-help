@@ -25,7 +25,7 @@ Lists every team member with a stats strip (total users, how many are configured
 
 ## The Access Rights Panel — Permission Modules
 
-Permissions are grouped into 12 modules, each expandable with Enable All / Disable All and per-permission toggles: Dashboard, Tally Sheet, Consignments, Business Partner, Products, Loading Sites, Reports, Storage, Inventory, Process, Support, Users & Company. Save applies immediately on the user's next page load — they don't need to log out.
+Permissions are grouped into 12 modules, each expandable with Enable All / Disable All and per-permission toggles: Dashboard, Tally Sheet, Consignments, Business Partner, Products, Locations, Reports, Storage, Inventory, Process, Support, Users & Company. Save applies immediately on the user's next page load — they don't need to log out.
 
 ## Roles Tab — Creating a Reusable Access Role
 

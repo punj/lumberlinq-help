@@ -19,7 +19,7 @@ There is also a platform-level ROOT role used only by LumberLinq support staff â
 
 ## Role-Based Access Control (RBAC) Permissions
 
-For USER-role members, access to each module is controlled by individual permissions, grouped into 12 modules in the Access Rights panel: Dashboard, Tally Sheet, Consignments (Shipments), Business Partner, Products, Loading Sites, Reports, Storage, Inventory, Process, Support, Users & Company.
+For USER-role members, access to each module is controlled by individual permissions, grouped into 12 modules in the Access Rights panel: Dashboard, Tally Sheet, Consignments, Business Partner, Products, Locations, Reports, Storage, Inventory, Process, Support, Users & Company.
 
 Instead of configuring these one user at a time, an admin can also create a reusable **Access Role** (e.g. "Accountant") with a fixed set of permissions and assign it to any number of users â€” see the RBAC & Access Roles guide.
 

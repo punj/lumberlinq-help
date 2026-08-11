@@ -5,21 +5,21 @@ description: Step-by-step guide for creating and managing Round and Square tally
 
 ## Tally Sheet List
 
-There is no menu item literally called "Tally Sheets" — every tally sheet belongs to a Transport Unit, so tally sheets are managed from the **Transport Unit** menu instead. Open **Transport Unit > Transport Units** to view all transport units and their tally sheets. The list supports search, table columns, KPI cards, and row actions.
+There is no menu item literally called "Tally Sheets" — every tally sheet belongs to a Stock Unit, so tally sheets are managed from the **Stock Unit** menu instead. Open **Stock Unit > Stock Units** to view all Stock Units and their tally sheets. The list supports search, table columns, KPI cards, and row actions.
 
-![Transport Units list header](/screenshots/transport-units/transport-units__list-header__01.png)
+![Stock Units list header](/screenshots/transport-units/transport-units__list-header__01.png)
 
-![Transport Units stats](/screenshots/transport-units/transport-units__stats__01.png)
+![Stock Units stats](/screenshots/transport-units/transport-units__stats__01.png)
 
-![Transport Units filter bar](/screenshots/transport-units/transport-units__filter-bar__01.png)
+![Stock Units filter bar](/screenshots/transport-units/transport-units__filter-bar__01.png)
 
-![Transport Units table](/screenshots/transport-units/transport-units__list-table__01.png)
+![Stock Units table](/screenshots/transport-units/transport-units__list-table__01.png)
 
 ## Create and Edit
 
-Use **Transport Unit > Add Transport Unit** to create a transport unit and tally sheet. Required fields include Transport ID, Product, and Transport Mode. Product type determines whether the measurement grid opens as Round or Square.
+Use **Stock Unit > Add Stock Unit** to create a Stock Unit and tally sheet. Required fields include Transport ID, Product, and Transport Mode. Product type determines whether the measurement grid opens as Round or Square.
 
-![New Transport Unit button](/screenshots/transport-units/transport-units__new-button__01.png)
+![New Stock Unit button](/screenshots/transport-units/transport-units__new-button__01.png)
 
 ![Round — create](/screenshots/tally/round-create.png)
 

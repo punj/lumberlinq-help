@@ -9,11 +9,11 @@ Open **Reports** from the main menu and choose the report you need. Each report 
 
 - **Business Partner Report** — Review buyer, supplier, shipper, consignee, and service-party records.
 - **Product Report** — Review timber product master data.
-- **Loading Site Report** — Review yards, mills, depots, and site-level information.
-- **Transport Unit Report** — Review transport-unit activity and related stock movement.
+- **Location Report** — Review yards, mills, depots, and location-level information.
+- **Stock Unit Report** — Review Stock Unit activity and related stock movement.
 - **Tally Report** — Review tally-sheet records and timber volume information.
 - **Reconciliation Report** — Review matched, pending, and discrepancy records.
-- **Consignment Report** (labelled Consignment Report in the menu; still "Shipment" in URLs) — Review consignments by trade type, payment status, volume, ports, parties, and BL number.
+- **Consignment Report** — Review consignments by trade type, payment status, volume, ports, parties, and BL number.
 - **Financial Report** — Review receivables, payables, overdue amounts, partner balances, and monthly trends.
 - **Inventory Report** — Review available stock, in-process stock, shipped stock, adjustments, and processing runs.
 - **Users Report** — Review users, roles, status, timezone, and joined date.

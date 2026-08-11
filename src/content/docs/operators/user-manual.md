@@ -5,17 +5,17 @@ description: Running Custom-Made (Re-saw) processing and managing your mill oper
 
 ## What is Custom-Made / Re-saw Processing?
 
-Custom-Made (also called Re-saw) processing is when input timber — typically round logs — is converted into a different output form, most commonly sawn/square boards. It's run from **Inventory → Processing**. A processing run consumes one or more input Transport Units and produces new output stock; the input TUs leave available stock and the output becomes a new open lot.
+Custom-Made (also called Re-saw) processing is when input timber — typically round logs — is converted into a different output form, most commonly sawn/square boards. It's run from **Inventory → Processing**. A processing run consumes one or more input Stock Units and produces new output stock; the input Stock Units leave available stock and the output becomes a new open lot.
 
-There is no separate "Machine" page — equipment is tracked as a **Machines Installed** field on each Loading Site, not as its own module.
+There is no separate "Machine" page — equipment is tracked as a **Machines Installed** field on each Location, not as its own module.
 
 ## Starting a Custom-Made Processing Run
 
 1. Open **Inventory → Processing** and click **New Processing Run**.
-2. Select the input Transport Units — the system can auto-suggest likely inputs based on what you're producing, learned from past runs.
+2. Select the input Stock Units — the system can auto-suggest likely inputs based on what you're producing, learned from past runs.
 3. Enter the output product and site.
 4. Optionally assign a **Mill Operator** to the run.
-5. Save. The run starts as **Draft**, then moves through **In Progress** to **Completed** (or **Cancelled**, which reverses the input TU assignments).
+5. Save. The run starts as **Draft**, then moves through **In Progress** to **Completed** (or **Cancelled**, which reverses the input Stock Unit assignments).
 
 ## Linking a Processing Run's Output to a Tally Sheet
 
@@ -45,6 +45,6 @@ There is no standalone "My Tasks" page. If you have active processing runs assig
 
 **"I can't deactivate an operator"** — they still have active (in-progress or draft) tasks assigned. Reassign or complete those tasks first, then deactivate.
 
-**"A processing run has no useful output"** — a run with no input TUs selected won't produce meaningful output. Cancel it and start again with the correct inputs.
+**"A processing run has no useful output"** — a run with no input Stock Units selected won't produce meaningful output. Cancel it and start again with the correct inputs.
 
 **"The output tally totals didn't pre-fill"** — this only happens when the run's output was linked to a tally sheet and you returned via the in-app link; a run without that linkage needs output values entered manually.
