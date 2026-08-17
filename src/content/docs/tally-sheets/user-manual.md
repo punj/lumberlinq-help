@@ -144,6 +144,8 @@ The status bar shows row count, gross CBM/CFT, unsaved count, save progress, sav
 
 Validation prevents incomplete or invalid tally data from being saved. Round validation covers required length/girth and configured ranges. Square validation covers required width, thickness, length, and pieces.
 
+If pressing Enter after the last row adds an extra blank row that's never filled in, it's automatically ignored when you save — you don't need to delete it by hand.
+
 ![Round validation error](/screenshots/tally/round-validation-error.png)
 
 ![Square validation example](/screenshots/tally/square-validation-example.png)
