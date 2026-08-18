@@ -12,7 +12,7 @@ from **Pending** to **Done** (keep them, don't delete — this file is the histo
 
 | Date | Article / Section | Screenshot path | Reason |
 |------|--------------------|------------------|--------|
-| _none yet_ | | | |
+| 2026-08-18 | Application Settings — Payment Reminders | `/screenshots/company/application-settings-payment-reminders.png` | New page shipped (sb v5.22.0/ng v5.36.0) — screenshot doesn't exist yet, needs first capture, not just a re-shoot |
 
 ## Done
 
