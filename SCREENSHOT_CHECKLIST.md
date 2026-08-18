@@ -13,6 +13,7 @@ from **Pending** to **Done** (keep them, don't delete — this file is the histo
 | Date | Article / Section | Screenshot path | Reason |
 |------|--------------------|------------------|--------|
 | 2026-08-18 | Application Settings — Payment Reminders | `/screenshots/company/application-settings-payment-reminders.png` | New page shipped (sb v5.22.0/ng v5.36.0) — screenshot doesn't exist yet, needs first capture, not just a re-shoot |
+| 2026-08-18 | Tally Sheets — Settings and Configuration | `/screenshots/tally/round-settings-configuration.png` | Round's settings panel replaced the manual "Save Form Settings" button + confirm popup with an auto-save Saving/Saved status indicator + "Save Now" button (ng v5.38.4), matching Square's own change from 2026-08-17 — old screenshot still shows the retired button |
 
 ## Done
 
