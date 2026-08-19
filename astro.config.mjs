@@ -75,6 +75,13 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Mill Command Center',
+          items: [
+            { label: 'User Manual', link: '/command-center/user-manual/' },
+            { label: 'FAQ', link: '/command-center/faq/' },
+          ],
+        },
+        {
           label: 'Mill Operators & Custom-Made',
           items: [
             { label: 'User Manual', link: '/operators/user-manual/' },

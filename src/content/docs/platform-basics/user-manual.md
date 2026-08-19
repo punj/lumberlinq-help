@@ -29,6 +29,26 @@ Not every section is visible to every user — several require a specific permis
 - Financial Health shows overdue → open the Financial Report or the consignment's Financials & Payments tab
 - A Mill Task looks stuck → open Inventory → Processing to review, complete, or cancel it
 
+Financial Health and the Reconciliation ring always reflect all-time data — they are not affected by any date range filter used elsewhere on the dashboard.
+
+Admin, Super Admin, and Root users also have a separate, more detailed **Command Center** page — see its own section in the sidebar.
+
+## Quick Search
+
+If your account has Quick Search access, a search icon appears in the header. Click it (or the equivalent shortcut) to open Quick Search — a fast, phone-call-style lookup for stock, similar to how Quick Tally parses a spoken measurement. Type something like "6 inch teak available in Yard 2" and it parses dimensions, species, origin, and quality from the text automatically, then shows matches grouped into **Available Now**, **In Process**, and **Arriving/Departing/Preparing**.
+
+A chip row above the results shows what was understood from your text — a chip with a question-mark icon means that part was fuzzy-matched (close but not exact), not a guaranteed match.
+
+Quick Search access is a separate permission from other module access — by default only Admins have it, but it can be granted to any custom role from Manage Roles.
+
+### Ask AI (Forest plan)
+
+Inside Quick Search, click the **Ask AI** toggle to switch to AI-assisted parsing for messier or more conversational phrasing than the regular parser handles. Type your question and click **Ask AI** — this is a manual, explicit action (it never runs automatically while typing) because each request uses AI credits from your plan.
+
+Ask AI only translates your text into search terms — it never invents or shows a number that isn't backed by real inventory. The results underneath are the same real stock/process/consignment data as a regular Quick Search.
+
+Ask AI requires the **Forest** plan (LumberLinq's top subscription tier) and draws from the same AI credit pool as AI Import for tally sheets. Credits are charged based on how much text is processed, not a flat fee per search. As your usage approaches your plan's AI credit limit, you'll see a warning at 80%, 90%, 95%, and 100% used. If you're out of AI credits or on a lower plan, the regular (non-AI) Quick Search still works at no credit cost.
+
 ## Utility
 
 Open **Main Menu → Utility** for three built-in calculation tools, so timber teams can do everyday conversions without a separate spreadsheet: **Cost Estimate**, **Unit Conversion**, and **Generate Slab**.

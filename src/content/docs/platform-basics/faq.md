@@ -7,6 +7,26 @@ description: Frequently asked questions about the Dashboard, calculation utiliti
 
 No — several sections need a specific permission (Financial Health needs finance access, Inventory Snapshot needs inventory access, Mill Tasks needs process access, Recent Activity needs a user-management permission). If you don't have that permission, the section simply doesn't show.
 
+**Why don't Financial Health/Reconciliation change when I pick a different date range?**
+
+They're intentionally all-time figures, independent of any date filter on the dashboard — only the charts (volume, top products, trade type) respond to the date range.
+
+**I don't see a search icon in the header — where's Quick Search?**
+
+Quick Search needs its own permission (`QUICK_SEARCH_ACCESS`), separate from other module access. By default only Admins have it — ask your Admin to grant it to your role via Manage Roles if you need it.
+
+**Why is "Ask AI" greyed out or missing inside Quick Search?**
+
+Ask AI requires the Forest subscription plan. On lower plans, the regular (non-AI) Quick Search still works normally, with no credit cost.
+
+**Does Ask AI cost anything if I don't like the answer?**
+
+Yes — like AI Import for tally sheets, AI credits are consumed once the request is processed, regardless of whether the results are useful.
+
+**What happens when I run low on AI credits?**
+
+You'll see a warning at 80%, 90%, 95%, and 100% of your plan's AI credit limit used. Once credits run out, Ask AI stops working until the next billing cycle or a plan upgrade — the regular Quick Search keeps working with no credit cost.
+
 **Why do my Cost Estimate results look wrong?**
 
 Almost always a unit mismatch — check every unit field carefully, especially when different rows use different units.
