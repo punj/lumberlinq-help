@@ -35,7 +35,12 @@ Admin, Super Admin, and Root users also have a separate, more detailed **Command
 
 ## Quick Search
 
-If your account has Quick Search access, a search icon appears in the header. Click it (or the equivalent shortcut) to open Quick Search — a fast, phone-call-style lookup for stock, similar to how Quick Tally parses a spoken measurement. Type something like "6 inch teak available in Yard 2" and it parses dimensions, species, origin, and quality from the text automatically, then shows matches grouped into **Available Now**, **In Process**, and **Arriving/Departing/Preparing**.
+If your account has Quick Search access, a search icon appears in the header. Click it (or the equivalent shortcut) to open Quick Search — a fast, phone-call-style lookup for stock, similar to how Quick Tally parses a spoken measurement. It parses species, origin, and quality automatically, and understands two kinds of size search:
+
+- **Exact size**, positional shorthand: `4in x 3in x 8ft teak` (three numbers = square sawn) or `90cm x 230cm ghana teak` (two numbers = round girth × length).
+- **Size ranges**, with a comparator and a named measurement: `girth over 90cm ghana teak`, `width between 6 and 10 inch`, `length under 12ft`.
+
+Every measurement always needs an explicit unit (`cm`, `mm`, `in`/`"`, or `ft`/`'`) — a bare number is never guessed at a default unit, since guessing silently returns the wrong stock. Results show grouped into **Available Now**, **In Process**, and **Arriving/Departing/Preparing**.
 
 A chip row above the results shows what was understood from your text — a chip with a question-mark icon means that part was fuzzy-matched (close but not exact), not a guaranteed match.
 
