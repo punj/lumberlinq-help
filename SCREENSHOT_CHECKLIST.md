@@ -17,6 +17,7 @@ from **Pending** to **Done** (keep them, don't delete — this file is the histo
 | 2026-08-19 | Mill Command Center — all sections | `/screenshots/command-center/command-center__overview__01.png` (+ inventory/floor/money/consignments tabs, and machines page) | Brand-new page (ng v5.42.0/sb v5.28.0) — no screenshots exist yet, needs first capture for every tab plus Machines CRUD |
 | 2026-08-19 | Dashboard, Utility, Storage & Support — Quick Search | `/screenshots/platform-basics/quick-search__overlay__01.png` | New feature — Quick Search overlay + parsed-chip row, needs first capture |
 | 2026-08-19 | Dashboard, Utility, Storage & Support — Ask AI | `/screenshots/platform-basics/quick-search__ask-ai__01.png` | New feature — Ask AI toggle, credit usage display, and threshold toast, needs first capture |
+| 2026-08-19 | Dashboard, Utility, Storage & Support — Quick Search (PENDING STOCK-IN + Did you mean) | `/screenshots/platform-basics/quick-search__overlay__01.png` | Same overlay screenshot area above is now further out of date: new "PENDING STOCK-IN" result group and a "Did you mean?" pick-list for ambiguous fuzzy species matches were added — capture both states in the same re-shoot batch as the other pending Quick Search item |
 
 ## Done
 
