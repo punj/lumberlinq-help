@@ -66,6 +66,8 @@ Global Search remembers your last 5 searches (shown as pills when you open it wi
 
 Global Search is a separate permission from Quick Search below — by default only Admins have it, but it can be granted to any custom role from Manage Roles.
 
+Each area shows up to 8 matches at a time — if you're not seeing the exact record you want, add another word or the full reference number to narrow it down.
+
 **Do the math without leaving search:** type a plain calculation like `150*3` or `(200+50)/4` directly into Global Search, and the answer appears instantly instead of search results — no need to open a separate calculator. Tap the answer to open the full calculator and keep working with that number. There's also a dedicated calculator icon inside the search box (or press **Ctrl+Alt+C** anywhere to open the calculator directly) for a real 4-function calculator you can type or tap into — handy for a quick price/CBM total without leaving the page you're on.
 
 ## Keyboard Shortcuts
