@@ -76,7 +76,11 @@ Press **?** anywhere in the app (not while typing in a text field) to open the f
 
 ## Utility
 
-Open **Main Menu → Utility** for three built-in calculation tools, so timber teams can do everyday conversions without a separate spreadsheet: **Cost Estimate**, **Unit Conversion**, and **Generate Slab**.
+Open **Main Menu → Utility** for four built-in calculation tools, so timber teams can do everyday conversions and sums without a separate spreadsheet or a phone calculator: **Calculator**, **Cost Estimate**, **Unit Conversion**, and **Generate Slab**.
+
+### Calculator
+
+A plain arithmetic calculator, just like the one on your phone — for quick sums that don't need a tally sheet or a saved record. Nothing you enter here is saved.
 
 ### Unit Conversion
 
