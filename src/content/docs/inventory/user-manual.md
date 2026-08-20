@@ -47,6 +47,21 @@ Only the actions your account has permission for are shown — if you don't see 
 
 Below the action strip, Overview lists every open stock lot — a batch of stock still available to receive against, process, or dispatch. Click a lot to see its full movement history and its chain — the lineage back to the processing run or tally sheet that produced it. A lot's status is Open, In Process, Depleted, or Closed.
 
+### What is the Chain?
+
+The Chain is the "family tree" for one specific batch of stock — proof of where it actually came from and where it actually went, all in one place, without you having to manually piece it together from separate purchase, processing, and sale records.
+
+It's not a separate page of its own — you won't find it in the main menu. To see it, open **Inventory → Overview**, find the stock lot you want, and click **View Chain** on that lot to expand its history right there.
+
+A chain can show, depending on that lot's own history:
+- **Source Lot** — the earlier stock this lot came from, if it wasn't a brand-new receipt
+- **Processing Run** — the mill/re-saw run that turned the source lot into this one, if any
+- **This Lot** — the batch you're looking at, with how much was received and how much is still remaining
+- **Dispatches** — shipments this lot's stock went out on
+- **Output Lots** — if this lot was itself re-sawn into something else, the new lot(s) that came out of it
+
+A lot with no upstream source and no downstream activity yet will just show as new, unprocessed stock — that's normal, not an error.
+
 ## In/Out — The Movement Ledger
 
 Open **Inventory → In/Out** to see every stock movement in chronological order — the audit trail for inventory. Movement types: **IN** (received), **OUT** (dispatched), **Proc IN** (entered a processing run), **Proc OUT** (produced by a processing run), **In Consignment** (assigned to a consignment), and **Adjustment**. Filter by movement type (chips at the top) or by date range.

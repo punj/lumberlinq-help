@@ -30,3 +30,11 @@ Only when recorded stock no longer matches physical reality (e.g. after a stockt
 **Can I undo a processing run?**
 
 Cancel it while it's still Draft or In Progress — cancelling reverses the input Stock Unit assignments. Once Completed, it can't be reversed the same way.
+
+**Where do I find the Chain feature? It's not in the menu.**
+
+That's expected — Chain isn't its own page. Go to **Inventory → Overview**, find the specific stock lot you want to trace, and click **View Chain** on that lot. It's tied to one lot at a time, not something you open on its own.
+
+**What does the Chain actually show me?**
+
+The full history of one specific batch of stock — where it came from (a purchase, or an earlier lot that was re-sawn into this one), what processing turned it into what you're looking at, and where it went afterwards (sold out, or re-sawn again into something else). Think of it as that batch's own family tree, in one place, instead of hunting through separate purchase/processing/sale records yourself.
