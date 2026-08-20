@@ -18,6 +18,10 @@ from **Pending** to **Done** (keep them, don't delete — this file is the histo
 | 2026-08-19 | Dashboard, Utility, Storage & Support — Quick Search | `/screenshots/platform-basics/quick-search__overlay__01.png` | New feature — Quick Search overlay + parsed-chip row, needs first capture |
 | 2026-08-19 | Dashboard, Utility, Storage & Support — Ask AI | `/screenshots/platform-basics/quick-search__ask-ai__01.png` | New feature — Ask AI toggle, credit usage display, and threshold toast, needs first capture |
 | 2026-08-19 | Dashboard, Utility, Storage & Support — Quick Search (PENDING STOCK-IN + Did you mean) | `/screenshots/platform-basics/quick-search__overlay__01.png` | Same overlay screenshot area above is now further out of date: new "PENDING STOCK-IN" result group and a "Did you mean?" pick-list for ambiguous fuzzy species matches were added — capture both states in the same re-shoot batch as the other pending Quick Search item |
+| 2026-08-20 | Dashboard, Utility, Storage & Support — Global Search | `/screenshots/platform-basics/global-search__overlay__01.png` | Brand-new feature (ng v5.44.22/sb v5.30.7) — grouped results overlay across all 6 record types, needs first capture |
+| 2026-08-20 | Dashboard, Utility, Storage & Support — Global Search inline math | `/screenshots/platform-basics/global-search__math-result__01.png` | Brand-new feature — the "= 450" inline computed-answer state, needs first capture |
+| 2026-08-20 | Dashboard, Utility, Storage & Support — Global Search calculator | `/screenshots/platform-basics/global-search__calculator__01.png` | Brand-new feature — the calculator dialog opened from Global Search, needs first capture |
+| 2026-08-20 | Dashboard, Utility, Storage & Support — Keyboard Shortcuts | `/screenshots/platform-basics/keyboard-shortcuts__dialog__01.png` | Brand-new feature — the "?" shortcuts cheat-sheet dialog, needs first capture |
 
 ## Done
 

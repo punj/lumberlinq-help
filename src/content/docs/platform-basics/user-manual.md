@@ -56,6 +56,22 @@ Ask AI only translates your text into search terms — it never invents or shows
 
 Ask AI requires the **Forest** plan (LumberLinq's top subscription tier) and draws from the same AI credit pool as AI Import for tally sheets. Credits are charged based on how much text is processed, not a flat fee per search. As your usage approaches your plan's AI credit limit, you'll see a warning at 80%, 90%, 95%, and 100% used. If you're out of AI credits or on a lower plan, the regular (non-AI) Quick Search still works at no credit cost.
 
+## Global Search
+
+Press **Ctrl+K** (or **Cmd+K** on Mac) anywhere in the app, or click the search icon in the header, to open Global Search — a single box that finds a record by name or reference number across six areas at once: Stock Units, Consignments, Business Partners, Products, Locations, and Users. Results appear grouped under each area as you type; click a result (or use the arrow keys and Enter) to jump straight to that record.
+
+Type at least 2 characters to search. Short reference codes (like a 3-letter product code) match from 2 characters; longer names need 4+ characters to search by relevance. Only areas you have permission to view show up in results — if you don't have Business Partner access, for example, Business Partner matches never appear, even if a match exists.
+
+Global Search remembers your last 5 searches (shown as pills when you open it with nothing typed) so you can quickly repeat a recent lookup — click a pill to search it again, or the × on a pill to remove it. Click the **?** icon inside the search box for a quick reminder of what each area covers.
+
+Global Search is a separate permission from Quick Search below — by default only Admins have it, but it can be granted to any custom role from Manage Roles.
+
+**Do the math without leaving search:** type a plain calculation like `150*3` or `(200+50)/4` directly into Global Search, and the answer appears instantly instead of search results — no need to open a separate calculator. Tap the answer to open the full calculator and keep working with that number. There's also a dedicated calculator icon inside the search box (or press **Ctrl+Alt+C** anywhere to open the calculator directly) for a real 4-function calculator you can type or tap into — handy for a quick price/CBM total without leaving the page you're on.
+
+## Keyboard Shortcuts
+
+Press **?** anywhere in the app (not while typing in a text field) to open the full Keyboard Shortcuts list — every shortcut across LumberLinq in one place, grouped by where it applies (Global Search, tally entry, forms, the photo viewer, and the calculator). You can also reach it from the **?** help icon inside Global Search's own help panel.
+
 ## Utility
 
 Open **Main Menu → Utility** for three built-in calculation tools, so timber teams can do everyday conversions without a separate spreadsheet: **Cost Estimate**, **Unit Conversion**, and **Generate Slab**.

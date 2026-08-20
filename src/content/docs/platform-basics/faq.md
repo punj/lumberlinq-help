@@ -15,6 +15,14 @@ They're intentionally all-time figures, independent of any date filter on the da
 
 Quick Search needs its own permission (`QUICK_SEARCH_ACCESS`), separate from other module access. By default only Admins have it — ask your Admin to grant it to your role via Manage Roles if you need it.
 
+**What's the difference between Global Search and Quick Search?**
+
+Global Search (Ctrl+K) finds a specific record — a Stock Unit, Consignment, Business Partner, Product, Location, or User — by name or reference number. Quick Search (/) is different: it's for finding available inventory by physical dimensions (size, species, origin, quality), like "4in x 3in x 8ft teak". Use Global Search when you know what record you're looking for; use Quick Search when you're asking "do we have any stock like this?"
+
+**I don't see the Global Search icon in the header — why?**
+
+Global Search needs its own permission (`GLOBAL_SEARCH_ACCESS`), separate from Quick Search and from other module access. By default only Admins have it — ask your Admin to grant it to your role via Manage Roles if you need it.
+
 **Why is "Ask AI" greyed out or missing inside Quick Search?**
 
 Ask AI requires the Forest subscription plan. On lower plans, the regular (non-AI) Quick Search still works normally, with no credit cost.
