@@ -21,7 +21,7 @@ Open the Share dialog on the tally sheet, find the link, and click Delete — it
 
 **Does AI Import cost anything?**
 
-Yes, it uses AI credits from your plan, consumed after extraction regardless of whether you confirm the import. It also requires the feature to be enabled on your subscription plan.
+Yes, it uses AI credits from your plan, consumed after extraction regardless of whether you confirm the import. It also requires the feature to be enabled on your subscription plan. The cost is calculated dynamically from how much the photo actually needs to process, not a flat fee per image — same formula for both Round and Square tally sheets.
 
 **Can I see exactly what fields a recipient will see before sharing?**
 

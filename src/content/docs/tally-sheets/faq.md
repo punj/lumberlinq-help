@@ -21,7 +21,7 @@ The Export menu shows Excel, PDF, Bundle, and Advanced options.
 
 ## Can I import tally rows?
 
-Yes. The toolbar includes Import for file-based import and AI Import for image-based extraction from handwritten tally sheets.
+Yes. The toolbar includes Import for file-based import and AI Import for image-based extraction from handwritten tally sheets — works the same way for both Round and Square tally sheets. AI Import's credit cost is calculated dynamically from how much the photo actually needs to process, not a flat fee per image, same as Linc AI Help/Assistant.
 
 ## What does the status bar show?
 

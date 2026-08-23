@@ -161,4 +161,4 @@ The Tally Sheet list is responsive and adapts to a narrow viewport.
 The toolbar includes Import and AI Import actions.
 
 - **Import** supports file-based tally import with configure, upload/map, and preview steps.
-- **AI Import** supports image-based extraction for handwritten tally sheets and shows AI credit usage.
+- **AI Import** supports image-based extraction for handwritten tally sheets (both Round and Square) and shows AI credit usage. The credit cost is calculated dynamically from how much the photo actually needs to process, not a flat fee per image — the same formula used for Linc AI Help/Assistant.

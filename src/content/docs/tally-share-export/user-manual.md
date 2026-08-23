@@ -71,7 +71,7 @@ Photos are only included in the Bundle format. PDF and Excel exports contain mea
 
 Inside a tally sheet, click **Import** in the toolbar, then select **AI Import**. Upload a clear photo of a handwritten tally (good lighting, full page visible), review the extracted rows in the preview and correct any misread values, then click **Confirm Import**.
 
-Each AI Import uses AI credits from your plan — credits are consumed after extraction regardless of whether you confirm the import. AI Import requires the feature to be enabled on your subscription plan.
+Each AI Import uses AI credits from your plan — credits are consumed after extraction regardless of whether you confirm the import. AI Import requires the feature to be enabled on your subscription plan. The credit cost is calculated dynamically from how much the photo actually needs to process, not a flat fee per image — the same formula used for Linc AI Help/Assistant, and the same for both Round and Square tally sheets.
 
 ## Common Problems
 
