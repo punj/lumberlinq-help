@@ -1,0 +1,16 @@
+{
+  "name": "lumberlinq-help-screenshot-capture",
+  "private": true,
+  "type": "module",
+  "description": "Playwright tooling to capture SCREENSHOT_CHECKLIST.md's Priority 1 items. Ported from tms-sb/tools/screenshot-capture on the VPS.",
+  "scripts": {
+    "install-browser": "playwright install --with-deps chromium",
+    "menu": "node menu.mjs",
+    "login": "node login-and-save-state.mjs",
+    "capture": "node capture.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "dotenv": "^16.4.5"
+  }
+}

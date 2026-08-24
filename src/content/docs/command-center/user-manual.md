@@ -21,6 +21,8 @@ The default tab. Shows:
 - **Snapshot tiles** — stock on hand (CBM), machines currently running vs. total, amount owed to you, and this week's arriving/departing/preparing consignment counts.
 - **Needs Attention** — a prioritized list of items that need a decision (e.g. overdue payments, stuck processing runs, unreconciled Transport Units). Click any item to jump to it. If the list is empty, everything is clear.
 
+![Command Center — Overview tab](/screenshots/command-center/command-center__overview__01.png)
+
 ## Inventory Tab
 
 - **Stock at a Glance** — a table of available stock grouped by product, site, origin, quality, and dimensions (this is the same Round/Square rollup used elsewhere in Inventory).
@@ -28,14 +30,20 @@ The default tab. Shows:
 - **Reconciliation Status** — counts of total, reconciled, pending, and locked Transport Units, plus the largest source-vs-destination discrepancies.
 - **Site Utilisation** — current volume vs. capacity per Loading Site, with a warning fill when a site is at or above 90%.
 
+![Command Center — Inventory tab](/screenshots/command-center/command-center__inventory__01.png)
+
 ## Floor Tab
 
 A live table of everything currently running on the mill floor: operator, machine, location, product, start time, and status. Empty when nothing is currently in process.
+
+![Command Center — Floor & Yield tab](/screenshots/command-center/command-center__floor__01.png)
 
 ## Money Tab
 
 - **Money Today** — total receivable, total payable, overdue amount, and overdue count, in your primary transaction currency, plus a receivables-aging breakdown.
 - **Recent Payments** and **Due Soon** — the latest payments received/made and the next payments coming due, each shown in its own currency (multi-currency consignments are not converted or blended here — figures are shown per transaction as recorded).
+
+![Command Center — Money tab](/screenshots/command-center/command-center__money__01.png)
 
 Financial Health figures on this page reflect **all-time** data — they are not affected by any date range picked elsewhere on the page or on the main Dashboard.
 
@@ -44,6 +52,8 @@ Financial Health figures on this page reflect **all-time** data — they are not
 - **Consignment Radar** — consignments Preparing, Departing Soon, and Arriving Soon.
 - **Recent Activity** — the latest Sale/Purchase/Payment events, with counterparty and amount.
 - **Trade Mix** — a breakdown of recent activity by trade type.
+
+![Command Center — Consignments tab](/screenshots/command-center/command-center__consignments__01.png)
 
 ## Machine Management
 
@@ -54,6 +64,8 @@ Machines are managed from **Main Menu → Inventory → Machines** (`/inventory/
 - Each machine shows Active/Needs Review status. Deactivating a machine does not delete its processing history.
 
 The stats strip at the top of the Machines page shows total machines, how many are active, and how many need review.
+
+![Machines page](/screenshots/command-center/command-center__machines__01.png)
 
 ## Common Problems
 

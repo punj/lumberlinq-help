@@ -1,0 +1,6 @@
+node_modules/
+.env
+auth-state.json
+affiliate-auth-state.json
+screenshots/*.png
+screenshots/_run-summary.json

@@ -23,6 +23,8 @@ There are two ways to apply, depending on whether you already use LumberLinq:
 6. Tick the agreement checkbox confirming you accept the LumberLinq Affiliate Partner Agreement and that your details are accurate.
 7. Click **Submit Application** — or, instead of filling the form manually, use one of the **social sign-up** buttons to continue with Google/another provider (this still requires the country, currency, and agreement fields above to be filled first).
 
+![Become an Affiliate Partner — apply form](/screenshots/affiliate-program/affiliate-program__apply-form__01.png)
+
 **If you're already a LumberLinq subscriber:**
 
 1. While logged in, go to the **Become an Affiliate** page (`/affiliate/apply`).

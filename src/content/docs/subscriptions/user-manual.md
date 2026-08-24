@@ -69,14 +69,14 @@ Each plan has limits on:
 - **Users** — number of team members you can invite
 - **Storage** — file/photo storage quota
 - **AI Chat (Linc)** — daily message limit per user
-- **AI credits** — shared pool used by AI Import (tally sheets) and, on the Forest plan, Ask AI inside Quick Search. Cost is based on how much text/image content is processed per request, not a flat fee — a Claude-style usage banner warns you at 80%, 90%, 95%, and 100% of your plan's credit limit used.
+- **AI credits** — shared pool used by AI Import (tally sheets) and, on the Forest plan, Ask AI inside Unified Search's Stock mode. Cost is based on how much text/image content is processed per request, not a flat fee — a Claude-style usage banner warns you at 80%, 90%, 95%, and 100% of your plan's credit limit used.
 
 When you approach a limit, a **Plan Limit Banner** appears at the top of the relevant module page. When a limit is reached, you cannot create new records of that type until you upgrade or delete old records.
 
 ## Forest Plan
 
 **Forest** is LumberLinq's top subscription tier. In addition to everything on lower plans, it unlocks:
-- **Ask AI** inside Quick Search — AI-assisted natural-language stock lookup (see Dashboard, Utility, Storage & Support → Quick Search)
+- **Ask AI** inside Unified Search's Stock mode — AI-assisted natural-language stock lookup (see Dashboard, Utility, Storage & Support → Unified Search)
 - Custom branding on exports and share links
 
 If a Forest-only feature is greyed out or missing, check your current plan on this page before assuming it's a technical error.

@@ -3,7 +3,7 @@ title: Dashboard, Utility, Storage & Support — FAQ
 description: Frequently asked questions about the Dashboard, calculation utilities, storage, and support tickets in LumberLinq.
 ---
 
-*Also searched as: dashboard home, quick search, global search, calculator, storage full, out of space, guided tour, support ticket, AI chat, ask AI, linc, chatbot, keyboard shortcuts, hotkeys.*
+*Also searched as: dashboard home, quick search, global search, unified search, records mode, stock mode, calculator, storage full, out of space, guided tour, support ticket, AI chat, ask AI, linc, chatbot, keyboard shortcuts, hotkeys.*
 
 **A dashboard section is missing for me — is that a bug?**
 
@@ -13,21 +13,21 @@ No — several sections need a specific permission (Financial Health needs finan
 
 They're intentionally all-time figures, independent of any date filter on the dashboard — only the charts (volume, top products, trade type) respond to the date range.
 
-**I don't see a search icon in the header — where's Quick Search?**
+**I don't see a search icon in the header — where's search?**
 
-Quick Search needs its own permission (`QUICK_SEARCH_ACCESS`), separate from other module access. By default only Admins have it — ask your Admin to grant it to your role via Manage Roles if you need it.
+The search icon (and the **/** shortcut) needs at least one of two permissions: `GLOBAL_SEARCH_ACCESS` (for Records mode) or `QUICK_SEARCH_ACCESS` (for Stock mode). By default only Admins have either — ask your Admin to grant one or both to your role via Manage Roles if you need it.
 
-**What's the difference between Global Search and Quick Search?**
+**What's the difference between Records mode and Stock mode?**
 
-Global Search (Ctrl+K) finds a specific record — a Stock Unit, Consignment, Business Partner, Product, Location, or User — by name or reference number. Quick Search (/) is different: it's for finding available inventory by physical dimensions (size, species, origin, quality), like "4in x 3in x 8ft teak". Use Global Search when you know what record you're looking for; use Quick Search when you're asking "do we have any stock like this?"
+Both live inside the same Unified Search dialog (press **/**), as two of its four modes. **Records** finds a specific record — a Stock Unit, Consignment, Business Partner, Product, Location, or User — by name or reference number. **Stock** is different: it's for finding available inventory by physical dimensions (size, species, origin, quality), like "4in x 3in x 8ft teak". Use Records when you know what record you're looking for; use Stock when you're asking "do we have any stock like this?" — or just type in **Auto** mode and it picks the right one for you.
 
-**I don't see the Global Search icon in the header — why?**
+**I have the search icon but only see some of the four modes — why?**
 
-Global Search needs its own permission (`GLOBAL_SEARCH_ACCESS`), separate from Quick Search and from other module access. By default only Admins have it — ask your Admin to grant it to your role via Manage Roles if you need it.
+Records and Stock modes each need their own separate permission (`GLOBAL_SEARCH_ACCESS` and `QUICK_SEARCH_ACCESS`) — by default only Admins have either. A mode button only appears if you have that mode's permission; Calculator is always available once you can open the dialog at all.
 
-**Why is "Ask AI" greyed out or missing inside Quick Search?**
+**Why is "Ask AI" greyed out or missing inside Stock mode?**
 
-Ask AI requires the Forest subscription plan. On lower plans, the regular (non-AI) Quick Search still works normally, with no credit cost.
+Ask AI requires the Forest subscription plan. On lower plans, the regular (non-AI) Stock search still works normally, with no credit cost.
 
 **Does Ask AI cost anything if I don't like the answer?**
 
@@ -35,7 +35,11 @@ Yes — like AI Import for tally sheets, AI credits are consumed once the reques
 
 **What happens when I run low on AI credits?**
 
-You'll see a warning at 80%, 90%, 95%, and 100% of your plan's AI credit limit used. Once credits run out, Ask AI stops working until the next billing cycle or a plan upgrade — the regular Quick Search keeps working with no credit cost.
+You'll see a warning at 80%, 90%, 95%, and 100% of your plan's AI credit limit used. Once credits run out, Ask AI stops working until the next billing cycle or a plan upgrade — the regular Stock search keeps working with no credit cost.
+
+**I remember search opening with Ctrl+K — why doesn't that work anymore?**
+
+Ctrl+K was removed. Unified Search (which now covers what used to be two separate dialogs, Quick Search and Global Search) opens with **/** only, or by clicking the search icon in the header.
 
 **How do I see the Product Tour again after dismissing it?**
 

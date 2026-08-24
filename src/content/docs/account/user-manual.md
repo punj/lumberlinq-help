@@ -115,6 +115,8 @@ Choose which notification categories can buzz your phone or browser. Turning a c
 
 Each toggle saves automatically — there's no separate save button.
 
+![Notification Preferences panel](/screenshots/account/account__notification-preferences__01.png)
+
 ## Self-Delete Account (Danger Zone)
 
 You can permanently delete your own LumberLinq account from the **Danger Zone** panel on your profile page.
@@ -122,6 +124,8 @@ You can permanently delete your own LumberLinq account from the **Danger Zone** 
 1. Click your avatar in the top-right header, then click **Edit Profile**.
 2. Scroll down to the **Danger Zone** panel (below Notification Preferences).
 3. Click **Delete My Account**.
+
+![Danger Zone panel](/screenshots/account/account__danger-zone__01.png)
 
 What happens next depends on whether you're the only admin in your company:
 

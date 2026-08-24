@@ -3,7 +3,7 @@ title: Dashboard, Utility, Storage & Support — User Manual
 description: The Dashboard landing page, calculation utilities, file storage, and support tickets in LumberLinq.
 ---
 
-*Also searched as: dashboard home, ctrl+k, quick search, global search, calculator, storage full, out of space, guided tour, walkthrough, help desk, AI chat, ask AI, linc, chatbot, support ticket, keyboard shortcuts, hotkeys.*
+*Also searched as: dashboard home, ctrl+k, quick search, global search, unified search, records mode, stock mode, calculator, storage full, out of space, guided tour, walkthrough, help desk, AI chat, ask AI, linc, chatbot, support ticket, keyboard shortcuts, hotkeys.*
 
 ## Dashboard
 
@@ -35,50 +35,56 @@ Financial Health and the Reconciliation ring always reflect all-time data — th
 
 Admin, Super Admin, and Root users also have a separate, more detailed **Command Center** page — see its own section in the sidebar.
 
-## Quick Search
+## Unified Search
 
-If your account has Quick Search access, a search icon appears in the header. Click it, or press **/** anywhere in the app (as long as you're not currently typing in a text field), to open Quick Search — a fast, phone-call-style lookup for stock, similar to how Quick Tally parses a spoken measurement. It parses species, origin, and quality automatically, and understands two kinds of size search:
+Press **/** anywhere in the app (as long as you're not currently typing in a text field), or click the search icon in the header, to open Unified Search — one search box covering both record lookup and stock lookup, plus a built-in calculator. It replaced two separate older dialogs (previously called Quick Search and Global Search); if you used LumberLinq before, "Quick Search" is still the name shown, but it now opens the combined dialog below rather than a standalone one, and it opens with **/**, not Ctrl+K.
+
+![Unified Search — Auto mode](/screenshots/platform-basics/platform-basics__unified-search-auto__01.png)
+
+Four modes are shown as buttons across the top:
+
+### Auto
+
+The default mode when you open the dialog. It reads what you typed and decides for you: if it looks like a size/dimension (a word like `girth`/`width`/`thickness`/`length`, a comparator like `over`/`under`/`between`, or a plain `4in x 3in x 8ft` shorthand), it searches **Stock**; otherwise it searches **Records**. A small note above the results says which one it picked ("Searching as Records" / "Searching as Stock"), so you're never guessing. If you type a plain calculation instead — `150*3`, `(200+50)/4` — the answer appears inline instead of search results; tap it (or press Enter) to open the full **Calculator** mode with that answer already filled in.
+
+### Records
+
+Finds a record by name or reference number across six areas at once: Stock Units, Consignments, Business Partners, Products, Locations, and Users. Results appear grouped under each area as you type; click a result (or use the arrow keys and Enter) to jump straight to that record. Type at least 2 characters to search — short reference codes (like a 3-letter product code) match from 2 characters, longer names need 4+. Only areas you have permission to view show up in results. Each area shows up to 8 matches at a time; add another word or the full reference number to narrow it down if you don't see what you want. Unified Search remembers your last 5 searches (shown as pills when you open it with nothing typed) — click a pill to repeat it, or its × to remove it. Click the **?** icon inside the search box for a quick reminder of what each area covers. Records mode is a separate permission from Stock mode — by default only Admins have it, but it can be granted to any custom role from Manage Roles.
+
+### Stock
+
+A fast, phone-call-style lookup for stock, similar to how Quick Tally parses a spoken measurement. It parses species, origin, and quality automatically, and understands two kinds of size search:
 
 - **Exact size**, positional shorthand: `4in x 3in x 8ft teak` (three numbers = square sawn) or `90cm x 230cm ghana teak` (two numbers = round girth × length).
 - **Size ranges**, with a comparator and a named measurement: `girth over 90cm ghana teak`, `width between 6 and 10 inch`, `length under 12ft`.
 
 Every measurement always needs an explicit unit (`cm`, `mm`, `in`/`"`, or `ft`/`'`) — a bare number is never guessed at a default unit, since guessing silently returns the wrong stock. Results show grouped into **Available Now**, **Pending Stock-In**, **In Process**, and **Arriving/Departing/Preparing**.
 
-**Pending Stock-In** covers stock that's been tallied on a Stock-In (BUY) Transport Unit but hasn't been received into Inventory yet — so it's real, but not yet part of your available stock figures. Click a Pending Stock-In result to jump straight to that Transport Unit and receive it into Inventory yourself; Quick Search never receives stock automatically.
+**Pending Stock-In** covers stock that's been tallied on a Stock-In (BUY) Transport Unit but hasn't been received into Inventory yet — so it's real, but not yet part of your available stock figures. Click a Pending Stock-In result to jump straight to that Transport Unit and receive it into Inventory yourself; Stock mode never receives stock automatically.
 
-A chip row above the results shows what was understood from your text — a chip with a question-mark icon means that part was fuzzy-matched (close but not exact), not a guaranteed match. If a typed word is a plausible but uncertain match for a product name, Quick Search shows a **"Did you mean?"** row with the closest candidates instead of silently guessing — pick the right one and the search re-runs with it locked in.
+A chip row above the results shows what was understood from your text — a chip with a question-mark icon means that part was fuzzy-matched (close but not exact), not a guaranteed match. If a typed word is a plausible but uncertain match for a product name, a **"Did you mean?"** row shows the closest candidates instead of silently guessing — pick the right one and the search re-runs with it locked in.
 
-Quick Search access is a separate permission from other module access — by default only Admins have it, but it can be granted to any custom role from Manage Roles.
+Stock mode is a separate permission from Records mode above — by default only Admins have it, but it can be granted to any custom role from Manage Roles.
 
-### Ask AI (Forest plan)
+**Ask AI (Forest plan)** — inside Stock mode, click the **Ask AI** toggle to switch to AI-assisted parsing for messier or more conversational phrasing than the regular parser handles. Type your question and click **Ask AI** — this is a manual, explicit action (it never runs automatically while typing) because each request uses AI credits from your plan. Ask AI only translates your text into search terms — it never invents or shows a number that isn't backed by real inventory. Ask AI requires the **Forest** plan and draws from the same AI credit pool as AI Import for tally sheets, charged by how much text is processed, not a flat fee per search; you'll see a warning at 80%, 90%, 95%, and 100% of your credit limit used. Without AI credits or on a lower plan, the regular (non-AI) Stock search still works at no credit cost.
 
-Inside Quick Search, click the **Ask AI** toggle to switch to AI-assisted parsing for messier or more conversational phrasing than the regular parser handles. Type your question and click **Ask AI** — this is a manual, explicit action (it never runs automatically while typing) because each request uses AI credits from your plan.
+### Calculator
 
-Ask AI only translates your text into search terms — it never invents or shows a number that isn't backed by real inventory. The results underneath are the same real stock/process/consignment data as a regular Quick Search.
+A real 4-function calculator you can type or tap into — handy for a quick price/CBM total without leaving the page you're on. Nothing entered here is saved. Reach it by clicking the Calculator button inside Unified Search, by tapping a math answer shown in Auto mode, or by pressing **Ctrl+Alt+C** anywhere in the app to jump straight into it.
 
-Ask AI requires the **Forest** plan (LumberLinq's top subscription tier) and draws from the same AI credit pool as AI Import for tally sheets. Credits are charged based on how much text is processed, not a flat fee per search. As your usage approaches your plan's AI credit limit, you'll see a warning at 80%, 90%, 95%, and 100% used. If you're out of AI credits or on a lower plan, the regular (non-AI) Quick Search still works at no credit cost.
-
-## Global Search
-
-Press **Ctrl+K** (or **Cmd+K** on Mac) anywhere in the app, or click the search icon in the header, to open Global Search — a single box that finds a record by name or reference number across six areas at once: Stock Units, Consignments, Business Partners, Products, Locations, and Users. Results appear grouped under each area as you type; click a result (or use the arrow keys and Enter) to jump straight to that record.
-
-Type at least 2 characters to search. Short reference codes (like a 3-letter product code) match from 2 characters; longer names need 4+ characters to search by relevance. Only areas you have permission to view show up in results — if you don't have Business Partner access, for example, Business Partner matches never appear, even if a match exists.
-
-Global Search remembers your last 5 searches (shown as pills when you open it with nothing typed) so you can quickly repeat a recent lookup — click a pill to search it again, or the × on a pill to remove it. Click the **?** icon inside the search box for a quick reminder of what each area covers.
-
-Global Search is a separate permission from Quick Search below — by default only Admins have it, but it can be granted to any custom role from Manage Roles.
-
-Each area shows up to 8 matches at a time — if you're not seeing the exact record you want, add another word or the full reference number to narrow it down.
-
-**Do the math without leaving search:** type a plain calculation like `150*3` or `(200+50)/4` directly into Global Search, and the answer appears instantly instead of search results — no need to open a separate calculator. Tap the answer to open the full calculator and keep working with that number. There's also a dedicated calculator icon inside the search box (or press **Ctrl+Alt+C** anywhere to open the calculator directly) for a real 4-function calculator you can type or tap into — handy for a quick price/CBM total without leaving the page you're on.
+![Unified Search — Calculator mode](/screenshots/platform-basics/platform-basics__unified-search-calculator__01.png)
 
 ## Keyboard Shortcuts
 
-Press **?** anywhere in the app (not while typing in a text field) to open the full Keyboard Shortcuts list — every shortcut across LumberLinq in one place, grouped by where it applies (Global Search, tally entry, forms, the photo viewer, and the calculator). You can also reach it from the **?** help icon inside Global Search's own help panel.
+Press **?** anywhere in the app (not while typing in a text field) to open the full Keyboard Shortcuts list — every shortcut across LumberLinq in one place, grouped by where it applies (Unified Search, tally entry, forms, the photo viewer, and the calculator). You can also reach it from the **?** help icon inside Unified Search's own help panel.
+
+![Keyboard Shortcuts dialog](/screenshots/platform-basics/platform-basics__keyboard-shortcuts__01.png)
 
 ## Product Tour
 
 The first time you land on a main app page after logging in, LumberLinq walks you through the header controls with a short guided tour: the navigation menu, the LumberLinq logo (click it to return to the Dashboard from anywhere), Language, Font Size, Theme, Dark Mode, your profile menu, and the Help & Support icon. Click the **×** on any step to dismiss the tour early — it won't pop up again on its own once you've seen it or dismissed it.
+
+![Product Tour — first step](/screenshots/platform-basics/platform-basics__product-tour-step__01.png)
 
 Many individual pages — Dashboard, Shipments, Tally Sheet, Reports, Business Partner, Products, Loading Site, Users, each of the four Inventory pages, RBAC Settings, and Subscription Management — also show their own short walkthrough the first time you open that page, pointing out the buttons and sections specific to that screen.
 
