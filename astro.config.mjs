@@ -33,6 +33,13 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Offline Mode & Mobile App',
+          items: [
+            { label: 'User Manual', link: '/offline-mobile-app/user-manual/' },
+            { label: 'FAQ', link: '/offline-mobile-app/faq/' },
+          ],
+        },
+        {
           label: 'Tally Sheets',
           items: [
             { label: 'User Manual', link: '/tally-sheets/user-manual/' },
@@ -135,6 +142,13 @@ export default defineConfig({
           items: [
             { label: 'User Manual', link: '/subscriptions/user-manual/' },
             { label: 'FAQ', link: '/subscriptions/faq/' },
+          ],
+        },
+        {
+          label: 'Affiliate Program',
+          items: [
+            { label: 'User Manual', link: '/affiliate-program/user-manual/' },
+            { label: 'FAQ', link: '/affiliate-program/faq/' },
           ],
         },
       ],

@@ -31,6 +31,14 @@ Only when recorded stock no longer matches physical reality (e.g. after a stockt
 
 Cancel it while it's still Draft or In Progress — cancelling reverses the input Stock Unit assignments. Once Completed, it can't be reversed the same way.
 
+**What is Quality Grading, and do I need to turn it on?**
+
+Quality Grading lets you tag stock with a quality/color grade (A/B/C/D, renamable) and filter by it. It's bundled with Inventory access, not a separate feature to enable — if Inventory is available on your plan, Quality Grading already is too, with nothing extra to switch on. It's still an ALPHA feature, so you'll see an "ALPHA" label next to it in the app.
+
+**Can I rename the quality grades to match how my company talks about quality?**
+
+Yes. The four grade codes (A/B/C/D) are fixed, but each one's label can be renamed — click the pencil icon next to any quality dropdown (tally settings, Stock In, or Send Out) to open Rename Grades. The new labels apply everywhere for your whole company.
+
 **Where do I find the Chain feature? It's not in the menu.**
 
 That's expected — Chain isn't its own page. Go to **Inventory → Overview**, find the specific stock lot you want to trace, and click **View Chain** on that lot. It's tied to one lot at a time, not something you open on its own.

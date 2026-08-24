@@ -22,6 +22,8 @@ from **Pending** to **Done** (keep them, don't delete — this file is the histo
 | 2026-08-20 | Dashboard, Utility, Storage & Support — Global Search inline math | `/screenshots/platform-basics/global-search__math-result__01.png` | Brand-new feature — the "= 450" inline computed-answer state, needs first capture |
 | 2026-08-20 | Dashboard, Utility, Storage & Support — Global Search calculator | `/screenshots/platform-basics/global-search__calculator__01.png` | Brand-new feature — the calculator dialog opened from Global Search, needs first capture |
 | 2026-08-20 | Dashboard, Utility, Storage & Support — Keyboard Shortcuts | `/screenshots/platform-basics/keyboard-shortcuts__dialog__01.png` | Brand-new feature — the "?" shortcuts cheat-sheet dialog, needs first capture |
+| 2026-08-24 | Account — Notification Preferences | `/screenshots/account/account-details__notification-preferences__01.png` | Existing feature getting documented for the first time (no article previously covered it) — screenshot doesn't exist yet, needs first capture. Navigate to `app.lumberlinq.com/edit/account-details` (logged in, any role) and scroll to the Notification Preferences panel |
+| 2026-08-24 | Account — Self-Delete Account (Danger Zone) | `/screenshots/account/account-details__danger-zone__01.png` | Existing feature getting documented for the first time — needs first capture of the Danger Zone panel plus the 3-step delete confirmation dialog (sole-admin warning / assign-admin / final email confirm). Navigate to `app.lumberlinq.com/edit/account-details` (logged in) and scroll to Danger Zone |
 
 ## Done
 

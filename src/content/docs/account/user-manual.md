@@ -89,3 +89,59 @@ Go to your User Profile (avatar → Profile) → Security tab → Change Passwor
 **"AI Chat is not enabled for your account"** — AI Chat (Linc) is tied to your subscription plan. Contact your administrator or check your subscription settings.
 
 **Turnstile CAPTCHA is not loading** — make sure JavaScript is enabled and Cloudflare isn't being blocked by a firewall or ad blocker.
+
+## Notification Preferences
+
+Choose which notification categories can buzz your phone or browser. Turning a category off doesn't hide it from your notification bell — you'll still see it there either way, and turning it off doesn't stop critical security alerts (like a password change) or email either.
+
+1. Click your avatar in the top-right header, then click **Edit Profile**.
+2. Scroll down to the **Notification Preferences** panel.
+3. Use the **Marketing notifications** toggle at the top to opt in or out of updates about new features and offers.
+4. Below that, toggle any of the following categories on or off individually:
+
+| Category | Covers |
+|---|---|
+| Team invites | When someone invites you to a team, or your invite is accepted or declined |
+| Security alerts | Login and account security notices (critical alerts like a password change are always sent regardless of this setting) |
+| Billing & payments | Subscription renewals, payment reminders, and invoices |
+| Shipments | Updates on your shipments and consignments |
+| Tally sheets | Updates on tally sheets you're working on |
+| Inventory & processing | Stock movements and mill or processing updates |
+| Products, partners & locations | Changes to products, business partners, or locations |
+| Shared links | Activity on links you've shared with others |
+| Affiliate program | Application status, commissions, and payouts for your affiliate account |
+
+Each toggle saves automatically — there's no separate save button.
+
+## Self-Delete Account (Danger Zone)
+
+You can permanently delete your own LumberLinq account from the **Danger Zone** panel on your profile page.
+
+1. Click your avatar in the top-right header, then click **Edit Profile**.
+2. Scroll down to the **Danger Zone** panel (below Notification Preferences).
+3. Click **Delete My Account**.
+
+What happens next depends on whether you're the only admin in your company:
+
+**If you're not the only admin:**
+
+1. A confirmation step appears. Type your email address exactly to confirm.
+2. Click **Delete My Account**.
+
+**If you're the only admin (sole admin):**
+
+1. A warning appears explaining that deleting your account will permanently shut down your company workspace, and lists the other users who will lose access.
+2. Choose one of two paths:
+   - **Assign Admin First** (recommended) — pick another team member from the list and click **Make Admin** to hand over admin rights. Once the transfer succeeds, click **Continue to Delete Account**.
+   - **Delete Anyway & Shut Down** — skip reassignment. You'll need to tick a checkbox confirming you understand that all company users will be logged out immediately, the workspace will shut down, and the subscription will expire.
+3. Type your email address exactly to confirm, then click **Delete My Account** (or **Delete & Shut Down Company** if you skipped reassignment).
+
+Once confirmed:
+
+- All your active sessions are revoked immediately and you're logged out.
+- Data you created (tallies, consignments, stock units) stays in the system, shown under the author name "Deleted User".
+- After 30 days, your personal details (name, email, phone) are anonymised and can't be recovered.
+- Your email address is released and can be used to create a new account later.
+- You're redirected to the login page with a confirmation message that your account was deleted.
+
+**This action cannot be undone — there is no recovery option.**

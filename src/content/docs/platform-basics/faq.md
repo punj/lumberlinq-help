@@ -35,6 +35,10 @@ Yes — like AI Import for tally sheets, AI credits are consumed once the reques
 
 You'll see a warning at 80%, 90%, 95%, and 100% of your plan's AI credit limit used. Once credits run out, Ask AI stops working until the next billing cycle or a plan upgrade — the regular Quick Search keeps working with no credit cost.
 
+**How do I see the Product Tour again after dismissing it?**
+
+Click the **?** help icon in the header, or open your profile menu (top right) and click **Product Tour** — either one restarts the guided walkthrough from the beginning.
+
 **Why do my Cost Estimate results look wrong?**
 
 Almost always a unit mismatch — check every unit field carefully, especially when different rows use different units.

@@ -88,6 +88,19 @@ Open **Inventory → Processing** to convert input timber into a different outpu
 
 Processing runs can be assigned to a Mill Operator — open **Inventory → Operators** to manage your roster. See the Mill Operators & Custom-Made Processing guide for the full operator workflow.
 
+## Quality Grading (ALPHA)
+
+Quality Grading adds an optional quality/color grade to stock, so you can tag and filter it by grade alongside the usual size, species, and origin fields. It's bundled with Inventory access, not a separate thing to switch on — if Inventory is available on your plan, Quality Grading is too.
+
+**The grading vocabulary:** every company starts with a fixed set of four grades, labelled A, B, C, and D. The four codes themselves can't be changed, but the label each one shows can be — click the pencil icon next to any quality dropdown (in tally settings, Stock In, or Send Out) to open **Rename Grades**, and give each code a name that matches how your company actually talks about quality (for example, renaming B to "Second Quality"). The rename applies everywhere the grade is shown, for everyone at your company.
+
+**Where you assign or use a grade:**
+- **On a tally sheet** — a Square or Round tally's settings include an optional Quality field for the Transport Unit; it applies that grade to every row tallied on that Transport Unit.
+- **Stock In (receiving into Inventory)** — the Stock In form has an optional Quality field so you can set or confirm the grade on the Stock Unit being received.
+- **Send Out (dispatch)** — the dispatch screen lets you filter available stock by quality grade, so you can find the exact batch you want to ship.
+
+Quality Grading is still an ALPHA feature — you'll see an "ALPHA" label next to it wherever it appears.
+
 ## Common Problems and Fixes
 
 **"I can't add a Stock Unit to a consignment"** — the Stock Unit hasn't been received into inventory. Go to Overview or In/Out and confirm a receipt (IN) movement exists; if not, check the tally sheet was fully saved, not just filled in.

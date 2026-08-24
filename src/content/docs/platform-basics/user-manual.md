@@ -74,6 +74,14 @@ Each area shows up to 8 matches at a time — if you're not seeing the exact rec
 
 Press **?** anywhere in the app (not while typing in a text field) to open the full Keyboard Shortcuts list — every shortcut across LumberLinq in one place, grouped by where it applies (Global Search, tally entry, forms, the photo viewer, and the calculator). You can also reach it from the **?** help icon inside Global Search's own help panel.
 
+## Product Tour
+
+The first time you land on a main app page after logging in, LumberLinq walks you through the header controls with a short guided tour: the navigation menu, the LumberLinq logo (click it to return to the Dashboard from anywhere), Language, Font Size, Theme, Dark Mode, your profile menu, and the Help & Support icon. Click the **×** on any step to dismiss the tour early — it won't pop up again on its own once you've seen it or dismissed it.
+
+Many individual pages — Dashboard, Shipments, Tally Sheet, Reports, Business Partner, Products, Loading Site, Users, each of the four Inventory pages, RBAC Settings, and Subscription Management — also show their own short walkthrough the first time you open that page, pointing out the buttons and sections specific to that screen.
+
+**Replay the tour anytime:** click the **?** help icon in the header (it has a subtle pulse until you've seen the tour for the first time) or open your profile menu and click **Product Tour** — both restart the same header walkthrough from the beginning, even if you've already seen or dismissed it before.
+
 ## Utility
 
 Open **Main Menu → Utility** for four built-in calculation tools, so timber teams can do everyday conversions and sums without a separate spreadsheet or a phone calculator: **Calculator**, **Cost Estimate**, **Unit Conversion**, and **Generate Slab**.

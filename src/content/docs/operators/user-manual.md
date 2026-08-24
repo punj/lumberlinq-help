@@ -7,7 +7,7 @@ description: Running Custom-Made (Re-saw) processing and managing your mill oper
 
 Custom-Made (also called Re-saw) processing is when input timber — typically round logs — is converted into a different output form, most commonly sawn/square boards. It's run from **Inventory → Processing**. A processing run consumes one or more input Stock Units and produces new output stock; the input Stock Units leave available stock and the output becomes a new open lot.
 
-There is no separate "Machine" page — equipment is tracked as a **Machines Installed** field on each Location, not as its own module.
+Each Location also has a **Machines Installed** field listing the equipment at that site. For the full Machine Management page — adding machines, importing them from Locations, and checking their active/needs-attention status — see the **Command Center** guide, which covers the dedicated Machines tab at `/inventory/machines`.
 
 ## Starting a Custom-Made Processing Run
 

@@ -34,3 +34,23 @@ Contact your company administrator — accounts are deactivated by admins from U
 **Why can't I see AI Chat (Linc)?**
 
 It's tied to your subscription plan. Contact your administrator or check your subscription settings.
+
+**If I turn off a notification category, will I stop seeing it in the notification bell?**
+
+No — the bell always shows it. Turning a category off only stops it from buzzing your phone or browser.
+
+**Do notification category toggles also control email notifications?**
+
+No — they only control push/in-app buzzing. Critical security alerts, like a password change, are always sent regardless of any toggle.
+
+**Is deleting my account reversible?**
+
+No. Sessions are revoked immediately, and after 30 days your personal details (name, email, phone) are anonymised and can't be recovered. There is no recovery option.
+
+**What happens if I'm the only admin in my company and I delete my account?**
+
+You'll be warned first and given a choice: assign admin rights to another team member before deleting (recommended), or delete anyway and permanently shut down the company workspace — which immediately logs out every user and expires the subscription.
+
+**What happens to my tally sheets and shipments after I delete my account?**
+
+They stay in the system exactly as they were — only the authorship label changes to "Deleted User". Nothing you created is removed.

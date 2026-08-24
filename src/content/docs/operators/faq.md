@@ -25,4 +25,4 @@ That only happens when the run's output was linked to a tally sheet and you retu
 
 **Is there a separate "Machine" module?**
 
-No. Equipment is tracked as a Machines Installed field on each Location, not as its own module.
+Yes — see Command Center's Machines tab (`/inventory/machines`) for adding, importing, and checking the status of equipment. Each Location also has a Machines Installed field listing what's at that site.
