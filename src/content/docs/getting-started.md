@@ -5,6 +5,19 @@ description: A quick orientation to LumberLinq — what it does, who it's for, a
 
 LumberLinq is a Timber Management System designed for timber exporters, importers, traders, and logistics teams. It centralises tally sheets, consignments, inventory, business partners, and reporting in one place.
 
+## Creating a New Company Account
+
+If you're the first person at your company to use LumberLinq (not joining via a teammate's invite — see [Account, Login & Sign Up](/account/user-manual/) for that flow instead), here's the real step-by-step setup you'll go through, in order — each step must be finished before the next one unlocks:
+
+1. **Sign up** — go to [app.lumberlinq.com/login](https://app.lumberlinq.com/login), click **Sign Up**, and enter your name, email, and a password. Check your inbox and click the verification link — this step is required, you can't skip it. Then log back in.
+2. **Personal Details** — a single page (no tabs at this stage) for your own basic info: name, mobile number, country/location, and similar. Later, once you're fully set up, your profile page grows more sections (notification preferences, account security, etc. — see [Account, Login & Sign Up](/account/user-manual/)), but you won't see those yet during this first setup.
+3. **Company Details** — one page with three parts: **Company Details** (company name, tax ID, phone, email, website, legal entity type), **Address** (country, state, city, address lines), and **Operating Profile** (industry type, company size, your role). This is a shorter version of the full Company Settings page you'll use later — see [Company Settings](/company/user-manual/) for the complete field reference.
+4. **Subscription** — pick a plan and choose Monthly or Yearly billing. A free trial option is also available here if you'd rather try LumberLinq before paying.
+5. **Payment** — enter your billing address and tax ID, and add a promo code if you have one. If you picked the free trial, this step completes instantly with nothing charged. Otherwise, you'll complete payment through the card/UPI popup that appears. See [Subscriptions & Billing](/subscriptions/user-manual/) for the full billing picture, including what happens if a trial or subscription lapses.
+6. **Confirmation** — a final screen confirming your account is ready.
+
+Once all of this is done, you land in the main app and can start using it — see "Your First Steps" below for what to do next.
+
 ## Sign In
 
 Open [app.lumberlinq.com](https://app.lumberlinq.com) in your browser and sign in with your company email and password. If you have not been invited yet, contact your company administrator.

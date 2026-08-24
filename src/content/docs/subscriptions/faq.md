@@ -23,11 +23,11 @@ Make sure it's entered exactly as given (promo codes are case-sensitive) and che
 
 **What happens when my trial ends?**
 
-You enter a Grace Period — a short additional window to upgrade without losing data. After that, your data is preserved but access is restricted until you activate a paid plan.
+Nothing is deleted — all your existing tally sheets, consignments, and other records stay exactly as they are. Your account downgrades to a lower, limited plan: you can keep using and editing everything you already have, you just can't create new records past that lower plan's limits until you subscribe again. Unlike a lapsed paid plan (which gets a short grace period first), a trial ends and downgrades right on its end date, with no extra window.
 
 **What payment methods are supported?**
 
-Razorpay (UPI, net banking, cards — India), Stripe (international cards), and PhonePe (UPI — India).
+The subscription checkout screen uses Razorpay or Cashfree (UPI, net banking, cards, depending on your region) — whichever is configured for your account.
 
 **How do I download an invoice?**
 

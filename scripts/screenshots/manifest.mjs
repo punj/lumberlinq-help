@@ -86,6 +86,30 @@ export const manifest = [
     viewport: { width: 1600, height: 1000 }, settleMs: 500,
     verified: true, note: '"Open Calculator" = Ctrl+Alt+C, confirmed via the same real Keyboard Shortcuts dialog capture — opens the calculator mode directly, no tab click needed. Cropped to `.us-dialog`.',
   },
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__unified-search-records__01',
+    route: '/dashboard-v7', mode: 'element', selector: '.us-dialog',
+    preActions: [
+      { type: 'key', key: '/' }, { type: 'wait', ms: 800 },
+      { type: 'click', selector: '.us-mode-btn:has-text("Records")' }, { type: 'wait', ms: 400 },
+      { type: 'click', selector: '.us-input' },
+      { type: 'type', text: 'report' }, { type: 'wait', ms: 1500 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 600,
+    verified: false, note: 'Added 2026-08-25. Selectors/preActions confirmed working — a live capture run against app.lumberlinq.com on 2026-08-24 succeeded mechanically (clicked Records tab, typed "report", captured the dialog cleanly). BUT it showed "No matches found" with no "Pages" group and no "Ask Linc" card, because app.lumberlinq.com is still running the pre-this-session frontend build — today\'s Quick Search changes (tms-ng, committed this session) have not been deployed to the live VPS yet. Do NOT use that captured PNG — it shows stale/incorrect UI. Re-run this entry (and flip to verified:true) only AFTER tms-ng is rebuilt and deployed live with this session\'s changes.',
+  },
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__unified-search-stock__01',
+    route: '/dashboard-v7', mode: 'element', selector: '.us-dialog',
+    preActions: [
+      { type: 'key', key: '/' }, { type: 'wait', ms: 800 },
+      { type: 'click', selector: '.us-mode-btn:has-text("Stock")' }, { type: 'wait', ms: 400 },
+      { type: 'click', selector: '.us-input' },
+      { type: 'type', text: '4in x 3in x 8ft teak' }, { type: 'wait', ms: 1500 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 600,
+    verified: false, note: 'Added 2026-08-25. Mode button text "Stock" confirmed same way as Records above. Query text is the exact-size example already documented in platform-basics/user-manual.md\'s own Stock mode section. A live run attempt on 2026-08-24 failed clicking the Stock tab button (30s timeout) even though the sibling Records entry\'s click on the same page worked fine moments earlier — plausibly a transient/server-load issue rather than a selector problem, but re-verify the selector on a real page load before assuming it\'s definitely fine. Also blocked by the same stale-deploy issue as the Records entry above — retry only after tms-ng redeploys live.',
+  },
 
   // ── platform-basics.md — Keyboard Shortcuts dialog. "?" trigger confirmed via a code comment
   //    in header.component.html directly above <app-keyboard-shortcuts>. ────────────────────

@@ -53,17 +53,11 @@ On the login page, click **Sign Up** to flip the card to registration.
 
 ### Account Setup Wizard
 
-After verifying your email, complete the setup wizard before accessing the main application:
-
-1. **Company details** — Company name, country, timezone, currency
-2. **Product / Timber type** — optionally set up your first product
-3. **Location** — optionally add your first location
-
-You can skip optional steps and complete them later from Main Menu → Company.
+After verifying your email, complete the setup wizard before accessing the main application. Each step must be finished before the next unlocks — see [Getting Started](/getting-started/) for the full step-by-step walkthrough (Personal Details → Company Details → Subscription → Payment → Confirmation).
 
 ### Trial Plan
 
-All new accounts start on a Trial Plan automatically, with full feature access for a limited period. When the trial ends, access is restricted until a paid plan is activated. Upgrade any time from the Subscription page.
+All new accounts can start on a Trial Plan (one per company, ever), with full feature access for a limited number of days and no grace period. See [Subscriptions & Billing](/subscriptions/user-manual/) for exactly what happens when it ends and how to upgrade.
 
 ### Registering via Invitation
 

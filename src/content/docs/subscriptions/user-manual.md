@@ -13,17 +13,32 @@ Open **Main Menu → Company → Subscription**. This page shows your current pl
 
 ## Trial Plan
 
-All new accounts start on a Trial Plan with full feature access for a limited period. When the trial expires, you enter a **Grace Period** (a short additional window to upgrade without losing data). After the grace period, data is preserved but access is restricted until a paid plan is activated.
+All new accounts start on a Trial Plan with full feature access, for a limited number of days. Only one trial is ever allowed per company — you can't restart a trial by picking a different package.
 
-## Upgrading Your Plan
+**A trial has no grace period.** It ends exactly on its end date — this is different from a paid plan lapsing (see below, which does get a short grace window).
+
+## What Happens After a Plan Lapses? (trial ends, or a paid renewal fails)
+
+Nothing is deleted and nothing is hidden. Your existing tally sheets, consignments, business partners, and every other record you already created stay fully visible and editable, exactly as before.
+
+What actually happens is a **downgrade**: your account moves onto a lower, limited plan. You can keep using and editing everything you already have — you just can't *create new* records past that lower plan's limits (new tallies, new consignments, new users, etc.) until you subscribe again.
+
+- A **lapsed paid plan** gets a short grace window first (a few days) before the downgrade happens, so a late renewal has a chance to catch up automatically.
+- A **lapsed trial** has no grace window — the downgrade happens right at the trial's end date.
+
+To keep full access, renew or upgrade before this happens.
+
+## Upgrading or Renewing Your Plan
 
 1. Go to **Subscription** from the sidebar.
 2. Click **Upgrade** or **Change Plan**.
 3. Browse available plans and select the one that fits your needs.
-4. Choose billing frequency — monthly or annual (annual is typically discounted).
+4. Choose billing frequency — monthly or annual. **Annual is usually the better deal** — check the current pricing page for the real numbers, since these change over time.
 5. Click **Subscribe / Pay**.
-6. Complete payment via the payment gateway (Razorpay, Stripe, or PhonePe depending on your region).
+6. Complete payment via the payment gateway.
 7. After successful payment, your plan upgrades immediately and limits are updated.
+
+Renewing after a lapse (trial ended, or a paid plan downgraded) uses this exact same flow — there's no separate "reactivation" screen.
 
 ![Package selection](/screenshots/reports/subscription-component-03-purchase-package-selection.png)
 
@@ -53,9 +68,7 @@ After payment, you'll land on a success, pending, or failure screen depending on
 
 ## Payment Methods Supported
 
-- **Razorpay** — UPI, net banking, credit/debit cards (India)
-- **Stripe** — International credit/debit cards
-- **PhonePe** — UPI (India)
+The subscription checkout screen uses **Razorpay** or **Cashfree** (UPI, net banking, credit/debit cards, depending on your region) — whichever is configured for your account. Other payment gateways exist elsewhere in LumberLinq but aren't used on this particular screen.
 
 ## Promo Codes
 
@@ -87,12 +100,12 @@ From **Subscription → Payment History**, click the download icon next to any p
 
 ![Transaction history](/screenshots/reports/subscription-component-02-transaction-history.png)
 
-## What Happens If Payment Fails?
+## What Happens If an Auto-Renewal Payment Fails?
 
 1. You receive an email notification.
-2. Your current plan continues briefly during a retry window.
-3. If retries fail, you are moved to the Grace Period.
-4. Update your payment method from Subscription → Payment Methods and retry.
+2. Your access is NOT cut immediately — it continues until your current billing period actually ends.
+3. Once that period ends with no successful renewal, the normal lapse handling above applies (grace period, then downgrade if still unresolved).
+4. Update your payment method from Subscription → Payment Methods and retry, or complete a fresh purchase from the Subscription page.
 
 ## Cancelling a Subscription
 

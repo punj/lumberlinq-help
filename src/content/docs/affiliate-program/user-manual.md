@@ -31,7 +31,7 @@ There are two ways to apply, depending on whether you already use LumberLinq:
 2. The form is the same as above, minus the Email/Password section — you're already logged in.
 3. Fill in your details and submit.
 
-After submitting, you'll see an **Application submitted** confirmation: *"Thanks for applying to the LumberLinq Affiliate Program. A SUPER_ADMIN will review your application soon — you'll be notified as soon as a decision is made."* If you applied without an existing account, you'll get a **Go to Login** button.
+After submitting, you'll see an **Application submitted** confirmation: *"Thanks for applying to the LumberLinq Affiliate Program. Our team will review your application soon — you'll be notified as soon as a decision is made."* If you applied without an existing account, you'll get a **Go to Login** button.
 
 ## Your Application Status
 
