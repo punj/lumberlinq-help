@@ -22,6 +22,17 @@
 // dashboard) are fine; screens whose entire purpose is platform-operator/admin tooling are not,
 // full stop. Verify a candidate route's actual guard (RoleGuard/@PreAuthorize) before adding it,
 // don't assume from the route name alone.
+//
+// HARD RULE (user instruction, 2026-08-24): screenshots must crop to a whole meaningful REGION —
+// a complete card, dialog, or panel that shows what the feature looks like and does — never a
+// single isolated element (one button, one field) and never a blind full-page/fullbrowser dump
+// with header/sidebar chrome included. Both look unprofessional; think "how does a real SaaS
+// product's help doc crop its screenshots" (a whole dialog, a whole settings card), not "crop as
+// tight as technically possible" or "just screenshot the whole page so nothing's missed." Default
+// to mode:'element' with a selector that wraps the FULL logical unit (e.g. `.p-dialog` for a whole
+// dialog, `.cc-shell` for a whole Command Center tab) — not a sub-element inside it. Only use
+// mode:'fullpage'/'viewport' when the entire screen genuinely IS the subject (e.g. a standalone
+// public landing/apply page with no other page chrome to exclude).
 
 export const manifest = [
   // ── company/application-settings-payment-reminders.md ─────────────────────────────────
@@ -153,8 +164,22 @@ export const manifest = [
   {
     kb: 'affiliate-program', outputName: 'affiliate-program__apply-form__01',
     route: '/join-as-affiliate', mode: 'fullpage', noAuth: true,
+    // First capture (2026-08-24) showed every text field empty — real, but useless for a reader
+    // trying to see what the form looks like filled in. Selectors are real IDs read directly from
+    // affiliate-apply.component.html (#aaEmail/#aaPassword/#aaDisplayName/#aaBusinessName/
+    // #aaPhone/#aaNote). Country/Payout currency aren't filled here — they already default to
+    // India/INR and showed correctly in the first capture.
+    preActions: [
+      { type: 'click', selector: '#aaEmail' }, { type: 'type', text: 'demo.partner@example.com' },
+      { type: 'click', selector: '#aaPassword' }, { type: 'type', text: 'SecurePass123' },
+      { type: 'click', selector: '#aaDisplayName' }, { type: 'type', text: 'Alex Carter' },
+      { type: 'click', selector: '#aaBusinessName' }, { type: 'type', text: 'Carter Timber Consulting' },
+      { type: 'click', selector: '#aaPhone' }, { type: 'type', text: '+1 555 0142' },
+      { type: 'click', selector: '#aaNote' }, { type: 'type', text: 'I run a woodworking supplies blog with 15K monthly readers interested in timber sourcing tools.' },
+      { type: 'wait', ms: 400 },
+    ],
     viewport: { width: 1600, height: 1400 }, settleMs: 1000,
-    verified: true, note: 'Route confirmed (public, noAuth). Full form capture, not cropped to a specific card.',
+    verified: true, note: 'Route confirmed (public, noAuth). Full form capture, not cropped to a specific card. Re-verify header icons look like guest state, not logged-in — confirmed via code that noAuth uses a fresh context with no storageState, so this is expected page behavior, not a session leak.',
   },
   {
     kb: 'affiliate-program', outputName: 'affiliate-program__verification-page__01',
@@ -173,5 +198,273 @@ export const manifest = [
     route: '/affiliate/dashboard', mode: 'fullpage',
     viewport: { width: 1600, height: 1200 }, settleMs: 1000,
     verified: false, note: 'Route confirmed; same affiliate-login requirement as verification-page above.',
+  },
+
+  // ── shipments.md — Private share link, logged-out demo. Real link created live 2026-08-24
+  // via create-private-link.mjs against consignment id=15 (LLPD-BL-0012, GreenRiver Sustainable
+  // Logs -> Continental Veneer GmbH): short code `30ed04d3`. The create-API's raw response body
+  // was a red herring ("/tally-sheet/share/30ed04d3", an internal authenticated deep-link, NOT
+  // the real short-code URL) -- confirmed by actually testing both URLs logged out: the real
+  // `/s/x/:code` prefix (per CLAUDE.md's Share Link System table) correctly redirects to
+  // `/login?shareRedirect=true&returnUrl=...`, exactly matching ShareDispatcherComponent's
+  // documented PRIVATE-tier behavior. Cropped to `.login-form-panel` (login.component.html) --
+  // the whole right-side card including the "Sign in to view this shared link." banner
+  // (`.login-share-redirect-banner`), not the full split-screen page (the left hero panel is
+  // unrelated to this screenshot's actual subject).
+  {
+    kb: 'shipments', outputName: 'shipments__private-link-login-required__01',
+    route: '/s/x/30ed04d3', mode: 'element', selector: '.login-form-panel', noAuth: true,
+    settleMs: 2500,
+    viewport: { width: 1600, height: 1000 },
+    verified: true, note: 'Live-tested 2026-08-24: /s/x/30ed04d3 redirects to /login?shareRedirect=true, banner confirmed rendered. Real code, not a placeholder.',
+  },
+
+  // ── shipments.md — Share Link "Manage Audience" dialog. IMPORTANT: this dialog only applies
+  // to PROTECTED-tier links with audienceType SPECIFIC_EMAILS/SPECIFIC_COMPANIES -- NOT Private
+  // (confirmed by reading shipment-list.component.ts:1095-1099: audienceType is only ever set
+  // when shareAccessMode === 'PROTECTED'). A real Protected+SpecificEmails link was created live
+  // 2026-08-24 on consignment id=15 (via create-protected-link.mjs, kept in this folder) --
+  // short code `0a86b7ad`, containing real registered user punj@rikexim.com (NOT a fake email:
+  // first attempt used partner@example.com and got a real backend 500, because the field
+  // actually requires an existing LumberLinq user's email, not any address -- worth a bug report
+  // separately, the 500 should be a clean validation error). That link now persists permanently
+  // in this consignment's Shared Links list, so this entry reopens the EXISTING row rather than
+  // creating a new one each run (avoids accumulating duplicate links on every dry-run/re-run).
+  // Manage Audience button: icon="pi pi-users" (real DOM attribute, confirmed via component
+  // source), only rendered on rows with a SPECIFIC_EMAILS/SPECIFIC_COMPANIES audienceType.
+  // Cropped to `app-share-link-audience-dialog .p-dialog` -- that Angular component selector is
+  // a real DOM tag, more precise than text-matching a generic p-dialog (which double-matched the
+  // Shared Links list dialog underneath during live testing).
+  {
+    kb: 'shipments', outputName: 'shipments__share-link-manage-audience__01',
+    route: '/consignments/list', mode: 'element', selector: 'app-share-link-audience-dialog .p-dialog',
+    preActions: [
+      { type: 'click', selector: 'input[formcontrolname="search"]' }, { type: 'type', text: 'LLPD-BL-0012' },
+      { type: 'wait', ms: 1200 },
+      { type: 'click', selector: 'tr:has-text("LLPD-BL-0012") button.shp-action-btn[icon="pi pi-share-alt"]' },
+      { type: 'waitFor', selector: '.share-links-dialog' }, { type: 'wait', ms: 500 },
+      { type: 'click', selector: 'tr:has-text("Specific Email Addresses") button[icon="pi pi-users"] >> nth=0' },
+      { type: 'wait', ms: 600 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: true, note: 'Live-tested 2026-08-24 end-to-end: dialog opens correctly, shows real content (punj@rikexim.com listed, Add/Close controls). Screenshot visually confirmed as a clean whole-dialog crop. Trial-and-error during setup left 3 duplicate SPECIFIC_EMAILS links on this consignment (harmless clutter, not cleaned up) -- hence `>> nth=0` to pick a consistent one rather than erroring on ambiguity.',
+  },
+
+  // ── shipments.md — Share Link Access Audit panel (app-share-link-audit, mounted at
+  // shipments.component.html:1668, only visible in isUpdateMode -- i.e. on the EDIT/form route,
+  // NOT the /consignments/consignment-view/:encodedId route, which is a DIFFERENT component
+  // (ShipmentViewComponent) confirmed by reading shipments-routing.module.ts:50 directly. The
+  // correct edit route is /consignments/:encodedId (line 53 of that file).
+  //
+  // BLOCKED -- real, reproducible app bug found live 2026-08-24, not a script/selector problem:
+  // navigating to /consignments/jedR6doeAx6vVplKNnGJuskX (consignment id=15) hangs forever on
+  // the global-page-loader ("Loading...") -- confirmed via TWO separate methods (direct URL nav,
+  // AND clicking the real Edit/pencil icon from /consignments/list), both hang identically, no
+  // console error, no failed HTTP response logged (only an unrelated benign QR-code library
+  // warning about an empty qrdata field). This is consignment id=15 specifically -- not
+  // re-tested against a different consignment for lack of remaining time budget this session.
+  // Worth a real bug report; not fixable from this script.
+  {
+    kb: 'shipments', outputName: 'shipments__share-link-access-audit__01',
+    route: '/consignments/jedR6doeAx6vVplKNnGJuskX', mode: 'element', selector: '.sla-panel',
+    preActions: [
+      { type: 'click', selector: '.sla-panel-header' }, { type: 'wait', ms: 1200 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 800,
+    verified: false, note: 'BLOCKED: the edit route for consignment id=15 hangs forever on the global page loader, reproduced twice via two different navigation methods, no error logged. Route/selector/click-sequence are all correct per source (shipments.component.html:1668, share-link-audit.component.html:8 for the toggle header) -- this is an app bug, not a script bug. Needs either a fix to whatever is hanging, or re-testing against a different consignment.',
+  },
+
+  // ── platform-basics.md — Utility tools. Routes confirmed against app-routing.module.ts:482-528.
+  // All 4 use the same `.bpf-card` wrapper class for their actual tool content (calculator.
+  // component.html:15 also adds `util-calc-card`, but `.bpf-card` alone matches uniquely on each
+  // page). Cropped to the card only, not the generic page header -- the tool itself is the
+  // meaningful subject here.
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__utility-calculator__01',
+    route: '/utility/calculator', mode: 'element', selector: '.bpf-card',
+    viewport: { width: 1600, height: 1000 }, settleMs: 700,
+    verified: true, note: 'Route + selector confirmed against calculator.component.html.',
+  },
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__utility-unit-conversion__01',
+    route: '/utility/unit-conversion', mode: 'element', selector: '.bpf-card',
+    viewport: { width: 1600, height: 1000 }, settleMs: 700,
+    verified: true, note: 'Route + selector confirmed against unit-conversion.component.html:21.',
+  },
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__utility-cost-estimate__01',
+    route: '/utility/volume-estimates', mode: 'element', selector: '.bpf-card',
+    viewport: { width: 1600, height: 1000 }, settleMs: 700,
+    verified: true, note: 'Route + selector confirmed against volume-estimate.component.html:19 (route path says "volume-estimates", app-facing label is "Cost Estimate" per app-routing.module.ts:495).',
+  },
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__utility-slab-generator__01',
+    route: '/utility/slab-generator', mode: 'element', selector: '.bpf-card',
+    viewport: { width: 1600, height: 1000 }, settleMs: 700,
+    verified: true, note: 'Route + selector confirmed against slab-generator.component.html:20.',
+  },
+
+  // ── company.md — Company Branding page. Route confirmed app-routing.module.ts:346-357
+  // (ROLE_ADMIN + ROLE_REGISTRATION, EXTRAS_ACCESS permission -- shiv qualifies as company
+  // ADMIN). `.bpf-card` matches whichever of the two mutually-exclusive states actually renders
+  // (locked-upsell vs real form) -- company-branding.component.html:16 and :23, same class on
+  // both, gated by *ngIf so only one exists in the DOM at a time.
+  {
+    kb: 'company', outputName: 'company__branding__01',
+    route: '/company/branding', mode: 'element', selector: '.bpf-card',
+    viewport: { width: 1600, height: 1000 }, settleMs: 800,
+    verified: true, note: 'Route + selector confirmed against company-branding.component.html.',
+  },
+
+  // ── account.md or platform-basics.md — Notifications history page (distinct from the already-
+  // documented Notification Preferences settings). Route confirmed app-routing.module.ts:140-144,
+  // no role/permission gate beyond being logged in. Cropped to `.tms-notif-page`, the whole-page
+  // wrapper (header + list), confirmed unique via notifications-page.component.html:1.
+  {
+    kb: 'account', outputName: 'account__notifications-history__01',
+    route: '/notifications', mode: 'viewport',
+    // NOT mode:'element' -- `.tms-notif-page` wraps the whole scrollable list (shiv has 29 real
+    // notifications), and locator.screenshot() captures the FULL element regardless of viewport,
+    // producing an unusable 4650px-tall image (confirmed live 2026-08-24). mode:'viewport' shows
+    // just what's naturally visible on load -- the correct "whole region" here, not the full list.
+    viewport: { width: 1600, height: 1100 }, settleMs: 800,
+    verified: true, note: 'Route confirmed against notifications-page.component.html. viewport mode chosen deliberately after element mode produced an oversized image.',
+  },
+
+  // ── subscriptions.md — CORRECTED FINDING 2026-08-24: the "subscription-features" and
+  // "subscription-history" CHILD ROUTES (app-routing.module.ts:453,463) are DEAD -- confirmed by
+  // reading subscription-view-main.component.html:14-33, which renders its OWN hardcoded 3-tab
+  // `<p-tabs>` UI (Subscription / Transactions / Purchase, each wrapping a real component:
+  // <app-subscription-opted>, <app-transaction-history>, <app-subscription-package>) regardless
+  // of which child URL is active -- there's no <router-outlet> consuming those child routes at
+  // all. Live-tested: navigating to /subscriptions/subscription-features timed out waiting for
+  // `p-card` because a completely different tabbed UI renders instead. The REAL way to reach
+  // Transaction History is clicking the "Transactions" tab from any /subscriptions/* route.
+  // Whole tabbed card wrapper: `.bpf-card.subscription-card` (subscription-view-main.component.
+  // html:14) -- used for both entries below, cropping header+tabs+active panel together.
+  {
+    kb: 'subscriptions', outputName: 'subscriptions__overview__01',
+    route: '/subscriptions/subscription-opted', mode: 'element', selector: '.subscription-card',
+    viewport: { width: 1600, height: 1000 }, settleMs: 800,
+    verified: true, note: 'Default tab (index 0, "Subscription") -- confirmed real live content: plan name "Forest", active status, customer code, dates. Replaces the originally-planned "Subscription Features" entry, which does not exist as a real live UI.',
+  },
+  {
+    kb: 'subscriptions', outputName: 'subscriptions__transactions__01',
+    route: '/subscriptions/subscription-opted', mode: 'element', selector: '.subscription-card',
+    preActions: [
+      { type: 'click', selector: 'p-tab:has-text("Transactions")' }, { type: 'wait', ms: 1000 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 800,
+    verified: true, note: 'Tab label "Transactions" confirmed via translations.ts:644 (subscription.transactions). p-tab is a real PrimeNG component selector.',
+  },
+
+  // ── subscriptions.md — Cancel Auto-Pay dialog. BLOCKED, confirmed live 2026-08-24: the whole
+  // `.sov-mandate` section (containing the Cancel Auto-Pay trigger button) is gated by
+  // `*ngIf="mandateStatus?.hasSub && ..."` (subscription-opted.component.html:103) -- a LIVE
+  // gateway mandate-status API call, completely separate from the `purchase.auto_renewal`
+  // database column this session flipped to 1 via SQL earlier. Live-tested: `.sov-mandate`
+  // element count is 0 for shiv's account -- the DB flag change had no effect on this UI, exactly
+  // as warned. This dialog cannot be reached without a real payment-gateway mandate actually
+  // existing for the account, which no SQL fix can fake safely (would risk the same "UI says on
+  // but no real subscription backs it" problem flagged earlier this session).
+  {
+    kb: 'subscriptions', outputName: 'subscriptions__cancel-auto-pay__01',
+    route: '/subscriptions/subscription-opted', mode: 'element', selector: '.p-dialog:has-text("Cancel Auto-Pay")',
+    preActions: [
+      { type: 'click', selector: '.sov-mandate-cancel-btn' }, { type: 'wait', ms: 800 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: false, note: 'BLOCKED: mandateStatus.hasSub is false for shiv\'s account (confirmed live), so the trigger button never renders. Needs a real account with an actual gateway-backed recurring mandate -- not fakeable via the DB flag alone.',
+  },
+
+  // ── account.md — Notification Bell dropdown. Real audit finding this session: it's not just a
+  // list, it has Accept/Decline buttons on unread invite-type notifications
+  // (notification-bell.component.html:47-64). Trigger: `.tms-notif-bell-btn` (real button, header
+  // .html:197 mounts <app-notification-bell>). Popover content: `.tms-notif-panel` (the p-popover
+  // styleClass) -- PrimeNG popovers render into an overlay appended near the trigger, cropped
+  // directly rather than via mode:'viewport' since the panel is a fixed-size, self-contained unit.
+  {
+    kb: 'account', outputName: 'account__notification-bell__01',
+    route: '/dashboard-v7', mode: 'element', selector: '.tms-notif-panel',
+    preActions: [
+      { type: 'click', selector: '.tms-notif-bell-btn' }, { type: 'wait', ms: 900 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: true, note: 'Selectors confirmed against notification-bell.component.html.',
+  },
+
+  // ── platform-basics.md — "Ask Linc" AI Help chatbot. Round 2 audit finding: the real desktop
+  // launcher is the bottom-right SpeedDial FAB (app.component.html:217-221, buttonStyleClass=
+  // "tms-speed-dial-btn"), not a header icon. Menu items built in buildSpeedDialItems()
+  // (app.component.ts:657-676) -- "Linc AI Help" (icon pi-comment) only added when
+  // `aiChatEnabled` is true (confirmed true for shiv's company via ai_chat_enabled=1 DB check
+  // earlier this session), calls `aiChatWidget.toggleChat()` directly, not a route nav.
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__ask-linc-speeddial__01',
+    route: '/dashboard-v7', mode: 'element', selector: '.p-speeddial',
+    preActions: [
+      { type: 'click', selector: '.p-speeddial-button' }, { type: 'wait', ms: 600 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: true, note: 'Shows the expanded FAB with its 2 action buttons (Linc AI Help, Support Tickets).',
+  },
+  {
+    kb: 'platform-basics', outputName: 'platform-basics__ask-linc-chat-panel__01',
+    route: '/dashboard-v7', mode: 'element', selector: '.ai-chat-sidebar',
+    preActions: [
+      { type: 'click', selector: '.p-speeddial-button' }, { type: 'wait', ms: 600 },
+      { type: 'click', selector: '.p-speeddial-action:has(.pi-comment)' }, { type: 'wait', ms: 1200 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 600,
+    verified: true, note: 'Drawer styleClass "ai-chat-sidebar" confirmed against ai-chat-widget.component.html:30 -- same class CLAUDE.md rule 21 already references as a confirmed-working dark-mode selector.',
+  },
+
+  // ── inventory.md — Add/Edit Operator dialog. Route confirmed inventory-routing.module.ts:19
+  // ("operators", parent "inventory" per the already-confirmed Machines page pattern). Multiple
+  // "Add Operator" buttons exist for responsive layouts (component.html:29,58,194) -- `>> nth=0`
+  // picks whichever renders first. Dialog has no custom styleClass, so cropped via its real
+  // translated header text "Add Operator" (translations.ts:1856).
+  {
+    kb: 'inventory', outputName: 'inventory__add-operator-dialog__01',
+    route: '/inventory/operators', mode: 'element', selector: '.p-dialog:has-text("Add Operator")',
+    preActions: [
+      { type: 'click', selector: 'button:has-text("Add Operator") >> nth=0' }, { type: 'wait', ms: 700 },
+    ],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: true, note: 'Selectors confirmed against operator-dashboard.component.html.',
+  },
+
+  // ── tally-sheets.md — AI Import + regular Import dialogs (Round + Square tally lists).
+  // BLOCKED, confirmed live 2026-08-24, genuine permission gap not a script bug: real route
+  // confirmed as `/new-tallysheet/view?transportId=<encodedId>` (found by clicking a real TU row's
+  // eye icon from `/new-tallysheet/transport-unit/view` -- the Stock Units list, 52 real TUs).
+  // Opened a real Round tally (22 real rows, transportId jm0Zu5ZUyviP0xFRmH-R00fe) and confirmed
+  // via direct locator counts: `.toolbar-group` (2) and `.pi-save` (1) exist -- the toolbar DOES
+  // render -- but `.btn-ai`/`.pi-sparkles` (AI Import) AND `.pi-file-import` (regular Import) are
+  // BOTH count:0, while Save renders fine. This matches *appHasPermission="'TALLY_AI_IMPORT'"' and
+  // 'TALLY_IMPORT'" gating in tallysheet-list-round.component.html:317,326 exactly -- shiv's
+  // account (company ADMIN, but this tenant has rbac_enabled=1) does not hold these two specific
+  // granular permissions. Not fixable from this script -- needs either granting shiv these RBAC
+  // permissions, or testing against a non-RBAC-restricted account.
+  {
+    kb: 'tally-sheets', outputName: 'tally-sheets__ai-import-round__01',
+    route: '/new-tallysheet/view?transportId=jm0Zu5ZUyviP0xFRmH-R00fe', mode: 'element', selector: '.p-dialog:has-text("AI Tallysheet Import")',
+    preActions: [{ type: 'click', selector: '.btn.btn-ai' }, { type: 'wait', ms: 800 }],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: false, note: 'BLOCKED: TALLY_AI_IMPORT permission not granted to shiv (confirmed via live locator counts, see block comment above). Real route/dialog header text confirmed correct against source.',
+  },
+  {
+    kb: 'tally-sheets', outputName: 'tally-sheets__ai-import-square__01',
+    route: '/new-tallysheet/view?transportId=jm0Zu5ZUyviP0xFRmH-R00fe', mode: 'element', selector: '.p-dialog:has-text("AI Tallysheet Import")',
+    preActions: [{ type: 'click', selector: '.btn.btn-ai' }, { type: 'wait', ms: 800 }],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: false, note: 'BLOCKED, same permission gap as the Round entry above. Route here points at a Round TU as a placeholder -- needs a real Square-type transportId substituted once the permission gap is fixed (tallysheet-square-list.component.html:376-381 has the equivalent Square button, same TALLY_AI_IMPORT gate).',
+  },
+  {
+    kb: 'tally-sheets', outputName: 'tally-sheets__import-dialog__01',
+    route: '/new-tallysheet/view?transportId=jm0Zu5ZUyviP0xFRmH-R00fe', mode: 'element', selector: '.p-dialog',
+    preActions: [{ type: 'click', selector: '.pi-file-import' }, { type: 'wait', ms: 800 }],
+    viewport: { width: 1600, height: 1000 }, settleMs: 500,
+    verified: false, note: 'BLOCKED: TALLY_IMPORT permission not granted to shiv (same confirmed live check as above -- .pi-file-import count was 0).',
   },
 ];

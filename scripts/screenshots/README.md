@@ -94,6 +94,17 @@ approved affiliate's own dashboard) is fine; a screen whose whole purpose is pla
 tooling is not. Check the real route guard (`RoleGuard`/`@PreAuthorize`) before adding a new
 entry — don't assume from the route name alone.
 
+## Crop to a whole region, not a button and not the whole page
+
+**Hard rule (2026-08-24):** every screenshot must show a complete, meaningful unit — a whole
+card, dialog, or panel — never a single isolated element (one button, one input) and never a
+blind full-page/full-browser dump with header/sidebar chrome included. Both look unprofessional
+for a help doc. Default to `mode: 'element'` with a selector that wraps the FULL logical unit
+(`.p-dialog` for a whole dialog, `.cc-shell` for a whole Command Center tab), not a sub-element
+inside it. Only use `mode: 'fullpage'`/`'viewport'` when the entire screen genuinely IS the
+subject (a standalone public landing page, for example). Think "how would a real SaaS product's
+help doc crop this," not "crop as tight as technically possible."
+
 ## What actually runs
 
 Only `verified: true` manifest entries run by default (6 of 16 — the routes/triggers actually

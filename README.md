@@ -81,6 +81,19 @@ rsync -av dist/ user@your-server:/var/www/lumberlinq-help/
 
 Screenshots go in `public/screenshots/<section>/` and are referenced as `/screenshots/section/filename.png`.
 
+Each doc page also carries an `*Also searched as: ...*` line right under its frontmatter — a list of synonyms/old names that feeds this site's own search index.
+
+---
+
+## Keeping "Also searched as" in sync with the backend
+
+Each doc page's `*Also searched as: ...*` line feeds this site's own search index. The tms-sb
+backend (Linc AI Help) keeps a separate, hand-maintained synonym list for the same purpose
+(`AiChatService.KB_GLOSSARY` in the tms-sb repo) — the two are NOT auto-synced (different repos,
+no shared build step). When you add or change an "Also searched as" line here for a renamed
+feature or new common phrasing, check whether `KB_GLOSSARY` needs the matching entry too, and
+vice versa.
+
 ---
 
 ## Disclaimer
