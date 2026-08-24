@@ -3,6 +3,8 @@ title: User Management — User Manual
 description: Managing team members, roles, and permissions in LumberLinq.
 ---
 
+*Also searched as: deactivate user, remove user, delete user, change someone's role, manage team, block user, user list, resend invite, edit user.*
+
 Open **Main Menu → User → Manage User** to view all users in your company account, their roles, and their status. This page is only available to ADMIN and SUPER_ADMIN roles.
 
 ![Manage User list](/screenshots/reports/users-01-manage-user-list.png)

@@ -3,6 +3,8 @@ title: Session Security — User Manual
 description: How LumberLinq's single-session login protection works.
 ---
 
+*Also searched as: logged out on another device, concurrent login, kicked out, session conflict, signed out unexpectedly, multiple devices, sign out everywhere, device management.*
+
 ## One Active Session at a Time
 
 LumberLinq allows only one active login session per user at a time. There's no separate settings page to browse or manage your sessions — instead, the system steps in automatically at the moment a conflict happens.

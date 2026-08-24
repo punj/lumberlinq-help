@@ -3,6 +3,8 @@ title: Mill Operators & Custom-Made Processing — FAQ
 description: Frequently asked questions about mill operators and Custom-Made processing in LumberLinq.
 ---
 
+*Also searched as: machine operators, mill workers, resaw, custom-made, mill tasks, yield, outturn, processing run, performance history.*
+
 **Where do I manage my mill operators?**
 
 Inventory → Operators.

@@ -3,6 +3,8 @@ title: Mill Command Center — FAQ
 description: Frequently asked questions about the Command Center and Machine management in LumberLinq.
 ---
 
+*Also searched as: mission control, operations dashboard, machine management, machine dashboard, floor status, money today, needs attention.*
+
 **Who can access the Command Center?**
 
 Admin, Super Admin, and Root users only. It's a separate page from the main Dashboard, built specifically for an owner's/admin's full-business view.

@@ -3,6 +3,8 @@ title: Offline Mode & Mobile App — FAQ
 description: Frequently asked questions about LumberLinq's offline Android app.
 ---
 
+*Also searched as: no internet, no signal, works offline, android app, play store, iphone app, sync issues, sync failed, offline banner.*
+
 **Can I use LumberLinq offline in a web browser?**
 
 No. Offline mode only works in the installed Android app. In a browser, losing your connection behaves like any normal website — pages that need the server won't load until you're back online.

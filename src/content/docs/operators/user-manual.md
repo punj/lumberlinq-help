@@ -3,6 +3,8 @@ title: Mill Operators & Custom-Made Processing — User Manual
 description: Running Custom-Made (Re-saw) processing and managing your mill operator roster in LumberLinq.
 ---
 
+*Also searched as: machine operators, mill workers, resaw run, custom-made processing, mill tasks, yield, outturn, processing run, performance history.*
+
 ## What is Custom-Made / Re-saw Processing?
 
 Custom-Made (also called Re-saw) processing is when input timber — typically round logs — is converted into a different output form, most commonly sawn/square boards. It's run from **Inventory → Processing**. A processing run consumes one or more input Stock Units and produces new output stock; the input Stock Units leave available stock and the output becomes a new open lot.

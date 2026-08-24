@@ -3,6 +3,8 @@ title: Consignments — FAQ
 description: Frequently asked questions about the Consignments module in LumberLinq.
 ---
 
+*Also searched as: shipment, shipments, BL, bill of lading, packing list, container, sea port, vessel, ETA, ETD, financials tab.*
+
 ## What is a consignment in LumberLinq?
 
 A consignment is a movement record for timber goods. It can include parties, route details, Stock Units, documents, invoice values, payments, status, and export/share controls.

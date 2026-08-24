@@ -3,6 +3,8 @@ title: Sharing & Exporting Tally Sheets — User Manual
 description: Creating shareable tally links and exporting tally reports in LumberLinq.
 ---
 
+*Also searched as: share link, export tally, public link, download tally, tally share, PDF export, excel export, bundle export, zip download, watermark, branding on export.*
+
 ## How to Share a Tally Sheet with an External Party
 
 Buyers, surveyors, and freight forwarders can view tally data without a LumberLinq account using shareable links.

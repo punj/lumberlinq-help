@@ -3,6 +3,8 @@ title: Tally Sheets — FAQ
 description: Frequently asked questions about Round and Square tally sheets in LumberLinq.
 ---
 
+*Also searched as: log tally, transport unit, round tally, square tally, timber measurement, CBM calculator, cubic meter, girth, hoppus.*
+
 ## What is the difference between Round and Square tally sheets?
 
 Round tally sheets use Length and Girth for round logs. Square tally sheets use Width, Thickness, Length, and Pieces for sawn or rectangular timber.

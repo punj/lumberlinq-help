@@ -3,13 +3,15 @@ title: Offline Mode & Mobile App — User Manual
 description: How LumberLinq's Android app works without an internet connection, and how it syncs back up once you're online.
 ---
 
+*Also searched as: no internet, no signal, works offline, download the app, android app, play store, sync issues, sync failed, offline banner, capacitor app.*
+
 ## What Offline Mode Is
 
 LumberLinq's Android app can keep working even when your phone or tablet has no internet connection — useful at a mill or yard with patchy signal. This offline support is only available in the installed **Android app**, not in a regular web browser. If you use LumberLinq in a browser (on desktop or mobile), losing your connection behaves like any normal website: pages that need the server simply won't load until you're back online.
 
 ## Getting the Android App
 
-LumberLinq's Android app is rolled out separately from the web app. The most reliable way to get the current install link is the **"Get the App"** banner or link inside the LumberLinq web app (app.lumberlinq.com) — it always points to whatever the current install method is (Play Store or a direct link), so check there rather than guessing. There is currently no iPhone/iOS app — LumberLinq is Android-only for now.
+LumberLinq is live on the **Google Play Store** — search for "LumberLinq" or install it directly from [play.google.com/store/apps/details?id=com.lumberlinq.app](https://play.google.com/store/apps/details?id=com.lumberlinq.app). You can also open the **"Get the App"** banner or link inside the LumberLinq web app (app.lumberlinq.com) on your phone, which takes you straight there. There is currently no iPhone/iOS app — LumberLinq is Android-only for now.
 
 ## How You Know You're Offline
 

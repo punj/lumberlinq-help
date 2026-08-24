@@ -3,6 +3,8 @@ title: Sharing & Exporting Tally Sheets — FAQ
 description: Frequently asked questions about sharing and exporting tally sheets in LumberLinq.
 ---
 
+*Also searched as: share link, export tally, public link, download tally, PDF export, excel export, bundle export, zip download, watermark.*
+
 **What's the difference between Public, Protected, and Private share links?**
 
 Public needs no login and shows the least detail. Protected needs the recipient to be logged into any LumberLinq account and shows more detail. Private needs the recipient to belong to your company (or be explicitly invited) and shows everything.

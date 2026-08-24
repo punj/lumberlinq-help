@@ -3,6 +3,8 @@ title: Products & Locations — FAQ
 description: Frequently asked questions about Products and Locations in LumberLinq.
 ---
 
+*Also searched as: species catalog, SKU, loading site, loading sites, add product, species list, grade.*
+
 ## Products
 
 ### What is a Product in LumberLinq?

@@ -3,6 +3,8 @@ title: Company Settings — FAQ
 description: Frequently asked questions about company profile and branding settings in LumberLinq.
 ---
 
+*Also searched as: business profile, company logo, business settings, company details, tax id, GST number, currency setting, branding.*
+
 **Where do I find my Company ID for a support ticket?**
 
 Main Menu → Company → Company Profile → Identity tab. It's shown near the top.

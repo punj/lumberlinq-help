@@ -3,6 +3,8 @@ title: Dashboard, Utility, Storage & Support — FAQ
 description: Frequently asked questions about the Dashboard, calculation utilities, storage, and support tickets in LumberLinq.
 ---
 
+*Also searched as: dashboard home, quick search, global search, calculator, storage full, out of space, guided tour, support ticket, AI chat, ask AI, linc, chatbot, keyboard shortcuts, hotkeys.*
+
 **A dashboard section is missing for me — is that a bug?**
 
 No — several sections need a specific permission (Financial Health needs finance access, Inventory Snapshot needs inventory access, Mill Tasks needs process access, Recent Activity needs a user-management permission). If you don't have that permission, the section simply doesn't show.

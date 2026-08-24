@@ -3,6 +3,8 @@ title: Inventory — User Manual
 description: Tracking timber stock from receipt through processing to shipment in LumberLinq.
 ---
 
+*Also searched as: stock levels, yard stock, quality grade, resaw, custom cut, transport unit, mill inventory, stock in, stock out, receiving, dispatch, movement log, chain, lot, in-out.*
+
 ## What is Inventory?
 
 Inventory tracks the lifecycle of timber stock after it has been received from a tally sheet and before it is shipped, processed, or moved out. It answers three questions for operations teams: what stock is available right now, where is it, and what has happened to it over time.

@@ -3,6 +3,8 @@ title: User Management — FAQ
 description: Frequently asked questions about managing users, roles, and permissions in LumberLinq.
 ---
 
+*Also searched as: deactivate user, remove user, delete user, change someone's role, manage team, block user, user list, resend invite, edit user.*
+
 **How do I invite a user?**
 
 Open Main Menu → User → Manage User, click Invite User, enter one or more email addresses, choose a role template if RBAC is enabled, and send the invite.

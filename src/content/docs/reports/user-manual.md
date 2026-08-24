@@ -3,6 +3,8 @@ title: Reports — User Manual
 description: Step-by-step guide for running and exporting every one of LumberLinq's 12 built-in reports.
 ---
 
+*Also searched as: analytics, export data, download report, business intelligence, financial report, reconciliation report, matching report, variance report, operator performance report, app usage report, users report.*
+
 ## Reports
 
 Open **Reports** from the main menu (requires the Report Access permission) and choose the report you need from the sidebar. Every report follows the same basic pattern: pick your filters, click **Generate** (or **Refresh**), then read the KPI cards, charts, and tables — or export the result.

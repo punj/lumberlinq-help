@@ -3,6 +3,8 @@ title: Dashboard, Utility, Storage & Support — User Manual
 description: The Dashboard landing page, calculation utilities, file storage, and support tickets in LumberLinq.
 ---
 
+*Also searched as: dashboard home, ctrl+k, quick search, global search, calculator, storage full, out of space, guided tour, walkthrough, help desk, AI chat, ask AI, linc, chatbot, support ticket, keyboard shortcuts, hotkeys.*
+
 ## Dashboard
 
 Open **Main Menu → Dashboard** — usually the landing page after login, at `/dashboard-v7`. It's the management view for high-level business visibility: consignments, inventory, payments, and reconciliation, all in one place, updating live within a couple of seconds of a change elsewhere in the app.

@@ -3,6 +3,8 @@ title: Account, Login & Sign Up — User Manual
 description: Creating a LumberLinq account, logging in, and managing your password.
 ---
 
+*Also searched as: sign in, log in, create account, register, forgot password, reset password, delete my account, close account, change password, timezone setting, profile picture, social login, google login, OTP verification, danger zone.*
+
 ## How to Log In
 
 Open **app.lumberlinq.com/login**. You'll see a flip card with Sign In on the front — enter your email and password and click **Sign In**. If Turnstile CAPTCHA is enabled, complete the challenge before proceeding. After a successful login you're redirected to the Dashboard.

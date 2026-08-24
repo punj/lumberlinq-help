@@ -3,6 +3,8 @@ title: Application Settings — Payment Reminders
 description: Automatically remind business partners about payments and receive a daily financial report in LumberLinq.
 ---
 
+*Also searched as: overdue payment emails, invoice reminders, dunning, receivables reminder, daily financial report, payment due notification.*
+
 ## How to Access
 
 Open **Main Menu → Company → Application Settings**. Requires Administrator role.

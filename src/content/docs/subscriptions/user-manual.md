@@ -3,6 +3,8 @@ title: Subscriptions & Billing — User Manual
 description: Managing your LumberLinq plan, payments, and limits.
 ---
 
+*Also searched as: billing, upgrade plan, invoice, payment method, grove plan, cancel subscription, downgrade, free trial, promo code, coupon code, add-on.*
+
 ## Accessing Subscription Settings
 
 Open **Main Menu → Company → Subscription**. This page shows your current plan name and status, billing period, limits (tallies, shipments, users, storage, AI Chat messages), payment history, and options to upgrade, downgrade, or cancel.

@@ -3,6 +3,8 @@ title: Products & Locations — User Manual
 description: Step-by-step guide for managing the product catalog and locations in LumberLinq.
 ---
 
+*Also searched as: species catalog, SKU, loading site, loading sites, add product, species list, grade, timber species.*
+
 ## Products
 
 Use Products to maintain the timber product catalog used in tally sheets, Stock Units, and reports.

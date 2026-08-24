@@ -3,6 +3,8 @@ title: Tally Sheets — User Manual
 description: Step-by-step guide for creating and managing Round and Square tally sheets in LumberLinq.
 ---
 
+*Also searched as: log tally, transport unit, measurement sheet, round tally, square tally, timber measurement, CBM calculator, cubic meter, girth, hoppus, wood measurement.*
+
 ## Tally Sheet List
 
 There is no menu item literally called "Tally Sheets" — every tally sheet belongs to a Stock Unit, so tally sheets are managed from the **Stock Unit** menu instead. Open **Stock Unit > Stock Units** to view all Stock Units and their tally sheets. The list supports search, table columns, KPI cards, and row actions.

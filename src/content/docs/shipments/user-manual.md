@@ -3,6 +3,8 @@ title: Consignments — User Manual
 description: Step-by-step guide for creating, editing, and managing consignments in LumberLinq.
 ---
 
+*Also searched as: shipment, shipments, export order, BL, bill of lading, packing list, container, sea port, vessel, ETA, ETD, financials tab, lock shipment.*
+
 ## Purpose
 
 The Consignments module helps timber and logistics teams manage export, import, domestic sale, domestic purchase, and trading consignments in one place. It brings together consignment details, parties, Stock Units, documents, invoice values, payment tracking, export reports, share links, and audit/status information.

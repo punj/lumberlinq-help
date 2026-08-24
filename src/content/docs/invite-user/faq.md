@@ -3,6 +3,8 @@ title: Inviting Team Members — FAQ
 description: Frequently asked questions about inviting users in LumberLinq.
 ---
 
+*Also searched as: create admin, add admin, add team member, add user, add colleague, add employee, resend invite, pending invitation, invite link expired.*
+
 **Who can invite new users?**
 
 Only Admins and Super Admins — the Manage User page itself requires the Admin role, so a regular user can't reach it even with specific permissions granted.

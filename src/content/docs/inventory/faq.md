@@ -3,6 +3,8 @@ title: Inventory — FAQ
 description: Frequently asked questions about the Inventory module in LumberLinq.
 ---
 
+*Also searched as: stock levels, quality grade, resaw, custom-made, transport unit, mill inventory, stock in, stock out, receiving, dispatch, movement log, chain, lot.*
+
 **Why can't I add a Stock Unit to a consignment?**
 
 It hasn't been received into inventory yet. Go to Overview or In/Out and confirm a receipt (IN) movement exists — if not, check the tally sheet was fully saved, not just filled in.

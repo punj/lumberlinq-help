@@ -3,6 +3,8 @@ title: Company Settings — User Manual
 description: Managing your company profile, branding, and account-wide inventory toggles in LumberLinq.
 ---
 
+*Also searched as: business profile, company logo, business settings, company details, tax id, GST number, allow oversell, currency setting, branding, legal entity type.*
+
 ## How to Access Company Settings
 
 Open **Main Menu → Company → Company Profile**. Requires Administrator role to edit.

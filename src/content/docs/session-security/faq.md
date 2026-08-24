@@ -3,6 +3,8 @@ title: Session Security — FAQ
 description: Frequently asked questions about LumberLinq's single-session login protection.
 ---
 
+*Also searched as: logged out on another device, concurrent login, kicked out, session conflict, signed out unexpectedly, sign out everywhere, device management.*
+
 **I got signed out with no warning — why?**
 
 Someone (possibly you, on another device) logged in and confirmed "Continue here" during the conflict dialog, which automatically signs out the other session once confirmed.

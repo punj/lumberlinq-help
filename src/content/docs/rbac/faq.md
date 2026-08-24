@@ -3,6 +3,8 @@ title: RBAC & Access Roles — FAQ
 description: Frequently asked questions about Role-Based Access Control in LumberLinq.
 ---
 
+*Also searched as: permissions, roles, access control, who can do what, manage roles, restrict access, custom access, access role, detach and customize.*
+
 **What is RBAC?**
 
 Role-Based Access Control. It lets administrators control which modules and actions each user can access, beyond their broad USER/ADMIN role tier.

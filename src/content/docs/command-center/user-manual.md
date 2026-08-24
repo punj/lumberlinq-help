@@ -3,6 +3,8 @@ title: Mill Command Center — User Manual
 description: The Command Center — a single owner-facing view of inventory, mill floor activity, money, and consignments, plus Machine management.
 ---
 
+*Also searched as: mission control, operations dashboard, ops dashboard, machine management, machine dashboard, floor status, money today, consignment radar, needs attention.*
+
 ## What Is the Command Center
 
 Open **Main Menu → Command Center**, or go directly to `/command-center`. It's a single page built for owners and admins to get a full business snapshot — stock, mill floor, money, and consignments — without navigating between separate modules. It updates live within a couple of seconds of a relevant change elsewhere in the app (a tally saved, a payment recorded, a processing run completed), the same way the main Dashboard does.

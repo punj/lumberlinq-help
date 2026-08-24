@@ -3,6 +3,8 @@ title: Business Partners — FAQ
 description: Frequently asked questions about Business Partners in LumberLinq.
 ---
 
+*Also searched as: buyer, seller, customer, supplier, vendor, client, party, contact, trading partner, add customer, new supplier, KYC, bank details.*
+
 ## What is a Business Partner?
 
 A Business Partner is a buyer, seller, exporter, importer, supplier, trader, or other company used in LumberLinq transactions.

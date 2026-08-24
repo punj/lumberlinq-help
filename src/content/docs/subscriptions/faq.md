@@ -3,6 +3,8 @@ title: Subscriptions & Billing — FAQ
 description: Frequently asked questions about LumberLinq plans, payments, and limits.
 ---
 
+*Also searched as: billing, upgrade plan, invoice, payment method, grove plan, cancel subscription, downgrade, free trial, promo code, coupon code.*
+
 **Payment was debited but my plan didn't upgrade — what do I do?**
 
 Wait 2-3 minutes for the webhook to confirm with our server. If the plan is still not updated after 10 minutes, raise a Support Ticket with your transaction ID — our team can verify and manually activate the plan.

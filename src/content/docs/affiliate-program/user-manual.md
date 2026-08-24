@@ -3,6 +3,8 @@ title: Affiliate Program — User Manual
 description: How to apply, get verified, add a payout method, and track your referrals and earnings as a LumberLinq Affiliate Partner.
 ---
 
+*Also searched as: referral program, earn commission, become a partner, reseller program, affiliate link, payout account, KYC, verification, commission plan, milestone bonus.*
+
 ## What Is the Affiliate Program?
 
 The Affiliate Program lets you earn commission by referring new subscribers to LumberLinq. You get a personal referral link — anyone who signs up through it is tracked as your referral, and you earn commission (a flat amount or a percentage, depending on the commission plan an admin assigns you) on their payments.

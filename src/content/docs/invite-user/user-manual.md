@@ -3,6 +3,8 @@ title: Inviting Team Members — User Manual
 description: Adding new users to your company account in LumberLinq.
 ---
 
+*Also searched as: create admin, add admin, add team member, add user, add colleague, add employee, new account for staff, resend invite, pending invitation, invite link expired.*
+
 ## How to Invite a New User
 
 Only Admins and Super Admins can invite users — the Manage User page itself requires the Admin role, so a regular user can't reach it even if granted specific permissions.

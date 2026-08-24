@@ -3,6 +3,8 @@ title: Affiliate Program — FAQ
 description: Common questions about applying, getting verified, and getting paid as a LumberLinq Affiliate Partner.
 ---
 
+*Also searched as: referral program, earn commission, become a partner, reseller program, payout, KYC, verification, commission plan, milestone bonus.*
+
 **How much commission do I earn?**
 
 It depends on the commission plan an admin assigns you — it could be a flat amount or a percentage, and either a one-time payment or a recurring one on renewals. Your dashboard's Commission Ledger always shows your real, actual earnings, not an estimate.

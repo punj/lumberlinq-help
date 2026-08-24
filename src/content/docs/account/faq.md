@@ -3,6 +3,8 @@ title: Account, Login & Sign Up — FAQ
 description: Frequently asked questions about LumberLinq accounts, login, and registration.
 ---
 
+*Also searched as: sign in, log in, create account, forgot password, reset password, delete my account, notification settings, email preferences, change password, timezone setting, social login, OTP verification, danger zone.*
+
 **I forgot my password — what do I do?**
 
 Click Forgot Password on the login page, enter your email, and follow the reset link sent to your inbox.
