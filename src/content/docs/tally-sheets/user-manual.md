@@ -19,7 +19,7 @@ There is no menu item literally called "Tally Sheets" — every tally sheet belo
 
 ## Create and Edit
 
-Use **Stock Unit > Add Stock Unit** to create a Stock Unit and tally sheet. Required fields include Transport ID, Product, and Transport Mode. Product type determines whether the measurement grid opens as Round or Square.
+Use **Stock Unit > Add Stock Unit** to create a Stock Unit and tally sheet. Every Stock Unit gets its own **Stock Unit ID** automatically (e.g. `SU-000123`) — this is its permanent identity and never needs to be typed in. **Transport ID** is optional — use it only to note the actual truck, container, or vehicle involved; the same Transport ID can be reused if the same vehicle comes back. Required fields are Product and Transport Mode. Product type determines whether the measurement grid opens as Round or Square.
 
 ![New Stock Unit button](/screenshots/transport-units/transport-units__new-button__01.png)
 
