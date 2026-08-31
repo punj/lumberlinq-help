@@ -164,3 +164,4 @@ The toolbar includes Import and AI Import actions.
 
 - **Import** supports file-based tally import with configure, upload/map, and preview steps.
 - **AI Import** supports image-based extraction for handwritten tally sheets (both Round and Square) and shows AI credit usage. The credit cost is calculated dynamically from how much the photo actually needs to process, not a flat fee per image — the same formula used for Linc AI Help/Assistant.
+- On Round sheets, the **Add to Length** setting also applies to AI Import: any length the AI reads as exactly 2 digits (10–99) is expanded by the set value, so sheets that record short lengths without the leading digit come in correctly. 1-digit and 3-digit lengths are left as read. The AI Import dialog shows the current setting before you extract, and — if the setting is off but 2-digit lengths are found — offers to apply it for that import. Expanded lengths are marked in the grid; the mark clears if you edit the cell.
