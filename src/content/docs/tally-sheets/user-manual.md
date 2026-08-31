@@ -163,7 +163,25 @@ The Tally Sheet list is responsive and adapts to a narrow viewport.
 The toolbar includes Import and AI Import actions.
 
 - **Import** supports file-based tally import with configure, upload/map, and preview steps.
-- **AI Import** supports image-based extraction for handwritten tally sheets (both Round and Square) and shows AI credit usage. The credit cost is calculated dynamically from how much the photo actually needs to process, not a flat fee per image — the same formula used for Linc AI Help/Assistant.
-- On Round sheets, a value the AI cannot read is kept as an empty cell — shown as a dash (—) in the preview — instead of the whole row being dropped. The row stays in its correct position and extraction starts at row 1; fill the value in the grid before saving. The preview header and the "AI data loaded" message tell you how many rows still need a value.
-- **Reviewing an import.** Cells the AI wasn't confident about, and cells that look unusual for the sheet (a dropped digit, a value far from the rest), are marked amber. A review bar above the grid shows how many rows need a look, with a **Show only these** filter. Clicking a flagged or errored Length/Girth cell opens a photo helper — a pannable, zoomable view of the photo you uploaded, scrolled to that row so you can check the digits against the paper. On a computer, drag the panel by its title bar to move it and drag its bottom-right corner to resize it; on a phone it sits as a dock at the bottom of the screen. You can turn the photo helper off in **Settings → Configuration Settings → Columns → "AI Import photo helper"**. The amber marker clears when you edit the cell. Always review every row — the AI can only flag the mistakes it noticed.
-- On Round sheets, the **Add to Length** setting also applies to AI Import: any length the AI reads as exactly 2 digits (10–99) is expanded by the set value, so sheets that record short lengths without the leading digit come in correctly. 1-digit and 3-digit lengths are left as read. When the sheet has 2-digit lengths, the AI Import dialog shows an inline control to set or adjust the "Add to Length" value for that import, with a live preview and an option to also save it as the sheet's default. Expanded lengths are marked in the grid; the mark clears if you edit the cell.
+- **AI Import** reads handwritten tally sheets from photos or a PDF and fills the grid. It is currently available on Round sheets. The credit cost is calculated dynamically from how much each photo or PDF page actually needs to process, not a flat fee — the same formula used for Linc AI Help/Assistant; a PDF is charged per page.
+
+### The AI Import dialog
+
+It has two steps: **Upload** and **Review**.
+
+**Upload step:**
+
+- **"How these rows import"** — a settings card at the top of the dialog with the sheet's Length unit, Girth unit, Decimals, Length/Girth allowances and the Add to Length rule, all editable here. These are the settings that lock once the sheet has more than 10 rows, so set them before a big import — whatever you change is written back to the sheet's Settings. On a sheet that is already locked, the card is read-only and shows "Already set — locked".
+- **Add to Length** — turn on if your sheet drops the leading digit (writes 45 for 245). Any length the AI reads as exactly 2 digits (10–99) is then expanded by the set value; 1- and 3-digit lengths are left as read. Expanded lengths are marked in the grid, and the mark clears if you edit the cell.
+- **Files** — click or drop photos and/or a PDF. Each file shows as a row you can drag to reorder or remove. A PDF counts as one file; its pages are split automatically (up to 12 pages per import). Rows import in the order the files are listed.
+- "See an example the AI can read" opens a sample of a readable sheet.
+
+**Review step:**
+
+- A value the AI cannot read is kept as an empty cell — a dash (—) in the preview — instead of the whole row being dropped. The row stays in position; fill the value in the grid before saving. Numbering is continuous across every page.
+- Cells the AI wasn't confident about, and cells that look unusual for the sheet (a dropped digit, a value far from the rest), are marked amber.
+- When an import spans more than one page (several photos, or a PDF), a **Pages list** on the left shows each page with its row range and flag count. Click a page to jump to its rows; the grid also shows a coloured stripe down each row and a "Page N" header before each page's block.
+- After import, a review bar above the grid shows how many rows still need attention, with a **Show only these** filter. Clicking a flagged or errored Length/Girth cell opens a **photo helper** — a pannable, zoomable view of the exact page that row came from, scrolled to it. On a computer, drag the panel by its title bar to move it and drag its bottom-right corner to resize it; on a phone it sits as a dock at the bottom of the screen. Turn it off in **Settings → Configuration Settings → Columns → "AI Import photo helper"**.
+- The amber marker clears when you edit the cell. Always review every row — the AI can only flag the mistakes it noticed; a plausible-but-wrong digit still needs a human check against the photo.
+
+Credits are only deducted after a successful read, and the dialog shows the exact number used. AI Import requires the feature to be enabled on your subscription plan.
