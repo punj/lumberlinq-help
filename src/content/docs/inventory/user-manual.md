@@ -9,7 +9,7 @@ description: Tracking timber stock from receipt through processing to shipment i
 
 Inventory tracks the lifecycle of timber stock after it has been received from a tally sheet and before it is shipped, processed, or moved out. It answers three questions for operations teams: what stock is available right now, where is it, and what has happened to it over time.
 
-Inventory is the bridge between Tally Sheets and Consignments. A Stock Unit created in a tally sheet cannot be added to a consignment until it has been received into inventory — this protects data integrity so you never ship stock the system doesn't recognise as officially received.
+Inventory is the bridge between Tally Sheets and Consignments. A Stock Unit created in a tally sheet can be linked to a Consignment and received into inventory in either order — there's no required sequence. See "Three Ways Stock Becomes a Batch" below for exactly how each way of receiving stock affects what details (Supplier, Purchase Date, Payment) end up showing on the resulting batch.
 
 ## How to Access Inventory
 
@@ -44,6 +44,20 @@ Every stock movement starts from one of three buttons at the top of Overview:
 - **Send Out** — dispatch stock (requires the Inventory Dispatch permission)
 
 Only the actions your account has permission for are shown — if you don't see Stock In or Send Out, ask an admin to grant it.
+
+## Three Ways Stock Becomes a Batch
+
+Every batch of stock shown in Overview got there one of three ways. Which way decides what details (Supplier, Origin, Purchase Date, Payment) it shows — this is normal, not a bug, if a batch is missing one of these.
+
+**1. Typed in by hand (the "Stock In" button)** — used to record stock you already physically have, most commonly when you first start using LumberLinq. You can optionally type in a Supplier and a Purchase Date. There's no Payment tracking for this method — that's expected, since there's no actual purchase record behind it.
+
+**2. A real delivery received with no Consignment attached** — a domestic delivery, an internal transfer, or self-harvested wood: tallied normally, then received into inventory directly from that Stock Unit's own page (the "Receive into Inventory" button), with no Consignment involved at all. Supplier and Origin come from that delivery's own tally record. Purchase Date and Payment don't apply here — nothing was purchased, so there's nothing to show.
+
+**3. A real delivery tied to a Consignment (an actual purchase)** — Supplier, Purchase Date, and Payment status all come from that Consignment. These are shown on the batch's own detail popup, under a **"Purchased from"** section. If a batch was built up from deliveries belonging to more than one Consignment, each one is listed separately with its own details — never averaged or mixed into one misleading value.
+
+**Good to know — order doesn't matter.** You can receive a delivery into inventory before its Consignment is created, or link the Consignment first and receive later — both work. If you receive first, the batch will show no Supplier/Purchase Date/Payment at that point (correctly — no Consignment exists yet). The moment you link that same delivery to a real Consignment afterward, those details appear automatically on the batch — you never have to redo the receipt or edit anything by hand.
+
+**Where to see these details:** open **Inventory → Overview**, click any batch card to open its detail popup. Supplier and Origin (when set) show near the top. Purchase Date and Payment (for Consignment-linked deliveries) show further down, under "Purchased from." Payment status is only visible to Admins or staff with Shipment access — everyone else still sees Supplier, Origin, and Purchase Date.
 
 ## Open Stock Lots
 
@@ -105,7 +119,9 @@ Quality Grading is still an ALPHA feature — you'll see an "ALPHA" label next t
 
 ## Common Problems and Fixes
 
-**"I can't add a Stock Unit to a consignment"** — the Stock Unit hasn't been received into inventory. Go to Overview or In/Out and confirm a receipt (IN) movement exists; if not, check the tally sheet was fully saved, not just filled in.
+**"I can't add a Stock Unit to a consignment"** — a Stock Unit does not need to be received into inventory first; the two can happen in either order (see "Three Ways Stock Becomes a Batch" above). If adding it still fails, check the tally sheet was fully saved (not just filled in), and confirm the Stock Unit isn't already assigned to a different consignment or mid-processing run.
+
+**"My batch shows no Supplier / Purchase Date / Payment"** — this is expected unless the batch came from a Consignment (see "Three Ways Stock Becomes a Batch" above). A hand-typed Stock In batch only ever has Supplier/Purchase Date (never Payment); a domestic/manual receipt with no Consignment has none of the three. If the batch WAS meant to be tied to a Consignment, link that Stock Unit to it — the details will appear automatically, no need to redo the receipt.
 
 **"A Stock Unit shows unavailable even though it was received"** — check In/Out for an assignment (In Consignment), a Proc IN (currently processing), or confirm it hasn't already shipped.
 
