@@ -59,19 +59,28 @@ Every batch of stock shown in Overview got there one of three ways. Which way de
 
 **Where to see these details:** open **Inventory → Overview**, click any batch card to open its detail popup. Supplier and Origin (when set) show near the top. Purchase Date and Payment (for Consignment-linked deliveries) show further down, under "Purchased from." Payment status is only visible to Admins or staff with Shipment access — everyone else still sees Supplier, Origin, and Purchase Date.
 
+**A fourth way, from the mill itself:** a batch produced by a completed Processing Run (see "Processing" below) is labelled **Mill Output** — it was never bought or hand-typed, so Supplier/Purchase Date/Payment don't apply to it, same reasoning as the other methods above.
+
+### Batch Type Badge
+
+Every batch card shows a small colored badge naming which of the four ways above it came from: **Starting Stock** (hand-typed), **No Purchase on File** or **Partially Linked** (a real delivery with no purchase, or only some of its deliveries linked to one — both carry a small (?) icon explaining why), **Linked to a Purchase**, or **Mill Output**. Use this badge to spot at a glance which batches still need a Consignment linked, without opening each one.
+
 ## Open Stock Lots
 
 Below the action strip, Overview lists every open stock lot — a batch of stock still available to receive against, process, or dispatch. Click a lot to see its full movement history and its chain — the lineage back to the processing run or tally sheet that produced it. A lot's status is Open, In Process, Depleted, or Closed.
+
+**Filtering and sorting the list:** a row of filter chips above the batches lets you narrow the view to **All**, **Needs Attention** (No Purchase on File / Partially Linked), **At the Mill** (a Mill Run is currently queued, running, or paused against it), **From the Mill** (Mill Output batches), or **Finished** (fully used-up batches, otherwise hidden from this list). Only one filter applies at a time. A **Sort** dropdown next to the chips reorders the list — Newest First (default), Oldest First, Name A-Z, or by remaining stock amount.
+
+**Mill Activity badge:** if a Mill Run currently has a batch reserved, a second badge shows **Queued for Milling**, **At the Mill Now** (with a gentle pulse while it's actually running), or **Paused**. Tapping this badge jumps straight to that Mill Run on the Processing page.
 
 ### What is the Chain?
 
 The Chain is the "family tree" for one specific batch of stock — proof of where it actually came from and where it actually went, all in one place, without you having to manually piece it together from separate purchase, processing, and sale records.
 
-It's not a separate page of its own — you won't find it in the main menu. To see it, open **Inventory → Overview**, find the stock lot you want, and click **View Chain** on that lot to expand its history right there.
+It's not a separate page of its own — you won't find it in the main menu. To see it, open **Inventory → Overview**, find the stock lot you want, and click **View Chain** on that lot to expand its full history right there — every generation back to where the trail started, all shown at once (not one step at a time).
 
 A chain can show, depending on that lot's own history:
-- **Source Lot** — the earlier stock this lot came from, if it wasn't a brand-new receipt
-- **Processing Run** — the mill/re-saw run that turned the source lot into this one, if any
+- **Earlier generations** — every source lot and the processing run that produced each one, all the way back to the original receipt; the oldest one also shows its own Batch Type badge and, if it came from a real purchase, its Supplier/Purchase Date/Payment
 - **This Lot** — the batch you're looking at, with how much was received and how much is still remaining
 - **Dispatches** — shipments this lot's stock went out on
 - **Output Lots** — if this lot was itself re-sawn into something else, the new lot(s) that came out of it
@@ -92,7 +101,13 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 
 ## Processing — Converting Timber Stock (Custom-Made / Re-saw Runs)
 
-Open **Inventory → Processing** to convert input timber into a different output — the most common case is round logs re-sawn into square/sawn boards (a Custom-Made run). Click **New Processing Run**, select the input Stock Units, and enter the output details; the system can auto-suggest likely inputs based on what you're producing. A run's status is Draft, In Progress, Completed, or Cancelled — cancelling reverses the input Stock Unit assignments. A completed run's output can be linked directly to a new tally sheet so the produced volume is measured and recorded in one flow.
+Open **Inventory → Processing** to convert input timber into a different output — the most common case is round logs re-sawn into square/sawn boards (a Custom-Made run). Click **New Processing Run**, select the input Stock Units, and enter the output details; the system can auto-suggest likely inputs based on what you're producing. A run's status is Draft, In Progress, Paused, Completed, or Cancelled — cancelling reverses the input Stock Unit assignments (allowed from Draft, In Progress, or Paused). A completed run's output can be linked directly to a new tally sheet so the produced volume is measured and recorded in one flow.
+
+**Pausing a run:** if something more urgent needs the mill, click **Pause** on a running job (an optional note explaining why is available but never required). A paused job can be **Resumed** back to running, or **Cancelled** directly without resuming first — nothing about its reserved input stock changes while paused.
+
+**Filtering and sorting the list:** a Status dropdown above the runs table narrows it to All, Draft, Running, Paused, Finished (Completed + Cancelled together), Completed, or Cancelled. A Sort dropdown next to it reorders by Newest First (default), Oldest First, or Run Code A-Z.
+
+**A run can't ask for more stock than a batch actually has** — starting or creating a run checks the chosen batch's real remaining amount first (after anything else already holding it) and blocks with a clear message if the request is too large, instead of silently creating a run that could never actually finish.
 
 ![Processing runs](/screenshots/reports/inventory-05-processing-runs.png)
 
