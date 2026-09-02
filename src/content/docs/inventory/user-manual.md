@@ -109,6 +109,8 @@ Open **Inventory → Processing** to convert input timber into a different outpu
 
 **A run can't ask for more stock than a batch actually has** — starting or creating a run checks the chosen batch's real remaining amount first (after anything else already holding it) and blocks with a clear message if the request is too large, instead of silently creating a run that could never actually finish.
 
+**Which purchase does the wood come from? (Detailed Stock Tracking)** When a batch was pooled from more than one purchase — say, two different deliveries received into the same Lot — a Mill Run that uses part of that batch needs a fair way to say which of the original purchases the wood being used actually counts against. By default, LumberLinq figures this out silently, oldest purchase first, and keeps a record without showing anything on screen. To see and, if needed, adjust this yourself, turn on **Application Settings → Inventory Policy → "Track which purchase a Mill Run's wood comes from."** Once it's on, completing a Mill Run against a multi-source batch shows a small panel on the Record Output screen with the suggested split (with a "?" explaining the oldest-first rule) and lets you edit the amounts before finishing, as long as they still add up to the same total. A batch with only one source never shows this panel — there's nothing to split.
+
 ![Processing runs](/screenshots/reports/inventory-05-processing-runs.png)
 
 ![New processing run — step 1](/screenshots/reports/inventory-06-processing-wizard-step-1.png)
