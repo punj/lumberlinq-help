@@ -186,13 +186,29 @@ It has two steps: **Upload** and **Review**.
 
 Credits are only deducted after a successful read, and the dialog shows the exact number used. AI Import requires the feature to be enabled on your subscription plan.
 
-## Section labels (Round sheets)
+## Section labels — marking bundles, grades, or pages on a sheet
 
-You can split a Round sheet into named sections. This works on any sheet — one you typed by hand or one filled by AI Import.
+You can split any tally sheet — Round or Square — into named sections. This is especially useful
+for Clean Sawn: suppliers commonly cut and bundle the same order into separate lots by grade (say,
+"A Grade" and "B Grade"), and a section label lets you mark exactly where each grade's rows start
+on the same sheet — no need for separate sheets per grade. It works on any sheet, hand-typed or
+filled by AI Import.
 
-- **Add a label:** in edit view, hover a row and click the green bookmark button in the row actions. Type a name (for example "Bundle B") and Save. That row gets a coloured divider, and a **Sections bar** appears above the grid with one chip per section showing its SR range. Click a chip to jump to that section.
-- **AI Import pages** show up here automatically as sections named "Page 1", "Page 2", and so on. Click the pencil on a divider to rename one to whatever you want.
+- **Add a label:** in edit view, hover a row and click the green bookmark button in the row
+  actions. Type a name — for example **"A Grade"** or **"B Grade"** for a grade-split bundle, or
+  **"Bundle B"** for a plain physical bundle — and Save. That row gets a coloured divider, and a
+  **Sections bar** appears above the grid with one chip per section showing its SR range. Click a
+  chip to jump to that section. This works the same way on both Round and Square sheets — it's the
+  one to use for marking grade bundles either way.
+- **AI Import pages, on Round sheets,** show up here automatically as sections named "Page 1",
+  "Page 2", and so on — no typing needed. Click the pencil on a divider to rename one to whatever
+  you want — e.g. turn "Page 2" into "B Grade" once you know that's where the grade split actually
+  falls. Square sheets don't create these automatically from AI Import yet — add the label by hand
+  the normal way above.
 - **Remove a label:** open the editor on a labelled row and click Remove.
 - Labels are saved with the sheet and stay after you reload.
 - Switch how the divider looks — a **Divider label** (default) or an **SR pill** — under **Settings → Configuration Settings → Columns → "Section marker style"**.
-- Section labels and the Sections bar are **edit view only**. They never appear on a share link.
+- **On a share link** (or any other read-only view), a section you've actually typed a label for
+  still shows its divider and caption — so someone you shared the sheet with can see the grade
+  bundles too. An auto-detected AI Import page with no label of its own stays edit-view only. The
+  Sections jump bar, and editing a label, always stay edit-view only either way.
