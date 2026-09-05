@@ -62,7 +62,7 @@ A fast, phone-call-style lookup for stock, similar to how Quick Tally parses a s
 
 Every measurement always needs an explicit unit (`cm`, `mm`, `in`/`"`, or `ft`/`'`) — a bare number is never guessed at a default unit, since guessing silently returns the wrong stock. Results show grouped into **Available Now**, **Pending Stock-In**, **In Process**, and **Arriving/Departing/Preparing**.
 
-**Pending Stock-In** covers stock that's been tallied on a Stock-In (BUY) Transport Unit but hasn't been received into Inventory yet — so it's real, but not yet part of your available stock figures. Click a Pending Stock-In result to jump straight to that Transport Unit and receive it into Inventory yourself; Stock mode never receives stock automatically.
+**Pending Stock-In** covers stock that's been tallied on a Stock-In (BUY) Transport Unit but hasn't been received into Inventory yet — so it's real, but not yet part of your available stock figures. Matching units are grouped the same way Available Now is (same product, location, origin, quality and size) — a single matching unit still opens straight to that Transport Unit's page for you to receive it; a group of several matching units instead shows a small badge with the count, and opening it lists each one so you can pick which to receive. Stock mode never receives stock automatically.
 
 A chip row above the results shows what was understood from your text — a chip with a question-mark icon means that part was fuzzy-matched (close but not exact), not a guaranteed match. If a typed word is a plausible but uncertain match for a product name, a **"Did you mean?"** row shows the closest candidates instead of silently guessing — pick the right one and the search re-runs with it locked in.
 
