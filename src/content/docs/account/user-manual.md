@@ -13,9 +13,9 @@ Open **app.lumberlinq.com/login**. You'll see a flip card with Sign In on the fr
 
 ### Social / OAuth Login
 
-On the web and the Android app, LumberLinq supports logging in via Google, Facebook, Microsoft, and LinkedIn. Click the provider's button, authorise with them, and you're returned to LumberLinq automatically. If your email isn't registered yet, a new account is created for you.
+On the **web**, LumberLinq supports logging in via Google, Facebook, Microsoft, LinkedIn, and **Apple**. On the **Android app**, the first four (no Apple). Click the provider's button, authorise with them, and you're returned to LumberLinq automatically. If your email isn't registered yet, a new account is created for you.
 
-The **iOS app** also offers **Sign in with Apple** (Apple button on the Sign In screen). On iOS, all login methods — including Apple — sign in an existing account only; there is no sign-up in the iOS app. If you sign in with an email that has no LumberLinq account, create a free account on **app.lumberlinq.com** first, then sign in. If you use Apple's "Hide My Email" and the private relay address doesn't match your account email, sign in with your original method instead.
+The **iOS app** also offers **Sign in with Apple** — on iOS it opens the native Apple sheet (Face ID / Touch ID). On iOS, all login methods sign in an existing account only; there is no sign-up in the iOS app. If you sign in on iOS with an Apple ID that has no LumberLinq account, create a free account on **app.lumberlinq.com** first (Sign in with Apple works there too), then sign in on iOS.
 
 ### Forgot Password
 

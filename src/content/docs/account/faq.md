@@ -11,7 +11,7 @@ Click Forgot Password on the login page, enter your email, and follow the reset 
 
 **Can I log in with Google or another social account?**
 
-Yes — Google, Facebook, Microsoft, and LinkedIn are supported on the web and Android app. If your email isn't registered yet, a new account is created for you automatically. The **iOS app** also has **Sign in with Apple**.
+Yes. The **web** supports Google, Facebook, Microsoft, LinkedIn, and **Sign in with Apple**. The **Android app** supports the first four. The **iOS app** supports all five (Apple via the native sheet). If your email isn't registered yet, a new account is created for you automatically (on the web).
 
 **Why is there no "Sign Up" in the iOS app, and why did Sign in with Apple say "no account"?**
 
