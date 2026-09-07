@@ -3,7 +3,7 @@ title: Account, Login & Sign Up — FAQ
 description: Frequently asked questions about LumberLinq accounts, login, and registration.
 ---
 
-*Also searched as: sign in, log in, create account, forgot password, reset password, delete my account, notification settings, email preferences, change password, timezone setting, social login, OTP verification, danger zone.*
+*Also searched as: sign in, log in, create account, forgot password, reset password, delete my account, notification settings, email preferences, change password, timezone setting, social login, sign in with apple, apple login, ios login, OTP verification, danger zone.*
 
 **I forgot my password — what do I do?**
 
@@ -11,7 +11,11 @@ Click Forgot Password on the login page, enter your email, and follow the reset 
 
 **Can I log in with Google or another social account?**
 
-Yes — Google, Facebook, Microsoft, and LinkedIn are all supported. If your email isn't registered yet, a new account is created for you automatically.
+Yes — Google, Facebook, Microsoft, and LinkedIn are supported on the web and Android app. If your email isn't registered yet, a new account is created for you automatically. The **iOS app** also has **Sign in with Apple**.
+
+**Why is there no "Sign Up" in the iOS app, and why did Sign in with Apple say "no account"?**
+
+The iOS app is sign-in only — new accounts are created on **app.lumberlinq.com** (or the Android app), not on iOS. Every iOS login button, Apple included, signs in an existing account. If Sign in with Apple says no account was found, either you haven't registered yet (do that on the web first), or you chose Apple's "Hide My Email" and the private relay address doesn't match your account's email — in that case, sign in with your original method.
 
 **I was invited by my company — should I use the sign-up form?**
 

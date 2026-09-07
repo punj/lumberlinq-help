@@ -3,7 +3,7 @@ title: Account, Login & Sign Up — User Manual
 description: Creating a LumberLinq account, logging in, and managing your password.
 ---
 
-*Also searched as: sign in, log in, create account, register, forgot password, reset password, delete my account, close account, change password, timezone setting, profile picture, social login, google login, OTP verification, danger zone.*
+*Also searched as: sign in, log in, create account, register, forgot password, reset password, delete my account, close account, change password, timezone setting, profile picture, social login, google login, sign in with apple, apple login, ios login, OTP verification, danger zone.*
 
 ## How to Log In
 
@@ -13,7 +13,9 @@ Open **app.lumberlinq.com/login**. You'll see a flip card with Sign In on the fr
 
 ### Social / OAuth Login
 
-LumberLinq supports logging in via Google, Facebook, Microsoft, and LinkedIn. Click the provider's button, authorise with them, and you're returned to LumberLinq automatically. If your email isn't registered yet, a new account is created for you.
+On the web and the Android app, LumberLinq supports logging in via Google, Facebook, Microsoft, and LinkedIn. Click the provider's button, authorise with them, and you're returned to LumberLinq automatically. If your email isn't registered yet, a new account is created for you.
+
+The **iOS app** also offers **Sign in with Apple** (Apple button on the Sign In screen). On iOS, all login methods — including Apple — sign in an existing account only; there is no sign-up in the iOS app. If you sign in with an email that has no LumberLinq account, create a free account on **app.lumberlinq.com** first, then sign in. If you use Apple's "Hide My Email" and the private relay address doesn't match your account email, sign in with your original method instead.
 
 ### Forgot Password
 
