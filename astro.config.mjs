@@ -78,6 +78,7 @@ export default defineConfig({
           label: 'Inventory',
           items: [
             { label: 'User Manual', link: '/inventory/user-manual/' },
+            { label: 'Stock Statement', link: '/inventory/stock-statement/' },
             { label: 'FAQ', link: '/inventory/faq/' },
           ],
         },
