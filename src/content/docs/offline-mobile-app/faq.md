@@ -1,17 +1,21 @@
 ---
 title: Offline Mode & Mobile App — FAQ
-description: Frequently asked questions about LumberLinq's offline Android app.
+description: Frequently asked questions about LumberLinq's offline mobile app on Android and iPhone.
 ---
 
-*Also searched as: no internet, no signal, works offline, android app, play store, iphone app, sync issues, sync failed, offline banner.*
+*Also searched as: no internet, no signal, works offline, android app, play store, iphone app, ios app, app store, sync issues, sync failed, offline banner.*
 
 **Can I use LumberLinq offline in a web browser?**
 
-No. Offline mode only works in the installed Android app. In a browser, losing your connection behaves like any normal website — pages that need the server won't load until you're back online.
+No. Offline mode only works in the installed app (Android or iPhone). In a browser, losing your connection behaves like any normal website — pages that need the server won't load until you're back online.
 
 **Can I use LumberLinq on iPhone?**
 
-Not yet. LumberLinq currently only has an Android app — there is no iOS/iPhone app available. On an iPhone you can still use LumberLinq through your mobile browser, but without offline support.
+Yes. The iPhone app is on the App Store — [apps.apple.com/us/app/lumberlinq/id6805041670](https://apps.apple.com/us/app/lumberlinq/id6805041670) — and works offline just like the Android app.
+
+**Why can't I sign up in the iPhone app?**
+
+The iPhone app is sign-in only. Create your free account first on **app.lumberlinq.com** (or in the Android app), then sign in on your iPhone with the same email or login method.
 
 **Why did my data disappear after 15 days offline?**
 

@@ -1,17 +1,22 @@
 ---
 title: Offline Mode & Mobile App — User Manual
-description: How LumberLinq's Android app works without an internet connection, and how it syncs back up once you're online.
+description: How LumberLinq's Android and iPhone apps work without an internet connection, and how they sync back up once you're online.
 ---
 
-*Also searched as: no internet, no signal, works offline, download the app, android app, play store, sync issues, sync failed, offline banner, capacitor app.*
+*Also searched as: no internet, no signal, works offline, download the app, android app, iphone app, ios app, play store, app store, sync issues, sync failed, offline banner, capacitor app.*
 
 ## What Offline Mode Is
 
-LumberLinq's Android app can keep working even when your phone or tablet has no internet connection — useful at a mill or yard with patchy signal. This offline support is only available in the installed **Android app**, not in a regular web browser. If you use LumberLinq in a browser (on desktop or mobile), losing your connection behaves like any normal website: pages that need the server simply won't load until you're back online.
+LumberLinq's mobile app — on **Android** and **iPhone** — can keep working even when your phone or tablet has no internet connection, useful at a mill or yard with patchy signal. This offline support is only available in the installed app, not in a regular web browser. If you use LumberLinq in a browser (on desktop or mobile), losing your connection behaves like any normal website: pages that need the server simply won't load until you're back online.
 
-## Getting the Android App
+## Getting the App
 
-LumberLinq is live on the **Google Play Store** — search for "LumberLinq" or install it directly from [play.google.com/store/apps/details?id=com.lumberlinq.app](https://play.google.com/store/apps/details?id=com.lumberlinq.app). You can also open the **"Get the App"** banner or link inside the LumberLinq web app (app.lumberlinq.com) on your phone, which takes you straight there. There is currently no iPhone/iOS app — LumberLinq is Android-only for now.
+- **Android:** live on the **Google Play Store** — search for "LumberLinq" or install it directly from [play.google.com/store/apps/details?id=com.lumberlinq.app](https://play.google.com/store/apps/details?id=com.lumberlinq.app).
+- **iPhone / iPad:** live on the **App Store** — search for "LumberLinq" or install it directly from [apps.apple.com/us/app/lumberlinq/id6805041670](https://apps.apple.com/us/app/lumberlinq/id6805041670).
+
+You can also open the **"Get the App"** banner or link inside the LumberLinq web app (app.lumberlinq.com) on your phone.
+
+**New to LumberLinq on iPhone?** The iPhone app is for signing in only — you can't create a new account inside it. Create your free account first on **app.lumberlinq.com** (or the Android app), then sign in on your iPhone. See [Account](/account/user-manual/) for details.
 
 ## How You Know You're Offline
 
