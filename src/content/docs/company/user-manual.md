@@ -23,6 +23,7 @@ Contains the legal and business information for your company:
 - **Email** and **Website**
 - **Legal Entity Type** — Private Limited, LLP, Partnership, Sole Proprietor, Foreign Entity, etc.
 - **Individual / Company** classification
+- **Company Timezone** — the clock your monthly plan allowances (tally sheets, consignments, stock units, AI credits) reset on. If left empty, India time (Asia/Kolkata) is used. It is the company's setting, not your personal profile timezone.
 
 Keep Identity details accurate — they appear on exported PDF documents and in account communications.
 
@@ -34,7 +35,7 @@ Stores the registered address of your company: Country (required), State/Provinc
 
 ### Profile Tab
 
-Stores supplementary business information: Industry Type, Company Size, Role in Company, and (where applicable) a Logo URL.
+Stores supplementary business information: Industry Type, Company Size, and Role in Company. Your logo is managed on the Branding page, not here.
 
 ![Profile tab](/screenshots/reports/company-03-details-profile-tab.png)
 
@@ -49,8 +50,12 @@ Both are saved independently of the main company form — toggling either takes 
 
 ## Company Branding
 
-Open **Main Menu → Company → Branding**. Upload your company logo here (PNG or SVG recommended) — it appears on PDF exports and the branding shown on share links.
+Open **Main Menu → Company → Branding**. Custom branding is available on the **Forest** plan; on other plans the page shows an upgrade prompt.
+
+Click to choose a logo file and it uploads right away — there is no URL box and no Save button. Use PNG, JPG or WEBP, up to 5 MB, at least 200×50 px. Large images are scaled down to fit 584×158 px (never cropped). Your logo appears on PDF reports, shipment and tally share pages, and image exports (Excel exports carry no logo). Until you upload one, the default LumberLinq logo is used; **Use Default** switches back to it.
+
+If your company moves to a plan without custom branding (a downgrade or a lapsed payment), the custom logo is removed and the default LumberLinq logo is used automatically.
 
 ![Branding — logo upload](/screenshots/reports/company-04-branding-logo.png)
 
-After saving, regenerate any existing share links for the new branding to appear on them; already-downloaded PDFs are not affected.
+Share pages pick up a new logo automatically — no need to create new share links. Already-downloaded PDFs are not changed.

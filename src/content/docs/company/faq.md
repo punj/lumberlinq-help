@@ -15,11 +15,19 @@ Select a Country first — State and City dropdowns load based on the country se
 
 **Where do I upload my company logo?**
 
-Main Menu → Company → Branding. Upload a PNG or SVG. It appears on PDF exports and share-link branding.
+Main Menu → Company → Branding (Forest plan). Choose a PNG, JPG or WEBP file (up to 5 MB) and it uploads immediately. It appears on PDF reports, share pages and image exports.
 
-**I updated my logo but old share links still show the old one — is that a bug?**
+**Do I need new share links after changing my logo?**
 
-No — regenerate the share link for the new branding to appear on it. Already-downloaded PDFs are also not affected by a later logo change.
+No — share pages show your current logo automatically. Already-downloaded PDFs are not changed by a later logo change.
+
+**What happens to my logo if I downgrade?**
+
+Custom branding is a Forest feature. If your plan changes to one without it, your logo is removed and the default LumberLinq logo is shown. Existing data is not affected.
+
+**When do my monthly limits reset?**
+
+On the 1st of each month in your Company Timezone (Company Details → Identity). If it is empty, India time is used.
 
 **What does "Allow Stock Oversell" do?**
 
