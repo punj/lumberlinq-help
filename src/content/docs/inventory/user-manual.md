@@ -36,20 +36,32 @@ Alongside the stage cards, KPI totals show available CBM, in-process CBM, in-con
 
 ![Overview — expanded site](/screenshots/reports/inventory-02-overview-expanded-site.png)
 
-## The Three Core Actions
+## The Core Actions
 
-Every stock movement starts from one of three buttons at the top of Overview:
-- **Stock In** — receive new stock (requires the Inventory Receive permission)
+Two buttons sit at the top of Overview:
+- **Opening Stock** — add the stock you already have, usually when you first start using LumberLinq (needs the Inventory Receive and Tally Add permissions). It opens a new Stock Unit — see "Adding Your Opening Stock" below.
 - **Mill Run** — start a processing/conversion run
-- **Send Out** — dispatch stock (requires the Inventory Dispatch permission)
 
-Only the actions your account has permission for are shown — if you don't see Stock In or Send Out, ask an admin to grant it.
+New deliveries come in through their own Stock Unit (the **Receive into Inventory** button on the Stock Unit page, or automatically from a purchase Consignment). Stock goes out through a sale Consignment.
+
+Only the actions your account has permission for are shown — if you don't see Opening Stock or Mill Run, ask an admin to grant it.
+
+## Adding Your Opening Stock
+
+When you start with LumberLinq, add all the stock already in your yard first:
+
+1. **Inventory → Overview → Opening Stock.** A new Stock Unit opens with **Stock In** already chosen and an **Opening stock** banner.
+2. Pick the **product**, the **site** (where the stock is) and the **origin**, then **Save**. No transport mode is needed — there's no truck behind opening stock.
+3. On the **Tallysheet** tab, enter the pieces: Square — thickness × width × length × pieces; Round — girth × length. Save the rows.
+4. Press **Receive into Inventory.** The stock goes into inventory, the tally locks, and the In/Out page and Stock Statement show a line noted **"Opening stock"**.
+
+Opening stock gets its own batch with a **Starting Stock** badge — it is never mixed with stock you buy later. A Consignment is **optional**: link one only if you want the purchase record (supplier, money, documents). Linking it later never adds the stock a second time. Opening stock has nothing to reconcile, so a mill run on it never asks you to type CONFIRM. Each opening-stock Stock Unit counts toward your plan's Stock Unit limit like any other.
 
 ## Three Ways Stock Becomes a Batch
 
 Every batch of stock shown in Overview got there one of three ways. Which way decides what details (Supplier, Origin, Purchase Date, Payment) it shows — this is normal, not a bug, if a batch is missing one of these.
 
-**1. Typed in by hand (the "Stock In" button)** — used to record stock you already physically have, most commonly when you first start using LumberLinq. You can optionally type in a Supplier and a Purchase Date. There's no Payment tracking for this method — that's expected, since there's no actual purchase record behind it.
+**1. Opening stock (the "Opening Stock" button)** — stock you already physically have, most commonly when you first start using LumberLinq. It is a normal Stock Unit with a full tally, received into its own **Starting Stock** batch. Origin comes from the Stock Unit. There's no Supplier, Purchase Date or Payment unless you link a purchase Consignment to it later — that's expected. (Batches typed in by hand with the old Stock In form before 2026-09-28 also show the Starting Stock badge.)
 
 **2. A real delivery received with no Consignment attached** — a domestic delivery, an internal transfer, or self-harvested wood: tallied normally, then received into inventory directly from that Stock Unit's own page (the "Receive into Inventory" button), with no Consignment involved at all. Supplier and Origin come from that delivery's own tally record. Purchase Date and Payment don't apply here — nothing was purchased, so there's nothing to show.
 
@@ -95,7 +107,7 @@ Open **Inventory → In/Out** to see every stock movement in chronological order
 
 ## Recording an Adjustment
 
-Use **Add Adjustment** (requires the Inventory Adjust permission) only when recorded stock no longer matches physical reality — e.g. after a stocktake, or when a Stock Unit was damaged. Fill in: the Stock Unit (search by ID/product/location), CBM delta, Pieces delta (positive to add, negative to reduce), a Reason (Reconciliation Delta, Damage, Moisture/Drying Loss, Measurement Error, Manual Correction, or Other), and notes explaining the correction. Don't use adjustments as a substitute for a normal receipt — if a Stock Unit was physically received but never entered, do a proper Stock In instead.
+Use **Add Adjustment** (requires the Inventory Adjust permission) only when recorded stock no longer matches physical reality — e.g. after a stocktake, or when a Stock Unit was damaged. Fill in: the Stock Unit (search by ID/product/location), CBM delta, Pieces delta (positive to add, negative to reduce), a Reason (Reconciliation Delta, Damage, Moisture/Drying Loss, Measurement Error, Manual Correction, or Other), and notes explaining the correction. Don't use adjustments as a substitute for a normal receipt — if a Stock Unit was physically received but never entered, receive it properly with its Stock Unit's **Receive into Inventory** button instead (or **Opening Stock** for stock you already had when you started).
 
 ![Adjustment dialog](/screenshots/reports/inventory-04-adjustment-dialog.png)
 
@@ -125,12 +137,12 @@ Processing runs can be assigned to a Mill Operator — open **Inventory → Oper
 
 Quality Grading adds an optional quality/color grade to stock, so you can tag and filter it by grade alongside the usual size, species, and origin fields. It's bundled with Inventory access, not a separate thing to switch on — if Inventory is available on your plan, Quality Grading is too.
 
-**The grading vocabulary:** every company starts with a fixed set of four grades, labelled A, B, C, and D. The four codes themselves can't be changed, but the label each one shows can be — click the pencil icon next to any quality dropdown (in tally settings, Stock In, or Send Out) to open **Rename Grades**, and give each code a name that matches how your company actually talks about quality (for example, renaming B to "Second Quality"). The rename applies everywhere the grade is shown, for everyone at your company.
+**The grading vocabulary:** every company starts with a fixed set of four grades, labelled A, B, C, and D. The four codes themselves can't be changed, but the label each one shows can be — click the pencil icon next to any quality dropdown (in tally settings or on a Stock Unit's product line) to open **Rename Grades**, and give each code a name that matches how your company actually talks about quality (for example, renaming B to "Second Quality"). The rename applies everywhere the grade is shown, for everyone at your company.
 
 **Where you assign or use a grade:**
 - **On a tally sheet** — a Square or Round tally's settings include an optional Quality field for the Transport Unit; it applies that grade to every row tallied on that Transport Unit.
-- **Stock In (receiving into Inventory)** — the Stock In form has an optional Quality field so you can set or confirm the grade on the Stock Unit being received.
-- **Send Out (dispatch)** — the dispatch screen lets you filter available stock by quality grade, so you can find the exact batch you want to ship.
+- **Receiving into Inventory (including Opening Stock)** — the Stock Unit's product line has an optional Quality field, so you can set or confirm the grade before you press Receive into Inventory.
+- **Stock Out (selling)** — on a Stock Out Stock Unit, each product line has a Quality field, and the available-stock check uses it, so you sell stock of the grade you picked.
 
 Quality Grading is still an ALPHA feature — you'll see an "ALPHA" label next to it wherever it appears.
 
@@ -138,7 +150,7 @@ Quality Grading is still an ALPHA feature — you'll see an "ALPHA" label next t
 
 **"I can't add a Stock Unit to a consignment"** — a Stock Unit does not need to be received into inventory first; the two can happen in either order (see "Three Ways Stock Becomes a Batch" above). If adding it still fails, check the tally sheet was fully saved (not just filled in), and confirm the Stock Unit isn't already assigned to a different consignment or mid-processing run.
 
-**"My batch shows no Supplier / Purchase Date / Payment"** — this is expected unless the batch came from a Consignment (see "Three Ways Stock Becomes a Batch" above). A hand-typed Stock In batch only ever has Supplier/Purchase Date (never Payment); a domestic/manual receipt with no Consignment has none of the three. If the batch WAS meant to be tied to a Consignment, link that Stock Unit to it — the details will appear automatically, no need to redo the receipt.
+**"My batch shows no Supplier / Purchase Date / Payment"** — this is expected unless the batch came from a Consignment (see "Three Ways Stock Becomes a Batch" above). An Opening Stock batch, or a domestic/manual receipt with no Consignment, has none of the three (older hand-typed batches may have Supplier/Purchase Date, never Payment). If the batch WAS meant to be tied to a Consignment, link that Stock Unit to it — the details will appear automatically, no need to redo the receipt.
 
 **"A Stock Unit shows unavailable even though it was received"** — check In/Out for an assignment (In Consignment), a Proc IN (currently processing), or confirm it hasn't already shipped.
 

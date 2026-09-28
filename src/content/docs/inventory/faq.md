@@ -25,9 +25,13 @@ Use In/Out for the movement audit trail, and the Reconciliation Report (under Re
 
 At Forest, At Mill, and At Yard are available stock at that location type. In Transit and In Consignment are stock already booked to a consignment (moving vs. not yet moving). In Process is stock currently going through a processing run.
 
-**When should I use Add Adjustment instead of a normal Stock In?**
+**When should I use Add Adjustment instead of a normal receipt?**
 
-Only when recorded stock no longer matches physical reality (e.g. after a stocktake or damage) — not as a substitute for a proper receipt. If a Stock Unit was physically received but never entered, do a real Stock In instead.
+Only when recorded stock no longer matches physical reality (e.g. after a stocktake or damage) — not as a substitute for a proper receipt. If a Stock Unit was physically received but never entered, receive it properly instead (its Stock Unit's **Receive into Inventory** button). For stock you already had when you started, use **Opening Stock**.
+
+**How do I add the stock I already have when I start with LumberLinq?**
+
+Inventory → Overview → **Opening Stock**. It opens a new Stock Unit already set to Stock In: pick the product, site and origin, save, enter the tally (sizes and pieces), then press **Receive into Inventory**. No transport mode is needed and a Consignment is optional — link one only if you want the purchase record. Each one counts toward your plan's Stock Unit limit.
 
 **Can I undo a processing run?**
 
@@ -39,7 +43,7 @@ Quality Grading lets you tag stock with a quality/color grade (A/B/C/D, renamabl
 
 **Can I rename the quality grades to match how my company talks about quality?**
 
-Yes. The four grade codes (A/B/C/D) are fixed, but each one's label can be renamed — click the pencil icon next to any quality dropdown (tally settings, Stock In, or Send Out) to open Rename Grades. The new labels apply everywhere for your whole company.
+Yes. The four grade codes (A/B/C/D) are fixed, but each one's label can be renamed — click the pencil icon next to any quality dropdown (tally settings or the Stock Unit's product line) to open Rename Grades. The new labels apply everywhere for your whole company.
 
 **Where do I find the Chain feature? It's not in the menu.**
 
