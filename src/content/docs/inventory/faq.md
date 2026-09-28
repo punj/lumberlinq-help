@@ -17,6 +17,10 @@ Check In/Out for an assignment (In Consignment), a Proc IN (currently processing
 
 Look for an uncommitted adjustment or an open processing run that hasn't been completed, and confirm every tally sheet linked to the affected Stock Units was actually saved.
 
+**After reconciling, which figure is my stock — the Stock Unit's or the reconciled one?**
+
+The reconciled one — it is what really arrived. For a Stock In unit, receive it into inventory first, then enter the unloading count and lock: stock becomes the reconciled net volume and pieces, and the Stock Statement shows the difference as a **Reconciled** line. If the batch was already milled or sold, the lock only records the difference — correct stock with an Adjustment.
+
 **Which screen should I use for reconciliation?**
 
 Use In/Out for the movement audit trail, and the Reconciliation Report (under Reports) for a structured comparison view.

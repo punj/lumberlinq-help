@@ -111,6 +111,18 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 
 ![Adjustment dialog](/screenshots/reports/inventory-04-adjustment-dialog.png)
 
+## Reconciliation and Stock
+
+**Reconciliation means what really arrived.** The Stock Unit's tally is what was loaded; the count you record at unloading is what you actually have. Example: loaded 19.00 CBM / 500 pcs, counted at unloading 18.75 CBM / 495 pcs.
+
+- **Receive first, then reconcile.** For a Stock In unit, the Reconciliation tab shows *"This Stock Unit isn't in inventory yet"* until it is received — press **Receive into Inventory** right there, then enter the count and lock.
+- **Locking puts what arrived into stock.** The lock dialog shows the change (e.g. *19.000 → 18.750 CBM · 500 → 495 pcs*). Stock always uses the **net** volume. The Stock Statement shows the received line plus a **Reconciled** line for the difference (−0.25 CBM / −5 pcs), and every screen — batch cards, Overview, Command Center, stock picker — shows 18.75.
+- **Pieces are compared like for like:** Square = total pieces, Round = total rows (one log each). If the unloading tally is a different kind (Round vs Square), only the volume difference is used.
+- **Already milled or sold?** Then locking only records the difference; correct stock with an Adjustment (the tab offers a pre-filled one).
+- The Stock Unit screen shows **"Received (reconciled): 18.750 CBM · 495 pcs"** once reconciled, so the loading figure isn't mistaken for stock in hand.
+- Adding an Adjustment for the same shortage after a reconciliation shows a warning — the reconciliation already corrected it.
+- Companies without Inventory, Stock Out units and opening stock work as before: no "receive first" step, and a lock only records the difference.
+
 ## Processing — Converting Timber Stock (Custom-Made / Re-saw Runs)
 
 Open **Inventory → Processing** to convert input timber into a different output — the most common case is round logs re-sawn into square/sawn boards (a Custom-Made run). Click **New Processing Run**, select the input Stock Units, and enter the output details; the system can auto-suggest likely inputs based on what you're producing. A run's status is Draft, In Progress, Paused, Completed, or Cancelled — cancelling reverses the input Stock Unit assignments (allowed from Draft, In Progress, or Paused). A completed run's output can be linked directly to a new tally sheet so the produced volume is measured and recorded in one flow.
