@@ -146,6 +146,17 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 
 **An adjustment that would take a batch below zero** shows the before → after figures and asks you to type **CONFIRM** in the same dialog.
 
+## The Stock Availability Box on a Stock Out
+
+While you tally an unconfirmed Stock Out, a small **Stock Availability** box floats on the screen. It has one line per product, origin and quality on the sheet, and it updates by itself — no reload — when anyone changes stock.
+
+- **Free** — the stock you can still use for this sheet, in CBM (tap to switch to CFT) and pieces. Wood held by *other* open Stock Outs and Mill Jobs is not counted; this sheet's own rows are not taken off this figure.
+- **Held by this sheet** — the total of the rows on this sheet (saved and not yet saved). It changes as you type.
+- **Remaining after save** — Free minus Held by this sheet. It turns red if the sheet asks for more than is free.
+- Tap a row and a size line appears (for example 4×3″ × 6′) with Free · Held (by other sheets) · In stock for that exact size.
+
+If you change a row's pieces (say 250 to 125) and save, Held by this sheet drops by 125 and Remaining goes up by 125 straight away.
+
 ## When a Received Stock Unit's Tally Is Changed
 
 If rows are edited on a Stock Unit that was already received, its batch follows the change automatically — one **Tally correction** line per save in In/Out (the change, not a recount).
@@ -162,6 +173,8 @@ Press **Apply to stock** or **Dismiss** (stock unchanged). You need the stock ad
 While you record a run's output on its tally, a **Recording output for Processing Run** bar stays pinned under the header (slim on phones), so you always know which run you are filling in.
 
 Open **Inventory → Processing** to convert input timber into a different output — the most common case is round logs re-sawn into square/sawn boards (a Custom-Made run). Click **New Processing Run**, select the input Stock Units, and enter the output details; the system can auto-suggest likely inputs based on what you're producing. A run's status is Draft, In Progress, Paused, Completed, or Cancelled — cancelling reverses the input Stock Unit assignments (allowed from Draft, In Progress, or Paused). A completed run's output can be linked directly to a new tally sheet so the produced volume is measured and recorded in one flow.
+
+**A finished run's output tally is locked.** Once a run is **Completed**, the output tally you recorded for it is final — the wood has already been added to stock as a new Lot. Opening that tally afterwards shows it **read-only**: the cells cannot be edited and the Save, Undo and Import buttons are not shown. This is on purpose, so the tally always matches the stock it created. To change the output of a finished run use **Edit Output** on the run; to correct a stock figure use **Add Adjustment** — both leave a record of the change.
 
 **Pausing a run:** if something more urgent needs the mill, click **Pause** on a running job (an optional note explaining why is available but never required). A paused job can be **Resumed** back to running, or **Cancelled** directly without resuming first — nothing about its reserved input stock changes while paused.
 
