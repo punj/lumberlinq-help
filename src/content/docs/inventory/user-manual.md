@@ -157,6 +157,21 @@ While you tally an unconfirmed Stock Out, a small **Stock Availability** box flo
 
 If you change a row's pieces (say 250 to 125) and save, Held by this sheet drops by 125 and Remaining goes up by 125 straight away.
 
+**When there is not enough stock (Square tallies).** What happens depends on **Application Settings → Inventory Policy → "Let sales continue past available stock"**:
+- **Off (the default):** a Save that asks for more of a size than is free is **refused**. Nothing is saved, and a message lists the rows to fix (for example "4 × 3 × 6 ft: needs 150 pcs, only 100 free").
+- **On:** the Save goes through after you enter a short reason.
+- **A size that has no stock at all:** the row can still be saved. It shows a red dot and holds no stock. Use **Request custom-made** (in the banner above the tally, or from the Stock Picker in Flexible layout) to ask the mill to make it. **Confirm Stock Out is refused** until every row has stock; the message names the rows.
+
+Round tallies have no sizes, so this size check does not apply to them.
+
+**A live dot for each row (Standard layout).** On a Standard-layout Stock Out (one product for every row) a ✨ column shows a dot for each row as you type: green = this size is in stock, amber = nearly all of it is used, red = not enough. Click the dot to see alternatives (a longer or bigger size, another grade or origin). Flexible layout shows the same warnings on each row's product chip instead.
+
+**Why was it sold past stock?** When the company setting allows selling past stock, you give a short reason when you save. That reason is then shown on the Stock Unit ("Sold past available stock — reason …") and, after the Stock Out is confirmed, on the Sold line in the Stock Statement and in the In/Out list.
+
+**Stock held by open Stock Outs.** On **Inventory → Stock in Hand**, the card **Held by open Stock Outs** lists every unconfirmed Stock Out that is holding stock, with how many days it has been idle (green under a week, amber from a week, red from a month). Use **Release** to free the wood of a forgotten draft in one click. The rows stay on the sheet; it holds the stock again the next time someone opens or saves it.
+
+**Confirm needs a saved tally.** If the tally still has unsaved rows, Confirm Stock Out asks you to save first — only saved rows are taken out of stock, and the tally locks after Confirm.
+
 ## When a Received Stock Unit's Tally Is Changed
 
 If rows are edited on a Stock Unit that was already received, its batch follows the change automatically — one **Tally correction** line per save in In/Out (the change, not a recount).
