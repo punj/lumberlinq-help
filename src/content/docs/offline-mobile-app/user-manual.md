@@ -1,67 +1,133 @@
 ---
 title: Offline Mode & Mobile App — User Manual
-description: How LumberLinq's Android and iPhone apps work without an internet connection, and how they sync back up once you're online.
+description: Why LumberLinq's Android and iPhone apps work offline, exactly what works without internet, how syncing works, and when unsynced work can be lost.
 ---
 
-*Also searched as: no internet, no signal, works offline, download the app, android app, iphone app, ios app, play store, app store, sync issues, sync failed, offline banner, capacitor app.*
+*Also searched as: no internet, no signal, works offline, offline tally, remote site, forest, yard, download the app, android app, iphone app, ios app, play store, app store, sync issues, sync failed, not synced, sync now, last synced, keep offline, offline lock, offline too long, changes waiting, lost changes, offline changes removed.*
 
-## What Offline Mode Is
+## Why the App Works Offline
 
-LumberLinq's mobile app — on **Android** and **iPhone** — can keep working even when your phone or tablet has no internet connection, useful at a mill or yard with patchy signal. This offline support is only available in the installed app, not in a regular web browser. If you use LumberLinq in a browser (on desktop or mobile), losing your connection behaves like any normal website: pages that need the server simply won't load until you're back online.
+The offline mode exists for **one main job: preparing tally sheets where there is no signal** — in a forest, a yard, a port or a remote mill. You measure and enter the tally on your phone, and the moment the phone is back in network everything is sent to LumberLinq automatically.
+
+Because of that purpose, **only a limited set of features works offline**. The app is not a full offline copy of LumberLinq — screens that need live company data (inventory, consignments, reports and so on) need the internet.
+
+Offline mode is only in the installed app — **Android** and **iPhone**. In a web browser, losing the connection behaves like any website: pages simply don't load until you are back online.
 
 ## Getting the App
 
-- **Android:** live on the **Google Play Store** — search for "LumberLinq" or install it directly from [play.google.com/store/apps/details?id=com.lumberlinq.app](https://play.google.com/store/apps/details?id=com.lumberlinq.app).
-- **iPhone / iPad:** live on the **App Store** — search for "LumberLinq" or install it directly from [apps.apple.com/us/app/lumberlinq/id6805041670](https://apps.apple.com/us/app/lumberlinq/id6805041670).
+- **Android:** [Google Play Store](https://play.google.com/store/apps/details?id=com.lumberlinq.app) — search "LumberLinq".
+- **iPhone / iPad:** [App Store](https://apps.apple.com/us/app/lumberlinq/id6805041670) — search "LumberLinq".
 
-You can also open the **"Get the App"** banner or link inside the LumberLinq web app (app.lumberlinq.com) on your phone.
+**New to LumberLinq on iPhone?** The iPhone app is for signing in only — create your free account first on **app.lumberlinq.com** (or the Android app), then sign in on your iPhone.
 
-**New to LumberLinq on iPhone?** The iPhone app is for signing in only — you can't create a new account inside it. Create your free account first on **app.lumberlinq.com** (or the Android app), then sign in on your iPhone. See [Account](/account/user-manual/) for details.
+**Important:** the first login on a phone must be online. The app saves your data for offline use only after it has synced once.
 
-## How You Know You're Offline
+## What Works Offline
 
-Whenever the app loses its connection, a bar appears at the top of the screen: **"You are offline. Some features may not be available."** It disappears automatically the moment your connection is back. There's no need to refresh or restart the app — LumberLinq checks your connection continuously in the background.
+| Area | What is on your phone | Can you change it offline? |
+|---|---|---|
+| **Stock Units (Transport Units) + tally sheets** | Every unit created in the **last 90 days**, every unit that is **still open**, and any unit you chose to **Keep offline** — with its tally rows, settings, summary and chart (up to 300 units, newest first) | Yes — create new units, and add, edit and delete tally rows, change tally settings |
+| **Business Partners** | The full list | Yes — view and create |
+| **Products** | The full list | Yes — view and create, add product photos |
+| **Locations (Loading Sites)** | The full list | Yes — view and create |
+| **Dropdown lists** (buyers, suppliers, products, locations, transport modes, fumigation types, countries) | Complete lists | — used when you fill in forms |
+| **Dashboard** | The numbers from your last sync (default date range only) | No |
 
-## What You Can Do Offline
+Offline, the Stock Units, Business Partners, Products and Locations lists can still be **searched, sorted and paged**, using what is saved on your phone. A small note shows how old that offline copy is.
 
-A handful of everyday screens are built to keep working with no connection, because their data is kept saved on your device:
+**"Open" Stock Unit** means one that is not locked and not Delivered, Closed or Cancelled.
 
-- **Stock Units (Transport Units)** — create new ones, and keep filling in tally rows
-- **Business Partners** — view and create
-- **Products** — view and create
-- **Locations** — view and create
+### Photos and documents offline
 
-Anything you create or edit in these areas while offline is saved on your device and queued to upload automatically once you're back online.
+- Photos and documents of your **10 newest** Stock Units are saved on the phone automatically.
+- For other units, a photo or document is saved on the phone **once you have opened it online**.
+- To keep space free, the app removes files you **haven't opened for 30 days**, and keeps all saved files under **300 MB** (the longest-unopened go first). A removed file simply downloads again next time you open it online. Your lists and tally rows are never removed by this.
 
-## What Needs a Live Connection
+### Keep offline
 
-Some areas genuinely need to talk to the server every time and are not available offline: **Export, Import, Reports, Consignments, and Inventory**, along with Admin screens and shared/public links. If you try to open one of these while offline, LumberLinq shows a plain "Needs a connection" page instead of letting the screen load and fail halfway through. That page automatically sends you back to what you were trying to open the moment your connection returns — you don't need to tap anything or retry manually.
+Need an older Stock Unit at a remote site? Open the **Stock Units** list, tap the row's menu (**⋮** or **⋯**) and choose **Keep offline**. It is saved on your phone right away (with its tally and files) and stays there until you choose **Remove from offline**.
 
-## How Syncing Works When You're Back Online
+## What Needs the Internet
 
-The instant your connection returns, LumberLinq quietly uploads everything you created or changed while offline — new Stock Units, tally rows, Business Partners, Products, and Locations — in the correct order automatically. While this is happening, you'll see a short progress bar with a small checklist showing which areas are still uploading. Most syncs finish within a few seconds. You don't need to stay on any particular screen for it to happen — it runs in the background.
+These show a **"Needs a connection"** page offline, and bring you back automatically when the connection returns:
 
-The app also quietly refreshes some of your offline data (Business Partners, Products, Locations, Stock Units, and your Dashboard numbers) every time you come back online, so what's saved on your device stays reasonably up to date for the next time you go offline.
+- **Inventory** (all of it, including My Tasks and Stock Statement) and the **Command Center**
+- **Consignments / Shipments**, **Reports**, **Export and Import**
+- **Admin**, **CRM**, **Support Tickets**, **Notifications**, **Profile** and **Settings**
+- **Subscription and payment** screens, **sign-up and account setup**, email verification and invitations
+- Shared / public links
+
+The **utility** tools (unit conversion, volume estimates, slab generator, calculator) work offline.
+
+## How Syncing Works
+
+- Everything you create or change offline is **saved on the phone** and sent to LumberLinq **automatically** when the connection is back — in the right order, even if the app is in the background.
+- Several tally-row saves for the same tally are sent together, so a big tally uploads quickly.
+- The app uses the phone's real network signal. On "Wi-Fi connected but no internet", your saves are kept on the phone instead of failing.
+- When you come back to the app after a while, it refreshes your offline copy on its own.
+- If the server has a problem, the app waits a little longer before each new try (seconds, then minutes). After 10 failed tries the item moves to **Sync Issues**, where you can press **Try again**.
+- Photos and documents are never saved twice, even if the upload had to be retried.
+
+### The sync button (top of the screen)
+
+Next to the notification bell you'll see a small cloud:
+
+- **Plain cloud** — everything is saved on LumberLinq.
+- **Spinning** — sending now.
+- **☁ with a number** — that many changes are waiting on this phone (you're offline, or they're about to be sent).
+- **⚠ with a number (amber)** — that many changes were refused by the server — tap to open **Sync Issues**.
+
+Tap it to see **when the phone last synced**, the counts, and a **Sync now** button.
 
 ## The Sync Issues Page
 
-Occasionally, something you created offline can't be saved once it reaches the server — for example, you named a new Product or Location the same as one that already exists. Items like this don't just disappear: they land on the **Sync Issues** page (in the app menu), which you can open whether you're online or offline, since it only reads what's already saved on your device.
+Sometimes the server refuses an offline change — for example a new Product or Location with a name that already exists, or a tally that was locked in the meantime. Those changes appear on **Sync Issues** (menu, or the amber ⚠ button):
 
-On this page, each failed item shows what it was and why it failed. Depending on the problem:
+- **Rename & Retry** — for a name clash on a Product or Location.
+- **Try again** — for an item that stopped after too many server failures.
+- **Delete** — removes the change for good (it was never saved on LumberLinq).
 
-- **Rename & Retry** — for a naming clash on a Product or Location, you can type a new name right there and resend it.
-- **Discard** — permanently removes the item. Use this if you no longer want to save it (it was never actually saved to LumberLinq, so nothing else is affected).
+## Logging Out
 
-Nothing on the Sync Issues page retries automatically — it's designed so you always decide what happens to work that didn't go through cleanly.
+Logging out always **syncs first**, so no work is left behind on the phone:
+
+- **Nothing waiting** — you are logged out as usual.
+- **Changes waiting and you are online** — the app sends them first ("Syncing before logout…"), then logs you out.
+- **Changes waiting and you are offline** — logout is **blocked**: *"5 changes waiting — connect to the internet to sync, then log out."*
+- **The server refused some changes** — you see the list and can choose **Delete and log out**, or **Cancel** to keep them and fix them in Sync Issues.
 
 ## The 15-Day Offline Limit
 
-For security, a device can only stay logged in and working offline for a limited stretch of time (currently 15 days) since its last real connection to LumberLinq. If a device passes that limit without reconnecting, it's automatically signed out the next time you try to use it, and you'll need to log in again with a live connection. This protects your company's data if a phone or tablet is lost, stolen, or simply left unused for a long time. As long as you reconnect every so often — even briefly — this limit never comes into play.
+For security, a phone can work offline for up to **15 days** after its last real connection.
 
-## Switching Users or Companies on the Same Device
+- **If nothing is waiting to sync** — after 15 days the app logs you out; log in again with internet.
+- **If changes are waiting** — the app **locks** instead ("Offline for too long"). Your changes stay safe on the phone, but nothing else is shown. As soon as the phone has internet (and you've logged in again if needed), the app asks **"Sync your old changes?"**:
+  - **Yes** — they are sent, then you are logged out.
+  - **No** — they are **deleted** ("Your 5 old changes were deleted because you chose No."), then you are logged out.
 
-If a different person logs into LumberLinq on a device that was previously used by someone else — or if you switch between two different companies on the same device — LumberLinq automatically clears out the previous person's or company's offline data first. This keeps one person from ever seeing, or accidentally overwriting, another person's or company's saved records. You'll briefly see an "account switched" message while this happens. Anything that hadn't finished syncing under the old login is cleared along with it, so make sure your offline work has synced (check the offline banner has disappeared) before handing a shared device to someone else or switching companies.
+Connect at least every few days — even briefly — and this limit never comes into play.
+
+## Several People, One Phone
+
+Each phone keeps offline data for **one person and one company** at a time.
+
+- When a **different person** logs in, the previous person's offline data is removed from the phone — **including any changes they had not synced yet**. The previous person is told the next time they log in (on this phone, and in their notifications on any device): *"N changes you made offline on a phone were removed…"*.
+- The same happens when you log into a **different company** on the same phone (switching company in the app is blocked while you have changes waiting).
+- **Before handing a phone to someone else, make sure the cloud button shows everything is synced.**
+
+## When Offline Work Can Be Lost — and How Much
+
+Offline changes are only ever lost in these cases:
+
+| Situation | What is lost |
+|---|---|
+| You press **Delete** on Sync Issues, or **Delete and log out** | Only the refused changes you deleted |
+| You answer **No** to "Sync your old changes?" after the 15-day lock | All changes that were waiting on that phone |
+| A **different person** (or you, into a different company) logs in on the phone before your changes synced | All your changes that were waiting on that phone — you are told on your next login |
+| The phone is **lost, broken, reset**, or the app is **uninstalled / its data cleared** before syncing | Everything that had not synced yet |
+
+Everything that **already synced** is safe on LumberLinq in every case. Offline data is not included in Google backups or phone-to-phone transfers, so a new or restored phone always starts fresh from your LumberLinq account.
 
 ## How This Connects to Other Modules
 
-Offline mode only affects the Stock Unit, Business Partner, Product, and Location screens described above — every other module behaves the same as it does online, just unavailable until you reconnect. It works alongside [Session Security](/session-security/user-manual/) — the same single-session rule still applies, it's just enforced the next time your device successfully reconnects rather than instantly.
+Offline mode covers Stock Units with their tally sheets, Business Partners, Products and Locations. Every other module works as usual online. It works alongside [Session Security](/session-security/user-manual/) — the single-session rule is enforced the next time your phone reconnects.
