@@ -84,6 +84,8 @@ Each plan has limits on:
 - **AI Chat (Linc)** — daily message limit per user
 - **AI credits** — shared pool used by AI Import (tally sheets) and, on the Forest plan, Ask AI inside Unified Search's Stock mode. Cost is based on how much text/image content is processed per request, not a flat fee — a Claude-style usage banner warns you at 80%, 90%, 95%, and 100% of your plan's credit limit used.
 
+**Limits reset.** A counted limit resets at the start of its period — most are **per month** (the plan page shows the period next to each limit, e.g. "per month"). Counting starts again from zero in the new period; your existing records are never deleted. Periods follow your company's timezone.
+
 When you approach a limit, a **Plan Limit Banner** appears at the top of the relevant module page. When a limit is reached, you cannot create new records of that type until you upgrade or delete old records.
 
 ## Forest Plan
@@ -99,6 +101,10 @@ If a Forest-only feature is greyed out or missing, check your current plan on th
 From **Subscription → Payment History**, click the download icon next to any paid invoice. The invoice downloads as a PDF.
 
 ![Transaction history](/screenshots/reports/subscription-component-02-transaction-history.png)
+
+## Renewal Reminder Email
+
+One to two days before an automatic renewal, you get an email with the **exact amount** that will be charged. If you cancel or downgrade before then, no reminder is sent.
 
 ## What Happens If an Auto-Renewal Payment Fails?
 

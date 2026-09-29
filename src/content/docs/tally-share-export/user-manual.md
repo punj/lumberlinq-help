@@ -43,6 +43,11 @@ Use the **Access Visibility Panel** (the "eye"/info button inside the share dial
 - **Expiry date** — the link stops working after this date; leave blank for no expiry
 - **Download permission** — allow the recipient to download a PDF from the share view
 - **Document access** — control whether uploaded Stock Unit documents (photos, files) are visible in the share view
+- **Show details in link preview** — when the link is pasted into WhatsApp, Telegram, LinkedIn, Slack and similar apps, the chat shows a card with the details this link is allowed to show (for a public link: product, volume, pieces). Turn it off for a plain card. Protected and Private links always show a locked card with only the number of Stock Units — never volume or product.
+
+**Opening a link on a phone:** a share link opened from WhatsApp or Instagram on a phone with the LumberLinq app opens that link inside the app, not the login page.
+
+**How long a link works:** a link keeps working until its own **Expiry date** (or forever when left blank) — it no longer stops after 3 days on its own.
 
 ## Revoking a Share Link
 

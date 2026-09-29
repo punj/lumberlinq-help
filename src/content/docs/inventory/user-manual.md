@@ -40,9 +40,11 @@ Alongside the stage cards, KPI totals show available CBM, in-process CBM, in-con
 
 Two buttons sit at the top of Overview:
 - **Opening Stock** — add the stock you already have, usually when you first start using LumberLinq (needs the Inventory Receive and Tally Add permissions). It opens a new Stock Unit — see "Adding Your Opening Stock" below.
-- **Mill Run** — start a processing/conversion run
+- **Mill Run** — opens the **New Processing Run** dialog straight away
 
 New deliveries come in through their own Stock Unit (the **Receive into Inventory** button on the Stock Unit page, or automatically from a purchase Consignment). Stock goes out through a sale Consignment.
+
+**Before you can receive a Stock Unit into inventory** it needs a **Product**, a **Location**, a transport mode (not for opening stock) and at least one saved tally row — otherwise Receive is greyed out or refused with a message saying what's missing.
 
 Only the actions your account has permission for are shown — if you don't see Opening Stock or Mill Run, ask an admin to grant it.
 
@@ -99,9 +101,22 @@ A chain can show, depending on that lot's own history:
 
 A lot with no upstream source and no downstream activity yet will just show as new, unprocessed stock — that's normal, not an error.
 
+### Full Trace — the Family Tree on One Screen
+
+**Full Trace** draws the whole chain as boxes you can open one step at a time: Consignment → Stock Unit → batch → processing run → output batch → the sale. Open it with the **Full Trace** button on a batch's detail popup (Overview) or on a processing run's details. It needs the **Full Trace** right — Admins have it; others can be given it in RBAC.
+
+- **▼ under a box** shows what came next (what the batch was milled into, which sale took it).
+- **▲ above a box** ("See where this came from") moves up to its source; when a batch was pooled from several purchases you pick which one.
+- On each box: 👁 a quick view, 🕘 its history (who did what, when). **+ / −** zooms the whole tree.
+- A supplier's name shows only to people with the Finance right.
+
 ## In/Out — The Movement Ledger
 
 Open **Inventory → In/Out** to see every stock movement in chronological order — the audit trail for inventory. Movement types: **IN** (received), **OUT** (dispatched), **Proc IN** (entered a processing run), **Proc OUT** (produced by a processing run), **In Consignment** (assigned to a consignment), and **Adjustment**. Filter by movement type (chips at the top) or by date range.
+
+- **Each row is one sentence**, e.g. "Sent to mill 1.560 m³ Teak from SU-000001 🚛 PQRS1234 for job PR-2026-0022". The Stock Unit, batch, mill job and consignment ids are chips — tap one to see its details (a bottom sheet on a phone).
+- **Mill job rows** open a **Whole job** panel: started → finished, input → output and wastage.
+- **Search one item:** type a Stock Unit, container / truck number, batch, mill job or BL number in the search box to see only its rows. **Export** then gives just those rows, and **Open full statement** opens that item's Stock Statement.
 
 ![In/Out ledger](/screenshots/reports/inventory-03-in-out-ledger.png)
 
@@ -123,7 +138,28 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 - Adding an Adjustment for the same shortage after a reconciliation shows a warning — the reconciliation already corrected it.
 - Companies without Inventory, Stock Out units and opening stock work as before: no "receive first" step, and a lock only records the difference.
 
+**Reconcile before milling.** When you start a mill run, the **Check Before You Start** list shows any Stock Unit in that batch that isn't reconciled yet, with a **Reconcile now** button (you come back to the run with your entries kept).
+- If you start anyway with a Stock Unit that was **never reconciled**, you type **CONFIRM** in the same dialog — asked once per Stock Unit. A machine operator starting a job from My Tasks is never asked.
+- "Closed without count" (locked with no unloading count) shows as information only — it can't be reconciled any more.
+
+**Reconciling after the batch was milled or sold:** the Reconciliation tab says so and offers only **Record & lock** — stock is not changed. Use **Correct with an adjustment →**: it opens Add Adjustment already filled in (Stock Unit, the difference, reason "Reconciliation after milling", a note with the counts) — check it and save.
+
+**An adjustment that would take a batch below zero** shows the before → after figures and asks you to type **CONFIRM** in the same dialog.
+
+## When a Received Stock Unit's Tally Is Changed
+
+If rows are edited on a Stock Unit that was already received, its batch follows the change automatically — one **Tally correction** line per save in In/Out (the change, not a recount).
+
+The stock is **not** changed automatically — it waits in a **Tally corrections waiting for you** panel (on the Stock Unit page and In/Out, and as an item in Command Center) — when:
+- it would take the batch below zero and your company doesn't allow selling past available stock (Application Settings → Inventory Policy);
+- the reconciliation is already locked (the arrived figures decide the stock from then on); or
+- the Stock Unit was already shipped.
+
+Press **Apply to stock** or **Dismiss** (stock unchanged). You need the stock adjustment right to do either.
+
 ## Processing — Converting Timber Stock (Custom-Made / Re-saw Runs)
+
+While you record a run's output on its tally, a **Recording output for Processing Run** bar stays pinned under the header (slim on phones), so you always know which run you are filling in.
 
 Open **Inventory → Processing** to convert input timber into a different output — the most common case is round logs re-sawn into square/sawn boards (a Custom-Made run). Click **New Processing Run**, select the input Stock Units, and enter the output details; the system can auto-suggest likely inputs based on what you're producing. A run's status is Draft, In Progress, Paused, Completed, or Cancelled — cancelling reverses the input Stock Unit assignments (allowed from Draft, In Progress, or Paused). A completed run's output can be linked directly to a new tally sheet so the produced volume is measured and recorded in one flow.
 

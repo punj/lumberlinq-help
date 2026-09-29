@@ -92,6 +92,35 @@ Many individual pages — Dashboard, Shipments, Tally Sheet, Reports, Business P
 
 **Replay the tour anytime:** click the **?** help icon in the header (it has a subtle pulse until you've seen the tour for the first time) or open your profile menu and click **Product Tour** — both restart the same header walkthrough from the beginning, even if you've already seen or dismissed it before.
 
+**Seen once — on every device.** Each person sees each tour only once. Once you finish, skip or close a tour, it won't show again for you on any phone, computer or browser (it used to come back on a new device). On a shared computer, every person still gets their own tours.
+
+**Tours can be switched off.** LumberLinq can switch the product tours off for everyone while a tour is being refreshed. While they are off, no tour starts by itself and the **Product Tour** menu item and the pulsing **?** are hidden.
+
+## After You Log In — Your Starting Page
+
+LumberLinq opens the **first page your role allows**, in this order: Dashboard → Tally Sheets → Stock Units → Consignments → Inventory → Sales CRM → Profile. If your role doesn't include the Dashboard, you land on Tally Sheets (for example) instead of an "Access restricted" screen.
+
+- **"This page isn't part of your role yet"** only shows when you open a page yourself (an old bookmark, a shared link, a typed address). Its **Go to my home page** button takes you to your first allowed page.
+- **Request access** on that screen sends your company's admins a bell notification (for example "Ravi asked for Dashboard access"). The admin gives the access in Manage Users / RBAC.
+- If your account has **no pages at all yet**, you see a welcome screen with **Request access** and **Log out** — your admin is told automatically.
+
+## Pages Update by Themselves
+
+Screens that show shared data — Command Center, Dashboards, Inventory, Stock Statement, Processing, Operators, Machines, the Reconciliation tab, My Tasks, support tickets and the Sales CRM inbox — update on their own when someone saves a change. There is no need to refresh the page.
+
+- Only what changed moves: new rows slide in, changed rows glow for a moment, numbers roll to their new value.
+- If you were away (phone locked, other screen), the page loads the latest data when you come back to it.
+
+## File Uploads Show Real Progress
+
+Every file upload shows its real progress: the percentage, MB sent of the total, speed and time left, with one bar per file and an overall bar. Several files upload a few at a time; each file has **Cancel**, and a failed file has **Retry** without touching the others. When the file is sent, the bar changes to **Processing…** while the server finishes (for example resizing a photo).
+
+**AI Import** shows what the AI is doing right now — "Preparing page 3 of 8", "AI is reading page 3 of 8", rows found per page and about how long is left — with a preview of the page being read.
+
+## Give Feedback
+
+Open your **profile menu** (top right; on a phone, the side menu) and choose **Give Feedback** to tell us what works and what doesn't. Your feedback goes straight to the LumberLinq team.
+
 ## Utility
 
 Open **Main Menu → Utility** for four built-in calculation tools, so timber teams can do everyday conversions and sums without a separate spreadsheet or a phone calculator: **Calculator**, **Cost Estimate**, **Unit Conversion**, and **Generate Slab**.

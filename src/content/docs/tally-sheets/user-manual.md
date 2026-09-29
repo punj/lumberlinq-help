@@ -146,6 +146,10 @@ The status bar shows row count, gross CBM/CFT, unsaved count, save progress, sav
 
 Validation prevents incomplete or invalid tally data from being saved. Round validation covers required length/girth and configured ranges. Square validation covers required width, thickness, length, and pieces.
 
+**Range rules only warn.** A value outside your configured range (or not divisible by 5, when that rule is on) is **kept** and its cell turns **amber** as a warning — it is never cleared or blocked. Warnings show while editing only.
+
+**Pick from the list.** On the Stock Unit form, **Product**, **Location (Loading Site)** and **Destination Site** must be picked from the suggestion list — text typed but not picked is cleared with a "Required" message when you leave the field. The same applies to a Consignment's ports, Shipper, Consignee and Notify Party.
+
 If pressing Enter after the last row adds an extra blank row that's never filled in, it's automatically ignored when you save — you don't need to delete it by hand.
 
 ![Round validation error](/screenshots/tally/round-validation-error.png)

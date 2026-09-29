@@ -43,7 +43,19 @@ Ctrl+K was removed. Unified Search (which now covers what used to be two separat
 
 **How do I see the Product Tour again after dismissing it?**
 
-Click the **?** help icon in the header, or open your profile menu (top right) and click **Product Tour** — either one restarts the guided walkthrough from the beginning.
+Click the **?** help icon in the header, or open your profile menu (top right) and click **Product Tour** — either one restarts the guided walkthrough from the beginning. If you don't see the Product Tour item or the **?**, product tours are switched off for everyone right now.
+
+**Why does the tour not show again on my new phone?**
+
+A tour you have seen, skipped or closed is remembered for your account, not your device — so it never shows twice, on any device.
+
+**Why did I land on Tally Sheets and not the Dashboard after logging in?**
+
+Your role doesn't include the Dashboard, so LumberLinq opened the first page you are allowed to use. To ask for more pages, open the page you need and press **Request access** — your company admin gets a notification.
+
+**Do I need to refresh a page to see my colleague's change?**
+
+No. Shared screens (Command Center, Inventory, Stock Statement, Processing, Dashboards, tickets and more) update by themselves a moment after the change is saved.
 
 **Why do my Cost Estimate results look wrong?**
 

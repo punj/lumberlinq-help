@@ -127,6 +127,8 @@ Use the **Export** action from the consignment edit screen or the download actio
 
 Use the share action from the list to create public, protected, or private consignment links. The share dialog lets users control duration, access limits, download permission, and document visibility.
 
+**Show details in link preview** controls the card WhatsApp and other chat apps show when the link is pasted: on a public link it shows the consignment's real details (only what your field-access settings allow); turn it off for a plain card. Protected and Private links always show a locked card with only the Stock Unit count.
+
 ![Share menu](/screenshots/shipments/shipments-04-share-menu.png)
 
 ## Lock a Consignment
