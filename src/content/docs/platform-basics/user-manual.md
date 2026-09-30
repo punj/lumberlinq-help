@@ -136,12 +136,17 @@ Files you already have — a photo, a PDF, a Word or Excel file, several at once
 
 If your account may not upload anywhere, the sheet tells you to ask your admin.
 
-**What happens next.** Nothing uploads by itself. LumberLinq opens the right screen and a bar at the bottom shows how many files are ready. Open the record you want:
+**What happens next.** Nothing uploads by itself.
+- For **Consignment documents, Stock Unit documents and AI Import** the sheet moves on to **Which consignment?** or **Which Stock Unit?**. Type at least 2 letters or digits of a number or name and tap the record. LumberLinq opens it straight on the right tab, and the **Attach here** banner scrolls into view and pulses so you do not miss it.
+- If you are **already on a record that can take the files** (an open consignment that is not locked, a saved Stock Unit you may edit, the New Ticket page), the sheet does not ask: you stay there and the banner comes forward.
+- A bar at the bottom shows how many files are ready until you attach or discard them. On a phone the sheet is a bottom sheet fixed to the bottom of the screen.
 
-- **Consignment:** a banner above the documents shows **Attach here** and **Discard**. If that consignment is locked, that document type is not available for it, or you can only view it, the banner is greyed and says why — the files wait, so you can open a different consignment.
-- **Stock Unit:** open its **Photos** tab. The same banner appears; **Attach here** opens the usual dialog (category, access level and note).
-- **AI Import:** open a Round or Square tally. **Attach here** opens AI Import with the files already added; the AI starts only when you press the read button.
-- **Support ticket:** the New Ticket page opens with the files already attached. Fill in the ticket and submit as usual. The usual limits apply (5 files, the allowed file types, 20 MB each).
+What you see per place:
+
+- **Consignment:** its **Documents** tab, with a banner showing **Attach here** and **Discard**. If that consignment is locked, that document type is not available for it, or you can only view it, the banner is greyed and says why — the files wait, so you can open a different consignment. When you are on a consignment like that, the sheet asks you to pick another one.
+- **Stock Unit:** its **Photos** tab. The same banner appears; **Attach here** opens the usual dialog (category, access level and note).
+- **AI Import:** the **Tallysheet** tab of the Stock Unit. **Attach here** opens AI Import with the files already added; the AI starts only when you press the read button.
+- **Support ticket:** the New Ticket page opens with the files already attached (if you are already on it, they are added at once). Fill in the ticket and submit as usual. The usual limits apply (5 files, the allowed file types, 20 MB each).
 
 Everything else — limits, storage, who may upload — is exactly the same as a normal upload. Waiting files survive a page reload or an app restart for up to 12 hours (same person, same company). They are removed when you attach them, discard them or log out.
 

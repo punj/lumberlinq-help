@@ -153,6 +153,10 @@ Open **Inventory → Stock in Hand** (or tap the **Stock on hand** tile on Comma
 - **Three totals at the top:** **In stock** is all the wood physically on hand. **Held** is the part kept for open Stock Outs and Mill Jobs — it is still yours and can still be sold or milled. **Free** is In stock minus Held: what is available right now for a new sale or Mill Job. Tap or hover the **?** next to each label for this explanation.
 - **Pieces under each total:** a line such as **Round: 50 logs · Square: 100 pcs** shows how many logs (round wood) and pieces (square wood) make up that total. These are whole-company totals and do not change when you search.
 - **The table** lists every product · size · origin · quality · site with In stock, Held (orange), Free (green), pieces and how many Lots (hover for the Lot codes). Search by product, size (for example `4x3x6`), origin, site or Lot code, and switch between CBM and CFT.
+- **On a phone** each size is a **card** instead of a table row: three boxes **In stock / Held / Free** (Free in green), the origin as a tag, and the products as groups with their totals. **Tap a card** to see the details, including the Lot codes (there is no hover on a phone). On a tablet the Quality and Site columns move into the same details (tap a row).
+- **Group by product:** the switch above the list gives one header per product with its In stock, Held and Free. Tap a header to fold its sizes, or use **Collapse all / Expand all**. It is on by default on a phone and remembers your choice. When you search, only the matching sizes stay and a group's totals are of the sizes shown.
+- **Sort:** click a column heading (Product, Size, In stock, Held, Free). Click again to reverse, a third time to return to the default order. On a phone use the **sort menu** (Free high to low, In stock high to low, Size, Product A–Z).
+- **Held vs Free bar:** a thin bar under the three totals shows the share of Held and Free, from the same numbers as the totals.
 - It updates by itself when stock moves. For proof of what happened to stock (received, milled, sold, adjusted), use the **Stock Statement**.
 
 ## The Stock Availability Box on a Stock Out
