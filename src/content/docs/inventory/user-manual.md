@@ -146,6 +146,15 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 
 **An adjustment that would take a batch below zero** shows the before → after figures and asks you to type **CONFIRM** in the same dialog.
 
+## Stock in Hand — How Much Stock Do I Have?
+
+Open **Inventory → Stock in Hand** (or tap the **Stock on hand** tile on Command Center) to see what you really have right now.
+
+- **Three totals at the top:** **In stock** is all the wood physically on hand. **Held** is the part kept for open Stock Outs and Mill Jobs — it is still yours and can still be sold or milled. **Free** is In stock minus Held: what is available right now for a new sale or Mill Job. Tap or hover the **?** next to each label for this explanation.
+- **Pieces under each total:** a line such as **Round: 50 logs · Square: 100 pcs** shows how many logs (round wood) and pieces (square wood) make up that total. These are whole-company totals and do not change when you search.
+- **The table** lists every product · size · origin · quality · site with In stock, Held (orange), Free (green), pieces and how many Lots (hover for the Lot codes). Search by product, size (for example `4x3x6`), origin, site or Lot code, and switch between CBM and CFT.
+- It updates by itself when stock moves. For proof of what happened to stock (received, milled, sold, adjusted), use the **Stock Statement**.
+
 ## The Stock Availability Box on a Stock Out
 
 While you tally an unconfirmed Stock Out, a small **Stock Availability** box floats on the screen. It has one line per product, origin and quality on the sheet, and it updates by itself — no reload — when anyone changes stock.
