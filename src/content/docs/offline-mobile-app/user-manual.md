@@ -138,4 +138,4 @@ Everything that **already synced** is safe on LumberLinq in every case. Offline 
 
 ## How This Connects to Other Modules
 
-Offline mode covers Stock Units with their tally sheets, Business Partners, Products and Locations. Every other module works as usual online. It works alongside [Session Security](/session-security/user-manual/) — the single-session rule is enforced the next time your phone reconnects.
+Offline mode covers Stock Units with their tally sheets, Business Partners, Products and Locations. Every other module works as usual online. It works alongside [Session Security](/session-security/user-manual/) — the device rule (one computer or browser plus one phone or tablet app on a paid plan, one device on a free plan or trial) is enforced the next time your phone reconnects.
