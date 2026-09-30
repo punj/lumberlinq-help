@@ -3,7 +3,7 @@ title: Subscriptions & Billing — FAQ
 description: Frequently asked questions about LumberLinq plans, payments, and limits.
 ---
 
-*Also searched as: billing, upgrade plan, invoice, payment method, grove plan, cancel subscription, downgrade, free trial, promo code, coupon code.*
+*Also searched as: billing, upgrade plan, invoice, payment method, grove plan, cancel subscription, downgrade, free trial, promo code, coupon code, bank transfer, cheque, NEFT, RTGS, IMPS, UTR.*
 
 **Payment was debited but my plan didn't upgrade — what do I do?**
 
@@ -16,6 +16,14 @@ Try logging out and back in to refresh your session first. If the issue persists
 **My AI Chat (Linc) messages ran out today — when do they reset?**
 
 Daily AI Chat limits reset at midnight (server time). To get a higher daily limit, upgrade to a higher plan.
+
+**Can I pay by bank transfer or cheque?**
+
+Yes, if your company is billed in INR. On the payment page turn **Auto-Renewal** off, then click **Pay by bank transfer / cheque (INR)**. It is not available for monthly plans (they renew automatically), for other currencies, or in the iPhone app. See **Paying by Bank Transfer or Cheque** in the Subscriptions manual for the steps.
+
+**I paid by bank transfer or cheque — when will my plan start?**
+
+After you submit the UTR or cheque number the page shows "Your payment is waiting for confirmation". Our team checks the bank and switches your plan on; you get a notification and your GST invoice by e-mail. While it waits you can attach or replace the proof of payment. If it is rejected you get the reason and can submit the details again.
 
 **My promo code isn't working — why?**
 

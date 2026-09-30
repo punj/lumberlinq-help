@@ -126,6 +126,12 @@ The Export menu shows Excel, PDF, Bundle, and Advanced options.
 
 Each editable grid row includes actions for adding a row below and deleting a row. Copy Previous Length is controlled from Settings and applies when adding rows.
 
+**Keys while entering rows.**
+- **Enter** moves to the next field (Round: Length → Girth → the next row; Square: Width → Thickness → Length → Pieces → the next row). On the last row it adds a new row. Enter only ever moves forward, so you can type as fast as you like.
+- **Shift+Enter** (Round tally) saves the value you are typing and adds a new row right below the current one. The same is done on a phone with the **+ ↓** button in the keypad bar, next to the row arrows.
+- **Ctrl + arrow keys** move between cells; **Ctrl+Enter** moves on even when a value is not valid.
+- The **numpad Enter** key works like the main Enter key, also in the side menu.
+
 ![Round — row actions](/screenshots/tally/round-row-actions-add-delete.png)
 
 ![Square — row actions](/screenshots/tally/square-row-actions-add-delete.png)

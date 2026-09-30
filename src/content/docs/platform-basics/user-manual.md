@@ -82,6 +82,8 @@ Press **?** anywhere in the app (not while typing in a text field) to open the f
 
 ![Keyboard Shortcuts dialog](/screenshots/platform-basics/platform-basics__keyboard-shortcuts__01.png)
 
+In the side menu, use the arrow keys and press **Enter** (main or numpad) to open an item.
+
 ## Product Tour
 
 The first time you land on a main app page after logging in, LumberLinq walks you through the header controls with a short guided tour: the navigation menu, the LumberLinq logo (click it to return to the Dashboard from anywhere), Language, Font Size, Theme, Dark Mode, your profile menu, and the Help & Support icon. Click the **×** on any step to dismiss the tour early — it won't pop up again on its own once you've seen it or dismissed it.

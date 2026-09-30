@@ -68,7 +68,28 @@ After payment, you'll land on a success, pending, or failure screen depending on
 
 ## Payment Methods Supported
 
-The subscription checkout screen uses **Razorpay** or **Cashfree** (UPI, net banking, credit/debit cards, depending on your region) — whichever is configured for your account. Other payment gateways exist elsewhere in LumberLinq but aren't used on this particular screen.
+The subscription checkout screen uses **Razorpay** or **Cashfree** (UPI, net banking, credit/debit cards, depending on your region) — whichever is configured for your account. Other payment gateways exist elsewhere in LumberLinq but aren't used on this particular screen. Companies billed in INR can also pay by **bank transfer or cheque** — see the next section.
+
+## Paying by Bank Transfer or Cheque (INR plans)
+
+If your company is billed in INR you can pay by **bank transfer (NEFT / RTGS / IMPS) or cheque** instead of the online gateway.
+
+**When the option is shown**
+- On INR plans only, in the web app (it is not shown in the iPhone app).
+- Not for monthly plans, because monthly plans renew automatically. Choose a longer plan to use it.
+- **Auto-Renewal must be off.** Turn it off on the payment page and the option appears; turn it on and it disappears.
+
+**How to pay**
+1. On the payment page fill in the billing details and accept the terms. Under **Proceed to Payment**, click **Pay by bank transfer / cheque (INR)**.
+2. The window shows the **Amount to pay** (it already includes GST and your coupon discount — please pay exactly this amount), our bank details (account name, bank, account number, branch), who to make a cheque payable to and where to send it, and a **reference to write in the payment remarks** (or on the back of the cheque) so we can find your payment.
+3. Make the transfer or send the cheque, then click **I have paid — enter the details**. Choose how you paid, enter the **UTR number** of the transfer or the **cheque number** (at least 4 characters) and the date. Your bank and a note are optional. A **proof of payment** (screenshot of the transfer or photo of the cheque; JPG, PNG, WEBP, HEIC or PDF, up to 8 MB) is optional but helps us confirm faster. Click **Submit payment details**.
+4. The page now shows **"Your payment is waiting for confirmation"**. Until we decide you can **Attach proof** or **Replace proof** there. Only one such payment can be waiting at a time, and the same UTR number cannot be used by another company.
+
+**What happens next**
+- The LumberLinq team checks the payment in the bank and switches your plan on. You get a notification, and your **GST invoice is e-mailed** to you when the payment is confirmed.
+- If a payment cannot be accepted you get a notification with the reason and can submit the details again (a rejected UTR number can be used again).
+- A waiting payment is not cancelled automatically.
+- A company that pays this way is never charged automatically. Before the plan ends you get the renewal reminder e-mail, which includes the bank details.
 
 ## Promo Codes
 
