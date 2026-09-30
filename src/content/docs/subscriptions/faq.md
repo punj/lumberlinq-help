@@ -19,7 +19,15 @@ Daily AI Chat limits reset at midnight (server time). To get a higher daily limi
 
 **My promo code isn't working — why?**
 
-Make sure it's entered exactly as given (promo codes are case-sensitive) and check whether it has an expiry date or is limited to specific plans.
+Make sure it's entered exactly as given, then check the message under the code:
+
+- **"You have already used this code"** — a code can be used once per company (it is not applied again at a renewal or an upgrade).
+- **"not valid for the selected currency / billing period"** — the code is limited to one currency or to monthly or yearly billing. A fixed-amount code works for INR billing only.
+- The code may have **expired**, or all its uses may be **taken**.
+
+**Why is Auto-Renewal switched off when I use a promo code?**
+
+A promo code discounts the payment you are making now. Auto-pay would charge the discounted price every cycle, so it is off while a code is applied — also on monthly plans. Pay now, then start auto-pay from the Subscription page; it then charges the normal full price.
 
 **What happens when my trial ends?**
 

@@ -72,7 +72,14 @@ The subscription checkout screen uses **Razorpay** or **Cashfree** (UPI, net ban
 
 ## Promo Codes
 
-If you have a promo code, enter it on the payment screen before completing the transaction. Discounts are applied automatically.
+If you have a promo code, enter it on the payment screen and press **Apply** before you pay. The discount is taken off the price first and GST is worked out on the reduced amount.
+
+How promo codes work:
+
+- **Once per company.** A code can be used one time by your company. It is not applied again at a renewal or an upgrade, and once your company has used it, the payment screen says "You have already used this code."
+- **For this payment only.** A promo code discounts the payment you are making now. Because of that, **Auto-Renewal is switched off** while a code is applied (also on monthly plans, where it is otherwise required). After you have paid you can start auto-pay from the Subscription page — it then charges the normal full price.
+- **Some codes have limits.** A code can be limited to one currency or one billing period (monthly or yearly), can have an expiry date, and can stop working once all its uses are taken. A fixed-amount code is for INR billing only.
+- Remove a code with the **Remove** button next to it to see the price without it.
 
 ## Plan Limits and Limit Banners
 
