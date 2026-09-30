@@ -115,6 +115,14 @@ Each phone keeps offline data for **one person and one company** at a time.
 - The same happens when you log into a **different company** on the same phone (switching company in the app is blocked while you have changes waiting).
 - **Before handing a phone to someone else, make sure the cloud button shows everything is synced.**
 
+## Sending Files From Other Apps
+
+On the Android app you can share a photo or document from WhatsApp, Files, Gmail or Drive straight to LumberLinq (**Share → LumberLinq**), and use **Paste** in an upload button's menu for files you copied. Waiting files are kept on the phone for up to 12 hours, and you choose where they go once you are logged in. See "Sending Files Into LumberLinq — Paste and Share" in the Dashboard, Utility, Storage & Support manual.
+
+## If the Phone Closes the App While You Are Typing
+
+The phone can close the app's page in the background while you are in the middle of a form. LumberLinq keeps what you typed on the phone and puts it back when you return — for the Consignment, Stock Unit, Business Partner, Product and Location forms. It is only put back onto the same record, and only if that record was not changed by someone else in the meantime. Lists inside a form (for example bank details) are not kept.
+
 ## When Offline Work Can Be Lost — and How Much
 
 Offline changes are only ever lost in these cases:

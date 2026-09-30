@@ -3,7 +3,7 @@ title: Dashboard, Utility, Storage & Support — FAQ
 description: Frequently asked questions about the Dashboard, calculation utilities, storage, and support tickets in LumberLinq.
 ---
 
-*Also searched as: dashboard home, quick search, global search, unified search, records mode, stock mode, calculator, storage full, out of space, guided tour, support ticket, AI chat, ask AI, linc, chatbot, keyboard shortcuts, hotkeys.*
+*Also searched as: dashboard home, quick search, global search, unified search, records mode, stock mode, calculator, storage full, out of space, guided tour, support ticket, AI chat, ask AI, linc, chatbot, keyboard shortcuts, hotkeys, paste files, ctrl+v, share to lumberlinq, send file from whatsapp.*
 
 **A dashboard section is missing for me — is that a bug?**
 
@@ -80,3 +80,19 @@ All admins on your account, plus the user who created the ticket.
 **Where do I find my Company ID to include in a ticket?**
 
 Company Profile → Identity tab.
+
+**I pressed Ctrl+V and nothing happened.**
+
+Copy the file itself (not just its name or path). Click the upload button you want to use first, then press Ctrl+V — or press Ctrl+V on an empty part of the page to open the **Where should these files go?** sheet. It does not open while you are typing in a text box or while another dialog is open. If a button says "Pasted file not accepted", that button does not take that file type.
+
+**Can I send a WhatsApp document or photo straight to LumberLinq?**
+
+On the Android app, yes: open the file in WhatsApp, tap **Share** and choose **LumberLinq**. WhatsApp has no Copy for documents, so Share is the way. It is not available on iPhone yet — save the file first and upload it in the usual way.
+
+**"Consignment documents" (or another place) is missing from the sheet.**
+
+The sheet only lists places your account may upload to — for example, Consignment documents need access to Consignments plus the right to add or edit them. AI Import is greyed out when none of the files is a photo or PDF. Ask your admin if you need access.
+
+**My waiting files disappeared.**
+
+Waiting files are kept for up to 12 hours, for the same person and company. They are removed when you attach or discard them, log out, or sign in as someone else or in another company.

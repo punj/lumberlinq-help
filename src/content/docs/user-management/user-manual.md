@@ -50,6 +50,20 @@ Summary: **Manage User → Invite User** → enter one or more emails, choose Ad
 
 ![Role template dropdown](/screenshots/reports/users-07-access-rights-role-template-dropdown.png)
 
+## Making and Removing an Admin
+
+Owners and Admins can give another team member admin rights, or take them away, from **Manage User**. On a member's row use **Make Admin** (or **Remove Admin**); on a phone these are in the row's menu. The buttons only show when you are allowed to use them.
+
+- **Make Admin** asks you to confirm: the person gets full admin access to this company, including managing users. You can remove it later.
+- **Remove Admin** asks you to confirm: the person stays in the company as a regular member but loses admin access.
+
+Rules that always apply:
+
+- The company **Owner's** admin rights can never be removed by anyone.
+- At least one active Owner or Admin must always remain. An admin can remove their own admin rights only if another Owner or Admin remains.
+- A removed admin stays in the company as a normal member.
+- It only changes the role in **this** company — the same person's role in another company is not touched.
+
 ## Deactivating a User
 
 Deactivating blocks the user from logging in without deleting their data:

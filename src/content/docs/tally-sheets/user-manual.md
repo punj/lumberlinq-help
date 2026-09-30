@@ -216,3 +216,9 @@ filled by AI Import.
   still shows its divider and caption — so someone you shared the sheet with can see the grade
   bundles too. An auto-detected AI Import page with no label of its own stays edit-view only. The
   Sections jump bar, and editing a label, always stay edit-view only either way.
+
+## Two People Editing the Same Stock Unit
+
+**Changed by someone else.** If you edit a row that someone else changed after you last loaded it (for example you were offline), LumberLinq does not silently overwrite it. You see **Changed by someone else** with **Keep mine** or **Show their change**. Rows you changed yourself on another device never clash.
+
+**Clashing rows (rows added at the same place).** When two people add rows after the same row, both sets of rows are kept together, **yours after theirs**, and an amber **Clashing rows** bar shows for both of you: "N rows need a check", arrows to jump between them, a filter to show only the clashing rows, and an amber mark on each row (who, when, what was done). **Change** offers four choices: keep both — mine after theirs (the default), keep both — mine first, keep theirs and drop mine (when the same logs were measured twice), or — admins only — keep mine and delete theirs (the other person is told). **Mark as checked** clears the marks for everyone.

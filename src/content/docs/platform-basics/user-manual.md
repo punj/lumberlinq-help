@@ -3,7 +3,7 @@ title: Dashboard, Utility, Storage & Support — User Manual
 description: The Dashboard landing page, calculation utilities, file storage, and support tickets in LumberLinq.
 ---
 
-*Also searched as: dashboard home, ctrl+k, quick search, global search, unified search, records mode, stock mode, calculator, storage full, out of space, guided tour, walkthrough, help desk, AI chat, ask AI, linc, chatbot, support ticket, keyboard shortcuts, hotkeys.*
+*Also searched as: dashboard home, ctrl+k, quick search, global search, unified search, records mode, stock mode, calculator, storage full, out of space, guided tour, walkthrough, help desk, AI chat, ask AI, linc, chatbot, support ticket, keyboard shortcuts, hotkeys, paste files, ctrl+v, share to lumberlinq, send file from whatsapp, where should these files go, attach here, upload from clipboard.*
 
 ## Dashboard
 
@@ -116,6 +116,38 @@ Screens that show shared data — Command Center, Dashboards, Inventory, Stock S
 Every file upload shows its real progress: the percentage, MB sent of the total, speed and time left, with one bar per file and an overall bar. Several files upload a few at a time; each file has **Cancel**, and a failed file has **Retry** without touching the others. When the file is sent, the bar changes to **Processing…** while the server finishes (for example resizing a photo).
 
 **AI Import** shows what the AI is doing right now — "Preparing page 3 of 8", "AI is reading page 3 of 8", rows found per page and about how long is left — with a preview of the page being read.
+
+**AI Import keeps working in the background.** If you switch to another app, lock the phone or the page is closed while the AI is reading, the reading carries on at LumberLinq. When you come back, the result is waiting for you (kept for up to 24 hours), and you get a notification when it has finished.
+
+## Sending Files Into LumberLinq — Paste and Share
+
+Files you already have — a photo, a PDF, a Word or Excel file, several at once — can be sent into LumberLinq without looking for the upload button first.
+
+**Paste into an upload button (computer).** Copy the file or files in File Explorer or Finder (a screenshot works too). Click the upload button of the document you want — for example **BL File** on a Consignment — then press **Ctrl+V** (**⌘V** on a Mac). The files upload there, with the normal progress bar. The button only takes the file types it accepts; anything else shows "Pasted file not accepted". Pasting text into an ordinary text box works exactly as before.
+
+**Paste anywhere else.** With files copied, press **Ctrl+V** on any page — not inside a text box and with no dialog open. A sheet called **Where should these files go?** opens with your files listed (the ✕ on a file removes it) and up to four places, only the ones your rights allow:
+
+- **Consignment documents** — you then pick the document type: BL File, Invoice, E-Waybill / LR File, Certificate of Origin, Phytosanitary or Other Documents.
+- **Stock Unit documents** — photos and papers of a Stock Unit.
+- **AI Import** — greyed out unless at least one file is a photo or a PDF.
+- **Support ticket** — the files are added to a new ticket.
+
+If your account may not upload anywhere, the sheet tells you to ask your admin.
+
+**What happens next.** Nothing uploads by itself. LumberLinq opens the right screen and a bar at the bottom shows how many files are ready. Open the record you want:
+
+- **Consignment:** a banner above the documents shows **Attach here** and **Discard**. If that consignment is locked, that document type is not available for it, or you can only view it, the banner is greyed and says why — the files wait, so you can open a different consignment.
+- **Stock Unit:** open its **Photos** tab. The same banner appears; **Attach here** opens the usual dialog (category, access level and note).
+- **AI Import:** open a Round or Square tally. **Attach here** opens AI Import with the files already added; the AI starts only when you press the read button.
+- **Support ticket:** the New Ticket page opens with the files already attached. Fill in the ticket and submit as usual. The usual limits apply (5 files, the allowed file types, 20 MB each).
+
+Everything else — limits, storage, who may upload — is exactly the same as a normal upload. Waiting files survive a page reload or an app restart for up to 12 hours (same person, same company). They are removed when you attach them, discard them or log out.
+
+**Android phone app — Share from other apps.** In WhatsApp, Files, Gmail or Drive, open a photo, PDF, Word, Excel, CSV or ZIP file (or select several), tap **Share** and choose **LumberLinq**. The same **Where should these files go?** sheet opens. Plain text is not accepted. If you are not logged in yet, log in first — the files wait for up to 12 hours.
+
+**Android phone app — Paste.** The small arrow next to an upload button has a **Paste** item that takes files you copied in the Files app. If nothing is copied you see "Nothing to paste". WhatsApp has no Copy for documents — use **Share → LumberLinq** for those.
+
+This is available in the newest Android app. It is not available on iPhone yet.
 
 ## Give Feedback
 

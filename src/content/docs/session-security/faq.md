@@ -24,3 +24,7 @@ No — session conflict handling applies the same way to every role, including A
 **How do I make sure I'm logged out on a shared computer?**
 
 Always log out explicitly via the avatar menu → Logout, rather than just closing the browser tab.
+
+**I waited a while on the "already signed in" screen and now it doesn't work.**
+
+That screen stays valid for 10 minutes. After that, log in again. Your first device stays signed in until you confirm on the new one.

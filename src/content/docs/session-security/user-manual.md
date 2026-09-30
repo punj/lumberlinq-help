@@ -18,6 +18,8 @@ If you log in from a new device or browser while you're still logged in somewher
 
 This exists to protect against someone else using your account without your knowledge — if the device/location shown isn't familiar, cancel and change your password.
 
+The dialog describes the other session in plain words: the device and browser (or the app — on the phone app it reads like "iPhone (iOS 17.5) - LumberLinq app 5.48.89"), and the approximate location. The confirmation stays open for **10 minutes**. If you wait longer, log in again — nothing changes on your first device until you confirm.
+
 ## Being Signed Out By a Login Elsewhere
 
 If someone else (or you, from another device) confirms a login that displaces your current session, you'll see a plain notice explaining that you were signed out because a login happened elsewhere. This dialog can't be dismissed without acknowledging it — click through it and log in again if you still need access.
