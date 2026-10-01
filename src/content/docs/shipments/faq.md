@@ -56,3 +56,15 @@ Inventory controls whether Stock Units are available for a consignment. The Inve
 ## Is the Consignments module mobile responsive?
 
 Yes. The Consignments list adapts to a narrow viewport for search, review, and follow-up actions.
+
+## Who decides which consignment fields a share link shows?
+
+Company admins, in Main Menu → Consignments → Consignment Field Access. For each field choose Hidden or View for "Anyone with the link" and for "LumberLinq users only". Group switches hide a whole group, and the buttons Preview as visitor, Presets and History are at the top of the screen.
+
+## Why does a file not show on my consignment share link?
+
+Each file has its own setting: Anyone with the link, LumberLinq users only, or My team only. A Public link shows only "Anyone with the link" files, a Protected link also shows "LumberLinq users only" files, and "My team only" files are never shown to outsiders.
+
+## Why is there no download icon on a shared consignment?
+
+Download permission is off unless you turn it on for that link.

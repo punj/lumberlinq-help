@@ -32,3 +32,31 @@ Yes — use the Access Visibility Panel (the eye/info button inside the share di
 **A recipient with a Protected link sees "Access denied" — why?**
 
 They need to be logged into LumberLinq with an account that belongs to your company, or the link may have expired.
+
+**Who decides what a share link shows?**
+
+Company admins, in Main Menu → Stock Unit → Stock Unit Field Access. For each field you choose Hidden or View for "Anyone with the link" and for "LumberLinq users only". The buttons Preview as visitor, Presets and History are at the top of that screen.
+
+**A file I uploaded does not show on a share link — why?**
+
+Each file has its own setting: Anyone with the link, LumberLinq users only, or My team only. A Public link shows only "Anyone with the link" files, a Protected link also shows "LumberLinq users only" files, and "My team only" files are never shown to outsiders.
+
+**Why is there no download icon on my share link?**
+
+Download permission is off unless you turn it on for that link.
+
+**Can I hide Length or Pieces on a share link?**
+
+No. The core tally columns (Length, Girth, Net Length, Net Girth, Net CBM, Net CFT, Width, Thickness, Pieces) are always visible because the tally cannot be read without them. Everything else can be hidden.
+
+**Are the supplier and buyer shown on a share link?**
+
+Not on Public or Protected links, unless an admin switches them on in Stock Unit Field Access.
+
+**How do I see who changed the share settings?**
+
+Open Stock Unit Field Access and click History: it lists the last 200 changes with who, when and what changed.
+
+**How long is the history of who opened a link kept?**
+
+Entries older than one year are removed automatically.

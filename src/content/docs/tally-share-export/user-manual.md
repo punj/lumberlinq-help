@@ -42,12 +42,36 @@ Use the **Access Visibility Panel** (the "eye"/info button inside the share dial
 
 - **Expiry date** — the link stops working after this date; leave blank for no expiry
 - **Download permission** — allow the recipient to download a PDF from the share view
-- **Document access** — control whether uploaded Stock Unit documents (photos, files) are visible in the share view
+- **Document access** — control whether uploaded Stock Unit documents (photos, files) are visible in the share view. Each file also has its own setting, see "Which files a link shows" below.
 - **Show details in link preview** — when the link is pasted into WhatsApp, Telegram, LinkedIn, Slack and similar apps, the chat shows a card with the details this link is allowed to show (for a public link: product, volume, pieces). Turn it off for a plain card. Protected and Private links always show a locked card with only the number of Stock Units — never volume or product.
 
 **Opening a link on a phone:** a share link opened from WhatsApp or Instagram on a phone with the LumberLinq app opens that link inside the app, not the login page.
 
 **How long a link works:** a link keeps working until its own **Expiry date** (or forever when left blank) — it no longer stops after 3 days on its own.
+
+## Which Files a Link Shows
+
+**Which files a link shows.** Every uploaded file has its own setting: **Anyone with the link**, **LumberLinq users only**, or **My team only**. A Public link shows only the files marked "Anyone with the link". A Protected link shows those plus the files marked "LumberLinq users only". A Private link (your own team) shows every file. A file marked "My team only" is never shown to outsiders. If a customer says a file is missing from a link, check the file's own setting first.
+
+The download icon next to a file appears only when the link has **Download permission** turned on. Download permission is off unless you turn it on for that link.
+
+## Choosing What a Share Link Shows (Stock Unit Field Access)
+
+Company admins decide, field by field, what Public and Protected links show. Open **Main Menu → Stock Unit → Stock Unit Field Access** (admins only).
+
+- Each field has a **Hidden** or **View** choice for **Anyone with the link** and for **LumberLinq users only**. "My team only" always sees everything and cannot be changed.
+- Each group (Stock Unit, Round Tally Grid, Square Tally Grid, Photos, Summary) has a master switch. Switching a group off hides the whole group for that kind of link.
+- Some tally columns are marked **Always visible** (Length, Girth, Net Length, Net Girth, Net CBM, Net CFT, Width, Thickness, Pieces). They are needed to read a tally and cannot be hidden.
+- The Stock Unit's **Supplier** and **Buyer** are hidden on Public and Protected links until you switch them on.
+- Details such as who locked a Stock Unit, over-stock notes and reconciliation figures are never shown on Public or Protected links.
+- When a recipient opens a link and you have hidden some Stock Unit details, they see a small note: "Some details are not shared on this link."
+
+Three buttons at the top help with this:
+- **Preview as visitor** — shows which fields a visitor of each link type will see, with hidden fields crossed out. It changes nothing.
+- **Presets** — start from **Public (minimal)**, **Buyer** or **Agent** instead of switching fields one by one. You see what will be shown and hidden before anything is saved. A red warning appears when a preset makes fields visible to anyone with the link. Presets never switch on supplier, buyer, money or audit fields.
+- **History** — the last 200 changes: who changed which setting, when, and from what to what.
+
+Switching a single field to View for **Anyone with the link** asks you to confirm first, because no login is needed to see it.
 
 ## Revoking a Share Link
 
@@ -81,6 +105,10 @@ Inside a tally sheet, click **Import** in the toolbar, then select **AI Import**
 Each AI Import uses AI credits from your plan — credits are consumed after extraction regardless of whether you confirm the import. AI Import requires the feature to be enabled on your subscription plan. The credit cost is calculated dynamically from how much the photo actually needs to process, not a flat fee per image — the same formula used for Linc AI Help/Assistant, and the same for both Round and Square tally sheets.
 
 ## Common Problems
+
+**"A file is missing on my share link"** — check the file's own setting (Anyone with the link / LumberLinq users only / My team only). A Public link shows only files marked "Anyone with the link"; a Protected link also shows "LumberLinq users only"; "My team only" files are never shown to outsiders.
+
+**"There is no download icon"** — turn on **Download permission** for that link. It is off by default.
 
 **"Share link shows 'Login required' even for a Public link"** — check the link format. Public links use `/s/p/:code`; a link starting with `/s/r/` or `/s/x/` is Protected or Private and requires login.
 

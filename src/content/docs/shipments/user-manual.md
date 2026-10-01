@@ -131,6 +131,19 @@ Use the share action from the list to create public, protected, or private consi
 
 ![Share menu](/screenshots/shipments/shipments-04-share-menu.png)
 
+**Which files a link shows.** Every uploaded file (BL, invoice, certificates and so on) has its own setting: **Anyone with the link**, **LumberLinq users only**, or **My team only**. A Public link shows only the files marked "Anyone with the link"; a Protected link also shows "LumberLinq users only"; a Private link (your own team) shows all. A file marked "My team only" is never shown to outsiders. In the share dialog you can also hide a whole document type or show only its file name. The download icon appears only when the link's Download permission is on (it is off by default). A document box (for example BL File) appears on the shared page whenever a file of that type is shown, even on a stock-out consignment.
+
+## Choosing What a Consignment Link Shows (Consignment Field Access)
+
+Company admins decide, field by field, what Public and Protected consignment links show. Open **Main Menu → Consignments → Consignment Field Access** (admins only).
+
+- Each field has **Hidden** or **View** for **Anyone with the link** and for **LumberLinq users only**. "My team only" always sees everything and cannot be changed.
+- The groups (Core Consignment, Route & Vessel, Location & Logistics, Parties, Documents, Financials, Audit) each have a master switch. Switching a group off hides every field of that group for that kind of link, whatever the single field switches say. Switching Documents off also hides the files. The Stock Units group switch does not hide the Stock Units tab.
+- **Preview as visitor** shows what each kind of visitor will see, with hidden fields crossed out. It changes nothing.
+- **Presets** — **Public (minimal)**, **Buyer** or **Agent**: you see what will be shown and hidden before saving, with a red warning when fields become visible to anyone with the link. Presets never switch on money, tax or audit fields.
+- **History** — the last 200 changes: who, when, and what changed.
+- Switching one field to View for **Anyone with the link** asks you to confirm first.
+
 ## Lock a Consignment
 
 Use the **Lock** action on the edit screen when a consignment should no longer be changed. Locked consignments show a lock badge and prevent normal editing.
