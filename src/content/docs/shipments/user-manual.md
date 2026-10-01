@@ -22,10 +22,20 @@ The list shows:
 - Consignee
 - Status stepper
 - Stock Unit count
+- File chips: the Consignment's own documents and the photos and files of its Stock Units (see below)
 - Route summary
 - Row actions for view, share, download/export, edit, payments, and delete
 
 ![Consignment list page](/screenshots/shipments/shipments-01-list-page.png)
+
+### File chips on each row
+
+Under the BL number every row shows two small file chips:
+
+- **Document chip** (for example **3**): the files attached to the Consignment itself. Tap it to see a checklist of the six document types — BL, Invoice, Certificate of Origin, Phytosanitary, E-Waybill and Other. A green tick with a count means that type has files; a grey cross with "missing" means nothing is attached yet. The card shows document types only, never file names.
+- **Box chip** (for example **7 photos, 2 files**): all the Stock Units of this Consignment added together, with photos and other files counted separately. Tap it to see the same two totals and one line for every Stock Unit; tap a Stock Unit line to see its files by category (Front, Stack, Back, BL, Document, Other).
+
+On a phone the card opens from the bottom of the screen. Tapping a chip never opens the Consignment itself.
 
 ## Search and Filter Consignments
 
@@ -131,7 +141,7 @@ Use the share action from the list to create public, protected, or private consi
 
 ![Share menu](/screenshots/shipments/shipments-04-share-menu.png)
 
-**Which files a link shows.** Every uploaded file (BL, invoice, certificates and so on) has its own setting: **Anyone with the link**, **LumberLinq users only**, or **My team only**. A Public link shows only the files marked "Anyone with the link"; a Protected link also shows "LumberLinq users only"; a Private link (your own team) shows all. A file marked "My team only" is never shown to outsiders. In the share dialog you can also hide a whole document type or show only its file name. The download icon appears only when the link's Download permission is on (it is off by default). A document box (for example BL File) appears on the shared page whenever a file of that type is shown, even on a stock-out consignment. The shared consignment page has no Export button; export a consignment inside LumberLinq. A Stock Unit opened from a shared consignment offers a PDF export (when Download permission is on).
+**Which files a link shows.** Every uploaded file (BL, invoice, certificates and so on) has its own setting: **Anyone with the link**, **LumberLinq users only**, or **My team only**. A Public link shows only the files marked "Anyone with the link"; a Protected link also shows "LumberLinq users only"; a Private link (your own team) shows all. A file marked "My team only" is never shown to outsiders. In the share dialog you can also hide a whole document type or show only its file name. The download icon appears only when the link's Download permission is on (it is off by default). A document box (for example BL File) appears on the shared page whenever a file of that type is shown, even on a stock-out consignment. With Download permission on, the shared consignment page shows an **Export** button (a PDF of the details and Stock Unit list) and a **Download pack** button (one ZIP with the summary PDF, Excel workbook, documents and photos that the link may show). A Stock Unit opened from a shared consignment offers a PDF export (when Download permission is on).
 
 ## Choosing What a Consignment Link Shows (Consignment Field Access)
 

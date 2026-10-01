@@ -41,7 +41,7 @@ Use the **Access Visibility Panel** (the "eye"/info button inside the share dial
 ## Share Link Options
 
 - **Expiry date** — the link stops working after this date; leave blank for no expiry
-- **Download permission** — allow the recipient to download a PDF from the share view
+- **Download permission** — allow the recipient to download a PDF or the whole Download pack (ZIP) from the share view
 - **Document access** — control whether uploaded Stock Unit documents (photos, files) are visible in the share view. Each file also has its own setting, see "Which files a link shows" below.
 - **Show details in link preview** — when the link is pasted into WhatsApp, Telegram, LinkedIn, Slack and similar apps, the chat shows a card with the details this link is allowed to show (for a public link: product, volume, pieces). Turn it off for a plain card. Protected and Private links always show a locked card with only the number of Stock Units — never volume or product.
 
@@ -63,7 +63,8 @@ Company admins decide, field by field, what Public and Protected links show. Ope
 - Each group (Stock Unit, Round Tally Grid, Square Tally Grid, Photos, Summary) has a master switch. Switching a group off hides the whole group for that kind of link.
 - Some tally columns are marked **Always visible** (Length, Girth, Net Length, Net Girth, Net CBM, Net CFT, Width, Thickness, Pieces). They are needed to read a tally and cannot be hidden.
 - The Stock Unit's **Supplier** and **Buyer** are hidden on Public and Protected links until you switch them on.
-- Details such as who locked a Stock Unit, over-stock notes and reconciliation figures are never shown on Public or Protected links.
+- Details such as who locked a Stock Unit, over-stock notes and reconciliation figures are never shown on the share page of a Public or Protected link.
+- **Reconciliation** is its own group with a single switch. It decides whether the loaded-versus-received figures go into the **Download pack**. It starts **OFF** for Public and Protected links, and even when ON nothing is added for a Stock Unit that is not reconciled yet.
 - When a recipient opens a link and you have hidden some Stock Unit details, they see a small note: "Some details are not shared on this link."
 - Three more switches control what a PDF made from the link says about you (company name, company logo, footer line); see "Exporting From a Share Link".
 
@@ -80,7 +81,8 @@ A person who opens a share link can make a **PDF** of the tally, and only if the
 
 - The **Export** menu on a share link lists **PDF** and **Advanced…** (the Advanced window also offers only the PDF). The PDF uses the columns the link is allowed to show.
 - When Download permission is off for the link, the Export button is shown greyed out as "Export (download off)".
-- A shared **consignment** page has no Export button; consignment export is done inside LumberLinq.
+- A shared **consignment** page also has an **Export** button (a PDF of the consignment details and its Stock Unit list) when Download permission is on.
+- Both pages also have a **Download pack** button: one ZIP with the summary PDF, the Excel workbook, the documents and the photos. See "Download Pack for the Recipient" below.
 
 **What the share page and the PDF say about the sender.** This follows three switches in **Stock Unit Field Access** (company name, company logo, footer line), set separately for Anyone with the link and for LumberLinq users only. Company name and logo are **ON by default** (a company can switch them off); the footer line is OFF by default. The same name and logo switches also decide the name and logo in the header of the share page, for Stock Units and for Consignments. With both off, the page header shows no name and no logo, and the PDF has none either:
 - Company name on: the sender's name in the header and as the watermark. Off: no name and no watermark.
@@ -108,6 +110,29 @@ LumberLinq gives every link type sensible starting settings. You can change all 
 - A file you upload starts as **My team only**. Set a file to **Anyone with the link** (or **LumberLinq users only**) to let those links show it.
 - These starting settings apply to **new companies** and when you press **Reset to default** in Field Access. A company that already changed its settings keeps them.
 - In the **Create share link** window the days and the download switch start from the table above, and you can change them for that link.
+
+## Download Pack for the Recipient
+
+If the link has **Download permission** on, the page shows a **Download pack** button (on a Consignment link next to **Export**, on a Stock Unit link above the tally). It opens a small window that lists what is inside, with a switch for each part:
+
+- **Summary PDF** — a premium, printable overview: details, volumes, distribution, tally rows, photos.
+- **Excel workbook** — every figure, ready to filter, one sheet per Stock Unit on a Consignment.
+- **Documents** — the files, grouped by type (BL, Invoice, certificates...).
+- **Photos** — the original photos.
+
+Press **Download** and the page prepares one ZIP, then shows a progress bar while it downloads. A Stock Unit pack also contains a compact **Packing List** PDF for printing, and every pack has a short README.
+
+What the recipient gets always follows the link you created:
+
+- Only fields and columns allowed by the link's Field Access are included. A hidden field is missing from the PDF and the Excel too.
+- Files follow their visibility: **Public** files are in every link, **Protected** files in Protected and Private links, **Private** files only in Private links. On a Consignment link, a document type you set to **View only** can be opened on the page but is not put in the pack.
+- Your company name, logo and footer line appear only if you switched them on in Stock Unit Field Access.
+- The **Reconciliation** figures (loaded vs received) are in the pack only if you switched on the **Reconciliation** row in Consignment or Stock Unit Field Access (it starts OFF) and the Stock Unit is really reconciled.
+- The pack is a snapshot taken at download time; later changes are not in it.
+
+Large packs can take a moment to prepare. A pack is limited to about 120 MB; the README lists anything that was left out.
+
+<!-- screenshot to add when taken (see SCREENSHOT_CHECKLIST.md): ![Download pack window](/screenshots/tally-share-export/share-download-pack-window.png) -->
 
 ## Revoking a Share Link
 
