@@ -65,6 +65,7 @@ Company admins decide, field by field, what Public and Protected links show. Ope
 - The Stock Unit's **Supplier** and **Buyer** are hidden on Public and Protected links until you switch them on.
 - Details such as who locked a Stock Unit, over-stock notes and reconciliation figures are never shown on Public or Protected links.
 - When a recipient opens a link and you have hidden some Stock Unit details, they see a small note: "Some details are not shared on this link."
+- Three more switches control what a PDF made from the link says about you (company name, company logo, footer line); see "Exporting From a Share Link".
 
 Three buttons at the top help with this:
 - **Preview as visitor** — shows which fields a visitor of each link type will see, with hidden fields crossed out. It changes nothing.
@@ -72,6 +73,41 @@ Three buttons at the top help with this:
 - **History** — the last 200 changes: who changed which setting, when, and from what to what.
 
 Switching a single field to View for **Anyone with the link** asks you to confirm first, because no login is needed to see it.
+
+## Exporting From a Share Link
+
+A person who opens a share link can make a **PDF** of the tally, and only if the link has **Download permission** turned on. Excel and Bundle (ZIP) are available inside LumberLinq when you are signed in; they are not offered on a share link.
+
+- The **Export** menu on a share link lists **PDF** and **Advanced…** (the Advanced window also offers only the PDF). The PDF uses the columns the link is allowed to show.
+- When Download permission is off for the link, the Export button is shown greyed out as "Export (download off)".
+- A shared **consignment** page has no Export button; consignment export is done inside LumberLinq.
+
+**What the share page and the PDF say about the sender.** This follows three switches in **Stock Unit Field Access** (company name, company logo, footer line), set separately for Anyone with the link and for LumberLinq users only. Company name and logo are **ON by default** (a company can switch them off); the footer line is OFF by default. The same name and logo switches also decide the name and logo in the header of the share page, for Stock Units and for Consignments. With both off, the page header shows no name and no logo, and the PDF has none either:
+- Company name on: the sender's name in the header and as the watermark. Off: no name and no watermark.
+- Company logo on: the sender's logo (if their plan includes a custom logo). Off, or no custom logo: no logo is shown.
+- Footer line on: "Shared by <company> · Link valid until <date> · Powered by LumberLinq". Off: just "Powered by LumberLinq" (no company name).
+- A Private link (your own team) always shows your name and logo.
+
+## What a New Share Link Starts With
+
+LumberLinq gives every link type sensible starting settings. You can change all of them for your own company.
+
+| | Anyone with the link | LumberLinq users only | My team only |
+|---|---|---|---|
+| Who | Anyone (WhatsApp, Facebook, email) | A buyer who has LumberLinq | Your own company (login) |
+| Goods details, photos, ports and dates | Shown | Shown | Shown |
+| Documents (BL, invoice, packing list) | Not shown, unless the file itself is set to Anyone with the link | Shown by each file's own visibility | Shown |
+| Supplier (shipper) | Not shown | Not shown | Shown |
+| Invoice amount | Never | Off, you can switch it on | Shown |
+| Cost, payment status, margin, who locked it, remarks | Never | Never | Shown |
+| Internal IDs | Never | Never | Never |
+| Download (PDF) | Off | On | On |
+| Company name and logo | On | On | On |
+| Link ends after | 30 days | 90 days | No limit |
+
+- A file you upload starts as **My team only**. Set a file to **Anyone with the link** (or **LumberLinq users only**) to let those links show it.
+- These starting settings apply to **new companies** and when you press **Reset to default** in Field Access. A company that already changed its settings keeps them.
+- In the **Create share link** window the days and the download switch start from the table above, and you can change them for that link.
 
 ## Revoking a Share Link
 
@@ -108,7 +144,9 @@ Each AI Import uses AI credits from your plan — credits are consumed after ext
 
 **"A file is missing on my share link"** — check the file's own setting (Anyone with the link / LumberLinq users only / My team only). A Public link shows only files marked "Anyone with the link"; a Protected link also shows "LumberLinq users only"; "My team only" files are never shown to outsiders.
 
-**"There is no download icon"** — turn on **Download permission** for that link. It is off by default.
+**"There is no download icon"** — turn on **Download permission** for that link. It is off by default. On a Stock Unit link without it, the Export button shows greyed out as "Export (download off)".
+
+**"There is no Excel or Bundle on the share link"** — a share link offers the PDF only. Excel and Bundle are available inside LumberLinq when signed in.
 
 **"Share link shows 'Login required' even for a Public link"** — check the link format. Public links use `/s/p/:code`; a link starting with `/s/r/` or `/s/x/` is Protected or Private and requires login.
 

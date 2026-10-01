@@ -60,3 +60,19 @@ Open Stock Unit Field Access and click History: it lists the last 200 changes wi
 **How long is the history of who opened a link kept?**
 
 Entries older than one year are removed automatically.
+
+**Why does a share link only offer PDF, not Excel?**
+
+Excel and Bundle (ZIP) are built for signed-in users inside LumberLinq. A share link offers the PDF only, and only when Download permission is on for that link (otherwise the Export button is greyed out).
+
+**Why does a share page or its PDF show no company name or logo?**
+
+The sender decides, in Stock Unit Field Access: company name and company logo each have a switch (on by default) that controls the page header and the PDF, and the footer line has its own switch (off by default). Switches are set separately for Anyone with the link and for LumberLinq users only. With name and logo off, the page header and the PDF show no name, no logo and no watermark; the line "Powered by LumberLinq" is always on the PDF.
+
+**Can I show the invoice amount to a buyer on a LumberLinq-users-only link?**
+
+Yes. In Consignment Field Access, switch on "Total Invoice Amount" for LumberLinq users only. It is off by default. It can never be shown on an Anyone-with-the-link link, and cost, payment status and margin are never shown on either.
+
+**Why did my new link get 30 or 90 days?**
+
+Each link type starts with its own length: 30 days for Anyone with the link, 90 days for LumberLinq users only, no limit for My team only. You can change it in the Create share link window.
