@@ -17,6 +17,10 @@ There is no menu item literally called "Tally Sheets" — every tally sheet belo
 
 ![Stock Units table](/screenshots/transport-units/transport-units__list-table__01.png)
 
+### Photo and file chips on each row
+
+Every row shows two small chips next to the volume: the number of **photos** (image files) and the number of **other files** (PDFs and so on) of that Stock Unit. Tap a chip to see the files by the category chosen at upload (Front, Stack, Back, BL, Document, Other) with a count each. A Stock Unit with no files shows grey zeros and nothing opens. On a phone the card opens from the bottom of the screen.
+
 ## Create and Edit
 
 Use **Stock Unit > Add Stock Unit** to create a Stock Unit and tally sheet. Every Stock Unit gets its own **Stock Unit ID** automatically (e.g. `SU-000123`) — this is its permanent identity and never needs to be typed in. **Transport ID** is optional — use it only to note the actual truck, container, or vehicle involved; the same Transport ID can be reused if the same vehicle comes back. Required fields are Product and Transport Mode. Product type determines whether the measurement grid opens as Round or Square. The next section shows how the Stock Unit page works.
