@@ -115,11 +115,13 @@ Screens that show shared data — Command Center, Dashboards, Inventory, Stock S
 
 ## Pull Down to Refresh
 
-On a phone or tablet, pull the page down from the very top and let go to reload it. A small round indicator shows while it loads. It works on the Dashboard, Command Center, Stock Units, Consignments (the list and a consignment's page), Inventory Overview, In/Out, Processing (which includes Mill runs), My Tasks, and the subscription pages Subscription Opted, Features and Transaction History.
+On a phone or tablet, pull a page down from the very top and let go to reload it. A small round indicator shows while it loads. It works on almost every page: lists, dashboards, reports, Inventory, Consignments, Stock Units, Business Partners, Products and more. Some pages reload only their data (keeping your filters and page); others are simply opened again.
 
-- It only starts when the page is already at the top and you pull straight down. It does not start inside the tally grid, in text fields, or while a window or side panel is open.
+- It only starts when the page is already at the top and you pull straight down. It does not start inside the tally grid, in text fields, while a window or side panel is open, or while a file is uploading.
+- If a page has changes you have not saved, you get the usual *Unsaved changes* question first. Choose **Stay** and nothing reloads.
 - If you are offline, nothing is reloaded.
-- Pull down does nothing on pages where reloading could lose your work, such as the Stock Unit edit page and the plan selection and payment pages.
+- It is switched off on sign in, sign up and password pages, payment and checkout pages, plan choice (it reloads the plan list only on the first step), error pages and the calculators, where reloading could lose your work.
+- On a shared link, refreshing does not add a new line to the link's visit history within two minutes.
 
 ## File Uploads Show Real Progress
 

@@ -7,7 +7,7 @@ description: Creating a LumberLinq account, logging in, and managing your passwo
 
 ## How to Log In
 
-Open **app.lumberlinq.com/login**. You'll see a flip card with Sign In on the front — enter your email and password and click **Sign In**. If Turnstile CAPTCHA is enabled, complete the challenge before proceeding. After a successful login you're redirected to the Dashboard.
+Open **app.lumberlinq.com/login**. You'll see a card with a **Sign In | Sign Up** switch at the top and Sign In selected — enter your email and password and click **Sign In**. If Turnstile CAPTCHA is enabled, complete the challenge before proceeding. After a successful login you're redirected to the Dashboard.
 
 ![Login page](/screenshots/auth/auth-login__sign-in-card__01.png)
 

@@ -202,6 +202,20 @@ While you record a run's output on its tally, a **Recording output for Processin
 
 Open **Inventory → Processing** to convert input timber into a different output — the most common case is round logs re-sawn into square/sawn boards (a Custom-Made run). Click **New Processing Run**, select the input Stock Units, and enter the output details; the system can auto-suggest likely inputs based on what you're producing. A run's status is Draft, In Progress, Paused, Completed, or Cancelled — cancelling reverses the input Stock Unit assignments (allowed from Draft, In Progress, or Paused). A completed run's output can be linked directly to a new tally sheet so the produced volume is measured and recorded in one flow.
 
+**Finishing a job — the Output screen.** Press **Job Done** on a running job. The screen is in four parts, in this order:
+
+1. **The job** — a strip showing how much went in (CBM, product, site) and whether the input is **Round** or **Square**.
+2. **What came out** — the **Output Product** and **Store At** (pick both from the lists). Pick the product first: it decides the tally type.
+3. **How do you record it?** — **Direct Volume** (type the total CBM yourself) or **Via Tally Sheet** (open the tally, record the pieces, come back — the volume and pieces fill in by themselves). With Via Tally Sheet you see the **Tally Type** (Round or Square) and why: *auto-detected from the product you chose*, *because the input is sawn timber*, or *from the linked tally* once it has rows. **Open Tally** stays greyed until the type is known.
+4. **Totals** — output volume, output pieces, the pieces taken from the input batch (when the job was fed from a batch), and a live outturn and loss figure.
+
+**Rules the screen enforces:**
+- **Sawn timber (a Square input) can only become Square output.** For such a job the type is Square straight away, Round products are not offered, and picking one anyway is refused. A **Round input** may give Square or Round output, so the product you choose decides.
+- **The tally and the product must agree.** If the job's tally already has rows in one type, a product of the other type is refused (a red note shows, and Open Tally and Complete job are greyed). Pick a matching product or switch to Direct Volume. While the tally is still empty, choosing a different product simply switches its type.
+- Output Product and Store At must be picked from the list, not typed freely.
+
+On a **phone** the screen fills the whole display: the sections sit one under another without boxes, the volume and pieces share a row, and **Cancel** and **Complete job** stay pinned at the bottom.
+
 **A finished run's output tally is locked.** Once a run is **Completed**, the output tally you recorded for it is final — the wood has already been added to stock as a new Lot. Opening that tally afterwards shows it **read-only**: the cells cannot be edited and the Save, Undo and Import buttons are not shown. This is on purpose, so the tally always matches the stock it created. To change the output of a finished run use **Edit Output** on the run; to correct a stock figure use **Add Adjustment** — both leave a record of the change.
 
 **Pausing a run:** if something more urgent needs the mill, click **Pause** on a running job (an optional note explaining why is available but never required). A paused job can be **Resumed** back to running, or **Cancelled** directly without resuming first — nothing about its reserved input stock changes while paused.
