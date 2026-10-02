@@ -164,7 +164,9 @@ Everything else — limits, storage, who may upload — is exactly the same as a
 
 **Android phone app — Paste.** The small arrow next to an upload button has a **Paste** item that takes files you copied in the Files app. If nothing is copied you see "Nothing to paste". WhatsApp has no Copy for documents — use **Share → LumberLinq** for those.
 
-This is available in the newest Android app. It is not available on iPhone yet.
+**Paste a picture on an iPhone, an iPad or a phone browser.** The same **Paste** item is in the small-arrow menu of an upload button on iPhone and iPad (in the app and in Safari) and in a phone browser such as Chrome. It takes a **picture** you copied: a screenshot, a photo copied from Photos, or an image copied from a website or a chat. On iPhone and iPad the system shows a small **Paste** button the first time: tap it. If the clipboard has no picture (or only text) you see "Nothing to paste". It only reads the clipboard when you tap **Paste**.
+
+Files (PDF, Word, Excel) copied on an iPhone cannot be pasted yet, and sharing a file from another app into LumberLinq on iPhone is not available yet. Use the upload button's normal file picker for those. The newest Android app does both: **Paste** takes copied files and pictures, and **Share → LumberLinq** works.
 
 ## Give Feedback
 

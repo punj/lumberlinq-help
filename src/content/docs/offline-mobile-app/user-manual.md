@@ -117,7 +117,7 @@ Each phone keeps offline data for **one person and one company** at a time.
 
 ## Sending Files From Other Apps
 
-On the Android app you can share a photo or document from WhatsApp, Files, Gmail or Drive straight to LumberLinq (**Share → LumberLinq**), and use **Paste** in an upload button's menu for files you copied. Waiting files are kept on the phone for up to 12 hours, and you choose where they go once you are logged in. See "Sending Files Into LumberLinq — Paste and Share" in the Dashboard, Utility, Storage & Support manual.
+On the Android app you can share a photo or document from WhatsApp, Files, Gmail or Drive straight to LumberLinq (**Share → LumberLinq**), and use **Paste** in an upload button's menu for files you copied. On iPhone, iPad and in a phone browser, **Paste** takes pictures you copied (screenshots, photos); copied PDF, Word or Excel files and **Share → LumberLinq** are not available on iPhone yet. Waiting files are kept on the phone for up to 12 hours, and you choose where they go once you are logged in. See "Sending Files Into LumberLinq — Paste and Share" in the Dashboard, Utility, Storage & Support manual.
 
 ## If the Phone Closes the App While You Are Typing
 
