@@ -95,6 +95,8 @@ Only eligible, unassigned units are available. If a Stock Unit has not been rece
 
 ![Second Stock Unit](/screenshots/shipments/shipments-26-shipment-view-second-transport-unit.png)
 
+**Viewing the Stock Units of a Consignment.** On the consignment view page each Stock Unit has its own tab. Inside it you see the same layout as a shared Stock Unit: a strip with the Transport ID or product and small chips, the tabs (Tallysheet, Photos, Summary), and a **Stock Unit details** button that opens the read-only details in a side panel (a sheet on a phone).
+
 ## Documents
 
 Use the Documents tab to maintain consignment document numbers and upload files. Supported document areas include BL, packing list, commercial invoice, certificate-related documents, and other attachments.

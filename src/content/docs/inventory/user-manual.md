@@ -42,7 +42,7 @@ Two buttons sit at the top of Overview:
 - **Opening Stock** — add the stock you already have, usually when you first start using LumberLinq (needs the Inventory Receive and Tally Add permissions). It opens a new Stock Unit — see "Adding Your Opening Stock" below.
 - **Mill Run** — opens the **New Processing Run** dialog straight away
 
-New deliveries come in through their own Stock Unit (the **Receive into Inventory** button on the Stock Unit page, or automatically from a purchase Consignment). Stock goes out through a sale Consignment.
+New deliveries come in through their own Stock Unit (**Receive into Inventory** in the **⋮** menu at the top of the Stock Unit page, or automatically from a purchase Consignment). Stock goes out through a sale Consignment.
 
 **Before you can receive a Stock Unit into inventory** it needs a **Product**, a **Location**, a transport mode (not for opening stock) and at least one saved tally row — otherwise Receive is greyed out or refused with a message saying what's missing.
 
@@ -55,7 +55,7 @@ When you start with LumberLinq, add all the stock already in your yard first:
 1. **Inventory → Overview → Opening Stock.** A new Stock Unit opens with **Stock In** already chosen and an **Opening stock** banner.
 2. Pick the **product**, the **site** (where the stock is) and the **origin**, then **Save**. No transport mode is needed — there's no truck behind opening stock.
 3. On the **Tallysheet** tab, enter the pieces: Square — thickness × width × length × pieces; Round — girth × length. Save the rows.
-4. Press **Receive into Inventory.** The stock goes into inventory, the tally locks, and the In/Out page and Stock Statement show a line noted **"Opening stock"**.
+4. Open the **⋮** menu and press **Receive into Inventory.** The stock goes into inventory, the tally locks, and the In/Out page and Stock Statement show a line noted **"Opening stock"**.
 
 Opening stock gets its own batch with a **Starting Stock** badge — it is never mixed with stock you buy later. A Consignment is **optional**: link one only if you want the purchase record (supplier, money, documents). Linking it later never adds the stock a second time. Opening stock has nothing to reconcile, so a mill run on it never asks you to type CONFIRM. Each opening-stock Stock Unit counts toward your plan's Stock Unit limit like any other.
 

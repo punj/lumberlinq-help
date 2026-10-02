@@ -113,6 +113,14 @@ Screens that show shared data — Command Center, Dashboards, Inventory, Stock S
 - Only what changed moves: new rows slide in, changed rows glow for a moment, numbers roll to their new value.
 - If you were away (phone locked, other screen), the page loads the latest data when you come back to it.
 
+## Pull Down to Refresh
+
+On a phone or tablet, pull the page down from the very top and let go to reload it. A small round indicator shows while it loads. It works on the Dashboard, Command Center, Stock Units, Consignments (the list and a consignment's page), Inventory Overview, In/Out, Processing (which includes Mill runs), My Tasks, and the subscription pages Subscription Opted, Features and Transaction History.
+
+- It only starts when the page is already at the top and you pull straight down. It does not start inside the tally grid, in text fields, or while a window or side panel is open.
+- If you are offline, nothing is reloaded.
+- Pull down does nothing on pages where reloading could lose your work, such as the Stock Unit edit page and the plan selection and payment pages.
+
 ## File Uploads Show Real Progress
 
 Every file upload shows its real progress: the percentage, MB sent of the total, speed and time left, with one bar per file and an overall bar. Several files upload a few at a time; each file has **Cancel**, and a failed file has **Retry** without touching the others. When the file is sent, the bar changes to **Processing…** while the server finishes (for example resizing a photo).

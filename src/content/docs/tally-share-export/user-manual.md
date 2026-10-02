@@ -55,6 +55,16 @@ Use the **Access Visibility Panel** (the "eye"/info button inside the share dial
 
 The download icon next to a file appears only when the link has **Download permission** turned on. Download permission is off unless you turn it on for that link.
 
+## What the Shared Stock Unit Page Looks Like
+
+A shared Stock Unit opens as one clean page: a strip at the top with the Transport ID (or the product when there is no Transport ID), the product, and small chips for the location, vehicle type, container or vehicle number and weight. Under it are the tabs (Tallysheet, Photos, Summary), then the tally.
+
+- **Only what the sender allows is shown.** A detail switched off in **Stock Unit Field Access** is missing from the strip and from the details. A tab the sender hid is not in the tab bar. The Stock Unit ID number is not shown on a shared link.
+- **Stock Unit details** opens the full read-only details in a side panel (a sheet on a phone). A small note tells the visitor when the sender has hidden some details.
+- On a wide screen the strip and the tab bar stay at the top while the visitor scrolls.
+- If the sender switched off the whole Stock Unit section, the strip just says **Stock Unit** and there is no details button.
+- The same layout is used for each Stock Unit inside a shared or opened Consignment.
+
 ## Choosing What a Share Link Shows (Stock Unit Field Access)
 
 Company admins decide, field by field, what Public and Protected links show. Open **Main Menu → Stock Unit → Stock Unit Field Access** (admins only).

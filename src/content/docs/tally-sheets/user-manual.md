@@ -19,7 +19,7 @@ There is no menu item literally called "Tally Sheets" — every tally sheet belo
 
 ## Create and Edit
 
-Use **Stock Unit > Add Stock Unit** to create a Stock Unit and tally sheet. Every Stock Unit gets its own **Stock Unit ID** automatically (e.g. `SU-000123`) — this is its permanent identity and never needs to be typed in. **Transport ID** is optional — use it only to note the actual truck, container, or vehicle involved; the same Transport ID can be reused if the same vehicle comes back. Required fields are Product and Transport Mode. Product type determines whether the measurement grid opens as Round or Square.
+Use **Stock Unit > Add Stock Unit** to create a Stock Unit and tally sheet. Every Stock Unit gets its own **Stock Unit ID** automatically (e.g. `SU-000123`) — this is its permanent identity and never needs to be typed in. **Transport ID** is optional — use it only to note the actual truck, container, or vehicle involved; the same Transport ID can be reused if the same vehicle comes back. Required fields are Product and Transport Mode. Product type determines whether the measurement grid opens as Round or Square. The next section shows how the Stock Unit page works.
 
 ![New Stock Unit button](/screenshots/transport-units/transport-units__new-button__01.png)
 
@@ -30,6 +30,19 @@ Use **Stock Unit > Add Stock Unit** to create a Stock Unit and tally sheet. Ever
 ![Square — create](/screenshots/tally/square-create.png)
 
 ![Square — edit](/screenshots/tally/square-edit.png)
+
+## The Stock Unit Page
+
+**A new Stock Unit.** Fill in the details on the page, then press **Save & start tally**. The tally waits underneath, locked, with the message *"Save the Stock Unit to start the tally"*. Every row is stored against the Stock Unit's ID, so the Stock Unit needs its ID first. When you save, the tally unlocks and you can start typing straight away. The direction (Stock In, Stock Out or Move) cannot be changed after saving.
+
+**A saved Stock Unit** opens on its tally. One strip at the top shows the Stock Unit ID, the product and origin, and small chips: direction, location, Transport ID, vehicle type, **Not in inventory** or **In inventory**, and **Locked** when it is locked. On a wide screen the strip and the tab bar stay at the top while you scroll, and the strip shrinks to one slim row. On a small phone, or a short screen, the page scrolls normally.
+
+- **Save** — one button for everything: the Stock Unit details and the tally rows. A dot (with words on a wide screen) says **All changes saved** or **Unsaved changes**. The button shows a spinner, then a tick. The tally's own save icon in the bar at the bottom still works too.
+- **Edit details** — opens the Stock Unit details in a side panel, or a sheet that slides up on a phone. It holds Transport ID, location, weight, product, origin, quality, vehicle type, container and seal numbers, and fumigation. On a phone, the less-used fields (Weight, Quality, Seal no., Fumigation) sit behind **More details**. If a field has a mistake, **Save** opens the panel for you.
+- **⋮ menu** — **Receive into Inventory** (Stock In), **Confirm Stock-Out** (Stock Out), **Lock Stock Unit** and **Delete Stock Unit**. An item that is greyed out tells you why, for example *add tally rows first*.
+- **Tabs** — Tallysheet, Photos, Summary, Reconciliation (not on a Stock Out) and Inventory (with the Inventory right). The other tabs load quietly in the background, so switching is quick; if you open one before it is ready, a short loading card shows.
+
+**Rows and columns stay where they are.** You cannot drag a row or a column in the tally grid. Use **Columns** to show or hide columns.
 
 ## Round Tally Sheet
 
