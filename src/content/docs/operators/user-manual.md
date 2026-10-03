@@ -23,6 +23,16 @@ Each Location also has a **Machines Installed** field listing the equipment at t
 
 A completed run's output can be linked directly to a new tally sheet, so the produced volume gets measured and recorded in the same flow instead of as a rough estimate. When you return from creating that tally sheet, the processing run screen picks up where you left off and pre-fills the output details (product, CBM, pieces, site) from the tally totals.
 
+## Custom-Made Requests From a Stock Out Row
+
+A Stock Out row whose size has no stock can ask the mill to make it (see the Inventory guide). On the mill side such a job shows an **Order needs** line (pieces and volume), the optional **Needed by** day, and a red **Late** chip once that day has passed (you and the requester get one reminder, sent each morning).
+
+- **The order changes before you start:** the job follows the row's new product / size / quantity and you get a message. If that size now has stock, the job is **cancelled by itself** and you are told. If the input volume is smaller than the order now needs, the job shows an amber line.
+- **Starting:** a cancelled or finished job cannot be started, and a job needs a source lot before it starts. A second tap on Start does nothing.
+- **Finishing:** the output product must stay the one that was requested, the **pieces** made must be entered, and the job needs its source lot. The Finish window shows *Order needs N pcs* and, in red, *short by N* while you type; you can still finish short. If the output cannot be added to stock, nothing is saved and you see why.
+- **While you are cutting:** the requester cannot change or delete that row, nor delete or empty the Stock Unit. Cancel the mill job first if the order changed.
+- **Taking a request back:** while the job is still **Draft**, the person who made the request (or a manager) can withdraw it from the row; the assigned operator is told. There is no **Send to Consignment** button on a mill job: stock leaves only through a Stock Out.
+
 ## Mill Operators — Managing Your Roster
 
 Open **Inventory → Operators** to manage who can be assigned to processing runs. Each operator has an expertise level — Trainee, Junior, Senior, or Master — plus optional specializations, hire date, and notes.

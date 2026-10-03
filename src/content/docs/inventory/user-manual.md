@@ -177,7 +177,11 @@ If you change a row's pieces (say 250 to 125) and save, Held by this sheet drops
 
 Round tallies have no sizes, so this size check does not apply to them.
 
+**Custom-Made request from a Stock Out row.** The request window has an optional **Needed by** day (you and the mill are reminded once if the job is still open after it) and starts on **Medium** priority. The job remembers how many pieces and how much volume the row needs, so the mill sees the target and **Finish** warns when the output is short (*short by N pcs*). A request that has not started can be taken back with the small **x** on the row's *Waiting to start* chip (the person who made it, the person who created the tally row, or a manager). Once the mill has started, that row cannot be changed or deleted, and the Stock Unit cannot be deleted or emptied, until the mill job is cancelled. If the row is changed before the mill starts, the job follows it and the operator is told; if that size gets stock in the meantime, the request is cancelled by itself and the operator is told. A job that comes out short sends you a message *only partly ready*, and you can ask the mill again for the rest.
+
 **A live dot for each row (Standard layout).** On a Standard-layout Stock Out (one product for every row) a ✨ column shows a dot for each row as you type: green = this size is in stock, amber = nearly all of it is used, red = not enough. Click the dot to see alternatives (a longer or bigger size, another grade or origin). Flexible layout shows the same warnings on each row's product chip instead.
+
+On a phone, the product chip shows the name on up to two lines. A row with the same product, origin and quality as the row above shows a quiet 〃 instead of repeating the chip (the order of rows never changes, and tapping it still opens the picker). Long-press a chip to see the full product name (on a locked sheet a normal tap shows it). While a product name is still loading, a grey bar shows; the internal product number is never shown.
 
 **Why was it sold past stock?** When the company setting allows selling past stock, you give a short reason when you save. That reason is then shown on the Stock Unit ("Sold past available stock — reason …") and, after the Stock Out is confirmed, on the Sold line in the Stock Statement and in the In/Out list.
 

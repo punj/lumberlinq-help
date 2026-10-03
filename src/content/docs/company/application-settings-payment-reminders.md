@@ -29,6 +29,8 @@ Two things happen once Payment Reminders is turned on:
 - **Send me a daily report** — toggle your own summary email on/off.
 - **Email / Push** — choose which channel(s) deliver your daily report (business partner reminders are always by email — they don't have app accounts to push to).
 
+**Addresses that bounce.** If the email service reports that a partner's address cannot receive mail (hard bounce, invalid address, blocked, or a spam complaint), LumberLinq stops emailing that address (reminders and the daily report). This avoids sending the same failing mail every day. The address is tried again after a later successful delivery to it, or after about 90 days. Correct the address on the Business Partner.
+
 ## Who Receives the Report
 
 Anyone who is an Administrator, or who holds **Financial Health** access under **Company → Access Control**, receives the daily report automatically — no separate recipient list to manage.

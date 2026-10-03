@@ -55,6 +55,8 @@ The result is grouped by **product · origin · site · quality**. Tap a group t
 - **Balanced** (green) — every batch's closing figure matches its batch record, and stock in equals stock out.
 - **Difference found** (red) — at least one batch does not match its record. That batch is marked in red with the record figure and the difference.
 - **Period statement** (blue) — the period ends in the past, so closing figures are *as of that date* and are not compared with today's records.
+- **Not in stock now** (blue) — a size filter found no batch that holds that size today. If confirmed Stock Outs took that size, the seal says how many pieces and how much volume left, with a link to each Stock Unit (for example *375 pcs · 3.54 CBM, SU-000059*); otherwise it says no batch holds it and no confirmed Stock Out of it was found. This is not an error, and a filter with no result no longer shows *Difference found*.
+- **Where, how much and why** — under a red *Difference found*, a card lists every batch that does not match: the batch record, what its movements add up to, and the difference. Tap **Why? What to do?** for the usual causes and the fix: open the batch, check its movements, and correct it with **Add Adjustment**. Do not edit the number directly.
 
 **Balance sheet**
 
