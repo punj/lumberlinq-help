@@ -147,6 +147,8 @@ Use the share action from the list to create public, protected, or private consi
 
 ## Choosing What a Consignment Link Shows (Consignment Field Access)
 
+The Documents group also has Certificate of Origin No., Fumigation Certificate No., Insurance Details and E-way Bill No. They start hidden for outsiders; switch them on only if the link holder should see them.
+
 Company admins decide, field by field, what Public and Protected consignment links show. Open **Main Menu → Consignments → Consignment Field Access** (admins only).
 
 - Each field has **Hidden** or **View** for **Anyone with the link** and for **LumberLinq users only**. "My team only" always sees everything and cannot be changed.

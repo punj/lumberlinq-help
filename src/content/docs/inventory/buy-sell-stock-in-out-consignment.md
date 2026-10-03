@@ -105,7 +105,7 @@ The list fits the kind of consignment, so you never see a step that does not exi
 |---|---|
 | **Export** by sea or rail (container) | Draft · Confirmed · Planned · Stuffing · Stuffed · Gate Out · In Transit · Arrived · Delivered · Closed · Cancelled |
 | **Export** by air or road | the same without Stuffing, Stuffed and Gate Out |
-| **Import** by sea or rail (container) | Draft · Confirmed · Planned · Stuffing · Stuffed · Gate Out (these three are the supplier's steps) · In Transit · **Arrived 📥** · **Unstuffing 📥** · **Delivered 📥** · Closed · Cancelled |
+| **Import** by sea or rail (container) | Draft · Confirmed · Planned · **Shipped** (the supplier's loading and gate-out in one step) · In Transit · **Arrived 📥** · **Unstuffing 📥** · **Delivered 📥** · Closed · Cancelled |
 | **Import** by air or road | Draft · Confirmed · Planned · In Transit · **Arrived 📥** · **Delivered 📥** · Closed · Cancelled |
 | **Domestic Sale** | Draft · Confirmed · Planned · In Transit · Delivered · Closed · Cancelled |
 | **Domestic Purchase** | Draft · Confirmed · Planned · In Transit · **Arrived 📥** · **Delivered 📥** · Closed · Cancelled |
@@ -118,8 +118,8 @@ The list fits the kind of consignment, so you never see a step that does not exi
 |---|---|---|
 | **Draft** | Being prepared | Nothing changes in stock. Can be saved with little filled in. |
 | **Confirmed**, **Planned** | Deal agreed / shipment arranged | Nothing changes in stock. |
-| **Stuffing** | You are loading / the supplier is loading | Nothing changes in stock. Stock Units show under **In Consignment**. |
-| **Stuffed**, **Gate Out** | Loaded and sealed, left the gate | Nothing changes in stock. Stock Units show under **In Transit**. |
+| **Stuffing** (export, and other non-import container trades) | You are loading the goods | Nothing changes in stock. Stock Units show under **In Consignment**. |
+| **Stuffed**, **Gate Out** (on an import, **Shipped**) | Loaded and sealed, left the gate (on an import: the supplier has loaded and shipped it) | Nothing changes in stock. Stock Units show under **In Transit**. |
 | **In Transit** | On the way to the buyer / on the way to you | Nothing changes in stock. On a **sale**, no new Stock Unit can be added from here on. |
 | **Arrived** | Reached the destination / reached your port or yard | **Sale:** nothing changes. **Purchase:** stock does not go up yet; you are asked to **Receive into Inventory**. |
 | **Unstuffing** (import by container) | Container is being unloaded | Same as Arrived on a purchase. |
@@ -215,7 +215,7 @@ Search and add Stock Units. The **?** beside the title explains which Stock Unit
 
 ### Tab 5 — Money (what about the money?)
 
-- **Invoice details:** Currency (fixed for domestic trade), exchange rate to your reporting currency when it differs, **Total Invoice Amount**, **Insurance Value**, **Freight Terms**, and an **Invoice per CBM** hint to catch a mistyped amount.
+- **Invoice details:** Currency (fixed for domestic trade), exchange rate to your reporting currency when it differs, **Total Invoice Amount**, **Insurance Value**, **Freight Terms**, and an **Invoice per CBM** hint to catch a mistyped amount. When your earlier consignments of the same type and currency (at least 3) are far from it (3 times higher or lower), a gentle orange note says so; it never blocks saving.
 - **Payment terms** (shown as **Customer Payment Terms** on a sale, **Supplier Payment Terms** on a purchase): choose Immediate / Advance, Cash on Delivery, L/C Sight, L/C Usance (days), DP, DA, Open Account (days), Net 7 / 15 / 30 / 45 / 60 / 90 days, or Other (Custom); Days or Custom Terms appear when needed. They are **required once an invoice amount is entered** (they give the due date and the overdue reminders). They are saved with **Update / Save**, together with everything else; the **Due Date** is worked out for you.
 - **Payments** (after the first save): a **paid / received so far** bar, the summary tiles (Invoice Amount, Received and Outstanding Receivable on a sale, Paid Out and Outstanding Payable on a purchase, Payment Status), and **Record Payment** (Date\*, Mode, Reference No, Amount\*, Currency, FX rate, Notes). Payments can be edited or deleted; every part-payment updates the outstanding amount. Payments are counted in the Consignment's currency.
 

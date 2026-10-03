@@ -57,6 +57,10 @@ No. Stock goes up only when you receive a Stock In into inventory and down only 
 
 Stock was already received through that consignment, so its status can only move forward (for example Arrived to Delivered to Closed).
 
+## Why does an orange note appear under "Invoice per CBM"?
+
+Your invoice amount per CBM is 3 times higher or lower than your earlier consignments of the same type and currency (at least 3 are needed). It is only a reminder to check for a typing mistake; it never blocks saving.
+
 ## Can the arrival be on the same day as the departure?
 
 Yes. Only an arrival earlier than the departure is refused.
