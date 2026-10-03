@@ -31,11 +31,11 @@ Yes. The Documents tab supports document numbers and file uploads for consignmen
 
 ## Can I see consignment parties clearly?
 
-Yes. The Consignment Info tab shows shipper, consignee, notify party, exporter reference, buyer order, origin, and destination fields.
+Yes. The Deal tab shows the shipper (seller), consignee (buyer), notify party and the references; the Route & Timing tab shows the countries and destination.
 
 ## Can I track payments?
 
-Yes. Use Financials & Payments to record payment terms, payment history, invoice totals, received/paid amounts, and outstanding balances.
+Yes. Use the Money tab to record payment terms (required once an invoice amount is entered), payment history, invoice totals, received/paid amounts, and outstanding balances.
 
 ## Can I export a consignment?
 
@@ -47,7 +47,19 @@ Yes. The share action supports public, protected, and private links with expiry,
 
 ## What happens when a consignment is locked?
 
-The consignment is marked as locked and normal editing is prevented.
+The consignment is marked as locked and normal editing is prevented. A lock is permanent: you type LOCK to confirm and there is no unlock, so lock only when everything is final.
+
+## Does changing the status change my stock?
+
+No. Stock goes up only when you receive a Stock In into inventory and down only when you confirm a Stock Out. The status only shows where the deal is. On a purchase, Arrived, Unstuffing and Delivered offer to receive the goods.
+
+## Why can I not choose an earlier status or Cancelled?
+
+Stock was already received through that consignment, so its status can only move forward (for example Arrived to Delivered to Closed).
+
+## Can the arrival be on the same day as the departure?
+
+Yes. Only an arrival earlier than the departure is refused.
 
 ## Where do inventory and reconciliation fit?
 

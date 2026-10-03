@@ -54,8 +54,8 @@ There are two ways. Both end in the same place: the wood sits in a Lot.
 1. **Create the Stock Unit as Stock In**, with Product, Location, Transport Mode and the tally rows (what the supplier says was loaded). Take photos if you want proof (see "Photos").
 2. **Create the Consignment**: Consignments → New. Choose type **Import** (from another country) or **Domestic Purchase** (same country). Fill the tabs (see "Every Consignment Tab Explained"). Your company must be one of Shipper, Consignee or Notify Party.
 3. **Link the Stock Unit**: Consignment → **Stock Units** tab → search and add it. You can do this before or after receiving — the order does not matter.
-4. **Update the status** as the goods travel (Planned → … → In Transit → Arrived). Changing the status moves **no stock**.
-5. **When the goods arrive** (status **Arrived**, **Unstuffing** or **Delivered** on a purchase consignment, with Inventory switched on) the app shows a banner *"Goods have arrived — ready to receive into inventory?"* and asks **Receive into Inventory?** after you save. Press it: now the stock goes **UP**, the Stock Unit locks, and the Consignment's **Status becomes permanently read-only** (see "Status Is Locked").
+4. **Update the status** as the goods travel (Planned → … → In Transit → Arrived): press the **Status** button at the top of the form. Changing the status moves **no stock**.
+5. **When the goods arrive** (status **Arrived**, **Unstuffing** or **Delivered** on a purchase consignment, with Inventory switched on) the app shows a banner *"Goods have arrived — ready to receive into inventory?"* and asks **Receive into Inventory?** after you save. Press it: now the stock goes **UP**, the Stock Unit locks, and the Consignment's status can from now on only move **forward** (see "After Stock Was Received").
    - You can also receive from the Stock Unit page: ⋮ menu → **Receive into Inventory**.
    - To receive, the Stock Unit needs a **Product**, a **Location**, a **Transport Mode** (not for opening stock) and **at least one saved tally row**. Otherwise the app tells you what is missing.
 6. **Reconcile** when you know what really arrived (see "When to Reconcile").
@@ -95,25 +95,64 @@ If you have not confirmed yet, you can still change or delete rows and the holds
 
 ## Consignment Status — What Each One Means
 
-The status is a label for where the deal is. **It never changes the numbers in your Lots.** It only (a) shows on the list, (b) decides which Overview card the unit appears in, and (c) for a **purchase** consignment, three statuses trigger the offer to receive the goods.
+The status says where the deal is. **It never changes the numbers in your Lots** — stock goes up only on **Receive into Inventory** and down only on **Confirm Stock-Out**. A status only (a) shows on the list and in the progress strip at the top of the form, (b) decides which Inventory Overview card the Stock Units appear in, and (c) on a **purchase**, three statuses offer you to receive the goods.
 
-| Group | Status | What it means | Effect |
-|---|---|---|---|
-| Planning | **Draft**, **Confirmed**, **Planned** | The deal is being prepared. | No inventory card, no stock change. |
-| At origin (sea/air) | **Stuffing**, **Stuffed**, **Gate Out** | Loading the container / leaving the gate. Hidden for domestic road/rail trade. | Stock Unit shows in "In Consignment" (Stuffing) or "In Transit" (Stuffed, Gate Out). No stock change. |
-| Moving | **In Transit** | On the way. | Shows in "In Transit". On a **sale** consignment, from here on **no new Stock Unit can be added**. |
-| At destination | **Arrived 📥**, **Unstuffing 📥**, **Delivered 📥** | Reached the destination. The 📥 mark means: on an **Import / Domestic Purchase** consignment these three offer **Receive into Inventory** for linked Stock In units not yet received. | Receiving (stock UP) only happens when **you** press it. |
-| Closed | **Closed**, **Cancelled** | Finished or called off. | No new Stock Units can be added. Closed shows the material as out of the pipeline; **Cancelled does not put stock back** — if stock numbers are wrong, use Add Adjustment. |
+### Which statuses you see
 
-Other rules about status:
-- **Status Is Locked once received.** After any linked Stock In unit has been received into inventory, the Consignment's status cannot be changed any more (no override), so the stock history and the timeline can never disagree.
-- Domestic consignments (Domestic Sale / Domestic Purchase) hide the sea/air steps (Stuffing, Stuffed, Gate Out, Unstuffing).
-- Every status change sends a notification and is written to the Consignment's history.
-- **Lock** is separate from status: Lock (edit screen) freezes the whole Consignment against edits; only an admin can unlock.
+The list fits the kind of consignment, so you never see a step that does not exist for it:
+
+| Consignment | Statuses offered |
+|---|---|
+| **Export** by sea or rail (container) | Draft · Confirmed · Planned · Stuffing · Stuffed · Gate Out · In Transit · Arrived · Delivered · Closed · Cancelled |
+| **Export** by air or road | the same without Stuffing, Stuffed and Gate Out |
+| **Import** by sea or rail (container) | Draft · Confirmed · Planned · Stuffing · Stuffed · Gate Out (these three are the supplier's steps) · In Transit · **Arrived 📥** · **Unstuffing 📥** · **Delivered 📥** · Closed · Cancelled |
+| **Import** by air or road | Draft · Confirmed · Planned · In Transit · **Arrived 📥** · **Delivered 📥** · Closed · Cancelled |
+| **Domestic Sale** | Draft · Confirmed · Planned · In Transit · Delivered · Closed · Cancelled |
+| **Domestic Purchase** | Draft · Confirmed · Planned · In Transit · **Arrived 📥** · **Delivered 📥** · Closed · Cancelled |
+
+📥 = on a purchase this status offers **Receive into Inventory** for linked Stock In units that are not received yet (needs the Inventory module). Choose the Type and Mode first; the list follows them.
+
+### What each status means and does
+
+| Status | Meaning (sale / purchase) | What it does in LumberLinq |
+|---|---|---|
+| **Draft** | Being prepared | Nothing changes in stock. Can be saved with little filled in. |
+| **Confirmed**, **Planned** | Deal agreed / shipment arranged | Nothing changes in stock. |
+| **Stuffing** | You are loading / the supplier is loading | Nothing changes in stock. Stock Units show under **In Consignment**. |
+| **Stuffed**, **Gate Out** | Loaded and sealed, left the gate | Nothing changes in stock. Stock Units show under **In Transit**. |
+| **In Transit** | On the way to the buyer / on the way to you | Nothing changes in stock. On a **sale**, no new Stock Unit can be added from here on. |
+| **Arrived** | Reached the destination / reached your port or yard | **Sale:** nothing changes. **Purchase:** stock does not go up yet; you are asked to **Receive into Inventory**. |
+| **Unstuffing** (import by container) | Container is being unloaded | Same as Arrived on a purchase. |
+| **Delivered** | The buyer has the goods / the goods are with you | **Sale:** stock goes down only when you **Confirm Stock-Out** on each Stock Unit. **Purchase:** receive any Stock Unit not yet received. |
+| **Closed** | Finished and settled | No more Stock Units can be added. Stock quantities do not change. |
+| **Cancelled** | Called off | Stock quantities do not change; no more Stock Units can be added. If stock was already received or confirmed, correct it with Add Adjustment. |
+
+### How to change the status
+
+- In the **summary at the top of the form**, press the **Status** button. A list opens with a short meaning under each status, and a panel that says what the selected one does. Press **Set status**, then **Update** (or Save) to keep it. A purchase asks to receive the goods right after the Update when the new status offers it.
+- On the **Consignments list**, press the status tag: same list, saved at once.
+
+### What becomes required, step by step
+
+A red **\*** shows only while a field is required. You can save a Draft (or a Cancelled consignment) with little; more is needed as the deal moves on:
+
+- **Always:** Type, Mode, Date, Seller / Shipper and Buyer / Consignee (and your own company must be one of the parties).
+- **From the first status after Draft:** Estimated Departure and Estimated Arrival. The same day is fine; arrival must not be earlier than departure.
+- **From Gate Out / In Transit onward:** Sea or Air: Port of Loading and Port of Discharge. Sea: Bill of Lading number. Road: From, To, Vehicle / LR No, Transporter. Rail: From and To station. Export and Import: Incoterms. Domestic Sale: Buyer Tax Number and Delivery Contact.
+- **Payment terms:** as soon as an invoice amount is entered (any type).
+
+### After stock has been received — the status moves forward only
+
+Once a Stock In has been received through a Consignment, its status can still move **forward** (for example Arrived → Delivered → Closed) but never **back** and never to **Cancelled**, so the stock history and the timeline can never disagree. The Status list then shows only the current and later steps, with a note.
+
+### Other rules
+
+- Every status change sends a notification and is written to the history (see **Activity**).
+- **Lock** is separate from status: Lock (edit screen) permanently freezes the whole Consignment against edits — you must type LOCK and it cannot be undone. Lock only when everything is final.
 
 ## The Stock Units Tab — Which Stock Units Appear and Which Do Not
 
-On the Consignment's **Stock Units** tab you search and add Stock Units. The search starts only after you type something. You can search by **Stock Unit ID** (SU-000123), **Transport ID**, **container / truck number**, or **product name**.
+On the Consignment's **Stock Units** tab you search and add Stock Units. The **?** beside the tab title shows this same explanation. The search starts only after you type something. You can search by **Stock Unit ID** (SU-000123), **Transport ID**, **container / truck number**, or **product name**.
 
 **A Stock Unit appears in the list when:**
 - it belongs to your company;
@@ -136,53 +175,53 @@ If the Stock Unit you expect is missing, check its **Direction** on the Stock Un
 
 ## Every Consignment Tab Explained
 
-A Consignment form has **six tabs**. Tabs are always clickable, in any order. A ✓ on a tab means it has real content and nothing wrong; a red **\*** on a tab means it has validation errors. A red star on a field means it is required. A strip under the title shows the **BL No** (or **Bill No** for domestic trade) from every tab once it is filled. Fields your role is not allowed to see may be hidden.
+### The summary at the top (it stays above every tab)
 
-### Tab 1 — Consignment Details (the deal and the route)
+- **Chips:** the type and the mode; **Unsaved changes** shows when something is not saved yet.
+- **Bill of Lading No** (domestic: **Bill No**): press it to jump straight to the field and type.
+- **Status** button: opens the status list (see above). The small ▾ at the end folds or opens the rest; on a phone it starts folded.
+- **Seller → Buyer** names, and the **progress strip**: each step is done, current or still to come (a cancelled consignment shows a red Cancelled line instead).
+- **Stock Units** (count and CBM), **Invoice** and **Outstanding** numbers.
+- A **"x/y ready"** ring: press it for what is still missing, and press an item to jump to it. It is a reminder only; it never blocks saving.
 
-- **Consignment Type\*** — Export, Import, Domestic Sale, Domestic Purchase or Trading. It decides which other fields appear, whether it is a sale or a purchase, and which Stock Units you can add.
-- **Mode of Transport\*** — Sea, Air, Road or Rail. It decides which route fields appear.
-- **Consignment Date\***.
-- **Status** — the lifecycle status (see above), grouped by phase. Locked once inventory has been received. A small hint below it says what the status means for inventory.
-- **Final Destination** — country (not for domestic).
-- **Incoterms\*** — export, import and trading only (FOB, CIF…); decides who pays freight and insurance. Not shown for domestic trade.
-- **Estimated Departure** and **Estimated Arrival** — arrival cannot be before departure.
-- **Port & Carrier Details** (Sea or Air): Port of Loading\*, Port of Discharge\*, Shipping Line (or Custom Shipping Line), Vessel Name and Voyage Number (sea) or Flight Number (air).
-- **Road Transport Details**: From Location\*, To Location\*, Vehicle / LR No\*, Transporter Name\*.
-- **Rail Movement Details**: Origin Station / ICD, Destination Station / ICD, Rail Operator (all optional).
+The form has **five tabs**, always clickable in any order. A green tick means opened, nothing wrong and it has real content; a red number means that many fields need fixing. (Old links to the 6th tab, Dispatch & Notes, open the first tab: its fields moved there.)
 
-### Tab 2 — Consignment Info (the parties)
+### Tab 1 — Deal (what is this deal?)
 
-- **Shipper\*** (who sends), **Consignee\*** (who receives), **Notify Party** (who is told on arrival, often an agent or bank). All are picked from your **Business Partners** (create them first). **At least one of Shipper, Consignee or Notify Party must be your own company**; depending on the type your company may be filled in and locked for you.
-- **Export / Import only:** Exporter Ref No, Buyer Order No, Country of Origin, Country of Destination.
-- **Domestic only:** **Buyer Tax Number\*** and **Delivery Contact\***.
+- **Type, mode and date:** Consignment Type\*, Mode of Transport\* (Sea, Air, Road, Rail), Consignment Date\*. Pick the type first: it decides which fields appear. A new consignment picks a sensible mode for you (domestic: Road, export / import: Sea); change it if needed. New consignments offer Export, Import, Domestic Sale and Domestic Purchase.
+- **References:** **Bill of Lading No** (domestic: **Bill No**; red \* for Sea once the goods leave), **BL Type** (Sea: Original or Surrendered), **Commercial Invoice No**, and for Export / Import **Packing List No**, **Exporter Ref No**, **Buyer Order No**.
+- **Parties:** **Shipper** (domestic: **Seller**)\* and **Consignee** (domestic: **Buyer**)\*, and **Notify Party** (Export / Import). Pick them from your Business Partners; the **+** beside a field adds a new one without leaving the form. **At least one of the parties must be your own company**; it is filled in and locked for you where the type makes it obvious (Shipper for Export and Domestic Sale, Consignee for Import and Domestic Purchase).
+- **Buyer details (domestic only):** **Buyer Tax Number** and **Delivery Contact**. On a Domestic Sale they are required once the goods leave, and the tax number is taken from the Buyer's Business Partner. On a Domestic Purchase they are optional and your own tax number is filled in.
+- **Notes:** Approved By, Remarks (internal).
 
-### Tab 3 — Stock Units (what is in the deal)
+### Tab 2 — Route & Timing (where does it go and when?)
 
-Search and add the Stock Units (see the section above). Each added unit shows as a card: Stock Unit ID, product, Transport ID, unit and seal numbers, mode, volume (CBM) and pieces. A note says units added to a new Consignment are linked when you save. A banner explains when adding is switched off. The small ? icon next to the search box explains that only trucks matching the deal are shown. The tab shows a count of linked units.
+- **Estimated Departure** and **Estimated Arrival** (required from the first status after Draft; the same day is allowed; a "Transit time" chip shows the days in between).
+- **Final Destination**, **Country of Origin**, **Country of Destination** (Export / Import) and **Incoterms** (Export / Import; required once the goods leave).
+- **Port & Carrier** (Sea or Air): Port of Loading\*, Port of Discharge\* (pick from the list), Shipping Line (or Other, with a custom name), Vessel Name and Voyage Number (Sea), Flight Number (Air).
+- **Road:** From Location\*, To Location\*, Vehicle / LR No\*, Transporter Name\*.
+- **Rail:** Origin Station / ICD\*, Destination Station / ICD\*, Rail Operator.
+These boxes slide in when you pick the mode.
 
-### Tab 4 — Documents (numbers and files)
+### Tab 3 — Stock Units (what is in it?)
 
-- **Bill of Lading No** (international; **Bill No** for domestic trade). It is marked required (\*) for **sea** consignments, with the message "Required for export"; for domestic it says "Bill number is required".
-- **BL Type** (sea): Original or Surrendered.
-- **Packing List No** (international) and **Commercial Invoice No**.
-- **Upload cards** for the files themselves: BL, Certificate of Origin and Phytosanitary (international), E-Waybill (road and rail), Invoice, and Other. Drag files in or Browse. Each file has its own visibility: Anyone with the link / LumberLinq users only / My team only (see sharing).
-- The tab shows a count of files.
+Search and add Stock Units. The **?** beside the title explains which Stock Units are listed and which are not (see the section above). A bar shows the **totals** of the linked units (units, pieces, CBM, weight). Each added unit is a card: Stock Unit ID, product, Transport ID, unit and seal numbers, mode, volume and pieces. When adding is switched off (Closed, Cancelled, or a sale that has already left) a banner says so.
 
-### Tab 5 — Financials & Payments (the money)
+### Tab 4 — Documents (which papers?)
 
-- **Invoice Details:** Currency (fixed automatically for domestic trade), Exchange rate to your reporting currency (only when the currency differs from your reporting currency; the converted amount is shown beside it), **Total Invoice Amount**, **Insurance Value**, **Freight Terms**.
-- **Payment terms** — shown as **Customer Payment Terms** on a sale (Export, Domestic Sale), **Supplier Payment Terms** on a purchase (Import, Domestic Purchase) and **Payment Terms** on Trading. Choose from Immediate / Advance, Cash on Delivery, L/C Sight, L/C Usance (days), DP, DA, Open Account (days), Net 7 / 15 / 30 / 45 / 60 / 90 days, or Other (Custom); **Days** or **Custom Terms** boxes appear when the choice needs them. The **Due Date** is worked out from the terms. Press **Save Terms** to save them on an existing Consignment.
-- **Payment summary cards** (after the Consignment is saved): **Invoice Amount**, **Received** and **Outstanding Receivable** (sales), **Paid Out** and **Outstanding Payable** (purchases), and **Payment Status** (unpaid, partly paid, paid or fully paid, overdue).
-- **Payment History → Record Payment:** Type (Trading only), Payment Date\*, Payment Mode, Reference No (bank ID, cheque no.), Amount\*, Currency, Exchange Rate, Notes. You can **edit** an entry later. Record every part-payment; the outstanding amount updates itself. Payments are counted in the Consignment's currency.
+- **Documents on file:** a checklist of what this kind of consignment normally has (Export / Import: Bill of Lading, Commercial invoice, Packing list, Certificate of Origin, Phytosanitary certificate, Fumigation certificate; Domestic: Bill, Invoice, and for road or rail the E-way bill / LR). A number or an uploaded file counts. It only reminds you.
+- **Document numbers:** Certificate of Origin No, Fumigation Certificate No and Insurance details (Export / Import), E-way Bill No (domestic).
+- **Upload cards:** **BL File** (domestic: **Bill File**), **E-Waybill / LR** (road and rail), **Certificate of Origin** and **Phytosanitary** (Export / Import), **Invoice**, and **Other Documents** with your own short label. Attach a **fumigation certificate** under Other with the label **Fumigation** (quick label buttons help). Up to 5 files per card; each file has its own visibility (Anyone with the link / LumberLinq users only / My team only).
 
-### Tab 6 — Dispatch & Notes (who and why)
+### Tab 5 — Money (what about the money?)
 
-- **Created By** (filled by the app), **Approved By** (the person who approved it internally) and **Remarks** (internal notes).
+- **Invoice details:** Currency (fixed for domestic trade), exchange rate to your reporting currency when it differs, **Total Invoice Amount**, **Insurance Value**, **Freight Terms**, and an **Invoice per CBM** hint to catch a mistyped amount.
+- **Payment terms** (shown as **Customer Payment Terms** on a sale, **Supplier Payment Terms** on a purchase): choose Immediate / Advance, Cash on Delivery, L/C Sight, L/C Usance (days), DP, DA, Open Account (days), Net 7 / 15 / 30 / 45 / 60 / 90 days, or Other (Custom); Days or Custom Terms appear when needed. They are **required once an invoice amount is entered** (they give the due date and the overdue reminders). They are saved with **Update / Save**, together with everything else; the **Due Date** is worked out for you.
+- **Payments** (after the first save): a **paid / received so far** bar, the summary tiles (Invoice Amount, Received and Outstanding Receivable on a sale, Paid Out and Outstanding Payable on a purchase, Payment Status), and **Record Payment** (Date\*, Mode, Reference No, Amount\*, Currency, FX rate, Notes). Payments can be edited or deleted; every part-payment updates the outstanding amount. Payments are counted in the Consignment's currency.
 
 ### Buttons at the top of the form
 
-**Lock** (freeze the Consignment), **Export** (PDF/Excel report), **Full Report** (PDF), **Full Trace** and **Stock Statement** (when Inventory is on), **Reset**, and **Save / Update Consignment**. On a phone these sit behind the ⋯ button.
+**Activity** (who made it, when it last changed, the status history), **Lock** (permanent), **Export**, **Full Report**, **Full Trace** and **Stock Statement** (when Inventory is on), **Reset**, and **Save / Update Consignment**. On a phone these sit behind the ⋯ button; Back / Next / Save stay at the bottom of the form.
 
 ## Photos — When and Where
 
@@ -192,9 +231,9 @@ Photos are added on the **Stock Unit** page, **Photos** tab, in categories **Fro
 - Photo and file counts show as small chips on the Stock Unit list and on each Consignment row (tap for the categories). Photos are included in the **Bundle** export and the **Download pack** of a share link (if the link is allowed to show them).
 - Consignment-level files (BL, invoice, certificates) go on the Consignment's **Documents** tab.
 
-## Status Is Locked — What to Do
+## After Stock Was Received — Status Moves Forward Only
 
-After a Stock In has been received through a Consignment, the status field is greyed out with the note "Inventory has already been received — status is locked." This is on purpose; it cannot be overridden. You can still edit most other fields unless the Consignment is **Locked**. If the status you wanted is wrong for the real world, add a note in **Remarks** and correct stock quantities with an Adjustment.
+After a Stock In has been received through a Consignment, the status can still move **forward** (for example Arrived → Delivered → Closed), but not back and not to Cancelled. The Status list shows only the current and later steps and a note says why. This is on purpose, so the stock history and the timeline never disagree. You can still edit most other fields unless the Consignment is **Locked**. If the status you wanted is wrong for the real world, add a note in **Remarks** and correct stock quantities with an Adjustment.
 
 ## I Made a Mistake — What Do I Do?
 
@@ -209,11 +248,11 @@ Every stock movement stays on record, so LumberLinq corrects mistakes with **new
 | **Stock Out rows are wrong, already confirmed** | Rows are locked. Use **Add Adjustment** on that Stock Out line: **Sent less than recorded** (wood goes back into that Lot and size) or **Sent more than recorded**. The Stock Out rows and the Consignment/invoice totals do **not** change — fix the invoice amount yourself on the Financials tab. |
 | **Confirmed the Stock Out too early** | A confirm cannot be undone. If the truck did not leave, use Add Adjustment → Sent less than recorded to put the wood back. |
 | **Linked the wrong Stock Unit to a Consignment** | Remove it on the Stock Units tab if it has not been confirmed (Stock Out) or received (Stock In). If it has, you cannot remove it; use an Adjustment for the stock side. |
-| **Wrong Consignment status** | Change it on Tab 1 (or the quick Change Status action on the list), unless the status is locked because stock was received. A purchase's accidental "Arrived" before real arrival only offers the receive prompt; nothing moves until you press Receive. |
+| **Wrong Consignment status** | Press the **Status** button at the top of the form (or the status tag on the list), choose the right one and Update. If stock was already received through the Consignment, the status can only move forward, never back. A purchase's accidental "Arrived" before real arrival only offers the receive prompt; nothing moves until you press Receive. |
 | **Consignment cancelled** | Cancelling does not touch Lot quantities. If stock numbers need correcting, use Add Adjustment. |
 | **Wrong payment amount or date** | Edit the entry in Payment History, or record a correcting entry with a note. |
 | **A wrong adjustment** | Fix it with another adjustment (the old one stays on record). |
-| **Consignment locked by mistake** | Ask an admin to unlock it. |
+| **Consignment locked by mistake** | A Consignment lock is permanent and cannot be undone in the app, so lock only when everything is final. Contact LumberLinq support if a change is essential. |
 
 **In Flexible Layout** the same rules apply, with these differences: every row has its own product, origin and quality, so a Flexible Stock Out can take several products at once; **Confirm Stock-Out debits each product from its own matching Lot** in one all-or-nothing step (if one product has too little stock, nothing is debited and the message names it); an Adjustment is made per line (Lot · size); a row for a size with no stock shows red and blocks the confirm; importing a file is not available (switch to Standard Layout in a new Stock Unit if you need import). The layout cannot be changed after saving, so if you chose the wrong layout before saving any rows, create a new Stock Unit.
 
@@ -237,7 +276,7 @@ Every stock movement stays on record, so LumberLinq corrects mistakes with **new
 
 **"Is it OK to receive first and create the Consignment later?"** Yes. When you link the Consignment later, Supplier, Purchase Date and Payment appear on the Lot automatically and the stock is not counted twice.
 
-**"I cannot change the Consignment status."** Stock was already received through it, so the status is locked. The Consignment may also be Locked by an admin.
+**"I cannot choose an earlier status (or Cancelled)."** Stock was already received through the Consignment, so the status can only move forward. The Consignment may also be Locked (permanent).
 
 **"I cannot receive the Stock Unit."** It needs a Product, a Location, a Transport Mode (not for opening stock) and at least one saved tally row.
 

@@ -51,22 +51,21 @@ The list also includes column filters for BL number, shipper, consignee, and sta
 
 Select **New** from the Consignments list.
 
-The create screen is organised into tabs:
+The form has a **summary at the top** (type and mode, the Bill of Lading / Bill number, the **Status** button, the Seller → Buyer names, a progress strip, Stock Units, Invoice and Outstanding, and a "x/y ready" ring that lists what is still missing) and **five tabs**:
 
-- **Consignment Details**: type, mode, dates, ports, vessel/flight/vehicle details, and Incoterms or payment terms
-- **Consignment Info**: shipper, consignee, notify party, exporter reference, buyer order, origin, and destination
-- **Stock Units**: search and add available Stock Units
-- **Documents**: BL, packing list, invoice, certificate, phyto, fumigation, and other consignment documents
-- **Financials & Payments**: invoice amount, currency, insurance, freight terms, payment terms, payment summary, and payment history
-- **Dispatch & Notes**: local tax/delivery fields, status, approved by, and remarks
+- **Deal**: type, mode and date; the references (Bill of Lading / Bill No, BL type, commercial invoice, packing list, exporter reference, buyer order); the parties (Shipper / Seller, Consignee / Buyer, Notify Party); for a domestic deal the buyer's tax number and delivery contact; and the notes (approved by, remarks)
+- **Route & Timing**: estimated departure and arrival (the same day is fine), final destination, countries, Incoterms, and the port & carrier, road or rail details for the mode you chose
+- **Stock Units**: search and add Stock Units; the **?** explains which units are listed; a bar shows the totals
+- **Documents**: a checklist of the documents on file, the document numbers (certificate of origin, fumigation, insurance, E-way bill) and the upload cards
+- **Money**: invoice amount, currency, insurance, freight terms, an "invoice per CBM" hint, payment terms, the paid / received bar, the payment summary and the payment history
+
+The status list fits the kind of consignment (for example a domestic sale has no Stuffing or Arrived), and a status never changes your stock. Full details: [Buying and Selling Timber](/inventory/buy-sell-stock-in-out-consignment/).
 
 ![Create consignment — details tab](/screenshots/shipments/shipments-07-create-details-tab.png)
 
 ## Required Field Validation
 
-If required consignment fields are missing, LumberLinq marks the relevant fields and tabs with validation indicators. Complete the mandatory fields before saving.
-
-Common required information includes consignment type, mode of transport, required route details, Incoterms/payment terms, and party information.
+A red **\*** shows only while a field is required, and a tab with fields to fix shows a red number. You can save a **Draft** with little: type, mode, date, seller and buyer (one of the parties must be your own company). More is needed as the status moves on: estimated departure and arrival from the first status after Draft (the same day is fine); the route details for the mode, the Bill of Lading number for sea, Incoterms (export / import) and, for a domestic sale, the buyer's tax number and delivery contact once the goods leave; and **payment terms as soon as an invoice amount is entered**.
 
 ![Required field validation](/screenshots/shipments/shipments-08-validation-required-fields.png)
 
@@ -81,7 +80,8 @@ Use the edit screen to update:
 - Linked Stock Units
 - Document numbers and attachments
 - Invoice and payment information
-- Consignment status and remarks
+- Consignment status (the **Status** button at the top of the form) and remarks
+- The **Activity** button shows who made the consignment, when it last changed and the status history
 
 ![Edit — details tab](/screenshots/shipments/shipments-09-edit-details-tab.png)
 
@@ -117,7 +117,7 @@ Use the Documents tab to maintain consignment document numbers and upload files.
 
 The Financials & Payments tab tracks invoice value, currency, insurance, freight terms, payment terms, due date, payment status, and payment history.
 
-Use **Record Payment** to add a received or paid amount with date, mode, reference number, amount, currency, and notes.
+Payment terms are saved together with everything else when you press **Update** (there is no separate Save Terms button) and are required once an invoice amount is entered. Use **Record Payment** to add a received or paid amount with date, mode, reference number, amount, currency, and notes.
 
 ![Financials & payments tab](/screenshots/shipments/shipments-13-financials-payments-tab.png)
 
