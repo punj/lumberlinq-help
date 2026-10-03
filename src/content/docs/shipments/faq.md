@@ -23,7 +23,7 @@ The list provides view, share, download/export, edit, payment quick panel, and d
 
 ## Why can I not add a Stock Unit to a consignment?
 
-Only eligible units can be linked. If a Stock Unit has not been received into inventory, the system blocks assignment. Receive the unit into inventory first, then add it to the consignment.
+Only eligible units are listed: not already in another consignment, and with a Direction that fits the deal (Stock Out on a sale, Stock In on a purchase). Receiving is not required — link before or after. Also check the consignment is not Closed/Cancelled or an already-departed sale, and type part of the Stock Unit ID, Transport ID, container / truck number or product name. See [Buying and Selling Timber](/inventory/buy-sell-stock-in-out-consignment/).
 
 ## Can I upload consignment documents?
 

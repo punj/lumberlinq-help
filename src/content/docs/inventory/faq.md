@@ -7,7 +7,7 @@ description: Frequently asked questions about the Inventory module in LumberLinq
 
 **Why can't I add a Stock Unit to a consignment?**
 
-It hasn't been received into inventory yet. Go to Overview or In/Out and confirm a receipt (IN) movement exists — if not, check the tally sheet was fully saved, not just filled in.
+Receiving is not required — a Stock Unit can be linked before or after it is received or confirmed. Check that it is not already in another consignment, that its Direction fits (Stock Out units on a sale, Stock In units on a purchase), that the consignment is not Closed/Cancelled or an already-departed sale, and that you typed part of its ID, Transport ID, container / truck number or product name. See [Buying and Selling Timber](/inventory/buy-sell-stock-in-out-consignment/).
 
 **A Stock Unit shows unavailable even though it was received — why?**
 

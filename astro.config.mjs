@@ -78,6 +78,7 @@ export default defineConfig({
           label: 'Inventory',
           items: [
             { label: 'How Stock Moves', link: '/inventory/how-stock-moves/' },
+            { label: 'Buy & Sell: Stock In, Stock Out, Consignments', link: '/inventory/buy-sell-stock-in-out-consignment/' },
             { label: 'User Manual', link: '/inventory/user-manual/' },
             { label: 'Stock Statement', link: '/inventory/stock-statement/' },
             { label: 'FAQ', link: '/inventory/faq/' },

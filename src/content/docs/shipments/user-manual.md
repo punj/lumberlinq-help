@@ -95,7 +95,7 @@ Use the edit screen to update:
 
 The Stock Units tab lets users search available units and link them to a consignment.
 
-Only eligible, unassigned units are available. If a Stock Unit has not been received into inventory, the system prevents consignment assignment. This protects inventory accuracy before dispatch.
+Only eligible, unassigned units are listed: units not already in another consignment, whose Direction fits the deal (Stock Out units on a sale, Stock In units on a purchase, both on Trading). A Stock Unit does not have to be received or confirmed first — you can link it before or after, and linking never changes stock. See [Buying and Selling Timber](/inventory/buy-sell-stock-in-out-consignment/).
 
 ![Stock Units tab](/screenshots/shipments/shipments-11-transport-units-tab.png)
 
@@ -170,7 +170,7 @@ The view action opens a read-only consignment view for reviewing consignment det
 
 ## Inventory and Reconciliation
 
-Consignment assignment is connected to inventory. Stock Units must be received into inventory before they can be linked to a consignment. Inventory screens help teams review available stock, movement history, adjustments, processing runs, reconciliation, and inventory reports.
+Consignment assignment is connected to inventory. A Stock Unit can be linked to a consignment before or after it is received (Stock In) or confirmed (Stock Out); linking and the consignment status never change stock — only Receive into Inventory (up) and Confirm Stock-Out (down) do. Inventory screens help teams review available stock, movement history, adjustments, processing runs, reconciliation, and inventory reports.
 
 ![Inventory overview](/screenshots/shipments/shipments-27-inventory-overview.png)
 
