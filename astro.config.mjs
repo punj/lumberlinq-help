@@ -134,6 +134,13 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Screen Support & Video Calls',
+          items: [
+            { label: 'User Manual', link: '/support-calls/user-manual/' },
+            { label: 'FAQ', link: '/support-calls/faq/' },
+          ],
+        },
+        {
           label: 'Company Settings',
           items: [
             { label: 'User Manual', link: '/company/user-manual/' },
