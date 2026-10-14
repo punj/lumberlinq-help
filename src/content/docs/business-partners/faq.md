@@ -25,13 +25,16 @@ Required fields include Company Name, Party Type, Registration Type, Party Categ
 
 No, it is optional. If you enter one it is checked: at least 3 characters, and for a partner in India it must be a valid 15-character GSTIN. Two partners with an empty Tax ID are not treated as duplicates of each other.
 
+<!-- "Import from Tally" is taken out for now (2026-10-14). To bring it back, remove these comment marks.
+
 ## Can I import my parties from Tally?
 
 Yes. On **Business Partners > View Business Partners** click **Import from Tally** and choose a file exported from Tally (Excel or CSV). Keep only the Sundry Debtors and Sundry Creditors in the file. Debtors become Buyers and creditors become Sellers. See "Import Business Partners from Tally" in the user manual.
+-->
 
 ## Why were some rows not imported?
 
-After the import the result lists every row that was not imported, with the reason. The usual ones: the partner already exists (same name or Tax ID), your plan's Business Partner limit was reached, Address Line 1 is missing, the GSTIN is not valid for India, or the row is a Tally ledger that is not a Sundry Debtor or Sundry Creditor.
+After the import the result lists every row that was not imported, with the reason. The usual ones: the partner already exists (same name or Tax ID), your plan's Business Partner limit was reached, Address Line 1 is missing, the GSTIN is not valid for India.
 
 ## What does Party Type mean?
 

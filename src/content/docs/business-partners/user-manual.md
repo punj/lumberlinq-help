@@ -101,17 +101,18 @@ Click **Add Bank Account** to add banking details such as bank name, account num
 
 ## Import Many Business Partners at Once
 
-On the **View Business Partners** page there are two import buttons (on a phone they are in the **...** menu):
+On the **View Business Partners** page there is an **Import** button (on a phone it is in the **...** menu):
 
 - **Import** — from an Excel or CSV file. Download the template first: it has the right column headers and an example row.
-- **Import from Tally** — for parties you already keep in Tally (next section).
 
-Both open the same guided steps: **Upload**, **Map Columns**, **Resolve Values**, **Review**, **Confirm**. Nothing is saved until you confirm at the end.
+It opens guided steps: **Upload**, **Map Columns**, **Resolve Values**, **Review**, **Confirm**. Nothing is saved until you confirm at the end.
 
 - A partner with the same name, or the same Tax ID, as one you already have is skipped. It is never overwritten.
 - The import follows your plan's Business Partner limit. Rows beyond the limit are skipped and reported as "Plan limit reached".
 - Rows that cannot be imported are listed with the reason, for example a missing Address Line 1 or an invalid GSTIN for India. Fix the file and import again; the rows already created are skipped as duplicates.
 - Tax ID / GSTIN is optional.
+
+<!-- "Import from Tally" is taken out for now (2026-10-14, owner decision). To bring it back, remove these comment marks.
 
 ## Import Business Partners from Tally
 
@@ -137,6 +138,7 @@ Good to know:
 - A party listed under both Sundry Debtors and Sundry Creditors is imported once, as whichever row comes first. Change its Party Type to **Both** afterwards if needed.
 - "Not Applicable", "NA" or "Unregistered" in the GSTIN column counts as empty, not as a wrong GSTIN.
 - If your Tally export uses different column names, use the **Map Columns** step to pick the right column for each field.
+-->
 
 ## Edit a Business Partner
 
