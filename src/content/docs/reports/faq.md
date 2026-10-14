@@ -5,6 +5,8 @@ description: Frequently asked questions about LumberLinq's reports.
 
 *Also searched as: analytics, export data, download report, business intelligence, matching report, variance report, operator performance report, app usage report.*
 
+**"Why don't I see the Consignment, Financial or Business Partner report?"** — they are built from consignments, so they belong to the Tree and Forest plans. On Seedling and Sapling they are not shown. Upgrading adds them, together with the data you already have.
+
 **"Which report should I use for a specific buyer or supplier?"** — use the Business Partner Report. Search for the partner by name, pick a date range, and it shows their shipment totals, payment breakdown, products, and loading sites, split by whether they were the seller or the buyer.
 
 **"Which report should I use for consignment performance?"** — use the Consignment Report. It covers totals, CBM, pieces, trade type, parties, ports, BL number, and payment status, with an Overview, Transactions, and Financial tab.

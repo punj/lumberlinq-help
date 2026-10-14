@@ -5,6 +5,10 @@ description: Frequently asked questions about the Consignments module in LumberL
 
 *Also searched as: shipment, shipments, BL, bill of lading, packing list, container, sea port, vessel, ETA, ETD, financials tab.*
 
+## Why don't I see Consignments in my menu?
+
+Consignments are part of the **Tree** and **Forest** plans. On Seedling and Sapling the module is not shown. If your plan ended and moved you to Seedling, your consignments are hidden, not deleted: renewing a plan that includes Consignments brings them all back at once.
+
 ## What is a consignment in LumberLinq?
 
 A consignment is a movement record for timber goods. It can include parties, route details, Stock Units, documents, invoice values, payments, status, and export/share controls.

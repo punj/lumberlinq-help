@@ -19,9 +19,13 @@ All new accounts start on a Trial Plan with full feature access, for a limited n
 
 ## What Happens After a Plan Lapses? (trial ends, or a paid renewal fails)
 
-Nothing is deleted and nothing is hidden. Your existing tally sheets, consignments, business partners, and every other record you already created stay fully visible and editable, exactly as before.
+Nothing is ever deleted. Your tally sheets, Stock Units and every other record you created stay as they are.
 
-What actually happens is a **downgrade**: your account moves onto a lower, limited plan. You can keep using and editing everything you already have — you just can't *create new* records past that lower plan's limits (new tallies, new consignments, new users, etc.) until you subscribe again.
+What actually happens is a **downgrade**: your account moves onto the free **Seedling** plan. Seedling does not include **Consignments** or **Business Partners**, so while you are on it your consignments and business partners are **hidden** — their screens, their reports and any shared consignment links stop working (a shared link shows "no longer available"). They are not deleted: when you renew a plan that includes them, **everything comes back at once**.
+
+On the free plan you keep using your tally sheets, Stock Units and the other core screens, and you just can't *create new* records past that plan's limits (new tallies, new users, etc.) until you subscribe again.
+
+**You are told before it happens.** If your company has consignments or business partners, the **Subscription** page shows a notice — "What happens if your plan ends" — with the real numbers, and the renewal reminder e-mail says the same.
 
 - A **lapsed paid plan** gets a short grace window first (a few days) before the downgrade happens, so a late renewal has a chance to catch up automatically.
 - A **lapsed trial** has no grace window — the downgrade happens right at the trial's end date.

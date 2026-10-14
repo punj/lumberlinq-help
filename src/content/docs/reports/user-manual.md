@@ -11,6 +11,8 @@ Open **Reports** from the main menu (requires the Report Access permission) and 
 
 ![Reports header](/screenshots/reports/reports__header__01.png)
 
+**Which reports your plan shows.** The Consignment Report, the Financial Report and the Business Partner Report are made from consignments, so they are part of the **Tree** and **Forest** plans. On Seedling and Sapling they are not listed in the Reports menu. The other reports (Stock Unit, Tally, Product, Location and so on) are available as your plan allows.
+
 ## Report Filters
 
 Most reports have a **From** / **To** date range. A few add extra filters specific to that report (search a partner, pick a trade type or status, type a currency code). Details for each report are below.

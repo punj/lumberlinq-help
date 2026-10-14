@@ -5,6 +5,10 @@ description: Automatically remind business partners about payments and receive a
 
 *Also searched as: overdue payment emails, invoice reminders, dunning, receivables reminder, daily financial report, payment due notification.*
 
+## Which Plans Include It
+
+Payment Reminders are about consignment payments, so they are part of the **Tree** and **Forest** plans. On Seedling and Sapling the Payment Reminders section is not shown.
+
 ## How to Access
 
 Open **Main Menu → Company → Application Settings**. Requires Administrator role.

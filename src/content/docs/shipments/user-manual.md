@@ -9,6 +9,8 @@ description: Step-by-step guide for creating, editing, and managing consignments
 
 The Consignments module helps timber and logistics teams manage export, import, domestic sale, domestic purchase, and trading consignments in one place. It brings together consignment details, parties, Stock Units, documents, invoice values, payment tracking, export reports, share links, and audit/status information.
 
+> **Plan note.** Consignments are part of the **Tree** and **Forest** plans. On Seedling and Sapling the Consignments menu, its reports and shared consignment links are not available. Your data is never deleted: when a plan that includes Consignments is active again, everything is back.
+
 ## Open the Consignments List
 
 Go to **Consignments > List Consignments**.
