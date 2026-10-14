@@ -5,6 +5,10 @@ description: Frequently asked questions about Business Partners in LumberLinq.
 
 *Also searched as: buyer, seller, customer, supplier, vendor, client, party, contact, trading partner, add customer, new supplier, KYC, bank details.*
 
+## Why don't I see Business Partners in my menu?
+
+Business Partners are part of the **Sapling**, **Tree** and **Forest** plans. On the free Seedling plan the module is not shown. If your plan ended and moved you to Seedling, your partners are hidden, not deleted: renewing a plan that includes them brings them back at once. On Sapling the Business Partner Report is not available, because it is made from consignments (a Tree and Forest part).
+
 ## What is a Business Partner?
 
 A Business Partner is a buyer, seller, exporter, importer, supplier, trader, or other company used in LumberLinq transactions.
@@ -15,7 +19,19 @@ They are reused across consignments, tally sheets, inventory, documents, and rep
 
 ## What fields are required?
 
-Required fields include Company Name, Party Type, Registration Type, Tax ID or GSTIN, Party Category, Email, Phone 1, Address Line 1, Country, and Zip Code.
+Required fields include Company Name, Party Type, Registration Type, Party Category, Email, Phone 1, Address Line 1, Country, and Zip Code.
+
+## Is the Tax ID or GSTIN required?
+
+No, it is optional. If you enter one it is checked: at least 3 characters, and for a partner in India it must be a valid 15-character GSTIN. Two partners with an empty Tax ID are not treated as duplicates of each other.
+
+## Can I import my parties from Tally?
+
+Yes. On **Business Partners > View Business Partners** click **Import from Tally** and choose a file exported from Tally (Excel or CSV). Keep only the Sundry Debtors and Sundry Creditors in the file. Debtors become Buyers and creditors become Sellers. See "Import Business Partners from Tally" in the user manual.
+
+## Why were some rows not imported?
+
+After the import the result lists every row that was not imported, with the reason. The usual ones: the partner already exists (same name or Tax ID), your plan's Business Partner limit was reached, Address Line 1 is missing, the GSTIN is not valid for India, or the row is a Tally ledger that is not a Sundry Debtor or Sundry Creditor.
 
 ## What does Party Type mean?
 

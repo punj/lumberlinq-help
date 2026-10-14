@@ -57,6 +57,17 @@ On the login page, click **Sign Up** to flip the card to registration.
 
 After verifying your email, complete the setup wizard before accessing the main application. Each step must be finished before the next unlocks — see [Getting Started](/getting-started/) for the full step-by-step walkthrough (Personal Details → Company Details → Subscription → Payment → Confirmation).
 
+### Verifying Your Mobile Number
+
+In the Personal Details step (and later in **Account Details**) you verify your mobile number with a 6-digit code. You choose how to get it:
+
+- **Send code on WhatsApp** — the code arrives in WhatsApp from LumberLinq as a message with a **Copy code** button. Tap it, then paste the code into LumberLinq. This is the main button for Indian (+91) numbers.
+- **Send code by SMS** — the same code as a text message. This is the main button for other countries.
+
+A code works for 5 minutes. You can ask for a new one after 30 seconds, and in the code window you can switch to the other way ("Send by SMS instead" / "Send on WhatsApp instead"). If WhatsApp tells us it could not deliver the code (for example the number is not on WhatsApp), the window says so and you can send it by SMS. There is a daily limit on how many codes can be requested, to protect your number from misuse. If you do not see the WhatsApp button, WhatsApp codes are switched off for now and SMS is the only way.
+
+Once a mobile number is verified it cannot be changed from the screen; raise a Support Ticket if you need it changed.
+
 ### Trial Plan
 
 All new accounts can start on a Trial Plan (one per company, ever), with full feature access for a limited number of days and no grace period. See [Subscriptions & Billing](/subscriptions/user-manual/) for exactly what happens when it ends and how to upgrade.

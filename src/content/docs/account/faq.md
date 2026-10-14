@@ -25,6 +25,14 @@ No — use the link in your invitation email instead. It pre-fills your email an
 
 Check spam/junk first, wait a few minutes for delivery delays, then use "Resend verification email" on the login page if available. Raise a Support Ticket if it still doesn't show up.
 
+**How do I get the code to verify my mobile number — can I use WhatsApp?**
+
+Yes. In Account Details (or the Personal Details step of the setup) press **Send code on WhatsApp** or **Send code by SMS**. On WhatsApp the code arrives as a message from LumberLinq with a **Copy code** button; tap it and paste the code into LumberLinq. A code works for 5 minutes. If you do not see the WhatsApp button, WhatsApp codes are switched off for now: use SMS.
+
+**The WhatsApp code did not arrive — what now?**
+
+Check that the number you typed is the one on WhatsApp and wait a few seconds. If WhatsApp could not deliver it, the code window tells you; press **Send by SMS instead**. You can ask for a new code after 30 seconds. If you asked for many codes today you may hit the daily limit: try again tomorrow or raise a Support Ticket.
+
 **What happens when my trial ends?**
 
 Access is restricted until you activate a paid plan — your data isn't lost. Upgrade any time from the Subscription page.

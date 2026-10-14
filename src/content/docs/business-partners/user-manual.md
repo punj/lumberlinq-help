@@ -9,11 +9,13 @@ Business Partners are the companies and contacts your organisation trades with i
 
 Business Partners are used across consignments, tally sheets, inventory, documents, and reports.
 
+> **Plan note.** Business Partners are part of the **Sapling**, **Tree** and **Forest** plans. On the free Seedling plan the Business Partners menu is not shown. On Sapling, Business Partners work as a simple address book (the consignment parts and the Business Partner Report belong to Tree and Forest). Your partners are never deleted: when a plan that includes them is active again, they are all back at once.
+
 ## How to Create a Business Partner
 
 1. Open **Business Partners > View Business Partners**.
 2. Click **New Partner**.
-3. On the **Identity** tab, fill in the required fields: Company Name, Party Type (Buyer, Seller, or Both), Registration Type, Tax ID / GSTIN, and Party Category. Contact Person and Reference Code are optional here.
+3. On the **Identity** tab, fill in the required fields: Company Name, Party Type (Buyer, Seller, or Both), Registration Type, and Party Category. Tax ID / GSTIN, Contact Person and Reference Code are optional here.
 4. Click the **Contact & Location** tab. Fill in Email, Phone 1, Address Line 1, Country, and Zip Code (all required), plus State, City, Phone 2, Address Line 2, and Website if you have them.
 5. Click the **Operations** tab if you want to set internal details — Linked User ID, External Code, Tags, or Notes. This tab is optional.
 6. Skip the **Attachments** and **Bank Accounts** tabs for now — both only unlock after the partner is saved for the first time.
@@ -59,8 +61,9 @@ Required fields include:
 - Company Name
 - Party Type
 - Registration Type
-- Tax ID or GSTIN
 - Party Category
+
+Tax ID or GSTIN is optional. If you enter one it is checked: at least 3 characters, and for a partner in India it must be a valid 15-character GSTIN.
 
 Party Type options include Buyer, Seller, and Both.
 
@@ -95,6 +98,45 @@ Attachments are available after the partner is saved.
 ![Create Bank Accounts tab](/screenshots/bp/actual-08-create-bank-accounts-tab.png)
 
 Click **Add Bank Account** to add banking details such as bank name, account number, IFSC/SWIFT, and currency.
+
+## Import Many Business Partners at Once
+
+On the **View Business Partners** page there are two import buttons (on a phone they are in the **...** menu):
+
+- **Import** — from an Excel or CSV file. Download the template first: it has the right column headers and an example row.
+- **Import from Tally** — for parties you already keep in Tally (next section).
+
+Both open the same guided steps: **Upload**, **Map Columns**, **Resolve Values**, **Review**, **Confirm**. Nothing is saved until you confirm at the end.
+
+- A partner with the same name, or the same Tax ID, as one you already have is skipped. It is never overwritten.
+- The import follows your plan's Business Partner limit. Rows beyond the limit are skipped and reported as "Plan limit reached".
+- Rows that cannot be imported are listed with the reason, for example a missing Address Line 1 or an invalid GSTIN for India. Fix the file and import again; the rows already created are skipped as duplicates.
+- Tax ID / GSTIN is optional.
+
+## Import Business Partners from Tally
+
+Use this when your buyers and suppliers are already in Tally.
+
+1. In Tally, export your list of ledgers (accounts) to Excel or CSV. Keep only the **Sundry Debtors** and **Sundry Creditors**. Other ledgers (bank accounts, duties and taxes, sales and so on) are not business partners and are not imported.
+2. In LumberLinq open **Business Partners > View Business Partners** and click **Import from Tally**.
+3. Choose your file. If the first rows of the file are a report title, raise **Skip rows at the top** until the column names are the first row.
+4. **Map Columns:** LumberLinq recognises the usual Tally column names (name, group such as "Under" or "Parent", GSTIN, address, state, pincode, phone, email). Check the match and fix any column it missed. Name and Address must be matched.
+5. **Resolve Values:** if a country, state or city is not an exact match, pick the right one from the suggestions. If a group such as "Bank Accounts" shows up here, choose **Keep as typed**; that row is reported as not imported.
+6. **Review**, then **Confirm.** The result shows how many partners were created, how many already existed, how many were over your plan limit, and the reason for every row that was not imported.
+
+What LumberLinq fills in for you:
+
+- Sundry Debtors become **Buyers** and Sundry Creditors become **Sellers**. If the file has no group column, the partner is set to **Both**.
+- Registration Type is set to **Company**.
+- If the file has no country, the partner gets **your own company's country**.
+- Party Category is **Domestic** when the partner is in your company's country and **International** otherwise.
+- The Tally ledger name is saved in the partner's **External Code** field so you can match it with Tally later.
+
+Good to know:
+
+- A party listed under both Sundry Debtors and Sundry Creditors is imported once, as whichever row comes first. Change its Party Type to **Both** afterwards if needed.
+- "Not Applicable", "NA" or "Unregistered" in the GSTIN column counts as empty, not as a wrong GSTIN.
+- If your Tally export uses different column names, use the **Map Columns** step to pick the right column for each field.
 
 ## Edit a Business Partner
 
