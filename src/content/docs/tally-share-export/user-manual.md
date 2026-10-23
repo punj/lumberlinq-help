@@ -148,7 +148,7 @@ Large packs can take a moment to prepare. A pack is limited to about 120 MB; the
 
 ## The Shared Links Window
 
-**Share → View shared links** (or the **⋮** menu on a list row → **View shared links**) opens all links of that Stock Unit or Consignment as one card per link:
+**Share → View shared links** (or **Share** in the **⋮** menu of a list row) opens all links of that Stock Unit or Consignment as one card per link:
 
 - A counter strip shows how many links there are, how many are active and how many have been opened.
 - Tabs filter the list: **All**, **LumberLinq users** and **Outside people**. The search box finds a person's email or number.
