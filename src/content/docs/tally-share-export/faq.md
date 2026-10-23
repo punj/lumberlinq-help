@@ -19,7 +19,7 @@ Upload your logo from Main Menu → Company → Branding before exporting — it
 
 **How do I revoke a share link?**
 
-Open the Share dialog on the tally sheet, find the link, and click Delete — it becomes invalid immediately.
+Open **Share → View shared links**, find the link and switch **Active** off or click **Revoke** — it becomes invalid immediately. **Disable all** switches off every link of that Stock Unit.
 
 **Does AI Import cost anything?**
 
@@ -76,3 +76,23 @@ Yes. In Consignment Field Access, switch on "Total Invoice Amount" for LumberLin
 **Why did my new link get 30 or 90 days?**
 
 Each link type starts with its own length: 30 days for Anyone with the link, 90 days for LumberLinq users only, no limit for My team only. You can change it in the Create share link window.
+
+**Can I share a Stock Unit or Consignment with someone who has no LumberLinq account?**
+
+Yes. Use **Share → Outside people**. Pick **Code** (a 6-digit code sent to their email or WhatsApp), **Shared password** (one password for everybody) or **Personal links** (one link per person; each person opens theirs with the shared password or with a code sent to their own email or WhatsApp). What they see follows your Protected field-access settings. Links for LumberLinq users work as before.
+
+**Which is the safest way for outside people?**
+
+Personal links with **Code**: each link is for one email or WhatsApp number and the code goes only to that contact, so there is no password to forward. A **Shared password** can be passed on by anyone who has it.
+
+**Where do I send a personal link from?**
+
+In the Shared Links window, click the envelope (email) or the WhatsApp button on the person's card. The WhatsApp button opens your own WhatsApp with the message ready.
+
+**Can I see who opened an outside-people link?**
+
+Yes. **Share Link Access Audit** shows each open with the visitor's name, company and contact, tagged as verified with a code, opened with a personal link, or not verified (typed by the visitor).
+
+**Is there a limit on codes and personal links?**
+
+Each company can send at most 50 codes and link emails per 24 hours (all plans), and make up to 50 personal links at a time.

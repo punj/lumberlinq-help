@@ -47,7 +47,7 @@ Yes. The export dialog supports format and visibility options, including Excel, 
 
 ## Can I share consignment details with another party?
 
-Yes. The share action supports public, protected, and private links with expiry, access limits, download permission, and document access settings.
+Yes. The share action supports public, protected, and private links with expiry, access limits, download permission, and document access settings. For people without a LumberLinq account use **Share → Outside people**: a code sent to their email or WhatsApp, a shared password, or personal links.
 
 ## What happens when a consignment is locked?
 

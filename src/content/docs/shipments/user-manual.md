@@ -131,7 +131,7 @@ Payment terms are saved together with everything else when you press **Update** 
 
 ## Export Consignment Reports
 
-Use the **Export** action from the consignment edit screen or the download action from the list. The export dialog supports access-level options, report format choices, watermark, company logo, photo inclusion, UOM row, and chart/stat options where available.
+Use **Reports → Export** on the consignment edit screen (header) or the download action from the list. The **Reports** menu also holds **Full Report** (PDF), **Full Trace** and **Stock Statement** (when Inventory is on and you may open those pages). The export dialog supports access-level options, report format choices, watermark, company logo, photo inclusion, UOM row, and chart/stat options where available.
 
 ![Export dialog](/screenshots/shipments/shipments-16-export-dialog.png)
 
@@ -139,7 +139,9 @@ Use the **Export** action from the consignment edit screen or the download actio
 
 ## Share Consignment Links
 
-Use the share action from the list to create public, protected, or private consignment links. The share dialog lets users control duration, access limits, download permission, and document visibility.
+Use **Share** on the Edit Consignment page (header, needs the share right), or the share entry in the **⋮** menu of a list row, to create public, protected, or private consignment links, or links for **Outside people**. The share dialog lets users control duration, access limits, download permission, and document visibility. **View shared links** opens the links as cards with tabs (All, LumberLinq users, Outside people), search, an **Opened** tag, and the Download and Active switches.
+
+**Outside people** makes links for people without a LumberLinq account: a **Code** sent to their email or WhatsApp, a **Shared password**, or **Personal links** (one per person, opened with the password or with a code sent to that person). They see what your Protected settings allow. Full steps: see *Sharing & Exporting Tally Sheets*, section "Sharing with People Who Have No LumberLinq Account".
 
 **Show details in link preview** controls the card WhatsApp and other chat apps show when the link is pasted: on a public link it shows the consignment's real details (only what your field-access settings allow); turn it off for a plain card. Protected and Private links always show a locked card with only the Stock Unit count.
 

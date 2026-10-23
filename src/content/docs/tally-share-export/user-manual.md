@@ -10,12 +10,14 @@ description: Creating shareable tally links and exporting tally reports in Lumbe
 Buyers, surveyors, and freight forwarders can view tally data without a LumberLinq account using shareable links.
 
 **Steps to create a share link:**
-1. Open a tally sheet (from **Stock Unit → Stock Units** → click a Stock Unit).
-2. Click the **Share** button in the toolbar.
-3. Choose an access level (see below).
+1. Open a Stock Unit (**Stock Unit → Stock Units** → click a Stock Unit). You can also use the **⋮** menu on a row of the Stock Units list.
+2. Click **Share** in the strip at the top, next to **Stock Unit details**. It shows only if you have the share right and you are online.
+3. Choose what you want to make: **LumberLinq users only**, **Anyone with the link**, **My team only**, or **Outside people** (for people without a LumberLinq account, see below). **View shared links** opens the list of links you already made.
 4. Set optional: expiry date, download permission, document visibility.
 5. Click **Create Link**.
 6. Copy the URL or scan the QR code to share.
+
+The **Share** button shows how many links the Stock Unit has, and the menu shows how many are active and how many have been opened.
 
 ![Shared Links list](/screenshots/tally-share/links-list.png)
 
@@ -30,7 +32,7 @@ Buyers, surveyors, and freight forwarders can view tally data without a LumberLi
 
 **PUBLIC** — Anyone with the URL can view the tally, no login needed. Shows basic volume summary, log count, Stock Unit ID. Does not show internal notes, pricing, or full party details.
 
-**PROTECTED** — Recipient must be logged into a LumberLinq account. Shows all PUBLIC data plus more detailed measurement rows and product information.
+**PROTECTED** — Recipient must be logged into a LumberLinq account. Shows all PUBLIC data plus more detailed measurement rows and product information. A link made for **Outside people** (people with no account) also uses these Protected settings, but it asks for a code or password instead of a login (see "Sharing with People Who Have No LumberLinq Account").
 
 **PRIVATE** — Recipient must be logged in and belong to your company or be an explicitly invited party. Shows full tally data including all fields.
 
@@ -144,9 +146,37 @@ Large packs can take a moment to prepare. A pack is limited to about 120 MB; the
 
 <!-- screenshot to add when taken (see SCREENSHOT_CHECKLIST.md): ![Download pack window](/screenshots/tally-share-export/share-download-pack-window.png) -->
 
+## The Shared Links Window
+
+**Share → View shared links** (or the **⋮** menu on a list row → **View shared links**) opens all links of that Stock Unit or Consignment as one card per link:
+
+- A counter strip shows how many links there are, how many are active and how many have been opened.
+- Tabs filter the list: **All**, **LumberLinq users** and **Outside people**. The search box finds a person's email or number.
+- Each card shows what the link is (Code, Shared password, Personal link, LumberLinq users, Anyone with the link, My team only), a colour tag (**Outside people** is violet), an **Opened** tag once someone opened it, the expiry date, a views bar (used / limit), and the **Download** and **Active** switches.
+- Buttons on a card: **Copy link**, open, QR code, share on social apps, and — for a personal link — send by email or WhatsApp. **Revoke** switches the link off.
+- **Disable all** switches off every link of that record after a confirmation.
+- On LumberLinq-user and public links a small tag turns the **link preview card** on or off. Outside-people links never have a preview card.
+
+## Sharing with People Who Have No LumberLinq Account
+
+Use **Share → Outside people** (also in the **New link** menu of the Shared Links window). Pick how the person gets in:
+
+- **Code** — one link for anyone you give it to. The visitor types their name, an email or a WhatsApp number (and optionally a company), and we send a 6-digit code there. The code works for 10 minutes. This proves the contact is real.
+- **Shared password** — one link and one password for everybody. The visitor types their name and email (the email is **not** checked) and the password. Send the password apart from the link; it is shown only once, when you create the link.
+- **Personal links** (recommended) — one link for each email address or WhatsApp number you list (up to 50 at a time). The link already knows who it is for. You choose **Password | Code**: with **Password** every person types the same password; with **Code** each person gets a code at their own email or WhatsApp number, so there is no password to send. Use the envelope or WhatsApp button on each card to send the link.
+
+Good to know:
+- What the visitor sees follows your **Protected** field-access and document settings. Nothing new is shown.
+- Default expiry is 7 days (you can pick 24 hours or 30 days). Set the number of views: for Code and Shared password it is the total, for Personal links it is per person.
+- Everybody must pass the code or password, also people who are logged into LumberLinq. Links for LumberLinq users keep working as before (login, no password).
+- After a correct code or password the visitor stays in for up to 12 hours (or until the link ends).
+- Protection: 5 wrong tries from one device lock it for 5 minutes; a new code can be asked after 1 minute and at most 5 times an hour per link. Each company can send at most 50 codes and link emails per 24 hours (all plans).
+- Every open is saved in **Share Link Access Audit** with the visitor's name, company and contact, and a tag: contact verified with a code, opened with a personal link, or not verified (typed by the visitor).
+- Someone using an old LumberLinq app sees "This link needs a code or password. Please open it in your web browser at app.lumberlinq.com, or update the LumberLinq app."
+
 ## Revoking a Share Link
 
-Open the Share dialog on the tally sheet, find the link in the list, and click Delete. The link becomes invalid immediately.
+Open **Share → View shared links**, find the link and switch **Active** off (after a confirmation) or click **Revoke**. The link becomes invalid immediately. **Disable all** switches off every link of that Stock Unit.
 
 ## How to Export a Tally Report
 
@@ -184,6 +214,12 @@ Each AI Import uses AI credits from your plan — credits are consumed after ext
 **"There is no Excel or Bundle on the share link"** — a share link offers the PDF only. Excel and Bundle are available inside LumberLinq when signed in.
 
 **"Share link shows 'Login required' even for a Public link"** — check the link format. Public links use `/s/p/:code`; a link starting with `/s/r/` or `/s/x/` is Protected or Private and requires login.
+
+**"The visitor did not get the code"** — check the email or WhatsApp number (WhatsApp needs the country code, like +91 98765 43210) and the spam folder. A new code can be asked after 1 minute. If WhatsApp is not available, the visitor can use email when you allowed both.
+
+**"A link says 'Too many wrong tries'"** — wait 5 minutes and try again, or create a new link.
+
+**"The Share button is missing"** — it needs the share right and an internet connection, and the Stock Unit must be saved.
 
 **"Recipient sees 'Access denied'"** — for Protected/Private links, the recipient must be logged into LumberLinq and their account must belong to your company (or the link has expired).
 
