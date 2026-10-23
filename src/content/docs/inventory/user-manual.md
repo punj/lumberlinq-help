@@ -57,7 +57,7 @@ When you start with LumberLinq, add all the stock already in your yard first:
 3. On the **Tallysheet** tab, enter the pieces: Square — thickness × width × length × pieces; Round — girth × length. Save the rows.
 4. Open the **⋮** menu and press **Receive into Inventory.** The stock goes into inventory, the tally locks, and the In/Out page and Stock Statement show a line noted **"Opening stock"**.
 
-Opening stock gets its own batch with a **Starting Stock** badge — it is never mixed with stock you buy later. A Consignment is **optional**: link one only if you want the purchase record (supplier, money, documents). Linking it later never adds the stock a second time. Opening stock has nothing to reconcile, so a mill run on it never asks you to type CONFIRM. Each opening-stock Stock Unit counts toward your plan's Stock Unit limit like any other.
+Opening stock gets its own batch with a **Starting Stock** badge — it is never mixed with stock you buy later. A Consignment is **optional**: link one only if you want the purchase record (supplier, money, documents). Linking it later never adds the stock a second time. Opening stock has nothing to reconcile, so a mill run on it never asks you to type CONFIRM. Each opening-stock Stock Unit counts toward your plan's Stock Unit limit like any other. After you save, the amber **Not in inventory yet** chip on the Stock Unit becomes an **Add to inventory** button (the same as ⋮ → Receive into Inventory), and Inventory → Overview shows a small reminder listing Opening Stock units that are not received yet. Opening stock has no **Reconciliation** tab and does not appear in the Reconciliation report, because there is no loading count to compare against.
 
 ## Three Ways Stock Becomes a Batch
 

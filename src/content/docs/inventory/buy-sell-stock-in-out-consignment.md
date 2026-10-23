@@ -68,7 +68,7 @@ Create the Stock Unit as Stock In, tally it, and press **Receive into Inventory*
 
 ### Opening Stock (wood you already have when you start)
 
-Inventory → Overview → **Opening Stock**. A Stock Unit opens with Stock In chosen. Pick product, site and origin, save, enter the tally rows (Square: thickness × width × length × pieces; Round: girth × length), save, then ⋮ → **Receive into Inventory**. The stock goes into its own **Starting Stock** Lot and the tally locks. A Consignment is optional. Mill Jobs on opening stock never ask for CONFIRM, because there is nothing to reconcile.
+Inventory → Overview → **Opening Stock**. A Stock Unit opens with Stock In chosen. Pick product, site and origin, save, enter the tally rows (Square: thickness × width × length × pieces; Round: girth × length), save, then ⋮ → **Receive into Inventory**. The stock goes into its own **Starting Stock** Lot and the tally locks. A Consignment is optional. Mill Jobs on opening stock never ask for CONFIRM, because there is nothing to reconcile. After you save, the amber **Not in inventory yet** chip on the Stock Unit becomes an **Add to inventory** button (the same as ⋮ → Receive into Inventory), and Inventory → Overview shows a small reminder listing Opening Stock units that are not received yet. Opening stock has no **Reconciliation** tab and does not appear in the Reconciliation report, because there is no loading count to compare against.
 
 ### When to "Receive into Inventory" and When to "Reconcile" — Simple Rule
 
