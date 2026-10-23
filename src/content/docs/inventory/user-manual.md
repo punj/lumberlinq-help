@@ -138,7 +138,7 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 - Adding an Adjustment for the same shortage after a reconciliation shows a warning — the reconciliation already corrected it.
 - Companies without Inventory, Stock Out units and opening stock work as before: no "receive first" step, and a lock only records the difference.
 
-**Reconcile before milling.** When you start a mill run, the **Check Before You Start** list shows any Stock Unit in that batch that isn't reconciled yet, with a **Reconcile now** button (you come back to the run with your entries kept).
+**Reconcile before milling.** When you start a mill run, the **Check Before You Start** list shows any Stock Unit in that batch that isn't reconciled yet, with a **Reconcile now** button (you come back to the run with your entries kept). The list is one slim bar with small tags (not reconciled, no purchase record); press **Review** to see the rows, **Hide** to fold them. The CONFIRM box stays visible. In the New Mill Job window, the lot you pick stays on top with a **Change** button and the long list folds away; if you searched a Stock Unit, that unit is shown first on its lot.
 - If you start anyway with a Stock Unit that was **never reconciled**, you type **CONFIRM** in the same dialog — asked once per Stock Unit. A machine operator starting a job from My Tasks is never asked.
 - "Closed without count" (locked with no unloading count) shows as information only — it can't be reconciled any more.
 
