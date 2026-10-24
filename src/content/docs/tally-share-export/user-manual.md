@@ -178,15 +178,28 @@ Good to know:
 
 Open **Share → View shared links**, find the link and switch **Active** off (after a confirmation) or click **Revoke**. The link becomes invalid immediately. **Disable all** switches off every link of that Stock Unit.
 
-## How to Export a Tally Report
+## How to Download a Tally Report
 
-Click **Export** in the tally sheet toolbar. Formats:
+**From the Stock Units list:** open the row menu (**⋮** on a computer, **⋯** on a phone) and tap **Download**. It is one menu item; the window opens at once. (Inside a tally sheet, the **Export** menu in the toolbar opens the same window under **Advanced…**.)
 
-- **PDF** — formatted, printable document with company branding
-- **Excel (.xlsx)** — full spreadsheet with all measurement rows and summary totals, best for analysis
-- **Bundle (ZIP)** — combines the PDF report with all uploaded Stock Unit photos into a single archive
+**Step 1 — Who will see this file?** Pick one of three:
 
-The export dialog also has an Access Level selector (Public/Protected/Private) controlling which columns appear — the same rules as share links.
+- **My team only** — for people in your company. Every column can be included. This is selected the first time; after that the window starts on the choice you used last.
+- **LumberLinq users only** — for people signed in to LumberLinq, any company. Private columns are left out.
+- **Anyone** — safe to hand to anyone. Only the basic columns are included.
+
+The columns are decided by this choice and by the tally type. Square tally: Anyone gets Sr. No., Width, Thickness, Length, Pieces and Net CFT (6 columns); LumberLinq users only adds Net CBM (7); My team only also gets Gross CFT and Gross CBM (9 standard columns). Round tally: Anyone 4 columns, LumberLinq users only 5, My team only 9. These are the same rules as share links.
+
+**Step 2 — press Download.** Most people stop here.
+
+**Step 3 (only if you want to change something) — More options:**
+
+- **File type** — **Excel (.xlsx)** (every measurement row and totals, best for analysis), **PDF** (a printable document with your branding) or **Bundle (.zip)** (the Excel plus the original photos and documents of the Stock Unit; it does not contain a PDF). It starts on Excel the first time and then remembers your last choice.
+- **What kind of report?** — **Table only** (just the measurement rows, many to a page), **Report with photos** (details, totals, charts and photos; the usual one) or **Official document** (the report plus your logo, a document number and sign-off lines).
+- **Columns** — **Standard columns** (the usual set for your choice, with the names shown), **Every column** (only shown when it adds something, which is for My team only), or **Choose myself** (tick the columns one by one).
+  - Columns your choice does not allow are not hidden quietly: they stay in the list, greyed with a padlock, under "Not available for this choice". A button, **Switch to My team only**, lets you change the choice if you need them. Only share that file with people in your company.
+  - If you change the choice after picking columns by hand, the columns are reset to what the new choice allows and a note tells you so.
+- **Other settings** — **Watermark** for every file type. Company logo, photos, unit row (UOM), company details and charts and stats only change a **PDF**; an Excel file or a Bundle always carries everything your choice allows, so those switches are not shown for them (a short line says so). Below My team only up to four more switches appear: **Include net measurements** (Net Length, Net Girth, or Net Width, Net Thickness, Net Length), **Include net volume** (only for Anyone: the Net CBM / Net CFT it does not get), **Include gross figures** (the Gross columns and totals) and, for Excel and Bundle, **Include Reconciliation** (the team's own inventory sheet). Both start off and show a warning when switched on. A Stock Unit's files are named after the BL number of its consignment when it is in one, otherwise after the Stock Unit number.
 
 ## Export Options
 
@@ -195,9 +208,9 @@ The export dialog also has an Access Level selector (Public/Protected/Private) c
 - **UoM row** — add a row showing units of measurement at the top of the data table
 - **Include charts** — add bar charts showing volume per Stock Unit (Excel only, when multiple Stock Units exist)
 
-## Why PDF Has No Photos
+## Where the Photos Go
 
-Photos are only included in the Bundle format. PDF and Excel exports contain measurement data only.
+Photos are in the PDF when the Photos switch is on (the "Report with photos" and "Official document" kinds), in the Excel file on a Photos sheet, and in the Bundle as the original files (with the documents). Files that are not images, such as a BL or an invoice PDF, cannot go inside a PDF or an Excel file: with such files the download arrives as a ZIP that holds the file and those documents, and a note in the window tells you how many. The totals follow the choice too: Anyone sees Pieces and Net CBM, LumberLinq users only adds Net CFT, My team only also sees the Gross figures. The Reconciliation sheet (the team's own inventory result) is only in a file for My team only.
 
 ## AI Import
 
@@ -223,6 +236,6 @@ Each AI Import uses AI credits from your plan — credits are consumed after ext
 
 **"Recipient sees 'Access denied'"** — for Protected/Private links, the recipient must be logged into LumberLinq and their account must belong to your company (or the link has expired).
 
-**"Bundle export only produces a PDF, no photos"** — photos must be uploaded to the Stock Unit first, from the tally sheet's Documents tab.
+**"The Bundle has no photos"** — photos must be uploaded to the Stock Unit first, from the tally sheet's Documents tab.
 
 **"Export PDF shows no company logo"** — upload your logo from Main Menu → Company → Branding before exporting.

@@ -20,8 +20,7 @@ The list shows:
 - BL number or bill number
 - Type
 - Date
-- Shipper
-- Consignee
+- **From** and **To** (the shipper and the consignee; for a domestic sale the seller and the buyer) — see below
 - Status stepper
 - Stock Unit count
 - File chips: the Consignment's own documents and the photos and files of its Stock Units (see below)
@@ -38,6 +37,22 @@ Under the BL number every row shows two small file chips:
 - **Box chip** (for example **7 photos, 2 files**): all the Stock Units of this Consignment added together, with photos and other files counted separately. Tap it to see the same two totals and one line for every Stock Unit; tap a Stock Unit line to see its files by category (Front, Stack, Back, BL, Document, Other).
 
 On a phone the card opens from the bottom of the screen. Tapping a chip never opens the Consignment itself.
+
+### From and To
+
+Each row shows who the goods come from (**From**) and who they go to (**To**), with a round initials badge and the name. A small **You** tag marks your own company. If a party has not been chosen yet, a dashed **+ From** or **+ To** pill shows instead — grey on a Draft, amber on a consignment that is already past Draft. Tap the pill to open the consignment and fill it in. A Draft with a missing party also shows "Add From and To to continue".
+
+### The tile and the status steps
+
+- The tile in front of the number shows the direction: a **down arrow** for an import, an **up arrow** for an export (other trade types have their own icon). A **red padlock** means the inventory has been received and the status is locked.
+- While a consignment is **on the way** (status **Gate Out** or **In Transit**) its tile pulses softly, and for imports and exports the arrow slides in its direction. Draft, Arrived and Delivered tiles stay still.
+- The four steps follow the real status: **Draft**, **Confirmed** (including Planned, Stuffing and Stuffed), **On the way** (Gate Out, In Transit) and **Arrived** (Arrived, Unstuffing, Delivered, Closed). The current step pulses. Hover a step to see its name.
+
+### On a phone
+
+Each consignment is a card: the tile, the number with its Stock Unit count, the transport mode, route and date under it (for example *Sea · Tema → Mundra · 20 Jul 26*), and the invoice amount on the right. Below it come the From → To bar and the status row with the file chips. The bar on the card's left edge shows the status — grey for Draft, blue while on the way, green once arrived.
+
+Under the search box, quick chips filter by status: **All**, **Draft**, **In transit** (this includes Gate Out), **Arrived** and **Delivered**. Tap a card to open **View**, **Edit** and **Share** (if you have those rights) and **⋯** for everything else (payments, download, delete); tap again to close. Tapping the BL number opens the consignment at once.
 
 ## Search and Filter Consignments
 
@@ -136,6 +151,15 @@ Use **Reports → Export** on the consignment edit screen (header) or the downlo
 ![Export dialog](/screenshots/shipments/shipments-16-export-dialog.png)
 
 ![Export with Stock Units](/screenshots/shipments/shipments-24-export-with-transport-units.png)
+
+**From the Consignments list:** open the row menu and choose **Download** (one menu item; you need the Export right). The window shows how many Stock Units the consignment has and today's date, then:
+
+- **Who will see this file?** — **My team only** (everything can be included), **LumberLinq users only** (private details and financials are left out) or **Anyone** (only the basic details). It starts on the choice you used last (My team only the first time). **What's included?** shows exactly what each choice contains. Press **Download**: most people stop here.
+- **More options** (closed until you open it):
+  - **File type** — **Excel** (a cover, one sheet per Stock Unit and a summary), **PDF** (a cover page and every Stock Unit in one PDF) or **Bundle (.zip)** (one Excel for the whole consignment, with a sheet per Stock Unit, plus a photos folder per Stock Unit and the consignment documents you may see). It remembers your last file type.
+  - **What kind of report?** (PDF and Bundle only) — **Table only**, **Report with photos** or **Official document** (the report plus your logo, a document number and sign-off lines).
+  - **What goes on the cover sheet** (Excel only) — Consignment details, Route & transport, Parties, Document numbers, Financials (only with finance access; below My team only it is your own choice and a warning shows) and Audit (who created and approved it; My team only files only).
+  - **Other settings** — Photos; Company logo and Unit row (UOM) for a PDF or a Bundle; for Excel also Charts & stats, Show hidden fields as ●●●●● and a Watermark. At the lower levels the Gross figures show as ●●●●● and the Reconciliation sheets are left out. Switch on **Include gross figures**, **Include net measurements** or **Include net volume** (below My team only; they work in Excel, PDF and Bundle) or **Include Reconciliation** (Excel) to include them. Gross and Reconciliation start off; in Excel the net measurements and net volume start on (as before), in PDF and Bundle they start off. A warning shows when an extra is on. PDF tables shrink their text so every column fits the A4 width.
 
 ## Share Consignment Links
 
