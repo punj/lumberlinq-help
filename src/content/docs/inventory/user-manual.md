@@ -133,7 +133,7 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 - **Receive first, then reconcile.** For a Stock In unit, the Reconciliation tab shows *"This Stock Unit isn't in inventory yet"* until it is received — press **Receive into Inventory** right there, then enter the count and lock.
 - **Locking puts what arrived into stock.** The lock dialog shows the change (e.g. *19.000 → 18.750 CBM · 500 → 495 pcs*). Stock always uses the **net** volume. The Stock Statement shows the received line plus a **Reconciled** line for the difference (−0.25 CBM / −5 pcs), and every screen — batch cards, Overview, Command Center, stock picker — shows 18.75.
 - **Pieces are compared like for like:** Square = total pieces, Round = total rows (one log each). If the unloading tally is a different kind (Round vs Square), only the volume difference is used.
-- **Already milled or sold?** Then locking only records the difference; correct stock with an Adjustment (the tab offers a pre-filled one).
+- **Already milled or sold?** Stock is used oldest purchase first. If only older Stock Units’ wood was used, your count still changes stock. If the mill or sales already reached this Stock Unit’s wood, locking only records the difference; correct stock with an Adjustment (the tab offers a pre-filled one).
 - The Stock Unit screen shows **"Received (reconciled): 18.750 CBM · 495 pcs"** once reconciled, so the loading figure isn't mistaken for stock in hand.
 - Adding an Adjustment for the same shortage after a reconciliation shows a warning — the reconciliation already corrected it.
 - Companies without Inventory, Stock Out units and opening stock work as before: no "receive first" step, and a lock only records the difference.
@@ -142,7 +142,7 @@ Use **Add Adjustment** (requires the Inventory Adjust permission) only when reco
 - If you start anyway with a Stock Unit that was **never reconciled**, you type **CONFIRM** in the same dialog — asked once per Stock Unit. A machine operator starting a job from My Tasks is never asked.
 - "Closed without count" (locked with no unloading count) shows as information only — it can't be reconciled any more.
 
-**Reconciling after the batch was milled or sold:** the Reconciliation tab says so and offers only **Record & lock** — stock is not changed. Use **Correct with an adjustment →**: it opens Add Adjustment already filled in (Stock Unit, the difference, reason "Reconciliation after milling", a note with the counts) — check it and save.
+**Reconciling after this Stock Unit’s wood was milled or sold:** the Reconciliation tab says so and offers only **Record & lock** — stock is not changed. Use **Correct with an adjustment →**: it opens Add Adjustment already filled in (Stock Unit, the difference, reason "Reconciliation after milling", a note with the counts) — check it and save.
 
 **An adjustment that would take a batch below zero** shows the before → after figures and asks you to type **CONFIRM** in the same dialog.
 
