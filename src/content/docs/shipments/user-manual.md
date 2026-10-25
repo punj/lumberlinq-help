@@ -148,6 +148,8 @@ Payment terms are saved together with everything else when you press **Update** 
 
 Use **Reports → Export** on the consignment edit screen (header) or the download action from the list. The **Reports** menu also holds **Full Report** (PDF), **Full Trace** and **Stock Statement** (when Inventory is on and you may open those pages). The export dialog supports access-level options, report format choices, watermark, company logo, photo inclusion, UOM row, and chart/stat options where available.
 
+Under **More options** you can also choose the **Look**: **Colour**, or **Print-friendly** (black and white, easy to read on any printer). The numbers are the same; only the colours change. Excel starts on Colour and PDF on Print-friendly, and each remembers your last choice. The **Summary of each transport** switch (on by default) adds a Summary sheet (Excel) or Summary page (PDF) for each Stock Unit, laid out like its Summary tab. The cover starts with the **BL / Bill number**, and Stock Units are named by their **Transport ID** everywhere in the file. A watermark runs across every PDF page in a light diagonal line. Files that cannot go inside the Excel or PDF come in a ZIP next to it, and a switch lets you leave them out. Every Excel sheet prints one A4 page wide.
+
 ![Export dialog](/screenshots/shipments/shipments-16-export-dialog.png)
 
 ![Export with Stock Units](/screenshots/shipments/shipments-24-export-with-transport-units.png)

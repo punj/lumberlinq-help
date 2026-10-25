@@ -23,6 +23,8 @@ Business Partners are used across consignments, tally sheets, inventory, documen
 
 Once saved, the form switches to edit mode and the Attachments and Bank Accounts tabs become usable — see below.
 
+At the top of the form a **Required fields** bar shows how many of the required fields are filled (for example 2 / 4); it turns green with a tick when all are done. Each field's name sits inside the box and moves up to the top edge when you click or type, so it is never hidden behind what you typed.
+
 ![Create Identity tab](/screenshots/bp/actual-04-create-identity-tab.png)
 
 ## View Business Partners
@@ -32,6 +34,12 @@ Open **Business Partners > View Business Partners**.
 ![Business Partner list](/screenshots/bp/actual-01-business-partners-list.png)
 
 The list shows partner name, party type, contact person, phone, tax ID, registration type, country, status, and row actions.
+
+**Summary tiles.** Above the list, small tiles show how many active partners you have in total and how many are Buyers, Sellers, or Both. They count your whole company, not only the page on screen, and update by themselves when someone adds or changes a partner.
+
+**Quick filter chips.** Under the filters, tap **All**, **Buyers**, **Sellers**, or **Both** to see only that kind of partner. The chip also narrows the search box results, and the refresh button next to the filters clears it.
+
+**More on each row.** Under the name you see the type, the place as city and country name (for example "Dubai, United Arab Emirates"), the contact person, and the phone number. On a phone the number is a tap-to-call link. The partner's category (Domestic or International) and up to three tags appear as small chips. Bank details are never shown in the list.
 
 You can:
 

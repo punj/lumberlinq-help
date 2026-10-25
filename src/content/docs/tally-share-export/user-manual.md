@@ -195,22 +195,29 @@ The columns are decided by this choice and by the tally type. Square tally: Anyo
 **Step 3 (only if you want to change something) — More options:**
 
 - **File type** — **Excel (.xlsx)** (every measurement row and totals, best for analysis), **PDF** (a printable document with your branding) or **Bundle (.zip)** (the Excel plus the original photos and documents of the Stock Unit; it does not contain a PDF). It starts on Excel the first time and then remembers your last choice.
+- **Look** — **Colour** (rich colours and coloured charts) or **Print-friendly** (black and white: white banner, black outlines, hatched charts, grey headers; easy to read on a black-and-white printer). The numbers are the same, only the colours change. Excel starts on Colour and PDF on Print-friendly; each is remembered, and a Bundle uses the Excel look. Every Excel sheet prints one A4 page wide.
 - **What kind of report?** — **Table only** (just the measurement rows, many to a page), **Report with photos** (details, totals, charts and photos; the usual one) or **Official document** (the report plus your logo, a document number and sign-off lines).
 - **Columns** — **Standard columns** (the usual set for your choice, with the names shown), **Every column** (only shown when it adds something, which is for My team only), or **Choose myself** (tick the columns one by one).
   - Columns your choice does not allow are not hidden quietly: they stay in the list, greyed with a padlock, under "Not available for this choice". A button, **Switch to My team only**, lets you change the choice if you need them. Only share that file with people in your company.
   - If you change the choice after picking columns by hand, the columns are reset to what the new choice allows and a note tells you so.
-- **Other settings** — **Watermark** for every file type. Company logo, photos, unit row (UOM), company details and charts and stats only change a **PDF**; an Excel file or a Bundle always carries everything your choice allows, so those switches are not shown for them (a short line says so). Below My team only up to four more switches appear: **Include net measurements** (Net Length, Net Girth, or Net Width, Net Thickness, Net Length), **Include net volume** (only for Anyone: the Net CBM / Net CFT it does not get), **Include gross figures** (the Gross columns and totals) and, for Excel and Bundle, **Include Reconciliation** (the team's own inventory sheet). Both start off and show a warning when switched on. A Stock Unit's files are named after the BL number of its consignment when it is in one, otherwise after the Stock Unit number.
-
-## Export Options
-
-- **Company logo** — include your uploaded company logo in the PDF header
-- **Watermark** — add text (e.g. "DRAFT", "CONFIDENTIAL") across the PDF pages
-- **UoM row** — add a row showing units of measurement at the top of the data table
-- **Include charts** — add bar charts showing volume per Stock Unit (Excel only, when multiple Stock Units exist)
+- **Other settings** — **Watermark** for every file type. Company logo, photos, unit row (UOM), company details and charts and stats only change a **PDF**; an Excel file or a Bundle always carries everything your choice allows, so those switches are not shown for them (a short line says so). Below My team only up to four more switches appear: **Include net measurements** (Net Length, Net Girth, or Net Width, Net Thickness, Net Length), **Include net volume** (only for Anyone: the Net CBM / Net CFT it does not get), **Include gross figures** (the Gross columns and totals) and, for Excel and Bundle, **Include Reconciliation** (the team's own inventory sheet). Both start off and show a warning when switched on. A Stock Unit's files are named after the BL number of its consignment when it is in one, otherwise after its Transport ID.
+- **Summary** — an Excel file gets a **Summary** sheet and a PDF gets a **Summary** page, like the Summary tab of the Stock Unit (see "The Summary in a Download" below). The **Your company** switch (logo and name) is on by default for every file type.
 
 ## Where the Photos Go
 
 Photos are in the PDF when the Photos switch is on (the "Report with photos" and "Official document" kinds), in the Excel file on a Photos sheet, and in the Bundle as the original files (with the documents). Files that are not images, such as a BL or an invoice PDF, cannot go inside a PDF or an Excel file: with such files the download arrives as a ZIP that holds the file and those documents, and a note in the window tells you how many. The totals follow the choice too: Anyone sees Pieces and Net CBM, LumberLinq users only adds Net CFT, My team only also sees the Gross figures. The Reconciliation sheet (the team's own inventory result) is only in a file for My team only.
+
+## The Summary in a Download
+
+With the **Summary** switch on (it is on by default), an Excel file gets a **Summary** sheet and a PDF gets a **Summary** page, laid out like the Summary tab of the Stock Unit: totals, the per-piece distribution, the girth and length distributions with charts (a square tally shows pieces by width and thickness and the size combinations). The numbers are the same as in the app. **Outlier watch** and **Which logs hold your volume** appear only in a file for **My team only**. Switch it off to get a file without it.
+
+## Names in a Download
+
+A file is named after the BL number of the consignment when the Stock Unit is in one, otherwise after its **Transport ID**. The internal Stock Unit number (SU-…) is never printed in a file; the tab names, headings and the certificate number use the Transport ID.
+
+## Watermark
+
+In a PDF the watermark text runs across every page in a light diagonal line, and the numbers stay readable. In Excel it is the tag at the top right of the banner and in the print header of every sheet. Switch it off for none.
 
 ## AI Import
 
@@ -224,7 +231,7 @@ Each AI Import uses AI credits from your plan — credits are consumed after ext
 
 **"There is no download icon"** — turn on **Download permission** for that link. It is off by default. On a Stock Unit link without it, the Export button shows greyed out as "Export (download off)".
 
-**"There is no Excel or Bundle on the share link"** — a share link offers the PDF only. Excel and Bundle are available inside LumberLinq when signed in.
+**"There is no Excel or Bundle on the share link"** — a share link offers the PDF only. Excel and Bundle are available inside LumberLinq when signed in. The PDF from a share link always uses the Print-friendly (black and white) design.
 
 **"Share link shows 'Login required' even for a Public link"** — check the link format. Public links use `/s/p/:code`; a link starting with `/s/r/` or `/s/x/` is Protected or Private and requires login.
 
