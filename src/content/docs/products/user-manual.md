@@ -15,7 +15,9 @@ Open **Products** from the application menu.
 
 The list shows existing product records and product summary cards.
 
-**Summary tiles.** Above the list, tiles show how many products you have, how many use the Round tally, how many use the Square tally, and how many different species they cover. They count the whole catalog, not only the page on screen.
+**Summary tiles.** Above the list, tiles show how many products you have, how many use the Round tally, how many use the Square tally, and how many different species they cover. They count the whole catalog, not only the page on screen, and only products that are active.
+
+**Show inactive.** Products you have deactivated are hidden from the list by default (they are kept in your history and in old records). Tick **Show inactive** under the chips to see them again; each one shows an **Inactive** tag and an **Activate** action. Untick it to hide them. The switch works together with the chips and the search box.
 
 **Quick filter chips.** Tap **All**, **Round**, or **Square** to show only that kind. The chip also narrows what you find with the search box.
 
@@ -78,11 +80,13 @@ Open **Locations** from the application menu.
 
 The list shows location records and summary cards.
 
-**Summary tiles.** Above the list, tiles show how many locations you have and how many of each kind (Yard, Mill, Forest, Port, Warehouse). Only kinds you actually have are shown.
+**Summary tiles.** Above the list, tiles show how many locations you have and how many of each kind (Yard, Mill, Forest, Port, Warehouse). Only kinds you actually have are shown. They count active locations only.
+
+**Show inactive.** Locations you have deactivated are hidden from the list by default (they are kept in your history). Tick **Show inactive** under the chips to see them again; each one shows an **Inactive** tag and an **Activate** action. Untick it to hide them. The switch works together with the chips and the search box.
 
 **Quick filter chips.** Tap **All** or a kind of site to see only those. The chips appear when you have two or more kinds. The chip also narrows the search box results, and the refresh button clears it.
 
-**More on each row.** Under the name you see the contact person and phone (tap-to-call on a phone), and small chips for the site type, operating hours, capacity, current volume, and machines installed. The country is written as a name, for example "India". If you filled in **Capacity (CBM)**, a thin bar shows how much volume has been handled at the site against that capacity (for example 420 / 1000 CBM); it turns orange to red above 85%. The volume is the net CBM of the Stock Units loaded at that site.
+**More on each row.** Under the name you see the contact person and phone (tap-to-call on a phone), and small chips for the site type, operating hours, capacity, current volume, and machines installed. The country is written as a name, for example "India". If you filled in **Capacity (CBM)**, a thin bar shows how much stock is at the site now against that capacity (for example 420 / 1000 CBM); it turns orange to red above 85%. The stock is the net CBM of the Stock Units at that site that are available or in process; units already shipped no longer count, so the bar goes down as stock leaves.
 
 ![Locations list](/screenshots/products/loading-sites-01-list-page.png)
 
