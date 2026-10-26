@@ -13,6 +13,14 @@ export default defineConfig({
       favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css'],
       lastUpdated: true,
+      // Share card for every help page (Slack, WhatsApp, LinkedIn, X): the pages had a large-image
+      // card type but no image. Same picture as the main site.
+      head: [
+        { tag: 'meta', attrs: { property: 'og:image', content: 'https://help.lumberlinq.com/og-image.png' } },
+        { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
+        { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
+        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://help.lumberlinq.com/og-image.png' } },
+      ],
       sidebar: [
         {
           label: 'Getting Started',
