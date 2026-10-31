@@ -69,6 +69,28 @@ Corrections are counted in: an adjustment that adds wood adds it (to its own Sto
 
 **Not oldest first:** a Mill Job takes from the Lot you pick for it, and Add Adjustment changes the Lot and size you pick.
 
+### Sending specific Stock Units to the mill
+
+Some companies want the mill to use one particular Stock Unit (for example a clean, matching one) and not simply the oldest. Turn on *Application Settings → Inventory Policy → "Send specific stock units to the mill"* (off by default; the ⓘ next to it explains it).
+
+- On **New Mill Job**, after you pick the Lot, a list of its Stock Units appears. Tick the ones this job should use.
+- Your choice is **only recorded**. The wood still comes out of the same Lot, and the Lot figures do not change. The Stock Statement, "From purchase" and Full Trace then count the job's wood against the Stock Units you ticked first, and oldest first for the rest.
+- With the switch off, or with nothing ticked, everything works oldest first as before.
+
+### Sending one Stock Unit to its own batch
+
+When one Stock Unit must be kept apart from the rest of its Lot, use **Send to its own batch** on that Stock Unit inside the Lot. It moves the unit into a new Lot of its own. The total stock does not change, and the move cannot be undone. Both Lots show it in their Stock Statement as **Moved between batches** (minus on the old Lot, plus on the new one).
+
+### Receiving a Stock Unit as its own batch
+
+You can also decide this at the moment you receive the unit, instead of moving it out afterwards. When **Send specific stock units to the mill** is switched on (Application Settings → Inventory Policy), the **Receive into Inventory** box shows a tick box: **Keep this Stock Unit as its own batch**.
+
+- **Not ticked (the default):** the unit joins an open Lot of the same product, place and origin if there is one, otherwise a new Lot is made.
+- **Ticked:** the unit gets a Lot of its own. Later deliveries never join it, so its supplier, price and quality stay separate. The In/Out ledger shows one **Received** line.
+- **Switch off:** the tick box does not appear, and receiving works as before.
+
+A Lot made this way cannot be merged back into another Lot.
+
 ## Stock Out — Hold, Sold, Locked
 
 | Step | What you do | What happens to stock |
