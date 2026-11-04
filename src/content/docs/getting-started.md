@@ -18,6 +18,16 @@ If you're the first person at your company to use LumberLinq (not joining via a 
 
 Once all of this is done, you land in the main app and can start using it — see "Your First Steps" below for what to do next.
 
+## Shorter Sign-up (newer accounts)
+
+New accounts are moving to a shorter sign-up, so depending on when you register you may see this instead of the steps above. After you verify your email you get one screen, **Almost there**: verify your mobile number with a 6-digit code (WhatsApp or SMS), then enter your company name, country and industry and tick the Terms of Service. Currency and time zone are filled in for you and can be changed later in Company Settings.
+
+Next is **Choose how to start**. Paid plans are shown first, with Monthly or Yearly billing. Below them you can continue with the free plan, which starts at once and shows its limits. After a paid plan you finish a short **Finish setting up** page for the company details still missing.
+
+Your dashboard then shows a **Get set up** list: complete your company profile, add your business partners, products and a loading site, create your first Stock Unit and your first consignment, invite a team member, or ask us to help you set up. Each item opens the right page, and later items unlock as you complete the earlier ones. You can hide the list when you no longer need it.
+
+On the free plan, LumberLinq asks you once to confirm the standard tally settings before your first Stock Unit, and to complete your company profile before your first PDF download or share link, because your company details print on the document.
+
 ## Sign In
 
 Open [app.lumberlinq.com](https://app.lumberlinq.com) in your browser and sign in with your company email and password. If you have not been invited yet, contact your company administrator.

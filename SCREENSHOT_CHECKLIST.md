@@ -205,3 +205,11 @@ from **Pending** to **Done** (keep them, don't delete — this file is the histo
 - Products and Locations lists: new "Show inactive" checkbox under the chips (https://app.lumberlinq.com/products and https://app.lumberlinq.com/site-locations); capacity bar now shows stock now at the site. Not re-taken yet.
 
 | 2026-10-31 | Inventory / how stock moves — the **Receive into Inventory** box with the tick box "Keep this Stock Unit as its own batch" (only with the Send specific stock units setting on) · new image, e.g. public/screenshots/inventory/inventory-receive-own-batch.png · https://app.lumberlinq.com/new-tallysheet (open a Stock In Stock Unit, ⋮ menu, Receive into Inventory; do not confirm) |
+
+
+## Added 2026-11-04 (shorter sign-up, switch off by default)
+
+- 2026-11-04 · getting-started / Shorter Sign-up · public/screenshots/getting-started/signup-almost-there.png (new) · https://app.lumberlinq.com/welcome (new account, switch on)
+- 2026-11-04 · getting-started / Shorter Sign-up · public/screenshots/getting-started/signup-choose-plan.png (new) · https://app.lumberlinq.com/welcome/plan (paid cards and the free plan row)
+- 2026-11-04 · getting-started / Shorter Sign-up · public/screenshots/getting-started/finish-setting-up.png (new) · https://app.lumberlinq.com/welcome/finish (after a paid plan)
+- 2026-11-04 · getting-started / Shorter Sign-up · public/screenshots/getting-started/get-set-up-list.png (new) · https://app.lumberlinq.com/dashboard-v7 (Get set up list on a new account)
