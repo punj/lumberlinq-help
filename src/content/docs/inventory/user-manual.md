@@ -253,6 +253,25 @@ Quality Grading adds an optional quality/color grade to stock, so you can tag an
 
 Quality Grading is still an ALPHA feature — you'll see an "ALPHA" label next to it wherever it appears.
 
+## Finding Stock Through a Mill Job — the Product Filter and Compact Cards
+
+On **Stock Lots**, pick a product in the **Product** filter. A **Match** switch then appears:
+
+- **This batch** (default): batches of that product, as before.
+- **Came from**: batches a mill job made out of that product.
+- **Goes into**: batches a mill job is turning into that product (a draft pick counts). Example: pick *Sawn Pine Timber* to find the lot waiting to become pine.
+- **Any link**: any of the three.
+
+A batch that matched through a job says how, for example *Milled from Teakwood Rough Square · PR-2026-0099*. A batch held by a mill job also shows **→ the product the job will make**.
+
+The **Compact** button switches Stock Lots to smaller cards: one big free-stock number and a thin bar (green free, orange held by a job, grey used). The Stock Unit, container, BL and consignment references open behind the small arrow. Your choice is remembered on that device.
+
+On **Mill Jobs**, each job shows *input → output*. Until the output product is picked, the draft pick is shown with a small **draft** tag.
+
+## The Confirm Stock-Out Box
+
+**Confirm Stock-Out** (Stock Unit menu) first shows what will leave your stock: the Stock Unit code, the total volume and pieces, and for each product the batches the load is drawn from (**All** or **Partial**). After **Yes, Confirm** the stock is deducted and the tally is locked. For **Off-cuts**, see the Off-cuts article.
+
 ## Common Problems and Fixes
 
 **"I can't add a Stock Unit to a consignment"** — a Stock Unit does not need to be received into inventory first; the two can happen in either order (see "Three Ways Stock Becomes a Batch" above). If adding it still fails, check the tally sheet was fully saved (not just filled in), and confirm the Stock Unit isn't already assigned to a different consignment or mid-processing run.
