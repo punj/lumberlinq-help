@@ -76,6 +76,13 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Price Lists',
+          items: [
+            { label: 'User Manual', link: '/price-lists/user-manual/' },
+            { label: 'FAQ', link: '/price-lists/faq/' },
+          ],
+        },
+        {
           label: 'Products & Locations',
           items: [
             { label: 'User Manual', link: '/products/user-manual/' },

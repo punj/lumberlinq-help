@@ -217,3 +217,8 @@ from **Pending** to **Done** (keep them, don't delete — this file is the histo
 - 2026-11-04 · getting-started / Shorter Sign-up · public/screenshots/getting-started/signup-choose-plan.png (new) · https://app.lumberlinq.com/welcome/plan (paid cards and the free plan row)
 - 2026-11-04 · getting-started / Shorter Sign-up · public/screenshots/getting-started/finish-setting-up.png (new) · https://app.lumberlinq.com/welcome/finish (after a paid plan)
 - 2026-11-04 · getting-started / Shorter Sign-up · public/screenshots/getting-started/get-set-up-list.png (new) · https://app.lumberlinq.com/dashboard-v7 (Get set up list on a new account)
+- 2026-11-07 · price-lists / Make a price list · public/screenshots/price-lists/price-list-screen.png (new) · https://app.lumberlinq.com/price-lists (module on, a list open with the live check box)
+- 2026-11-07 · price-lists / Prices on a consignment · public/screenshots/price-lists/consignment-prices-block.png (new) · https://app.lumberlinq.com/consignments/<id> Stock Units tab (module on, units with prices)
+- 2026-11-07 · price-lists / Money tab · public/screenshots/price-lists/money-price-calculation.png (new) · same consignment, Money tab (Auto / Manual switch visible)
+- 2026-11-07 · price-lists / On the Stock Unit page · public/screenshots/price-lists/stock-unit-price-card.png (new) · https://app.lumberlinq.com/new-tallysheet?transportId=<id> then Stock Unit details (Price card)
+- 2026-11-07 · price-lists / In the tally and downloads · public/screenshots/price-lists/tally-show-prices.png (new) · same Stock Unit, Tallysheet tab after Show prices; and the Download window with Every column
