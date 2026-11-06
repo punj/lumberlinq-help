@@ -43,7 +43,7 @@ Its list uses a different currency from the consignment, so it cannot be added w
 
 ## Can I change prices on a locked consignment?
 
-No. A locked consignment refuses every price change, and its saved Total Invoice Amount stays as it is.
+No. A locked consignment refuses every price change, and its saved Total Invoice Amount stays as it is. Locking is permanent: there is no unlock.
 
 ## Can I delete a price list?
 

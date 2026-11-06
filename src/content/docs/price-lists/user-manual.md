@@ -57,7 +57,7 @@ Open the consignment, then the **Stock Units** tab. The **Prices** block shows e
 - **Prices** (on a unit) opens the table of every log with its price and amount. You can **type a different price for one log**; it is marked as typed, and **Remove typed prices** goes back to the list.
 - When the list has a **newer version**, you are asked once: **Update to the new version** or **Keep** the one you have. Nothing changes until you choose.
 - When you **change the buyer or supplier**, a question card offers the new partner's list (**Use their list**), or you keep the prices you have.
-- A **locked** consignment cannot have its prices changed. If a line is in a different currency from the consignment, it is shown as "not in the total".
+- A **locked** consignment cannot have its prices changed (locking is permanent; there is no unlock). If a line is in a different currency from the consignment, it is shown as "not in the total".
 
 ## The Money tab: calculation and Total Invoice Amount
 
