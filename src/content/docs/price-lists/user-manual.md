@@ -88,6 +88,8 @@ Think of a money-changer: one rate for each pair, written on the receipt.
 5. **The totals follow:** the Goods total, the calculated total on the Money tab and the Auto Total Invoice Amount all use the converted amounts. The Excel and the Full Report show both amounts and the rate.
 6. **No rate yet?** The line stays out of the total, and the screen tells you which rate is missing.
 
+**Payments in your books currency:** each payment can carry its own rate to your books currency (for example INR). When you record a payment in another currency than the consignment's, the rate box fills in from your **Currencies and rates** if you have a rate for it; you can change it. The **Paid Out** card (purchases) and the **Received** card (sales) then show a blue "≈ ₹ amount" line, and the payments table shows the same under **Total Paid** and **Total Received**. If any payment of that kind has no rate yet, the line is hidden rather than showing a partial total. It converts to your books currency only, not to a third currency such as USD.
+
 **What is not converted:** payments and the invoice stay in the consignment's currency. The price of each log in the Stock Unit tally stays in the list's own currency. The consignment's own "rate to your books currency" box is separate and was already there.
 
 **Where you will see conversion:** Price Lists → Currencies and rates · a consignment's Stock Units tab (the rate box on each price line) · the Money tab and the Total Invoice Amount · the consignment Excel and the Full Report.

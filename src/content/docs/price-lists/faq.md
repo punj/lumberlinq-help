@@ -53,6 +53,10 @@ Its list uses a different currency from the consignment and there is no rate for
 
 Yours. The reference rate is only a hint taken from a free rate service once a day; the rate that counts is the one you typed on the **Currencies and rates** screen or on the consignment.
 
+## How do I see what I paid in my own (books) currency?
+
+Open the consignment's **Money** tab. Each payment can carry a rate to your books currency; for a payment in another currency the rate box fills in from **Currencies and rates** when you record it, and you can change it. The **Paid Out** and **Received** cards then show "≈" with the amount in your books currency, and the payments table shows the same under **Total Paid** and **Total Received**. If one payment has no rate yet, the line is hidden until you add it. It shows your books currency only, not a third currency.
+
 ## Can I change prices on a locked consignment?
 
 No. A locked consignment refuses every price change, and its saved Total Invoice Amount stays as it is. Locking is permanent: there is no unlock.
