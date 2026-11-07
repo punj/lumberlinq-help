@@ -47,7 +47,11 @@ Yes: open **Edit prices** on the unit (it opens full screen on a phone) and type
 
 ## Why is a line "not in the total"?
 
-Its list uses a different currency from the consignment, so it cannot be added without a rate. Use a list in the consignment's currency.
+Its list uses a different currency from the consignment and there is no rate for that pair yet. Add the rate under **Directory → Price Lists → Currencies and rates**, or type it in the rate box on the consignment's price line, and the line is converted and included. You can also choose a list in the consignment's currency.
+
+## The reference rate is different from my bank's rate. Which one is used?
+
+Yours. The reference rate is only a hint taken from a free rate service once a day; the rate that counts is the one you typed on the **Currencies and rates** screen or on the consignment.
 
 ## Can I change prices on a locked consignment?
 

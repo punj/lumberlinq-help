@@ -62,7 +62,20 @@ Open the consignment, then the **Stock Units** tab. The **Prices** block shows e
 - **Open all N logs in the Stock Unit** (and the **Unit** button) opens the Stock Unit with the Price and Amount columns already shown in the tally.
 - When the list has a **newer version**, you are asked once: **Update to the new version** or **Keep** the one you have. Nothing changes until you choose.
 - When you **change the buyer or supplier**, a question card offers the new partner's list (**Use their list**), or you keep the prices you have.
-- A **locked** consignment cannot have its prices changed (locking is permanent; there is no unlock). If a line is in a different currency from the consignment, it is shown as "not in the total".
+- A **locked** consignment cannot have its prices changed (locking is permanent; there is no unlock). If a line is in a different currency from the consignment, it is converted with a rate (see **Currencies and rates** below); with no rate yet it is shown as "not in the total".
+
+## Currencies and rates
+
+Your price lists can be in different currencies from your consignments. For example a forest in Togo is paid in CFA francs (XOF), the money is sent in USD or EUR, you sell in USD or EUR, and your books are in INR. A consignment always keeps **one** currency for its invoice and payments; a price list in another currency is brought in with a **rate**.
+
+1. Open **Directory → Price Lists** and scroll to **Currencies and rates**.
+2. Use **Add a currency** and type **one rate for each currency you deal in**, against your **books currency** (the company currency in your company settings, INR if you have not set one). For example 1 USD = 84.50 INR. Every other pair, such as EUR to XOF, is worked out from these rates.
+3. Beside each rate you see today's **reference rate** from a free rate service, with the date and time it was last updated in **your own time zone**. It is only a hint: press **Use** to copy it, or type your own. Nothing changes by itself.
+4. On a consignment, a price line in another currency shows **amount × rate = converted amount**, and the totals include it. You can **type a different rate for that consignment**, or press **Use my rates** to go back.
+
+A rate is **saved on the consignment** the next time something changes on it and never moves by itself afterwards; a **locked** consignment keeps its rate for good. If a line has no rate yet, it stays out of the total and the screen tells you which rate is missing. If you change your books currency later, the rates typed for the old one ask to be typed again.
+
+Everywhere a currency is chosen in LumberLinq you now use the same picker: type to search, see the code, name and symbol, with the currencies your company uses most shown first.
 
 ## The Money tab: calculation and Total Invoice Amount
 
