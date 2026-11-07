@@ -28,9 +28,11 @@ Managers and Accountants have *View prices* by default. You can give either righ
 ## Make a price list
 
 1. Open **Directory → Price Lists** and click **New price list**.
-2. Give it a name, choose what decides the price (one price, girth, length, quality, or girth and quality), choose **per CBM, per CFT or per log**, and the **currency**. You may also pick an **Incoterm** (for example FOB or CIF) so the list says which delivery term the price is for.
+2. Give it a name, choose what decides the price (one price, girth, length, quality, or girth and quality), choose **per CBM, per CFT or per log**, and the **currency**. You may also pick an **Incoterm** (for example FOB or CIF) so the list says which delivery term the price is for. The **Quality** and **Girth and quality** choices appear only when your company has **Quality Grading** switched on, because they price a log by the quality saved on it. The qualities are the same ones as in your Quality Grading settings (A, B, C, D, with your own names).
 3. Fill in the price table. The **live check** box lets you type one log (length, girth, quality) and shows the price straight away.
 4. Save.
+
+Tap the **?** next to a heading, or **How this works** at the top, for a short explanation. It opens as a card, so it works on a phone too.
 
 Good to know:
 
@@ -49,12 +51,15 @@ When a Stock Unit goes into a consignment, LumberLinq chooses its list in this o
 3. your company's **standard list**;
 4. otherwise a **Custom copy** of the first list found, with a warning to check the price.
 
+The partner list shows **10 partners at a time**, with "Showing 10 of N" and a **Show more** button. Use **All / With a list / No list yet** to find the partners that still have no list, **A–Z** or **No list first** to sort them, and the search box to find one by name. Your own lists are shown A–Z.
+
 ## Prices on a consignment
 
 Open the consignment, then the **Stock Units** tab. The **Prices** block shows each Stock Unit with its price.
 
 - Each round Stock Unit gets a **price line**: a *copy* of the list version, so later changes to the list do not move your prices behind your back. Use **Add price** for a unit that has none. Square tallies are not priced yet.
-- **Prices** (on a unit) opens the table of every log with its price and amount. You can **type a different price for one log**; it is marked as typed, and **Remove typed prices** goes back to the list.
+- **Edit prices** (on a unit) opens a large window over the consignment (the full screen on a phone). Every log is there with its price box and amount, 50 at a time (**Show 50 more**). The chips **All / No price / Typed** show only the logs that need a price, or the ones where someone typed a price, and **Go to log #** jumps to one log. You can **type a different price for one log**; it is saved at once and marked as typed, and **Remove typed prices** goes back to the list. **Done** closes the window. A user who may not edit consignments sees **Prices** instead, to read only.
+- **Open all N logs in the Stock Unit** (and the **Unit** button) opens the Stock Unit with the Price and Amount columns already shown in the tally.
 - When the list has a **newer version**, you are asked once: **Update to the new version** or **Keep** the one you have. Nothing changes until you choose.
 - When you **change the buyer or supplier**, a question card offers the new partner's list (**Use their list**), or you keep the prices you have.
 - A **locked** consignment cannot have its prices changed (locking is permanent; there is no unlock). If a line is in a different currency from the consignment, it is shown as "not in the total".
@@ -76,9 +81,9 @@ Open a Stock Unit and choose **Stock Unit details**. The **Price** card has:
 
 - **Price list (optional)**: the list this unit starts with when it is added to a consignment. The same field is on **New Stock Unit**.
 - A chip showing the consignment the unit is in, with **Open consignment**.
-- **Show prices**: the price and amount of every log.
+- **Show Price and Amount in the table**: closes this panel and turns on the Price and Amount columns in the tally, where all logs are, even thousands, with sorting and fast scrolling. The card also shows the list, the version and the total amount.
 
-In the tally itself, **Show prices** (next to **Columns**) adds read-only **Price** and **Amount** columns to the table; **Hide prices** removes them. Prices are never stored in the tally.
+In the tally itself, **Show prices** (next to **Columns**) adds read-only **Price** and **Amount** columns to the table, with the currency in the heading; **Hide prices** removes them. A Stock Unit opened from a consignment shows them already. Prices are never stored in the tally, and to change the price of one log you go back to the consignment (**Edit prices**).
 
 ## Prices in downloads and reports
 

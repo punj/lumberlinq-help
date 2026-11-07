@@ -31,11 +31,19 @@ Only round tallies can be priced for now.
 
 ## Why does a log have no price?
 
-The list may price by quality and the log has no quality, or its size falls outside the table. Fill in the missing value, or type a price for that log.
+The list may price by quality and the log has no quality, or its size falls outside the table. Fill in the missing value, or type a price for that log. In **Edit prices**, the **No price** chip shows exactly these logs.
+
+## Why can't I choose Quality or Girth and quality when I make a list?
+
+Those two choices price a log by its quality, so they need **Quality Grading**. When your company does not have it switched on, they are hidden and the form says so. Ask your LumberLinq contact to switch Quality Grading on; the price lists then use the same qualities as the rest of the app.
+
+## How do I find the partners that still have no list?
+
+On the Price Lists screen, in **Partners and their usual lists**, press **No list yet**. **No list first** puts them on top. The list shows 10 partners at a time; press **Show more** for the next ones.
 
 ## Can I type a price for one log?
 
-Yes: open **Prices** on the unit and type the price. It is marked as typed and stays when you update the list; **Remove typed prices** goes back to the list.
+Yes: open **Edit prices** on the unit (it opens full screen on a phone) and type the price in the log's box. It is saved at once, marked as typed, and stays when you update the list; **Remove typed prices** goes back to the list. The Stock Unit's tally shows prices but does not let you change them.
 
 ## Why is a line "not in the total"?
 
