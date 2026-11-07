@@ -45,6 +45,14 @@ Every payment and invoice needs a rate to your books currency. If one has none, 
 
 No. The Proforma / Commercial Invoice is for customs and the bank. GST tax invoices, e-invoices and e-way bills are not made by LumberLinq.
 
+## Does an Estimate hold my stock?
+
+The Estimate PDF does not. The draft consignment it comes from does: its Stock-Out Stock Units reserve the quantity until the consignment is locked, cancelled or deleted.
+
+## I made a quote and the buyer never answered. Will the stock stay held?
+
+It stays held until someone deals with the draft, but you are told. The Estimate's valid-until date is saved on the consignment (a date you type is saved, an empty box keeps the saved one), and the owner and admins get one summary a day of quotes that expire in 2 days, expire today or expired yesterday (plus older expired ones every Monday). Nothing is released by itself. Download the Estimate again with a later date to keep the quote, or delete the draft consignment to release the stock.
+
 ## Can I get a Delivery Note from a Stock Out?
 
 Yes. Open the Stock Unit's **Download** window and choose **Documents**: you can make a **Delivery Note** for that one Stock Unit (a Stock Out) or a **Goods Received Note** for one that was received. They are also available from the consignment, for all its Stock Units together.

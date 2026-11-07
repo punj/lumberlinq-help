@@ -23,6 +23,12 @@ If your company does not have the module, you will not see the **Documents** cho
 | **Payment Receipt** (**Payment Advice** for money paid out) | One page for one payment. | The **print icon** on a payment row (Money tab) |
 | **Statement of Account** | What a partner owes you (or you owe them) for a date range, one block per currency, with ageing. PDF or Excel. | **Statement** button on the business partner |
 
+## Estimates and the stock they hold
+
+The Estimate PDF holds nothing by itself. The stock is held by the **draft consignment** it is made from: a Stock-Out Stock Unit in it reserves the quantity until the consignment is locked, cancelled or deleted. So the best way to quote stock you have is a draft consignment: if the buyer agrees, you carry on with the same record.
+
+When you download an Estimate for a consignment that is not locked, its **valid-until date is saved on the consignment**. A date you type is saved; if you leave the box empty the date already saved is kept (a first Estimate gets 14 days from today), so downloading a copy later never extends the quote. Each day the company's owner and admins get **one summary notification** of the quotes that still hold stock and expire in 2 days, expire today or expired yesterday. On Mondays it also lists older expired quotes that still hold stock. **Nothing is released automatically.** To keep a quote, download its Estimate again with a later valid-until date. To release the stock, delete the draft consignment. To go ahead, continue with the consignment. Each person can switch these summaries off in their Notification Preferences.
+
 ## Grade, length and HSN on the documents
 
 - **HSN** is the HS code of the product (every product has one). It is printed per Stock Unit on the Delivery Note and the Packing List, and as the HSN codes of the goods on the Proforma / Commercial Invoice.
