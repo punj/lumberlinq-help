@@ -83,6 +83,13 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Business Documents',
+          items: [
+            { label: 'User Manual', link: '/documents/user-manual/' },
+            { label: 'FAQ', link: '/documents/faq/' },
+          ],
+        },
+        {
           label: 'Products & Locations',
           items: [
             { label: 'User Manual', link: '/products/user-manual/' },
