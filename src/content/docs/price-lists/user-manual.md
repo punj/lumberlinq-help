@@ -77,6 +77,21 @@ A rate is **saved on the consignment** the next time something changes on it and
 
 Everywhere a currency is chosen in LumberLinq you now use the same picker: type to search, see the code, name and symbol, with the currencies your company uses most shown first.
 
+## How currency conversion works, in simple words
+
+Think of a money-changer: one rate for each pair, written on the receipt.
+
+1. **A price list has only one currency.** Nothing is converted inside a list or while you build it. The currency there only says what the prices are written in.
+2. **Conversion happens on the consignment.** If a unit's price comes from a list in another currency than the consignment, LumberLinq turns it into the consignment's currency. For example, a USD consignment with a EUR list: 1,250.00 EUR becomes 1,349.11 USD.
+3. **The rate** comes from your **Currencies and rates** (one rate per currency against your books currency). For a pair like EUR to USD, LumberLinq divides the two: EUR rate ÷ USD rate. You can also type a rate on one consignment.
+4. **The rate is saved on the consignment** the next time something changes on it. After that it never moves by itself. **Locking** the consignment keeps the rate for good.
+5. **The totals follow:** the Goods total, the calculated total on the Money tab and the Auto Total Invoice Amount all use the converted amounts. The Excel and the Full Report show both amounts and the rate.
+6. **No rate yet?** The line stays out of the total, and the screen tells you which rate is missing.
+
+**What is not converted:** payments and the invoice stay in the consignment's currency. The price of each log in the Stock Unit tally stays in the list's own currency. The consignment's own "rate to your books currency" box is separate and was already there.
+
+**Where you will see conversion:** Price Lists → Currencies and rates · a consignment's Stock Units tab (the rate box on each price line) · the Money tab and the Total Invoice Amount · the consignment Excel and the Full Report.
+
 ## The Money tab: calculation and Total Invoice Amount
 
 On the **Money** tab, **Price calculation** shows: goods from the Stock Units, plus **Freight** and **Insurance**, minus a **Discount %** of the goods, plus a **Tax %** on that result, giving the **Calculated total**.
