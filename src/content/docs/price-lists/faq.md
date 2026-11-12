@@ -25,9 +25,29 @@ Each Stock Unit keeps a copy of the list version it started with. When a newer v
 
 LumberLinq found no list for this unit, partner or company, so it used the first list it could as a starting point. Check the prices, or choose the right list on the Stock Unit or the partner.
 
-## A Stock Unit says "Prices for square tallies are not available yet".
+## How do I price sawn (square) timber?
 
-Only round tallies can be priced for now.
+On the price list, tick **Sawn timber** under **Parts of this list**. Use **Simple** (pick what decides the price and fill in the numbers, or type lines such as `4x3x6 QA 315` for exact sizes) or **Custom rules** for any other way of pricing. Then give the list to the partner or the Stock Unit as usual.
+
+## A Stock Unit says "This price list has no sawn prices yet".
+
+The list that unit would use has no sawn part. Open the list and tick **Sawn timber**, or choose another list for that unit (**Edit prices**, or the Price card on the Stock Unit). A round unit on a list with only a sawn part says it has no round prices, the same way.
+
+## A sawn piece is 6.2 ft but my list only has 6 ft and 6.5 ft. What price does it get?
+
+It depends on **Match a piece to a listed size** (Exact sizes). **Exactly** gives it no price; **Nearest listed size** takes 6 ft (6.3 ft would take 6.5 ft); **Listed size or below** takes 6 ft. Set it separately for thickness, width and length.
+
+## What does "Never used" on a custom rule mean?
+
+An earlier rule already fits every piece this rule would fit, so this one can never be reached. Move it up, or make the earlier rule narrower.
+
+## Which units are the sizes in?
+
+Thickness, width and length each have their own unit, starting from your **Tally Defaults** for square tallies. Change one on the price list (**Your company default / Imperial / Metric**) and the numbers you already typed are converted.
+
+## Does a "per piece" sawn price count one piece or the whole row?
+
+A tally row is a group of pieces of one size, so a price per piece is multiplied by the pieces on that row.
 
 ## Why does a log have no price?
 
@@ -35,7 +55,7 @@ The list may price by quality and the log has no quality, or its size falls outs
 
 ## Why can't I choose Quality or Girth and quality when I make a list?
 
-Those two choices price a log by its quality, so they need **Quality Grading**. When your company does not have it switched on, they are hidden and the form says so. Ask your LumberLinq contact to switch Quality Grading on; the price lists then use the same qualities as the rest of the app.
+Those two choices price a log by its quality, so they need **Quality Grading**. It is its own module, with its own plan switch or add-on. When your company does not have it, they are hidden (for sawn timber too, and a rule that uses quality cannot be saved) and the form says so, with a link to the plans for people who can change them. Ask your administrator or LumberLinq contact to add Quality Grading; the price lists then use the same qualities as the rest of the app.
 
 ## How do I find the partners that still have no list?
 
