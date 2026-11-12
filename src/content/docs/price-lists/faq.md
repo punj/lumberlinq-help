@@ -3,7 +3,7 @@ title: Price Lists — FAQ
 description: Frequently asked questions about price lists, partner prices and automatic invoice amounts in LumberLinq.
 ---
 
-*Also searched as: price list, price module, rate, per cbm, invoice amount, auto total, price version, keep or update, custom copy, price missing.*
+*Also searched as: price list, price module, rate, per cbm, invoice amount, auto total, price version, keep or update, custom copy, price missing, needs a rate, waiting for a rate, use reference rate, type my own rate, usd to inr.*
 
 ## Why don't I see Price Lists in my menu?
 
@@ -67,7 +67,11 @@ Yes: open **Edit prices** on the unit (it opens full screen on a phone) and type
 
 ## Why is a line "not in the total"?
 
-Its list uses a different currency from the consignment and there is no rate for that pair yet. Add the rate under **Directory → Price Lists → Currencies and rates**, or type it in the rate box on the consignment's price line, and the line is converted and included. You can also choose a list in the consignment's currency.
+Its list uses a different currency from the consignment and there is no rate for that pair yet. Add the rate under **Directory → Price Lists → Currencies and rates**, or type it in the rate box on the consignment's price line, and the line is converted and included. You can also choose a list in the consignment's currency. When a reference rate is available, the price line also shows **Needs a rate to count in** your consignment's currency, with what it would be worth, and two buttons: **Use** that rate or **Type my own rate**. A chip beside the **Goods total** says how many lines are still waiting for a rate.
+
+## What does "Needs a rate to count in INR" mean?
+
+A unit's price list is in one currency (for example USD) and the consignment is in another (for example INR), so LumberLinq cannot add the price to the total until it knows the rate between the two. The line shows what the price would be worth at today's reference rate, for example "84.96 USD → about 7,974.08 INR at 93.8569". Press **Use 93.8569** to save that rate for this consignment, or **Type my own rate** to enter the rate your bank gave you. Nothing is saved until you press one. The reference rate comes from a free rate service once a day; if none is available you only see the missing-rate message and the rate box.
 
 ## The reference rate is different from my bank's rate. Which one is used?
 
