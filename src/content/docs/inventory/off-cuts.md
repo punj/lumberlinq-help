@@ -41,6 +41,10 @@ The assigned person finds the task on **Inventory → Overview** (or **My Tasks*
 
 The office can press the pencil on an open task (on Overview) to change its place, operator, machine or note, or to cancel the task. The product and the way of measuring cannot change: cancel the task and make a new one.
 
+## Link to a job later, or "Nothing to link"
+
+If you saved off-cuts with **Not from one job**, you can link them to a finished mill job later. On **Stock Lots** (New layout) open the batch and press **Link to a job**, then pick the job that made them. If there is no job to link, press **Nothing to link**: the batch shows **No job needed** and stops appearing in **Needs attention**. **Link to a job after all** brings it back. A batch with no job and no answer shows in Needs attention after the number of days set in **Application Settings → Inventory Policy** (default 7, 0 = right away). Linking needs the right to receive stock.
+
 ## What you get
 
 One **batch** (lot) per size and length range, on **Stock Lots** with an **Off-cuts** chip. A rough batch also shows **Approx.** until a load measures it. A finished mill job shows its off-cuts under **Off-cuts** in the job details, with the percentage of the input.
@@ -59,6 +63,7 @@ The load always takes exactly the volume you tallied.
 
 ## Common problems
 
-- **No Off-cuts button:** the add-on is not on for your company, or you do not have the right to receive stock.
+- **No Off-cuts button:** the add-on is not on for your company, your company does not have the **Mill** module (new off-cuts come from sawing, so they need it; batches you already have stay), or you do not have the right to receive stock.
+
 - **A pieces number looks too high or low:** a rough batch estimates pieces from the length range. Set the **Average length** for a closer estimate.
 - **I picked the wrong product:** cancel the task (pencil on Overview) and add it again.

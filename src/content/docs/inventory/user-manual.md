@@ -110,6 +110,21 @@ A lot with no upstream source and no downstream activity yet will just show as n
 - On each box: 👁 a quick view, 🕘 its history (who did what, when). **+ / −** zooms the whole tree.
 - A supplier's name shows only to people with the Finance right.
 
+### The New layout (Classic | New)
+
+Above the lots there is a **Classic | New** switch. Your choice is saved on your login and follows you to every device. **Classic** is the cards you know and stays the default.
+
+**New** shows one calm line per batch: what it is, one tag to find it by (BL, container or Transport ID; the mill job for milled wood and off-cuts), how much is left and the date. The batches sit in folders: **This week**, **This month**, then one folder per month. Each folder says how many batches and how much wood it holds. A folder loads its batches when you open it, and **Show 30 more** loads the next ones, so a long list stays quick. Tap a line to see its story and where the wood came from: beside the list on a computer, from the bottom on a phone. **Send to mill** and **Full details** are in the same place.
+
+The chips (All, Free to mill, At the Mill, From the Mill, Needs Attention, Finished), the Product and Round / Square filters, the search box and the sort work as in Classic and give the same batches. The **m³ | CFT** switch changes the numbers and is saved on your login too.
+
+**Shipments and the family in the details.** For a batch that was received from deliveries, the details show a **Shipments** list: for each shipment its BL (or "Shipment 2" when BL numbers are hidden), when it departs and arrives (ETD and ETA, only for people who can see shipments), and how much of its wood is still in the batch ("119 CFT left of 119"). Five show first; **Show all** opens the rest. People with the Full Trace right also get **Show the family**: the batches this one was made from, this batch, and the batches it became (with the mill job in between).
+
+
+**Off-cuts with no mill job.** An off-cuts batch saved with **Not from one job** that is still without a job after a few days shows in **Needs attention** ("1 off-cuts batch has no mill job"). Press **Show** to see only those. Open one to **Link to a job** (pick the finished mill job that made them) or press **Nothing to link** when there is no job to link. It then shows **No job needed** and leaves Needs attention. **Link to a job after all** brings it back. The number of days is set in **Application Settings → Inventory Policy → "Days before off-cuts with no mill job need attention"** (0 = right away, default 7).
+
+**Hiding BL and container numbers.** In **Application Settings → Inventory Policy** the switch **"Hide BL and container numbers on stock batches"** is off by default. When it is on, only admins and people who have the right **See BL / container numbers** see the BL reference and the container, truck and seal numbers on batches. Everyone still sees the Transport ID and the Stock Unit ID. Give or remove the right in the user's access settings.
+
 ## In/Out — The Movement Ledger
 
 Open **Inventory → In/Out** to see every stock movement in chronological order — the audit trail for inventory. Movement types: **IN** (received), **OUT** (dispatched), **Proc IN** (entered a processing run), **Proc OUT** (produced by a processing run), **In Consignment** (assigned to a consignment), and **Adjustment**. Filter by movement type (chips at the top) or by date range.
