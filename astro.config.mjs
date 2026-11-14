@@ -178,6 +178,13 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Measurer Account',
+          items: [
+            { label: 'User Manual', link: '/measurer/user-manual/' },
+            { label: 'FAQ', link: '/measurer/faq/' },
+          ],
+        },
+        {
           label: 'Affiliate Program',
           items: [
             { label: 'User Manual', link: '/affiliate-program/user-manual/' },
