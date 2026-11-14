@@ -81,3 +81,54 @@ On the home screen the owner sees an **Invite another measurer** card with a per
 - **"Waiting for approval"**: your sign-up or a staff member is still being checked.
 - **"Accept the terms"**: open any screen and the Terms window appears; accept it.
 - **"Not allowed in this account"**: that part of LumberLinq is not part of the free Measurer account.
+
+## Tallies sent to you by a measurer
+
+When a measurer sends you a tally, it waits in **Stock Units → Received tallies**. A bell notice tells you it arrived.
+
+The screen lists every waiting tally. The ones that need your decision come first, then the ones that are ready, then the ones you parked. Tap a tally to see what LumberLinq found and what you can do with it.
+
+### The three choices
+
+- **Use for reconciliation.** Use this when you already have the container in your stock, for example from the purchase you entered at the origin. The measurer's counts become the destination side of that Stock Unit's reconciliation. This needs a plan that includes Reconciliation.
+- **Add as a new Stock Unit.** Use this only for wood you have not recorded yet. The new Stock Unit carries the measurer's name and a "received" mark.
+- **Keep waiting.** Nothing happens. Decide later.
+
+### How LumberLinq finds the right container
+
+LumberLinq compares the container number (spaces and capitals do not matter), the Transport ID, the seal and the species. When the measurer mistyped one or two characters, it suggests the closest container and shows the wrong character in red. A real container number ends in a check digit, so a mistyped number is easy to spot. You must tick that the number was mistyped before it can be used.
+
+### Things that need your decision
+
+- **The Stock Unit already has destination numbers.** Choose **Replace** (the old numbers stay in the history and Undo brings them back) or **Keep mine** (the measurer's tally is stored as a reference copy). There is no default.
+- **The difference is more than 10%.** LumberLinq warns you and asks you to tick that you checked it is the right Stock Unit. It never blocks you.
+- **Two tallies point at the same Stock Unit.** A Stock Unit takes one measurer tally at a time. Send one to another Stock Unit or keep it waiting.
+- **The Stock Unit is locked.** A locked reconciliation is never changed. Pick another Stock Unit or keep the tally waiting.
+- **The same container was sent twice.** The later one is marked "Sent twice" and waits until you choose which to use.
+
+### Applying and undoing
+
+Press **Apply** to apply everything that is ready in one go. A window lists what will happen first, and tallies that still need you are not touched. Every tally you applied appears under **Applied**. Open it and press **Undo** to take the counts off the Stock Unit and send the tally back to the list. Undo works only until you lock the reconciliation.
+
+## Photos and files travel with the tally
+
+When you send a tally, its photos and files go with it. The client sees them on the Stock Unit's **Photos** tab, marked "From" your company name. They are stored once, not twice. If you later delete a photo, the client keeps their copy. If the client presses Undo on a reconciliation, the shared photos leave that Stock Unit again.
+
+## Counted by
+
+In **Reports → Reconciliation**, a new **Counted by** column shows who made the destination count: a measurer company's name and the day, or **Your team** when your own staff counted. The Excel files say the same on the Method line.
+
+## Difference report
+
+Open **Download** on a Stock Unit or a consignment and press **Difference report**. It shows the origin tally against the destination count: the totals, one row per Stock Unit, a size table where the counts differ, and a summary per supplier. Units that are not counted yet are listed, but they are not part of the difference.
+
+- **Download PDF** or **Download Excel**. No prices appear anywhere.
+- **Create link for supplier** makes a link that anyone can open without signing in. It shows quantities only and stops working after 30 days. On a consignment you can pick one supplier first, so each supplier gets only their own containers.
+
+## Compare with a client's figures (measurers)
+
+If your client does not use LumberLinq and sent their own numbers, open **Compare with client figures** on the measurer home screen. Pick your Stock Unit, type the client's logs and CBM next to it, and add more containers if you need. **Preview** shows the difference; **Download PDF** or **Download Excel** makes the one-page report to send back. Nothing is imported or saved from the client's numbers.
+
+## No imports in the free account
+
+The free Measurer account has no AI Import and no Excel or CSV import. Counts are entered by hand, and a client's file is only ever compared as described above.
