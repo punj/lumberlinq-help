@@ -1,6 +1,6 @@
 ---
 title: Measurer Account — FAQ
-description: Frequently asked questions about the free Measurer account: cost, staff approval, sending tallies to clients, the recycle bin, daily limits and the verify QR code.
+description: Frequently asked questions about the free Measurer account, including cost, staff approval, sending tallies to clients, the recycle bin, daily limits and the verify QR code.
 ---
 
 *Also searched as: measurer faq, free measurer account, staff not approved, tally not received, QR code, verify, daily limit, recycle bin, bonus seats.*
