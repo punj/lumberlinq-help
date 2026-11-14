@@ -118,9 +118,9 @@ When you send a tally, its photos and files go with it. The client sees them on 
 
 In **Reports → Reconciliation**, a new **Counted by** column shows who made the destination count: a measurer company's name and the day, or **Your team** when your own staff counted. The Excel files say the same on the Method line.
 
-## Difference report
+## Origin vs Destination Report
 
-Open **Download** on a Stock Unit or a consignment and press **Difference report**. It shows the origin tally against the destination count: the totals, one row per Stock Unit, a size table where the counts differ, and a summary per supplier. Units that are not counted yet are listed, but they are not part of the difference.
+Open **Download** on a Stock Unit or a consignment and press **Origin vs Destination Report**. It shows the origin tally against the destination count: the totals, one row per Stock Unit, a size table where the counts differ, and a summary per supplier. Units that are not counted yet are listed, but they are not part of the difference.
 
 - **Download PDF** or **Download Excel**. No prices appear anywhere.
 - **Create link for supplier** makes a link that anyone can open without signing in. It shows quantities only and stops working after 30 days. On a consignment you can pick one supplier first, so each supplier gets only their own containers.
@@ -135,8 +135,8 @@ The free Measurer account has no AI Import and no Excel or CSV import. Counts ar
 
 ## Chart, links and the Destination view
 
-- **Chart.** The Difference report starts with a bar chart: for each counted Stock Unit, a grey bar for the origin and a green or blue bar for the destination, with the difference beside it. For a big consignment it shows the 15 biggest differences. The PDF has the same chart.
-- **Links you made.** In the Difference report window, **Links made for this report** lists every supplier link with its date and whether it is active. Press **Switch off** and the address stops working at once. A link also stops by itself after 30 days.
+- **Chart.** The Origin vs Destination Report starts with a bar chart: for each counted Stock Unit, a grey bar for the origin and a green or blue bar for the destination, with the difference beside it. For a big consignment it shows the 15 biggest differences. The PDF has the same chart.
+- **Links you made.** In the Origin vs Destination Report window, **Links made for this report** lists every supplier link with its date and whether it is active. Press **Switch off** and the address stops working at once. A link also stops by itself after 30 days.
 - **Origin tally / Destination tally.** On the **Tallysheet** tab of a Stock Unit that has a destination count, a switch lets you look at the destination rows. They are read-only, say who counted, and each row shows whether that size has the same number of logs at the origin. Nothing you type in the origin tally is lost when you look at the destination.
 - **Photos left behind.** If a measurer deletes a photo after sending, and the client rejects the tally or the measurer takes it back, the stored photo is removed too.
 
