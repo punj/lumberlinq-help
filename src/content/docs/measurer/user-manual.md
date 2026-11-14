@@ -132,3 +132,10 @@ If your client does not use LumberLinq and sent their own numbers, open **Compar
 ## No imports in the free account
 
 The free Measurer account has no AI Import and no Excel or CSV import. Counts are entered by hand, and a client's file is only ever compared as described above.
+
+## Chart, links and the Destination view
+
+- **Chart.** The Difference report starts with a bar chart: for each counted Stock Unit, a grey bar for the origin and a green or blue bar for the destination, with the difference beside it. For a big consignment it shows the 15 biggest differences. The PDF has the same chart.
+- **Links you made.** In the Difference report window, **Links made for this report** lists every supplier link with its date and whether it is active. Press **Switch off** and the address stops working at once. A link also stops by itself after 30 days.
+- **Origin tally / Destination tally.** On the **Tallysheet** tab of a Stock Unit that has a destination count, a switch lets you look at the destination rows. They are read-only, say who counted, and each row shows whether that size has the same number of logs at the origin. Nothing you type in the origin tally is lost when you look at the destination.
+- **Photos left behind.** If a measurer deletes a photo after sending, and the client rejects the tally or the measurer takes it back, the stored photo is removed too.
