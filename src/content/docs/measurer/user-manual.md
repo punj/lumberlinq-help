@@ -139,3 +139,9 @@ The free Measurer account has no AI Import and no Excel or CSV import. Counts ar
 - **Links you made.** In the Difference report window, **Links made for this report** lists every supplier link with its date and whether it is active. Press **Switch off** and the address stops working at once. A link also stops by itself after 30 days.
 - **Origin tally / Destination tally.** On the **Tallysheet** tab of a Stock Unit that has a destination count, a switch lets you look at the destination rows. They are read-only, say who counted, and each row shows whether that size has the same number of logs at the origin. Nothing you type in the origin tally is lost when you look at the destination.
 - **Photos left behind.** If a measurer deletes a photo after sending, and the client rejects the tally or the measurer takes it back, the stored photo is removed too.
+
+## Summary and Photos tabs with a destination count
+
+- **Summary tab:** a switch **Origin | Destination | Compare** appears. Destination shows the same summary built from the destination count. Compare shows four numbers (origin to destination, with the difference) and the volume by size band with a grey bar for the origin and a coloured bar for the destination.
+- **Photos tab:** when a measurer photos came with the count, the photos are grouped under **Origin photos** and **From the destination count**.
+- Stock Units without a destination count look exactly as before. The origin views are only hidden while another view is shown, so unsaved typing in the origin tally is kept.
