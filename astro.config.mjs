@@ -62,6 +62,12 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Tallies from Measurers',
+          items: [
+            { label: 'FAQ', link: '/measurers/faq/' },
+          ],
+        },
+        {
           label: 'Consignments',
           items: [
             { label: 'User Manual', link: '/shipments/user-manual/' },
