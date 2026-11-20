@@ -7,7 +7,7 @@ description: How to make price lists for round logs and sawn (square) timber, li
 
 ## What the Price module is
 
-Price Lists is an **optional paid module**. When your company has it, you can:
+Price Lists is an **optional paid module**: a mill-yard ledger that never forgets a plank. When your company has it, you can:
 
 - keep **reusable price lists** (for example "Teak logs FOB"), each with its own rule: one price, or a price by girth, by length, by quality, or by girth and quality, for **round logs**, for **sawn (square) timber**, or for both in one list;
 - link a list to a **business partner**, so a consignment to that partner picks up the right prices by itself;

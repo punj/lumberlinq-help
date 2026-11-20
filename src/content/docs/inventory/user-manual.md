@@ -7,6 +7,8 @@ description: Tracking timber stock from receipt through processing to shipment i
 
 ## What is Inventory?
 
+*Teak-grade tidy: every lot, one clear line.*
+
 Inventory tracks the lifecycle of timber stock after it has been received from a tally sheet and before it is shipped, processed, or moved out. It answers three questions for operations teams: what stock is available right now, where is it, and what has happened to it over time.
 
 Inventory is the bridge between Tally Sheets and Consignments. A Stock Unit created in a tally sheet can be linked to a Consignment and received into inventory in either order — there's no required sequence. See "Three Ways Stock Becomes a Batch" below for exactly how each way of receiving stock affects what details (Supplier, Purchase Date, Payment) end up showing on the resulting batch.
