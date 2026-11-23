@@ -12,6 +12,7 @@ export default defineConfig({
       },
       favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css'],
+      components: { Footer: './src/components/Footer.astro' },
       lastUpdated: true,
       // Share card for every help page (Slack, WhatsApp, LinkedIn, X): the pages had a large-image
       // card type but no image. Same picture as the main site.
@@ -195,6 +196,13 @@ export default defineConfig({
           items: [
             { label: 'User Manual', link: '/affiliate-program/user-manual/' },
             { label: 'FAQ', link: '/affiliate-program/faq/' },
+          ],
+        },
+        {
+          label: 'LumberLinq',
+          items: [
+            { label: 'Home page', link: 'https://lumberlinq.com/' },
+            { label: 'Pricing', link: 'https://lumberlinq.com/pricing/' },
           ],
         },
       ],

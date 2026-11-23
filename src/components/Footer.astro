@@ -1,0 +1,13 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+<Default {...Astro.props}><slot /></Default>
+<p class="ll-site-links">
+  <a href="https://lumberlinq.com/">LumberLinq: timber management software</a>
+  <span aria-hidden="true">·</span>
+  <a href="https://lumberlinq.com/pricing/">Pricing</a>
+</p>
+<style>
+  .ll-site-links { margin: 0.75rem 0 0; font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .ll-site-links a { color: var(--sl-color-text-accent); }
+</style>
