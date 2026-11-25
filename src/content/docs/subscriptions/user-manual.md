@@ -40,9 +40,21 @@ To keep full access, renew or upgrade before this happens.
 4. Choose billing frequency — monthly or annual. **Annual is usually the better deal** — check the current pricing page for the real numbers, since these change over time.
 5. Click **Subscribe / Pay**.
 6. Complete payment via the payment gateway.
-7. After successful payment, your plan upgrades immediately and limits are updated.
+7. After successful payment, an upgrade starts immediately and limits are updated. A renewal or a smaller plan starts when your current plan ends.
 
 Renewing after a lapse (trial ended, or a paid plan downgraded) uses this exact same flow — there's no separate "reactivation" screen.
+
+## When Can I Renew, Upgrade or Switch? (Purchase tab)
+
+Open **Subscription → Purchase**. The top of the page says which plan you are on and when it ends. Your own plan's card has a **Your plan** badge.
+
+- **Renewing.** Renewal opens **45 days before a yearly plan ends** and **7 days before a monthly plan ends**. Before that date the button on your plan is grey and says "Renewal opens <date>". After your plan has ended you can renew at any time.
+- **Upgrading to a bigger plan.** You can upgrade at any time. The unused days of your current plan are credited against the new plan.
+- **Choosing a smaller plan** (including the free Seedling plan). This opens at the same time as renewal. The smaller plan **starts when your current plan ends** — you keep your current plan until then. There is no refund, and the smaller plan has smaller limits, so check your usage first.
+- **Switching between monthly and yearly** on the same plan counts as a renewal, so it follows the same dates.
+- **One change at a time.** If a change is already waiting to start (for example a smaller plan that starts after your current plan ends), the page says which plan starts on which date and the other plans are locked until it starts.
+- **The top plan.** If you are on the top plan, use **Add capacity** to add more of one thing without changing plan.
+- If someone tries to buy outside these dates (for example from an old tab), the payment is refused with a message that gives the date it opens. Nothing is charged.
 
 ![Package selection](/screenshots/reports/subscription-component-03-purchase-package-selection.png)
 

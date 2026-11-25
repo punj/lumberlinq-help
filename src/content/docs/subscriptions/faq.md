@@ -9,6 +9,18 @@ description: Frequently asked questions about LumberLinq plans, payments, and li
 
 Wait 2-3 minutes for the webhook to confirm with our server. If the plan is still not updated after 10 minutes, raise a Support Ticket with your transaction ID — our team can verify and manually activate the plan.
 
+**Why is the Renew button grey on the Purchase tab?**
+
+Renewal opens 45 days before a yearly plan ends and 7 days before a monthly plan ends. The button says "Renewal opens" with the exact date. Upgrading to a bigger plan is allowed at any time.
+
+**Can I move to a smaller plan, or from yearly to monthly?**
+
+Yes, once the renewal window opens (45 days before a yearly plan ends, 7 days before a monthly plan ends). The new plan starts when your current plan ends and you keep your current plan until then. There is no refund, and a smaller plan has smaller limits, so check your usage first.
+
+**Why can't I change my plan right now?**
+
+Only one change can wait at a time. If a plan is already waiting to start, the Purchase tab shows its name and start date and locks the other plans until it starts.
+
 **I can't access a feature right after upgrading — is that expected?**
 
 Try logging out and back in to refresh your session first. If the issue persists, raise a Support Ticket.
