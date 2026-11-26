@@ -55,7 +55,7 @@ It shows why it failed. For a name clash on a Product or Location, rename it and
 
 **Can I use LumberLinq on iPhone?**
 
-Yes — [App Store](https://apps.apple.com/us/app/lumberlinq/id6805041670). The iPhone app is sign-in only: create your account on app.lumberlinq.com or in the Android app first.
+Yes — [App Store](https://apps.apple.com/app/lumberlinq/id6805041670). The iPhone app is sign-in only: create your account on app.lumberlinq.com or in the Android app first.
 
 **Can I send a file from WhatsApp to LumberLinq when I have no signal?**
 

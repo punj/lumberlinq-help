@@ -16,7 +16,7 @@ Offline mode is only in the installed app — **Android** and **iPhone**. In a w
 ## Getting the App
 
 - **Android:** [Google Play Store](https://play.google.com/store/apps/details?id=com.lumberlinq.app) — search "LumberLinq".
-- **iPhone / iPad:** [App Store](https://apps.apple.com/us/app/lumberlinq/id6805041670) — search "LumberLinq".
+- **iPhone / iPad:** [App Store](https://apps.apple.com/app/lumberlinq/id6805041670) — search "LumberLinq".
 
 **New to LumberLinq on iPhone?** The iPhone app is for signing in only — create your free account first on **app.lumberlinq.com** (or the Android app), then sign in on your iPhone.
 
